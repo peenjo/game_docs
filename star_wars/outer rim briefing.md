@@ -1,10 +1,11 @@
 # Outer Rim Frontier Briefing Document - The Six Systems Polity
+## 19th Year of the Empire (1 BBY)
 
 ### OVERVIEW + NOTES
 The campaign takes place a few years before the destruction of the first death star, in a cluster of six systems near the frontier of hutt-controlled space. These systems are relatively poor, producing goods that can be found cheaper elsewhere, making them a haven for runaways and those looking to avoid the empire and the hutts. The main hub is the planet Aridara, with its largest colony, Sandport, acting as the central trading and administrative hub.
 
 #### ARIDARA SYSTEM
-main colony: Sandport
+main colony: **Sandport**
 
 population: ~1,000,000
 
