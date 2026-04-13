@@ -4,30 +4,30 @@
 The campaign takes place a few years before the destruction of the first death star, in a cluster of six systems near the frontier of hutt-controlled space. These systems are relatively poor, producing goods that can be found cheaper elsewhere, making them a haven for runaways and those looking to avoid the empire and the hutts. The main hub is the planet Aridara, with its largest colony, Sandport, acting as the central trading and administrative hub.
 
 #### ARIDARA SYSTEM
-main colony: sandport
+main colony: Sandport
+
 population: ~1,000,000
+
 products: hardy grains, drought-resistant crops, low-grade ores.
-frontier support bureau lead: director lenna voss - experienced and pragmatic, she ensures the
-smooth operation of supply logistics.
-bounty hunters' guild contact: renn baro - gruff but fair, a seasoned guild representative who
-handles bounties and keeps things in line. all bounties may be delivered to him for payment.
-marshal’s boss: chief inspector nira sol - no-nonsense and sharp-eyed, oversees law enforcement
-coordination across the colonies.
-description: sandport is the bustling heart of the aridara system, where all goods from the
-other systems are processed before heading out. it’s a rough-and-tumble place, with a mix of
-colonists, traders, and folks looking to make a new start.
+
+frontier support bureau lead: Director Lenna Voss - experienced and pragmatic, she ensures the smooth operation of supply logistics.
+
+bounty hunters' guild contact: Renn Baro - gruff but fair, a seasoned guild representative who handles bounties and keeps things in line. all bounties may be delivered to him for payment.
+
+marshal’s boss: Chief Inspector Nira Sol - no-nonsense and sharp-eyed, oversees law enforcement coordination across the colonies.
+
+description: Sandport is the bustling heart of the aridara system, where all goods from the other systems are processed before heading out. it’s a rough-and-tumble place, with a mix of colonists, traders, and folks looking to make a new start.
 
 #### OUTPOSTS ON ARIDARA
-dunewatch: moisture farming, small livestock (~30,000). a hardy community surviving on the
-fringes.
-miner's rest: mining settlement extracting low-grade ores (~20,000). dusty and tough, home to
-miners and their families.
-dryfield: agricultural town specializing in grain alternatives (~15,000). a small, close-knit
-farming settlement.
-gritton: dusty trading post for runaways and smugglers (~10,000). a haven for those looking to
-lay low.
-rust hollow: junkyard town scavenging old tech and scrap (~5,000). a scrappy, resourceful
-community making a living from salvage.
+Dunewatch: moisture farming, small livestock (~30,000). a hardy community surviving on the fringes.
+
+Miner'S Rest: mining settlement extracting low-grade ores (~20,000). dusty and tough, home to miners and their families.
+
+Dryfield: agricultural town specializing in grain alternatives (~15,000). a small, close-knit farming settlement.
+
+Gritton: dusty trading post for runaways and smugglers (~10,000). a haven for those looking to lay low.
+
+Rust Hollow: junkyard town scavenging old tech and scrap (~5,000). a scrappy, resourceful community making a living from salvage.
 
 #### VIREEN SYSTEM
 main colony: vireen prime
