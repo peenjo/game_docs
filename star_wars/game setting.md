@@ -16,7 +16,7 @@ bounty hunters' guild contact: **Renn Baro** - gruff but fair, a seasoned guild 
 
 marshal’s boss: **Chief Inspector Nira Sol** - no-nonsense and sharp-eyed, oversees law enforcement coordination across the colonies.
 
-description: Sandport is the bustling heart of the Aridara system, where all goods from the other systems are processed before heading out. it’s a rough-and-tumble place, with a mix of colonists, traders, and folks looking to make a new start.
+description: Sandport is the bustling heart of the Aridara system, where all goods from the other systems are processed before heading out. It’s a rough-and-tumble place, with a mix of colonists, traders, and folks looking to make a new start.
 
 #### OUTPOSTS ON ARIDARA
 **Dunewatch**: moisture farming, small livestock (~30,000). A hardy community surviving on the fringes.
