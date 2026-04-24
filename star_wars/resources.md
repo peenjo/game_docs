@@ -1,6 +1,6 @@
 Core Rules:
 
-- [Edge of the Empire Core Ruleset](https://imadeyoursite.com/Edge/Edge%20of%20the%20Empire%20-%20Beginner%20Game%20%28SWE01%29.pdf)
+- [Edge of the Empire Core Ruleset](https://imadeyoursite.com/Edge/EotE%20Core%20Rulebook.pdf)
 
 - [Star Wars Gadgets and Gear](https://drive.google.com/drive/folders/1hBoUh5Onjvf8eGxf8_qouCZzRPERYVeG)
 - [Edge of the Empire Beginner Game](https://imadeyoursite.com/Edge/EotE%20Beginner%20Game.pdf)
