@@ -10,13 +10,13 @@ population: ~1,000,000
 
 products: hardy grains, drought-resistant crops, low-grade ores.
 
-frontier support bureau lead: **Director Lenna Voss** - experienced and pragmatic, she ensures the smooth operation of supply logistics.
+frontier support bureau lead: **Director Lenna Voss** (human) - experienced and pragmatic, she ensures the smooth operation of supply logistics.
 
-bounty hunters' guild contacts: **Renn Baro** - gruff but fair, a seasoned guild representative who handles bounties and keeps things in line. All bounties must be delivered to him for payment. **Meen Alin** - overworked but highly capable office manager.
+bounty hunters' guild contacts: **Renn Baro** (spider???) - gruff but fair, a seasoned guild representative who handles bounties and keeps things in line. All bounties must be delivered to him for payment. **Meen Alin** (???) - overworked but highly capable office manager.
 
-marshal’s boss: **Chief Inspector Nira Sol** - no-nonsense and sharp-eyed, oversees law enforcement coordination across the colonies.
+marshal’s boss: **Chief Inspector Nira Sol** (human) - no-nonsense and sharp-eyed, oversees law enforcement coordination across the colonies.
 
-description: Sandport is the bustling heart of the Aridara system, where all goods from the other systems are processed before heading out. It’s a rough-and-tumble place, with a mix of colonists, traders, and folks looking to make a new start.
+description: Sandport is the bustling heart of the Aridara system, where all goods from the other systems are processed before heading out. It’s a rough-and-tumble place, with a mix of colonists, traders and folks looking to make a new start.
 
 #### OUTPOSTS ON ARIDARA
 **Dunewatch**: moisture farming, small livestock (~30,000). A hardy community surviving on the fringes.
@@ -77,7 +77,7 @@ sheriff: **Vix Taro** (rodian) - wily and sharp, keeps the peace in the chaotic 
 
 supply contact: **Mara Trell** (human) - organized and efficient, ensuring miners get what they need.
 
-description: a bustling starbase floating among a vast asteroid field. Miners resupply here, and the environment is a mix of frontier grit and tight-knit camaraderie.
+description: a bustling starbase floating among a vast asteroid field. Miners resupply here and the environment is a mix of frontier grit and tight-knit camaraderie.
 
 #### QUELLION SYSTEM
 main colony: **Quellion Port**
@@ -95,4 +95,4 @@ description: a cold, industrial outpost with a focus on extracting rare minerals
 #### ADDITIONAL SETTLEMENTS ACROSS THE SYSTEMS
 Beyond the primary colonies listed above, each system contains between 10 and 20 smaller outposts scattered across planets or installations. These range from isolated homesteads and “mom-and-pop” operations to small frontier towns with populations in the low hundreds.
 
-The larger of these settlements typically maintain their own mayor, constable, and a designated supply contact, all of whom may occasionally call upon sandport for assistance. These outposts are often under-resourced, loosely governed, and highly dependent on irregular resupply, making them frequent sources of trouble, opportunity, or both.
+The larger of these settlements typically maintain their own mayor, constable and a designated supply contact, all of whom may occasionally call upon sandport for assistance. These outposts are often under-resourced, loosely governed and highly dependent on irregular resupply, making them frequent sources of trouble, opportunity, or both.
