@@ -12,7 +12,7 @@ products: hardy grains, drought-resistant crops, low-grade ores.
 
 frontier support bureau lead: **Director Lenna Voss** - experienced and pragmatic, she ensures the smooth operation of supply logistics.
 
-bounty hunters' guild contact: **Renn Baro** - gruff but fair, a seasoned guild representative who handles bounties and keeps things in line. all bounties may be delivered to him for payment.
+bounty hunters' guild contacts: **Renn Baro** - gruff but fair, a seasoned guild representative who handles bounties and keeps things in line. All bounties must be delivered to him for payment. **Meen Alin** - overworked but highly capable office manager.
 
 marshal’s boss: **Chief Inspector Nira Sol** - no-nonsense and sharp-eyed, oversees law enforcement coordination across the colonies.
 
