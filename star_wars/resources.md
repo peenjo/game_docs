@@ -3,7 +3,6 @@ Core Rules:
 - [Edge of the Empire Core Ruleset](https://imadeyoursite.com/Edge/EotE%20Core%20Rulebook.pdf)
 
 - [Star Wars Gadgets and Gear](https://drive.google.com/drive/folders/1hBoUh5Onjvf8eGxf8_qouCZzRPERYVeG)
-- [Edge of the Empire Beginner Game](https://imadeyoursite.com/Edge/EotE%20Beginner%20Game.pdf)
 
 Specializations:
 
@@ -19,3 +18,5 @@ Specializations:
 Youtube:
 
 - [Ultimate Star Wars Dice Video](https://www.youtube.com/watch?v=xGVr-gvFOnQ)
+
+- [A Guide to Destiny Tokens](https://www.youtube.com/watch?v=ShSRxHw-0N0)
