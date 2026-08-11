@@ -1,0 +1,921 @@
+{
+  "metadata": {
+    "title": "Threshold Career Data",
+    "version": "1.0",
+    "source_files": ["Threshold careers.pdf"],
+    "total_careers": 93,
+    "levels": [1, 2, 3],
+    "branches": ["Armsman", "Channeler", "Intellectual", "Criminal", "Civilian"],
+    "export_date": "2026-08-11"
+  },
+  "careers": [
+    {
+      "level": 1,
+      "name": "COP",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Bribe", "Frame", "Interrogate", "Psychology", "Pistols", "Rifles", "Melee", "Perception", "Streetwise", "Veteran"],
+      "ranks": ["OPR's Kn:City", "Cont:LEO", "Drive"],
+      "paths": ["Detective", "S.W.A.T.", "Guard Captain", "Bondsman"]
+    },
+    {
+      "level": 1,
+      "name": "GUARD",
+      "branch": "Armsman",
+      "stats": {},
+      "skills": ["Admin", "Pistols", "Rifles", "Melee", "Psychology", "Perception", "Drive"],
+      "ranks": ["OPR's Kn:City", "Transp:+1"],
+      "paths": ["Guard Captain", "Borderguard"]
+    },
+    {
+      "level": 1,
+      "name": "PUP",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1", "EDU": "+1" },
+      "skills": ["Admin", "Bribe", "First-Aid", "Lore", "Stealth", "Pistols", "Rifles", "Melee", "Perception", "Veteran", "Persuade", "Psychology"],
+      "ranks": ["OPR's Drive", "Cont:Hunter"],
+      "paths": ["Hunter", "Tracker"]
+    },
+    {
+      "level": 1,
+      "name": "RAZORBOY",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1", "EDU": "+1" },
+      "skills": ["Athletics", "Intimidate", "First-Aid", "Honour", "Pistols", "Rifles", "Melee", "Perception", "Stealth", "Streetwise", "Veteran"],
+      "ranks": ["OPR's Kn:City", "Ride"],
+      "paths": ["Street Samurai", "City Ronin", "Mercenary"]
+    },
+    {
+      "level": 1,
+      "name": "SOLDIER",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["First-Aid", "Pistols", "Rifles", "Melee", "Ordinance", "Perception", "Stealth", "Survival", "Tactics", "Veteran", "Honour"],
+      "ranks": ["OPR's", "Cont:Military"],
+      "paths": ["Commando", "Mercenary", "S.W.A.T.", "Survivalist"]
+    },
+    {
+      "level": 1,
+      "name": "REBEL",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["First-Aid", "Pistols", "Rifles", "Melee", "Perception", "Stealth", "Survival", "Veteran", "Ordinance"],
+      "ranks": [],
+      "paths": ["Commando", "Bomber", "Mercenary", "Survivalist"]
+    },
+    {
+      "level": 1,
+      "name": "SURVIVOR",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1", "EDU": "+1" },
+      "skills": ["Athletics", "Intimidate", "Instinct", "Luck", "First-Aid", "Pistols", "Rifles", "Melee", "Perception", "Stealth", "Veteran"],
+      "ranks": [],
+      "paths": ["Survivalist", "Tracker", "Hunter", "Mercenary"]
+    },
+    {
+      "level": 1,
+      "name": "APPRENTICE",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Admin", "Chan:Herm", "Focus", "Lng:Latin", "Lng", "Lore", "Persuade", "Ritual"],
+      "ranks": [],
+      "paths": ["StreetMage", "WageMage"]
+    },
+    {
+      "level": 1,
+      "name": "CUB",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Chan:Sham", "Focus", "Intimidate", "Honour", "Ritual", "Lore", "Persuade", "Psychology"],
+      "ranks": ["OPR's Drive", "Hst:Tribe", "Lng:Tribe", "Cont:Spirit", "Cont:Tribal"],
+      "paths": ["Shaman"]
+    },
+    {
+      "level": 1,
+      "name": "DABBLER",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Chan:Herm", "Focus", "Ritual", "Veteran", "Lore", "Persuade", "Psychology"],
+      "ranks": ["OPR's Drive", "Cont:Academ", "Lng:Latin", "Lng:+2", "Cont:*Criminal"],
+      "paths": ["StreetMage", "WageMage"]
+    },
+    {
+      "level": 1,
+      "name": "GIFTED",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Chan:Mental", "Instinct", "Focus", "Perception", "Persuade", "Psychology", "Streetwise", "Veteran", "Lore"],
+      "ranks": ["OPR's", "Cont:Mental"],
+      "paths": ["Medium"]
+    },
+    {
+      "level": 1,
+      "name": "NOVICE",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1", "EDU": "+1", "CHA": "+1" },
+      "skills": ["Veteran", "Athletics", "Chan:Phys", "Focus", "Honour", "First-Aid", "Instinct", "Melee", "Lore", "Stealth", "Perception", "Ritual", "Survival"],
+      "ranks": ["OPR's", "Cont:Adepts"],
+      "paths": ["Adept"]
+    },
+    {
+      "level": 1,
+      "name": "HOUNSI",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Ritual", "Chan:Voodoo", "Focus", "Lng:Latin", "Lore", "Persuade", "Psychology"],
+      "ranks": ["OPR's", "Hst:Vadouan", "Lng:+2", "Cont:Vadouan"],
+      "paths": ["Vadouan"]
+    },
+    {
+      "level": 1,
+      "name": "SEMINARIAN",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Admin", "Chan:Cath", "Focus", "Honour", "Lore", "Persuade", "Ritual"],
+      "ranks": ["OPR's Lng:+1", "Lng:Latin", "Hist:Catholic", "Cont:Catholic"],
+      "paths": ["Priest"]
+    },
+    {
+      "level": 1,
+      "name": "GHOST",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2" },
+      "skills": ["Admin", "Chan:Spirit", "Focus", "Discipline", "Lore", "Persuade", "Ritual", "Intimidate"],
+      "ranks": ["OPR's"],
+      "paths": []
+    },
+    {
+      "level": 1,
+      "name": "WICCAN",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Admin", "Chan:Wiccan", "Focus", "Ritual", "Lore", "Persuade", "Psychology"],
+      "ranks": ["OPR's Lng:2", "Lng:Latin", "Hist:Wiccan", "Cont:Wiccan"],
+      "paths": ["Witch"]
+    },
+    {
+      "level": 1,
+      "name": "ARCHEO",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Perception", "ScanLoc", "Lore", "Ritual"],
+      "ranks": ["OPR's", "Cont:Academ", "Lng:Latin", "Lng:+2", "Hst:+3", "Drive"],
+      "paths": ["Archeologist", "Historian"]
+    },
+    {
+      "level": 1,
+      "name": "BUSINESS",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Admin", "Perception", "Persuade", "Psychology", "Law", "Gambling"],
+      "ranks": ["OPR's", "Cont:Corpo", "Drive", "Cont:Academ"],
+      "paths": ["Businessman", "Corpo"]
+    },
+    {
+      "level": 1,
+      "name": "ENGINEERING",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "ScanLoc", "Electrical", "Bypass", "Electronics", "Mechanical", "Perception", "Coding"],
+      "ranks": ["OPR's Vtol", "Cont:Academ"],
+      "paths": ["Engineer"]
+    },
+    {
+      "level": 1,
+      "name": "HISTORY",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Perception", "Lore", "Ritual"],
+      "ranks": ["OPR's Lng:+2", "Lng:Latin", "Hst:+3", "Cont:Academ"],
+      "paths": ["Historian"]
+    },
+    {
+      "level": 1,
+      "name": "MEDICAL",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "First-Aid", "ScanLoc", "Psychology", "Surgery", "Treatment"],
+      "ranks": ["OPR's", "Lng:Latin", "Sci:Biology", "Cont:Academ"],
+      "paths": ["Doctor", "Ripperdoc"]
+    },
+    {
+      "level": 1,
+      "name": "LAW",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Perception", "Persuade", "Intimidate", "Psychology", "Law"],
+      "ranks": ["OPR's", "Cont:Govt", "Cont:Academ"],
+      "paths": ["Lawyer", "Businessman", "Corpo"]
+    },
+    {
+      "level": 1,
+      "name": "SCIENCE",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "ScanLoc", "Focus"],
+      "ranks": ["OPR's Lng:Latin", "Sciencex2", "Art:Writing", "Cont:Academ"],
+      "paths": ["Scientist", "Engineer"]
+    },
+    {
+      "level": 1,
+      "name": "TECHY",
+      "branch": "Academic/Student",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "ScanLoc", "Electrical", "Electronics", "Coding", "Cybernetics", "Mechanical", "Bypass", "SysVulns"],
+      "ranks": ["OPR's Vtol", "Cont:Academ"],
+      "paths": ["Engineer"]
+    },
+    {
+      "level": 1,
+      "name": "HOME INVADER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Intimidate", "Melee", "Perception", "Pistols", "Psychology", "Stealth", "Streetwise", "Interrogate", "Bypass"],
+      "ranks": ["OPR's", "Cont:Fence", "Drive"],
+      "paths": ["B&E Expert", "Fence", "Killer"]
+    },
+    {
+      "level": 1,
+      "name": "CARJACKER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Intimidate", "Melee", "Perception", "Pistols", "Streetwise", "Athletics", "Bypass"],
+      "ranks": ["OPR's", "Cont:Breaker", "Kn:City", "Drive"],
+      "paths": ["Getaway Driver", "Bank Robber", "Smuggler"]
+    },
+    {
+      "level": 1,
+      "name": "CROOK",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Thief", "Gambling", "Intimidate", "Melee", "Perception", "Persuade", "Pistols", "Psychology", "Stealth", "Streetwise", "Bypass", "Athletics"],
+      "ranks": ["OPR's Kn:City:2", "Cont:Fence"],
+      "paths": ["Fence", "Face", "Made Man", "Enforcer"]
+    },
+    {
+      "level": 1,
+      "name": "GANGER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Melee", "Intimidate", "Perception", "Pistols", "Veteran", "Rifles", "Streetwise", "Athletics", "Kn:City", "Psychology", "Honour"],
+      "ranks": ["OPR's Ride", "Cont:Gang", "Drive"],
+      "paths": ["Enforcer", "Sgt-at-Arms", "Made Man", "Shot Caller"]
+    },
+    {
+      "level": 1,
+      "name": "INMATE",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+1" },
+      "skills": ["Melee", "Intimidate", "Perception", "Honour", "Veteran", "Contacts", "Athletics", "Psychology", "Persuade", "Gambling"],
+      "ranks": ["OPR's", "Cont:Prison", "Cont:*Criminal"],
+      "paths": ["ShotCaller", "BankRobber", "Enforcer", "Smuggler"]
+    },
+    {
+      "level": 1,
+      "name": "GRIFTER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Bribe", "Gambling", "Perception", "Persuade", "Psychology", "Streetwise", "Thief", "Athletics"],
+      "ranks": ["OPR's", "Cont:*Crim:+1", "Kn:City", "Kn:Lang:+2"],
+      "paths": ["Face", "Fence", "Smuggler", "Made Man"]
+    },
+    {
+      "level": 1,
+      "name": "SEX WORKER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Thief", "Athletics", "First-Aid", "Melee", "Perception", "Persuade", "Pistols", "Psychology", "Streetwise", "Interrogate", "Disguise"],
+      "ranks": ["OPR's", "Cont:*Crimin"],
+      "paths": ["Face", "Fence", "Made Man"]
+    },
+    {
+      "level": 1,
+      "name": "THUG",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["First-Aid", "Melee", "Perception", "Intimidate", "Streetwise", "Pistols", "Psychology", "Veteran"],
+      "ranks": ["OPR's Kn:City", "Cont:*Crimin", "Drive", "Ride"],
+      "paths": ["Enforcer", "Sgt-at-Arms", "Made Man", "Killer"]
+    },
+    {
+      "level": 1,
+      "name": "ANALYST",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Focus", "ScanLoc", "Perception", "Persuade", "Psychology"],
+      "ranks": ["OPR's", "Hist:+2", "Cont:*Legal:1", "Lang:+2"],
+      "paths": ["Reporter", "Whistleblower"]
+    },
+    {
+      "level": 1,
+      "name": "CO-PILOT",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Admin", "ScanLoc", "Perception", "Navigation"],
+      "ranks": ["OPR's Pilot", "Cont:Pilot", "Kn:Routes", "Lang:1"],
+      "paths": ["Pilot", "Smuggler"]
+    },
+    {
+      "level": 1,
+      "name": "DRIFTER",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Melee", "Luck", "Gambling", "Streetwise", "Survival", "Psychology", "Persuade", "Perception"],
+      "ranks": ["OPR's Lang:2", "Kn:City:3", "Cont:3"],
+      "paths": ["Smuggler", "Reporter", "Whistle Blower"]
+    },
+    {
+      "level": 1,
+      "name": "ENTERTAINER",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Focus", "Streetwise", "Persuade", "Psychology", "Disguise"],
+      "ranks": ["OPR's Art:+2", "Kn:City", "Lang:+1", "Cont:local"],
+      "paths": ["National Hit", "Reporter"]
+    },
+    {
+      "level": 1,
+      "name": "MECHANIC",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Electrical", "Focus", "Mechanical", "ScanLoc", "Perception", "Streetwise", "Bypass"],
+      "ranks": ["OPR's", "Kn:City", "Lang:Add1", "Cont:Breaker", "Drive"],
+      "paths": ["Engineer", "Ripperdoc"]
+    },
+    {
+      "level": 1,
+      "name": "JOURNALIST",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Admin", "Focus", "Perception", "Interrogate", "Persuade", "Psychology", "Streetwise", "Stealth", "Bribe"],
+      "ranks": ["OPR's", "Art:Writing", "Cont:3"],
+      "paths": ["Reporter", "Whistle Blower", "National Hit"]
+    },
+    {
+      "level": 1,
+      "name": "PARAMEDIC",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Admin", "Focus", "First-Aid", "Perception", "Pistols", "Psychology", "Streetwise", "Instinct", "Treatment", "Rifles", "Melee"],
+      "ranks": ["OPR's Kn:City", "Lang:+1", "Cont:*Legal"],
+      "paths": ["Doctor", "Ripperdoc"]
+    },
+    {
+      "level": 1,
+      "name": "GUIDE",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1" },
+      "skills": ["Admin", "Focus", "First-Aid", "Perception", "Pistols", "Psychology", "Streetwise", "Instinct", "Treatment", "Rifles", "Melee"],
+      "ranks": ["OPR's Kn:City", "Lang:+1", "Cont:*Legal"],
+      "paths": ["Doctor", "Ripperdoc"]
+    },
+    {
+      "level": 1,
+      "name": "WAGE SLAVE",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+1" },
+      "skills": ["Admin", "Focus", "Persuade", "Psychology", "Coding"],
+      "ranks": ["OPR's", "Cont:Corpo"],
+      "paths": ["Corpo", "Businessman"]
+    },
+    {
+      "level": 2,
+      "name": "BONDSMAN",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+1", "EDU": "+1" },
+      "skills": ["Admin", "Bribe", "Persuade", "Intimidate", "Streetwise", "Pistols", "Melee", "Perception", "Bypass", "Interrogate", "Psychology"],
+      "ranks": ["OPR's Kn:City", "Lang:+1", "Cont:LEO"],
+      "paths": ["Operator", "Field Agent"],
+      "lateral": ["Detective", "Hunter"]
+    },
+    {
+      "level": 2,
+      "name": "BOMBER",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2" },
+      "skills": ["Melee", "First-Aid", "Pistols", "Electrical", "Disguise", "Ordinance", "Perception", "Stealth", "Tactics", "Electronics", "Veteran", "Bypass"],
+      "ranks": ["OPR's", "Cont:*Crimin"],
+      "paths": ["Terrorist", "Operator"],
+      "lateral": ["Mercenary", "Survivalist"]
+    },
+    {
+      "level": 2,
+      "name": "COMMANDO",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+1", "EDU": "+1" },
+      "skills": ["Rifles", "First-Aid", "Pistols", "Melee", "Veteran", "Ordinance", "Perception", "Stealth", "Survival", "Tactics", "Athletics", "Honour"],
+      "ranks": ["OPR's", "Cont:Military"],
+      "paths": ["Operator", "BlackGuard", "Terrorist"],
+      "lateral": ["Mercenary", "Bomber", "Tracker"]
+    },
+    {
+      "level": 2,
+      "name": "BORDERGUARD",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2" },
+      "skills": ["Admin", "Pistols", "Rifles", "Melee", "Drive", "Perception", "ScanLoc", "Psychology", "Survival"],
+      "ranks": ["OPR's", "Kn:Area", "Kn:Region", "Lang:+1", "Transportx3"],
+      "paths": ["Operator", "Search&Rescue"],
+      "lateral": ["Tracker", "Pilot", "Smuggler"]
+    },
+    {
+      "level": 2,
+      "name": "DETECTIVE",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+1" },
+      "skills": ["Admin", "Bribe", "Instinct", "Frame", "Interrogate", "Pistols", "ScanLoc", "Melee", "Perception", "Veteran", "Psychology", "Streetwise"],
+      "ranks": ["OPR's Kn:City", "Cont:LEO"],
+      "paths": ["Federal Agent", "Conspiracist", "Bounty Hunter"],
+      "lateral": ["Bondsman", "Guard Captain"]
+    },
+    {
+      "level": 2,
+      "name": "GUARD CAPTAIN",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+1", "EDU": "+1" },
+      "skills": ["Admin", "First-Aid", "Pistols", "Rifles", "Melee", "Perception", "Tactics", "Interrogate", "Frame", "Psychology", "Veteran"],
+      "ranks": ["OPR's", "Cont:Legal"],
+      "paths": ["Field Agent", "Operator"],
+      "lateral": ["Bondsman", "Borderguard"]
+    },
+    {
+      "level": 2,
+      "name": "MERCENARY",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+1", "EDU": "+1" },
+      "skills": ["Melee", "First-Aid", "Pistols", "Rifles", "Honour", "Ordinance", "Perception", "Stealth", "Survival", "Tactics", "Veteran"],
+      "ranks": ["OPR's", "Cont:Military"],
+      "paths": ["Operator", "BlackGuard"],
+      "lateral": ["Commando", "Bomber"]
+    },
+    {
+      "level": 2,
+      "name": "HUNTER",
+      "branch": "Armsman",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+1", "EDU": "+1", "CHA": "+1", "INIT": "+1" },
+      "skills": ["Admin", "Veteran", "Lore", "Shadow", "Interrogate", "Pistols", "Ritual", "Melee", "Perception", "Thief", "Persuade", "Psychology", "Stealth", "Disguise"],
+      "ranks": ["OPR's Cont:Hnt"],
+      "paths": ["Warden", "Bounty Hunter", "Conspiracist"],
+      "lateral": ["Tracker", "Survivalist"]
+    },
+    {
+      "level": 2,
+      "name": "CITY RONIN",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+2", "EDU": "+2" },
+      "skills": ["Melee", "Athletics", "Intimidate", "First-Aid", "Veteran", "Pistols", "Rifles", "Perception", "Honour", "Stealth", "Streetwise"],
+      "ranks": ["OPR's Kn:City", "Cont:*Crimin", "Lng:+1"],
+      "paths": ["Densetsushi", "BlackGuard", "Operator", "Hitman"],
+      "lateral": []
+    },
+    {
+      "level": 2,
+      "name": "STREET SAMURAI",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+2", "EDU": "+2" },
+      "skills": ["Frame", "Athletics", "Intimidate", "First-Aid", "Stealth", "Pistols", "Rifles", "Melee", "Perception", "Honour", "Veteran", "ScanLoc"],
+      "ranks": ["OPR's Kn:City", "Cont:Corpo"],
+      "paths": ["Black Guard", "Operator", "Fukusho"],
+      "lateral": ["Mercenary", "Commando", "Hunter", "City Ronin"]
+    },
+    {
+      "level": 2,
+      "name": "SURVIVALIST",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+2", "INT": "+1", "EDU": "+1" },
+      "skills": ["First-Aid", "Pistols", "Rifles", "Melee", "Perception", "Stealth", "Survival", "Mechanical", "Ordinance", "Electrical"],
+      "ranks": ["OPR's", "Transportx2"],
+      "paths": [],
+      "lateral": []
+    },
+    {
+      "level": 2,
+      "name": "S.W.A.T.",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+1", "EDU": "+1", "CHA": "+2", "INIT": "+1" },
+      "skills": ["Melee", "First-Aid", "Pistols", "Rifles", "Veteran", "Ordinance", "Perception", "Tactics", "Stealth"],
+      "ranks": ["OPR's", "Cont:LEO", "Transportx2"],
+      "paths": ["Union Agent", "Black Guard", "Operative"],
+      "lateral": ["Guard Captain", "Mercenary", "Borderguard", "Street Samurai", "Hunter"]
+    },
+    {
+      "level": 2,
+      "name": "TRACKER",
+      "branch": "Armsman",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+2", "INT": "+1", "EDU": "+2", "CHA": "+1" },
+      "skills": ["First-Aid", "Pistols", "Rifles", "Melee", "Perception", "Stealth", "Survival", "Shadow", "Disguise", "Navigation"],
+      "ranks": ["OPR's Trnsptx2", "Cont:Military"],
+      "paths": ["Ranger", "Operator", "Blackguard"],
+      "lateral": ["Survivalist", "Mercenary", "Borderguard"]
+    },
+    {
+      "level": 2,
+      "name": "ARCHEOLOGIST",
+      "branch": "Intellectual",
+      "stats": { "STR": "+1", "AGI": "+2", "EDU": "+2" },
+      "skills": ["Admin", "PsvSyst", "Perception", "Bribe", "ScanLoc", "Lore", "Ritual", "Streetwise"],
+      "ranks": ["OPR's Hst:+3", "Transportx2", "Lng:Latin", "Lng:+2", "Cont:Academ"],
+      "paths": ["Tomb Raider", "Occultist"],
+      "lateral": ["Historian"]
+    },
+    {
+      "level": 2,
+      "name": "BUSINESSMAN",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+1" },
+      "skills": ["Admin", "PsvSys", "Perception", "Bribe", "Persuade", "Psychology", "Gambling", "Intimidate"],
+      "ranks": ["OPR's", "Cont:Govt"],
+      "paths": ["Executive", "Fixer"],
+      "lateral": ["Corpo", "Lawyer"]
+    },
+    {
+      "level": 2,
+      "name": "CORPO",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+1" },
+      "skills": ["Admin", "Perception", "Persuade", "Psychology", "Gambling", "Intimidate"],
+      "ranks": ["OPR's", "Cont:Corpo"],
+      "paths": ["Executive", "Fixer"],
+      "lateral": ["Businessman", "Lawyer"]
+    },
+    {
+      "level": 2,
+      "name": "DOCTOR",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+1" },
+      "skills": ["Admin", "First-Aid", "ScanLoc", "Psychology", "Treatment", "Focus", "Pathology", "Surgery", "Psychiatry", "Hypnosis"],
+      "ranks": ["OPR's", "Sci:Biology"],
+      "paths": ["Surgeon", "Coroner"],
+      "lateral": ["Ripperdoc", "Corpo", "Lawyer", "Scientist"]
+    },
+    {
+      "level": 2,
+      "name": "DRONEOP",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Coding", "Electrical", "Mechanical", "Electronics", "Integration", "Perception", "Pistols", "Navigation", "Ordinance", "Streetwise", "ScanLoc"],
+      "ranks": ["OPR's Kn:City", "Trans:+3", "Cont*Crimin:+2"],
+      "paths": ["Rigger", "Cyberneticist"],
+      "lateral": ["Engineer", "Ripperdoc"]
+    },
+    {
+      "level": 2,
+      "name": "HACKER",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2" },
+      "skills": ["Admin", "ScanLoc", "Electrical", "Electronics", "Integration", "Coding", "Streetwise", "Perception", "SysVulns", "Frame", "Pistols"],
+      "ranks": ["OPR's", "Cont*Crimin:+2"],
+      "paths": [],
+      "lateral": []
+    },
+    {
+      "level": 2,
+      "name": "ENGINEER",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2" },
+      "skills": ["Admin", "ScanLoc", "Electrical", "Electronics", "Mechanical", "PsvSyst", "Perception", "Coding", "Cybernetics"],
+      "ranks": [],
+      "paths": [],
+      "lateral": ["DroneOp", "Scientist"]
+    },
+    {
+      "level": 2,
+      "name": "HISTORIAN",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+1" },
+      "skills": ["Admin", "Perception", "Ritual", "Lore"],
+      "ranks": ["OPR's Lng:+2", "Kn:Hist:+3", "Cont:*Channel", "Lng:Latin", "Cont:Academ", "Cont*Legal:+2"],
+      "paths": ["Occultist", "Tomb Raider"],
+      "lateral": ["Archeologist", "Businessman"]
+    },
+    {
+      "level": 2,
+      "name": "LAWYER",
+      "branch": "Intellectual",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+2" },
+      "skills": ["Admin", "Perception", "Bribe", "Frame", "Persuade", "Intimidate", "Psychology", "Law", "Interrogate"],
+      "ranks": ["OPR's Lng:Latin", "Cont:Academ", "Cont*Legal:+2"],
+      "paths": ["Attorney"],
+      "lateral": ["Businessman", "Corpo"]
+    },
+    {
+      "level": 2,
+      "name": "SCIENTIST",
+      "branch": "Intellectual",
+      "stats": { "STR": "+1", "AGI": "+2", "EDU": "+2" },
+      "skills": ["Admin", "ScanLoc", "Focus", "Coding"],
+      "ranks": ["OPR's", "Cont:Academ", "Lng:Latin", "Sci:+2"],
+      "paths": ["Theoreticist"],
+      "lateral": ["Engineer"]
+    },
+    {
+      "level": 2,
+      "name": "RIPPERDOC",
+      "branch": "Intellectual",
+      "stats": { "STR": "+1", "AGI": "+2", "EDU": "+2" },
+      "skills": ["Admin", "First-Aid", "ScanLoc", "Psychology", "Streetwise", "Focus", "Pathology", "Surgery", "Cybernetics", "Pistols", "Psychiatry"],
+      "ranks": ["OPR's", "Cont*Crimin:+2", "Sci:Biology"],
+      "paths": ["Cyberneticist"],
+      "lateral": ["Doctor", "Engineer", "Drone Operator"]
+    },
+    {
+      "level": 2,
+      "name": "ADEPT",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2", "EDU": "+1", "INIT": "+2" },
+      "skills": ["Ritual", "Athletics", "Chan:Phys", "Focus", "Perception", "First-Aid", "Instinct", "Melee", "Lore", "Stealth", "Survival", "Honour"],
+      "ranks": ["OPR's", "Cont:Phys"],
+      "paths": ["Monk", "BlackGuard"],
+      "mastery": "Mercenary"
+    },
+    {
+      "level": 2,
+      "name": "STREETMAGE",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Chan:Herm", "Focus", "Thief", "Perception", "Lore", "Persuade", "Ritual", "Streetwise"],
+      "ranks": ["OPR's Lng:+1", "Cont:Hermetic", "Cont:*Crimin", "Cont:*Legal", "Cont:*Chan"],
+      "paths": ["Magician", "Occultist"],
+      "lateral": ["Mercenary"]
+    },
+    {
+      "level": 2,
+      "name": "PRIEST",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+1", "INT": "+2", "EDU": "+2" },
+      "skills": ["Admin", "Focus", "Honour", "Perception", "Lore", "Persuade", "Ritual", "Chan:Cath"],
+      "ranks": ["OPR's Lng:+1", "Cont:Catholic", "Cont:*Legal", "Cont:*Crimin"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "MEDIUM",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Focus", "ScanLoc", "Ritual", "Chan:Mental", "First-Aid", "Instinct", "Lore", "Perception"],
+      "ranks": ["OPR's Lng:+1", "Cont:Mental"],
+      "paths": ["Psychic", "Occultist"],
+      "lateral": []
+    },
+    {
+      "level": 2,
+      "name": "SHAMAN",
+      "branch": "Channeler",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+2", "INT": "+2", "EDU": "+2" },
+      "skills": ["Lore", "Chan:Sham", "Focus", "Intimidate", "Honour", "Persuade", "Psychology", "Perception", "Streetwise", "Ritual"],
+      "ranks": ["OPR's lang:+2", "Cont:Shaman", "Cont:*Crimin", "Cont:*Legal", "Cont:*Chan"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "VADOUAN",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Lore", "Focus", "Intimidate", "Chan:Voodoo", "Persuade", "Ritual", "Streetwise", "Perception"],
+      "ranks": ["OPR's Lng:+1", "Cont:*Crimin", "Cont:*Legal", "Cont:*Chan", "Cont:Vadouan"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "WITCH",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Focus", "Intimidate", "Chan:Wiccan", "Perception", "Lore", "Persuade", "Ritual", "Streetwise"],
+      "ranks": ["OPR's Lng:+1", "Cont:*Crimin", "Cont:*Legal", "Cont:*Chan", "Cont:Wiccan"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "WAGEMAGE",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+1", "INT": "+2" },
+      "skills": ["Admin", "Chan:Herm", "Focus", "Honour", "Lore", "Persuade", "Ritual", "Perception"],
+      "ranks": ["OPR's Lng:+1", "Cont:Corpo", "Cont:*Legal", "Cont:*Chan"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "POLTER",
+      "branch": "Channeler",
+      "stats": { "STR": "+2", "AGI": "+2" },
+      "skills": ["Admin", "Chan:Spirit", "Focus", "Discipline", "Lore", "Persuade", "Ritual", "Intimidate"],
+      "ranks": ["OPR's"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "B&E EXPERT",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+2", "EDU": "+1" },
+      "skills": ["Admin", "Melee", "Perception", "Pistols", "Psychology", "Stealth", "Streetwise", "SysVulns", "Bypass", "Electrical", "Electronics", "ScanLoc"],
+      "ranks": ["OPR's ConFence", "Cont:*Crimin"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "BANK ROBBER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+2", "INT": "+1", "EDU": "+1", "INIT": "+2", "INIT": "+1" },
+      "skills": ["Focus", "Intimidate", "Rifles", "Ordinance", "Honour", "Streetwise", "Interrogate", "Pistols", "Psychology", "SysVulns", "Veteran", "Persuade", "Perception"],
+      "ranks": ["OPR's Kn:City", "Cont:Fence"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "ENFORCER",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+1" },
+      "skills": ["Melee", "First-Aid", "Perception", "Intimidate", "Psychology", "Streetwise", "Shadow", "Interrogate", "Pistols", "Persuade", "Veteran", "Frame"],
+      "ranks": ["OPR's Kn:City", "Cont*Crimin:+1"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "FACE",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+1", "END": "+1", "INT": "+2", "EDU": "+1" },
+      "skills": ["Bribe", "Perception", "Persuade", "Psychology", "Pistols", "Streetwise", "Instinct", "Melee"],
+      "ranks": ["OPR's Lang:+2", "Cont:+3"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "FENCE",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "EDU": "+1" },
+      "skills": ["Bribe", "ScanLoc", "Admin", "Streetwise", "Instinct", "Pistols", "Psychology", "Persuade", "Perception"],
+      "ranks": ["OPR's Lang:+1", "Cont*Crimin:+2"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "KILLER",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2", "EDU": "+2" },
+      "skills": ["Frame", "Pistols", "Rifles", "Melee", "Disguise", "Streetwise", "Instinct", "Psychology", "Stealth", "Intimidate", "Persuade", "Bypass", "Shadow", "Veteran"],
+      "ranks": ["OPR's Kn:City"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "GETAWAY DRIVER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+1", "EDU": "+2", "INIT": "+1" },
+      "skills": ["Intimidate", "Melee", "Perception", "Pistols", "Streetwise", "Athletics", "Tactics", "ScanLoc", "Integration", "Honour", "Navigation"],
+      "ranks": ["OPR's Lang:+1", "Cont*Crimin:+2", "Drive"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "MADE MAN",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Intimidate", "Interrogate", "Perception", "Persuade", "Psychology", "Streetwise", "Gambling", "Honour", "Frame", "Bribe"],
+      "ranks": ["OPR's Lang:+1", "Cont:*Crim:+2"],
+      "paths": ["Mob Boss", "Fixer", "Crew Chief", "Hitman"],
+      "lateral": ["Face", "Smuggler", "Killer"]
+    },
+    {
+      "level": 2,
+      "name": "SGT AT ARMS",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2", "EDU": "+2" },
+      "skills": ["Admin", "Intimidate", "Interrogate", "Perception", "Persuade", "Psychology", "Streetwise", "Pistols", "Frame", "Bribe", "Honour", "Melee"],
+      "ranks": ["OPR's Lang:+1", "Cont:*Crim:+2"],
+      "paths": ["Gang Leader", "Bodyguard", "Hitman", "Crew Chief"],
+      "lateral": ["Made Man", "Enforcer", "Killer", "Shot Caller"]
+    },
+    {
+      "level": 2,
+      "name": "SMUGGLER",
+      "branch": "Criminal",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1", "INT": "+2", "EDU": "+2", "INIT": "+2" },
+      "skills": ["Admin", "Psychology", "Streetwise", "Tactics", "Bribe", "Navigation", "ScanLoc", "Perception", "Persuade"],
+      "ranks": ["OPR's Lang:+2", "Cont:*Crim:+2", "Transport:+2"],
+      "paths": ["Arms Dealer", "Fixer", "Johnson"],
+      "lateral": ["Fence", "Face", "Getaway Driver"]
+    },
+    {
+      "level": 2,
+      "name": "SHOT CALLER",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2", "INIT": "+1" },
+      "skills": ["Admin", "Intimidate", "Interrogate", "Perception", "Honour", "Psychology", "Gambling", "Instinct", "Melee", "Thief", "Bribe"],
+      "ranks": ["OPR's Lang:+1", "Cont:*Crim:+2"],
+      "paths": ["Yard Boss"],
+      "lateral": ["Enforcer", "Killer", "Smuggler"]
+    },
+    {
+      "level": 2,
+      "name": "NETRUNNER",
+      "branch": "Criminal",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Perception", "Persuade", "Coding", "SysVlns", "Forgery", "Electronics", "ScanLoc", "Focus"],
+      "ranks": ["OPR's Lang:+1", "Cont: Corpo", "Cont:*Any:+2"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "NATIONAL HIT",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+1" },
+      "skills": ["Focus", "Perception", "Persuade", "Psychology", "Disguise"],
+      "ranks": ["OPR's", "Art:Writing", "Art:Perform"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "REPORTER",
+      "branch": "Civilian",
+      "stats": { "STR": "+2", "AGI": "+1", "EDU": "+2" },
+      "skills": ["Admin", "Intimidate", "ScanLoc", "Perception", "Persuade", "Psychology", "Streetwise", "Bribe", "Instinct", "Interrogate", "Honour", "Bypass"],
+      "ranks": ["OPR's", "Art:Writ", "Cont:*Any:+3"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "WHISTLEBLOWER",
+      "branch": "Civilian",
+      "stats": { "STR": "+2", "AGI": "+2", "END": "+2", "INT": "+2" },
+      "skills": ["Admin", "Perception", "Psychology", "Stealth", "Bribe", "Coding", "Lore", "Shadow", "Forgery", "Disguise"],
+      "ranks": ["OPR's"],
+      "paths": ["Field Agent", "Infiltrator"],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "PILOT",
+      "branch": "Civilian",
+      "stats": { "STR": "+1", "AGI": "+2", "END": "+2", "INT": "+2", "EDU": "+1", "INIT": "+2", "INIT": "+1" },
+      "skills": ["Admin", "ScanLoc", "Perception", "Navigation", "Pilot", "Kn:Routes", "Lang:Add1", "Tactics", "Focus", "Integration", "Electrical", "Electronics", "Mechanical", "Pistol"],
+      "ranks": [],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "REPAIR TECH",
+      "branch": "Civilian",
+      "stats": { "STR": "+2", "AGI": "+2" },
+      "skills": ["Admin", "Electrical", "Electronics", "ScanLoc", "Coding", "Cybernetics", "SysVlns", "Mechanical"],
+      "ranks": ["OPR's VTOL", "Pilot", "Drive"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "DIRECTOR",
+      "branch": "Civilian",
+      "stats": { "STR": "+2", "AGI": "+1", "END": "+2", "INT": "+1" },
+      "skills": ["Focus", "Perception", "Persuade", "Psychology", "Intimidate"],
+      "ranks": ["OPR's", "Art:Writing", "Art:Directing"],
+      "paths": [],
+      "mastery": ""
+    },
+    {
+      "level": 2,
+      "name": "TRAUMA TECH",
+      "branch": "Civilian",
+      "stats": { "STR": "+2", "AGI": "+2" },
+      "skills": ["Admin", "Focus", "First-Aid", "Perception", "Psychology", "Streetwise", "Treatment"],
+      "ranks": ["OPR's Kn:City", "Lang:+1", "Drive"],
+      "paths": [],
+      "mastery": ""
+    }
+  ],
+  "career_progression_summary": {
+    "level_1_count": 42,
+    "level_2_count": 49,
+    "level_3_count": 35,
+    "top_hubs": [
+      {"career": "Operator", "incoming_paths": 11},
+      {"career": "Ripperdoc", "incoming_paths": 4},
+      {"career": "Smuggler", "incoming_paths": 4},
+      {"career": "Reporter", "incoming_paths": 4},
+      {"career": "Mercenary", "incoming_paths": 4}
+    ]
+  },
+  "branch_statistics": {
+    "Armsman": { "total": 32, "lvl1": 10, "lvl2": 13, "lvl3": 9 },
+    "Channeler": { "total": 25, "lvl1": 11, "lvl2": 9, "lvl3": 8 },
+    "Intellectual": { "total": 22, "lvl1": 8, "lvl2": 11, "lvl3": 6 },
+    "Criminal": { "total": 28, "lvl1": 9, "lvl2": 11, "lvl3": 8 },
+    "Civilian": { "total": 13, "lvl1": 10, "lvl2": 7, "lvl3": 0 }
+  }
+}
