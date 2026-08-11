@@ -45,7 +45,8 @@
       "ranks": "Special ranks/connections/bonuses",
       "paths": "Level progression destinations",
       "lateral": "Side-branch transfer options",
-      "mastery": "Special mastery ability (if any)"
+      "mastery": "Special mastery ability (if any)",
+      "signature": "Signature move (if any)"
     }
   },
   "careers": [
@@ -82,7 +83,8 @@
         "Bondsman"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GUARD",
@@ -107,7 +109,8 @@
         "Borderguard"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "PUP",
@@ -143,7 +146,8 @@
         "Tracker"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "RAZORBOY",
@@ -179,7 +183,8 @@
         "Mercenary"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SOLDIER",
@@ -213,7 +218,8 @@
         "Survivalist"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "REBEL",
@@ -243,7 +249,8 @@
         "Survivalist"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SURVIVOR",
@@ -277,7 +284,8 @@
         "Mercenary"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "APPRENTICE",
@@ -305,7 +313,8 @@
         "WageMage"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CUB",
@@ -339,7 +348,8 @@
         "Shaman"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DABBLER",
@@ -371,7 +381,8 @@
         "WageMage"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GIFTED",
@@ -400,7 +411,8 @@
         "Medium"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "NOVICE",
@@ -436,7 +448,8 @@
         "Adept"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HOUNSI",
@@ -466,7 +479,8 @@
         "Vadouan"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SEMINARIAN",
@@ -497,7 +511,8 @@
         "Priest"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GHOST",
@@ -521,7 +536,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WICCAN",
@@ -552,7 +568,8 @@
         "Witch"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ARCHEO",
@@ -581,7 +598,8 @@
         "Historian"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BUSINESS",
@@ -610,7 +628,8 @@
         "Corpo"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ENGINEERING",
@@ -638,7 +657,8 @@
         "Engineer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HISTORY",
@@ -664,7 +684,8 @@
         "Historian"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MEDICAL",
@@ -692,7 +713,8 @@
         "Ripperdoc"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "LAW",
@@ -720,7 +742,8 @@
         "Corpo"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SCIENCE",
@@ -746,7 +769,8 @@
         "Engineer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "TECHY",
@@ -775,7 +799,8 @@
         "Engineer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HOME INVADER",
@@ -806,7 +831,8 @@
         "Killer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CARJACKER",
@@ -836,7 +862,8 @@
         "Smuggler"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CROOK",
@@ -871,7 +898,8 @@
         "Enforcer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GANGER",
@@ -907,7 +935,8 @@
         "Shot Caller"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "INMATE",
@@ -942,7 +971,8 @@
         "Smuggler"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GRIFTER",
@@ -975,7 +1005,8 @@
         "Made Man"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SEX WORKER",
@@ -1008,7 +1039,8 @@
         "Made Man"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "THUG",
@@ -1042,7 +1074,8 @@
         "Killer"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ANALYST",
@@ -1070,7 +1103,8 @@
         "Whistleblower"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CO-PILOT",
@@ -1098,7 +1132,8 @@
         "Smuggler"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DRIFTER",
@@ -1130,7 +1165,8 @@
         "Whistle Blower"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ENTERTAINER",
@@ -1158,7 +1194,8 @@
         "Reporter"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MECHANIC",
@@ -1189,7 +1226,8 @@
         "Ripperdoc"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "JOURNALIST",
@@ -1221,7 +1259,8 @@
         "National Hit"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "PARAMEDIC",
@@ -1255,7 +1294,8 @@
         "Ripperdoc"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GUIDE",
@@ -1289,7 +1329,8 @@
         "Ripperdoc"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WAGE SLAVE",
@@ -1314,7 +1355,8 @@
         "Businessman"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BONDSMAN",
@@ -1353,7 +1395,8 @@
         "Detective",
         "Hunter"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BOMBER",
@@ -1389,7 +1432,8 @@
         "Mercenary",
         "Survivalist"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "COMMANDO",
@@ -1429,7 +1473,8 @@
         "Bomber",
         "Tracker"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BORDERGUARD",
@@ -1466,7 +1511,8 @@
         "Pilot",
         "Smuggler"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DETECTIVE",
@@ -1505,7 +1551,8 @@
         "Bondsman",
         "Guard Captain"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GUARD CAPTAIN",
@@ -1542,7 +1589,8 @@
         "Bondsman",
         "Borderguard"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MERCENARY",
@@ -1579,7 +1627,8 @@
         "Commando",
         "Bomber"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HUNTER",
@@ -1622,7 +1671,8 @@
         "Tracker",
         "Survivalist"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CITY RONIN",
@@ -1660,7 +1710,8 @@
         "Hitman"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "STREET SAMURAI",
@@ -1702,7 +1753,8 @@
         "Hunter",
         "City Ronin"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SURVIVALIST",
@@ -1732,7 +1784,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "S.W.A.T.",
@@ -1774,7 +1827,8 @@
         "Street Samurai",
         "Hunter"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "TRACKER",
@@ -1814,7 +1868,8 @@
         "Mercenary",
         "Borderguard"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ARCHEOLOGIST",
@@ -1849,7 +1904,8 @@
       "lateral": [
         "Historian"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BUSINESSMAN",
@@ -1881,7 +1937,8 @@
         "Corpo",
         "Lawyer"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CORPO",
@@ -1911,7 +1968,8 @@
         "Businessman",
         "Lawyer"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DOCTOR",
@@ -1947,7 +2005,8 @@
         "Lawyer",
         "Scientist"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DRONEOP",
@@ -1985,7 +2044,8 @@
         "Engineer",
         "Ripperdoc"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HACKER",
@@ -2014,7 +2074,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ENGINEER",
@@ -2041,7 +2102,8 @@
         "DroneOp",
         "Scientist"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HISTORIAN",
@@ -2074,7 +2136,8 @@
         "Archeologist",
         "Businessman"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "LAWYER",
@@ -2108,7 +2171,8 @@
         "Businessman",
         "Corpo"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SCIENTIST",
@@ -2136,7 +2200,8 @@
       "lateral": [
         "Engineer"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "RIPPERDOC",
@@ -2172,7 +2237,8 @@
         "Engineer",
         "Drone Operator"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ADEPT",
@@ -2210,7 +2276,8 @@
       "lateral": [
         "Mercenary"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "STREETMAGE",
@@ -2247,7 +2314,8 @@
       "lateral": [
         "Mercenary"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "PRIEST",
@@ -2278,7 +2346,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MEDIUM",
@@ -2310,7 +2379,8 @@
         "Occultist"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SHAMAN",
@@ -2344,7 +2414,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "VADOUAN",
@@ -2376,7 +2447,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WITCH",
@@ -2408,7 +2480,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WAGEMAGE",
@@ -2438,7 +2511,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "POLTER",
@@ -2461,7 +2535,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "B&E EXPERT",
@@ -2494,7 +2569,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BANK ROBBER",
@@ -2530,7 +2606,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ENFORCER",
@@ -2562,7 +2639,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "FACE",
@@ -2591,7 +2669,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "FENCE",
@@ -2619,7 +2698,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "KILLER",
@@ -2653,7 +2733,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GETAWAY DRIVER",
@@ -2687,7 +2768,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MADE MAN",
@@ -2727,7 +2809,8 @@
         "Smuggler",
         "Killer"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SGT AT ARMS",
@@ -2770,7 +2853,8 @@
         "Killer",
         "Shot Caller"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SMUGGLER",
@@ -2811,7 +2895,8 @@
         "Face",
         "Getaway Driver"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SHOT CALLER",
@@ -2849,7 +2934,8 @@
         "Killer",
         "Smuggler"
       ],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "NETRUNNER",
@@ -2879,7 +2965,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "NATIONAL HIT",
@@ -2902,7 +2989,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "REPORTER",
@@ -2933,7 +3021,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WHISTLEBLOWER",
@@ -2963,7 +3052,8 @@
         "Infiltrator"
       ],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "PILOT",
@@ -2997,7 +3087,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "REPAIRTECH",
@@ -3024,7 +3115,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DIRECTOR",
@@ -3048,7 +3140,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "TRAUMA TECH",
@@ -3074,7 +3167,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BOUNTY HUNTER",
@@ -3108,7 +3202,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BLACKGUARD",
@@ -3139,7 +3234,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CONSPIRACIST",
@@ -3169,7 +3265,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DENSETSUSHI",
@@ -3202,7 +3299,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "UNION AGENT",
@@ -3234,7 +3332,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "FUKUSHO",
@@ -3269,7 +3368,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "RANGER",
@@ -3297,7 +3397,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SEARCH & RESCUE",
@@ -3328,7 +3429,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "OPERATOR",
@@ -3360,7 +3462,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "TERRORIST",
@@ -3395,7 +3498,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "WARDEN",
@@ -3432,7 +3536,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ATTORNEY",
@@ -3455,7 +3560,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ARCHITECT",
@@ -3482,7 +3588,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CYBERNETICIST",
@@ -3512,7 +3619,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MANAGEMENT",
@@ -3537,7 +3645,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "OCCULTIST",
@@ -3561,7 +3670,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "TOMB RAIDER",
@@ -3594,7 +3704,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SURGEON",
@@ -3621,7 +3732,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "THEORETICIST",
@@ -3647,7 +3759,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CORONER",
@@ -3676,7 +3789,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "EXORCIST",
@@ -3707,7 +3821,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HIGH PRIESTESS",
@@ -3740,7 +3855,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HOUNGANS/MAMBOS",
@@ -3773,7 +3889,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MAGICIAN",
@@ -3807,7 +3924,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MONK",
@@ -3840,7 +3958,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "PSYCHIC",
@@ -3869,7 +3988,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "SKINWALKER",
@@ -3903,7 +4023,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "POSSESSING SPIRIT",
@@ -3923,7 +4044,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "ARMS DEALER",
@@ -3957,7 +4079,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "BODYGUARD",
@@ -3993,7 +4116,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "MOB BOSS",
@@ -4025,7 +4149,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "CREW CHIEF",
@@ -4059,7 +4184,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "FIXER",
@@ -4093,7 +4219,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "FORGER",
@@ -4123,7 +4250,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "GANGLEADER",
@@ -4161,7 +4289,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "HITMAN",
@@ -4198,7 +4327,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "YARD BOSS",
@@ -4233,7 +4363,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "DEKKER",
@@ -4262,7 +4393,8 @@
       "ranks": [],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "RIGGER",
@@ -4293,7 +4425,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     },
     {
       "name": "JOHNSON",
@@ -4322,7 +4455,8 @@
       ],
       "paths": [],
       "lateral": [],
-      "mastery": null
+      "mastery": null,
+      "signature": null
     }
   ]
 }
