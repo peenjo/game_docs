@@ -1,12 +1,13 @@
 {
   "metadata": {
     "title": "Threshold Career Path",
-    "version": "1.1",
+    "version": "2.0",
     "source_files": [
-      "Threshold careers.pdf"
+      "Thresh2.pdf"
     ],
-    "total_careers": 106,
-    "export_date": "2026-08-11"
+    "total_careers": 133,
+    "export_date": "2026-08-11",
+    "note": "stats/skills/ranks re-read from the PDF by position; lateral moves carried over from v1.1 (not on the sheet), sorted by name for ease of version comparison"
   },
   "branches": {
     "Armsman": [
@@ -51,237 +52,68 @@
   },
   "careers": [
     {
-      "name": "COP",
-      "level": 1,
-      "branch": "Armsman",
+      "name": "ADEPT",
+      "level": 2,
+      "branch": "Channeler",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1"
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+2",
+        "INIT": "+2",
+        "WIL": "+1",
+        "ESS": "+2"
       },
       "skills": {
-        "Admin": 0,
-        "Bribe": 0,
-        "Frame": 0,
-        "Interrogate": 1,
-        "Psychology": 1,
-        "Pistols": 1,
-        "Rifles": 1,
-        "Melee": 1,
-        "Perception": 1,
-        "Streetwise": 1,
-        "Veteran": 1
-      },
-      "ranks": [
-        "Kn:City",
-        "Cont:LEO",
-        "Drive"
-      ],
-      "paths": [
-        "Detective",
-        "S.W.A.T.",
-        "Guard Captain",
-        "Bondsman"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GUARD",
-      "level": 1,
-      "branch": "Armsman",
-      "stats": {},
-      "skills": {
-        "Admin": 0,
-        "Pistols": 1,
-        "Rifles": 1,
-        "Melee": 1,
-        "Psychology": 0,
-        "Perception": 1
-      },
-      "ranks": [
-        "Kn:City",
-        "Transp:+1",
-        "Drive"
-      ],
-      "paths": [
-        "Guard Captain",
-        "Borderguard"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "PUP",
-      "level": 1,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1",
-        "EDU": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "Bribe": 0,
-        "First-Aid": 1,
-        "Lore": 1,
-        "Stealth": 1,
-        "Pistols": 1,
-        "Rifles": 1,
-        "Melee": 1,
+        "Ritual": 2,
+        "Athletics": 2,
+        "Chan:Phys": 2,
+        "Focus": 2,
         "Perception": 2,
-        "Veteran": 1,
-        "Persuade": 0,
-        "Psychology": 0
-      },
-      "ranks": [
-        "Drive",
-        "Cont:Hunter"
-      ],
-      "paths": [
-        "Hunter",
-        "Tracker"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "RAZORBOY",
-      "level": 1,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1",
-        "EDU": "+1"
-      },
-      "skills": {
-        "Athletics": 1,
-        "Intimidate": 1,
-        "First-Aid": 0,
-        "Honour": 0,
-        "Pistols": 1,
-        "Rifles": 1,
-        "Melee": 1,
-        "Perception": 1,
-        "Stealth": 1,
-        "Streetwise": 0,
-        "Veteran": 1
-      },
-      "ranks": [
-        "Kn:City:1",
-        "Ride"
-      ],
-      "paths": [
-        "Street Samurai",
-        "City Ronin",
-        "Mercenary"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SOLDIER",
-      "level": 1,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
         "First-Aid": 1,
-        "Pistols": 0,
-        "Rifles": 1,
-        "Melee": 0,
-        "Ordinance": 0,
-        "Perception": 1,
-        "Stealth": 0,
+        "Instinct": 2,
+        "Melee": 2,
+        "Lore": 1,
+        "Stealth": 2,
         "Survival": 1,
-        "Tactics": 1,
-        "Veteran": 1,
-        "Honour": 0
+        "Honour": 2
       },
       "ranks": [
-        "Cont:Military"
+        "Cont:Phys"
       ],
       "paths": [
-        "Commando",
-        "Mercenary",
-        "S.W.A.T.",
-        "Survivalist"
+        "Monk",
+        "BlackGuard"
       ],
-      "lateral": [],
-      "mastery": null,
+      "lateral": [
+        "Mercenary"
+      ],
+      "mastery": "Mercenary",
       "signature": null
     },
     {
-      "name": "REBEL",
+      "name": "ANALYST",
       "level": 1,
-      "branch": "Armsman",
+      "branch": "Civilian",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "First-Aid": 0,
-        "Pistols": 0,
-        "Rifles": 1,
-        "Melee": 1,
-        "Perception": 1,
-        "Stealth": 1,
-        "Survival": 1,
-        "Veteran": 1,
-        "Ordinance": 0
-      },
-      "ranks": [],
-      "paths": [
-        "Commando",
-        "Bomber",
-        "Mercenary",
-        "Survivalist"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SURVIVOR",
-      "level": 1,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
         "INT": "+1",
         "EDU": "+1"
       },
       "skills": {
-        "Athletics": 1,
-        "Intimidate": 1,
-        "Instinct": 1,
-        "Luck": 1,
-        "First-Aid": 0,
-        "Pistols": 1,
-        "Rifles": 1,
-        "Melee": 1,
+        "Admin": 1,
+        "Focus": 1,
+        "ScanLoc": 1,
         "Perception": 1,
-        "Stealth": 0,
-        "Veteran": 1
+        "Persuade": 1,
+        "Psychology": 1
       },
-      "ranks": [],
+      "ranks": [
+        "Hist:+2",
+        "Cont:*Legal1",
+        "Lang:+2"
+      ],
       "paths": [
-        "Survivalist",
-        "Tracker",
-        "Hunter",
-        "Mercenary"
+        "Reporter",
+        "Whistleblower"
       ],
       "lateral": [],
       "mastery": null,
@@ -292,16 +124,16 @@
       "level": 1,
       "branch": "Channeler",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
+        "INT": "+1",
+        "EDU": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
       },
       "skills": {
         "Admin": 1,
         "Chan:Herm": 1,
         "Focus": 1,
-        "LngLatin": null,
+        "LngLatin": 0,
         "Lng": 1,
         "Lore": 1,
         "Persuade": 0,
@@ -317,267 +149,12 @@
       "signature": null
     },
     {
-      "name": "CUB",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Chan:Shamn": 1,
-        "Focus": 1,
-        "Intimidate": 0,
-        "Honour": 1,
-        "Ritual": 1,
-        "Lore": 1,
-        "Persuade": 0,
-        "Psychology": 0
-      },
-      "ranks": [
-        "Drive",
-        "Horse",
-        "Hst:Tribe",
-        "Lng:Tribe",
-        "Cont:Spirit",
-        "Cont:Tribal"
-      ],
-      "paths": [
-        "Shaman"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DABBLER",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": null,
-        "Chan:Herm": 1,
-        "Focus": 1,
-        "Ritual": 1,
-        "Veteran": 1,
-        "Lore": 1,
-        "Persuade": 1,
-        "Psychology": 1
-      },
-      "ranks": [
-        "Drive",
-        "Cont:Academ",
-        "Lng:Latin",
-        "Lng:+2",
-        "Cont:*Criminal"
-      ],
-      "paths": [
-        "StreetMage",
-        "WageMage"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GIFTED",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Chan:Mental": 1,
-        "Instinct": 1,
-        "Focus": 1,
-        "Perception": 0,
-        "Persuade": 0,
-        "Psychology": 0,
-        "Streetwise": 0,
-        "Veteran": 1,
-        "Lore": 1
-      },
-      "ranks": [
-        "Cont:Mental"
-      ],
-      "paths": [
-        "Medium"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "NOVICE",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1",
-        "EDU": "+1",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Veteran": null,
-        "Athletics": 1,
-        "Chan:Phys": 1,
-        "Focus": 1,
-        "Honour": 1,
-        "First-Aid": 1,
-        "Instinct": 1,
-        "Melee": 1,
-        "Lore": 1,
-        "Stealth": 1,
-        "Perception": 1,
-        "Ritual": 0,
-        "Survival": 1
-      },
-      "ranks": [
-        "Cont:Adepts"
-      ],
-      "paths": [
-        "Adept"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HOUNSI",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Ritual": 1,
-        "Chan:Voodoo": 1,
-        "Focus": 1,
-        "LngLatin": null,
-        "Lore": 1,
-        "Persuade": 1,
-        "Psychology": 0
-      },
-      "ranks": [
-        "Hst:Vadouan",
-        "Lng:+2",
-        "Cont:Vadouan"
-      ],
-      "paths": [
-        "Vadouan"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SEMINARIAN",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Chan:Cath": 1,
-        "Focus": 1,
-        "Honour": 1,
-        "Lore": 1,
-        "Persuade": 0,
-        "Ritual": 1
-      },
-      "ranks": [
-        "Lng+1",
-        "LngLatin",
-        "Hist:Catholic",
-        "Cont:Catholic"
-      ],
-      "paths": [
-        "Priest"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GHOST",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 1,
-        "Chan:Spirit": 2,
-        "Focus": 2,
-        "Discipline": null,
-        "Lore": 1,
-        "Persuade": 0,
-        "Ritual": 2,
-        "Intimidate": null
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "WICCAN",
-      "level": 1,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Chan:Wiccan": 1,
-        "Focus": 1,
-        "Ritual": 1,
-        "Lore": 1,
-        "Persuade": 0,
-        "Psychology": 1
-      },
-      "ranks": [
-        "Lng2",
-        "LngLatin",
-        "Hist:Wiccan",
-        "Cont:Wiccan"
-      ],
-      "paths": [
-        "Witch"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
       "name": "ARCHEO",
       "level": 1,
       "branch": "Intellectual",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1"
+        "INT": "+1",
+        "EDU": "+1"
       },
       "skills": {
         "Admin": 1,
@@ -589,8 +166,8 @@
       "ranks": [
         "Cont:Academ",
         "LngLatin",
-        "Lng:+2",
-        "Hst:+3",
+        "Lng+2",
+        "Hst+3",
         "Drive"
       ],
       "paths": [
@@ -602,759 +179,301 @@
       "signature": null
     },
     {
-      "name": "BUSINESS",
-      "level": 1,
+      "name": "ARCHEOLOGIST",
+      "level": 2,
       "branch": "Intellectual",
       "stats": {
         "STR": "+1",
+        "INT": "+2",
+        "EDU": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Perception": 2,
+        "Bribe": 2,
+        "ScanLoc": 2,
+        "Lore": 2,
+        "Ritual": 2,
+        "Streetwise": 1
+      },
+      "ranks": [
+        "Hst:+3",
+        "Transportx2",
+        "Lng:Latin",
+        "Lng:+2",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Tomb Raider",
+        "Occultist"
+      ],
+      "lateral": [
+        "Historian"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ARCHITECT",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 3,
+        "Bureaucracy": 3,
+        "Electrical": 3,
+        "Electronics": 3,
+        "Mechanical": 2,
+        "Persuade": 2,
+        "ScanLoc": 3
+      },
+      "ranks": [
+        "Cont:*Legal+2",
+        "Kn:City"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ARMS DEALER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
         "AGI": "+1",
-        "END": "+1"
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+3",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 2,
+        "Psychology": 3,
+        "Streetwise": 2,
+        "Bribe": 3,
+        "Navigation": 2,
+        "Perception": 2,
+        "Persuade": 3
+      },
+      "ranks": [
+        "Trans:+2",
+        "Cont:Corpo",
+        "Cont:Mob",
+        "Cont:Govt",
+        "Cont:Gangs",
+        "Cont:Yakuza"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ATTORNEY",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+2"
+      },
+      "skills": {
+        "Admin": 3,
+        "Perception": 2,
+        "Persuade": 3,
+        "Intimidate": 3,
+        "Psychology": 3,
+        "Law": 3,
+        "Interrogate": 3
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "B&E EXPERT",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+2",
+        "END": "+1",
+        "INT": "+2",
+        "INIT": "+1"
       },
       "skills": {
         "Admin": 1,
-        "Perception": 0,
-        "Persuade": 1,
+        "Melee": 1,
+        "Perception": 2,
+        "Pistols": 1,
         "Psychology": 1,
-        "Law": 0,
-        "Gambling": 1
+        "Stealth": 3,
+        "Streetwise": 2,
+        "SysVulns": 2,
+        "Bypass": 2,
+        "Electrical": 1,
+        "Electronics": 1,
+        "ScanLoc": 2
+      },
+      "ranks": [
+        "ConFenc",
+        "Cont:*Crimin"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BANK ROBBER",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+2",
+        "END": "+2",
+        "INT": "+1",
+        "EDU": "+1",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Focus": 1,
+        "Intimidate": 2,
+        "Rifles": 2,
+        "Ordinance": 2,
+        "Honour": 2,
+        "Streetwise": 2,
+        "Interrogate": 1,
+        "Pistols": 1,
+        "Psychology": 1,
+        "SysVulns": 2,
+        "Veteran": 1,
+        "Persuade": 2,
+        "Perception": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Cont:Fence"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BLACKGUARD",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+3",
+        "END": "+3",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "First-Aid": 2,
+        "Pistols": 2,
+        "Rifles": 3,
+        "Melee": 2,
+        "Ordinance": 2,
+        "Perception": 2,
+        "Stealth": 2,
+        "Survival": 3,
+        "Tactics": 3,
+        "Veteran": 3,
+        "Honour": 2
+      },
+      "ranks": [
+        "Trans:+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BODYGUARD",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+2",
+        "END": "+3",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+1",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 2,
+        "First-Aid": 2,
+        "Pistols": 3,
+        "Rifles": 2,
+        "Melee": 3,
+        "Perception": 3,
+        "Tactics": 2,
+        "Interrogate": 2,
+        "Frame": 2,
+        "Psychology": 3,
+        "Veteran": 2,
+        "Intimidate": 3
       },
       "ranks": [
         "Cont:Corpo",
-        "Drive",
-        "Cont:Academ"
+        "Cont:*Crim+2"
       ],
-      "paths": [
-        "Businessman",
-        "Corpo"
-      ],
+      "paths": [],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "ENGINEERING",
-      "level": 1,
-      "branch": "Intellectual",
+      "name": "BOMBER",
+      "level": 2,
+      "branch": "Armsman",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1"
+        "INT": "+2",
+        "EDU": "+1",
+        "WIL": "+2"
       },
       "skills": {
-        "Admin": 0,
-        "ScanLoc": 1,
-        "Electrical": 1,
-        "Bypass": 0,
-        "Electronics": 1,
-        "Mechanical": 1,
-        "Perception": 0,
-        "Coding": 1
-      },
-      "ranks": [
-        "Vtol",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Engineer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HISTORY",
-      "level": 1,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Perception": 1,
-        "Lore": 1,
-        "Ritual": 0
-      },
-      "ranks": [
-        "Lng+2",
-        "LngLatin",
-        "Hst+3",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Historian"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MEDICAL",
-      "level": 1,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "First-Aid": 1,
-        "ScanLoc": 0,
-        "Psychology": 0,
-        "Surgery": 0,
-        "Treatment": 1
-      },
-      "ranks": [
-        "Lng:Latin",
-        "Sci:Biology",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Doctor",
-        "Ripperdoc"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "LAW",
-      "level": 1,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Perception": 0,
-        "Persuade": 2,
-        "Intimidate": 0,
-        "Psychology": 1,
-        "Law": 1
-      },
-      "ranks": [
-        "Cont:Govt",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Lawyer",
-        "Businessman",
-        "Corpo"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SCIENCE",
-      "level": 1,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "ScanLoc": 1,
-        "Focus": 1
-      },
-      "ranks": [
-        "LngLatin",
-        "Sciencex2",
-        "Art:Writing",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Scientist",
-        "Engineer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "TECHY",
-      "level": 1,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "ScanLoc": 1,
-        "Electrical": 1,
-        "Electronics": 1,
-        "Coding": 1,
-        "Cybernetics": 1,
-        "Mechanical": 1,
-        "Bypass": 1,
-        "SysVulns": 1
-      },
-      "ranks": [
-        "Vtol",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Engineer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HOME INVADER",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Intimidate": 1,
         "Melee": 1,
+        "First-Aid": 1,
+        "Pistols": 2,
+        "Electrical": 2,
+        "Disguise": 1,
+        "Ordinance": 2,
         "Perception": 1,
-        "Pistols": 1,
-        "Psychology": 1,
         "Stealth": 1,
-        "Streetwise": 1,
-        "Interrogate": 0,
-        "Bypass": 1
-      },
-      "ranks": [
-        "Cont:Fence",
-        "Drive"
-      ],
-      "paths": [
-        "B&E Expert",
-        "Fence",
-        "Killer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CARJACKER",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Intimidate": 1,
-        "Melee": 1,
-        "Perception": 1,
-        "Pistols": 1,
-        "Streetwise": 1,
-        "Athletics": 0,
-        "Bypass": 1
-      },
-      "ranks": [
-        "Cont:Breaker",
-        "Kn:City",
-        "Drive"
-      ],
-      "paths": [
-        "Getaway Driver",
-        "Bank Robber",
-        "Smuggler"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CROOK",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Thief": 1,
-        "Gambling": 1,
-        "Intimidate": 1,
-        "Melee": 1,
-        "Perception": 0,
-        "Persuade": 1,
-        "Pistols": 1,
-        "Psychology": 0,
-        "Stealth": 0,
-        "Streetwise": 1,
-        "Bypass": 1,
-        "Athletics": 1
-      },
-      "ranks": [
-        "Kn:City:2",
-        "Cont:Fence"
-      ],
-      "paths": [
-        "Fence",
-        "Face",
-        "Made Man",
-        "Enforcer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GANGER",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Melee": 1,
-        "Intimidate": 1,
-        "Perception": 0,
-        "Pistols": 1,
-        "Veteran": 1,
-        "Rifles": 0,
-        "Streetwise": 1,
-        "Athletics": 0,
-        "Kn:City": 1,
-        "Psychology": 0,
-        "Honour": 1
-      },
-      "ranks": [
-        "Ride",
-        "Cont:Gang",
-        "Drive"
-      ],
-      "paths": [
-        "Enforcer",
-        "Sgt-at-Arms",
-        "Made Man",
-        "Shot Caller"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "INMATE",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Melee": 1,
-        "Intimidate": 1,
-        "Perception": 0,
-        "Honour": 1,
-        "Veteran": 1,
-        "Contacts": 1,
-        "Athletics": 0,
-        "Psychology": 0,
-        "Persuade": 0,
-        "Gambling": 1
-      },
-      "ranks": [
-        "Cont:Prison",
-        "Cont:*Criminal"
-      ],
-      "paths": [
-        "ShotCaller",
-        "BankRobber",
-        "Enforcer",
-        "Smuggler"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GRIFTER",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Bribe": 1,
-        "Gambling": 1,
-        "Perception": 1,
-        "Persuade": 1,
-        "Psychology": 1,
-        "Streetwise": 1,
-        "Thief": 1,
-        "Athletics": 1
-      },
-      "ranks": [
-        "Cont:*Crim+1",
-        "Kn:City",
-        "Lang:+2"
-      ],
-      "paths": [
-        "Face",
-        "Fence",
-        "Smuggler",
-        "Made Man"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SEX WORKER",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Thief": 1,
-        "Athletics": 1,
-        "First-Aid": 1,
-        "Melee": 0,
-        "Perception": 0,
-        "Persuade": 1,
-        "Pistols": 1,
-        "Psychology": 1,
-        "Streetwise": 1,
-        "Interrogate": 0,
-        "Disguise": 1
+        "Tactics": 2,
+        "Electronics": 2,
+        "Veteran": 2,
+        "Bypass": 2
       },
       "ranks": [
         "Cont:*Crimin"
       ],
       "paths": [
-        "Face",
-        "Fence",
-        "Made Man"
+        "Terrorist",
+        "Operator"
       ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "THUG",
-      "level": 1,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "First-Aid": 0,
-        "Melee": 1,
-        "Perception": 0,
-        "Intimidate": 1,
-        "Streetwise": 1,
-        "Pistols": 1,
-        "Psychology": 0,
-        "Veteran": 1
-      },
-      "ranks": [
-        "Kn:City",
-        "Cont:*Crimin",
-        "Drive",
-        "Ride"
+      "lateral": [
+        "Mercenary",
+        "Survivalist"
       ],
-      "paths": [
-        "Enforcer",
-        "Sgt-at-Arms",
-        "Made man",
-        "Killer"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ANALYST",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Focus": 1,
-        "ScanLoc": 1,
-        "Perception": 1,
-        "Persuade": 1,
-        "Psychology": 1
-      },
-      "ranks": [
-        "Hist:+2",
-        "Cont:*Legal:1",
-        "Lang:+2"
-      ],
-      "paths": [
-        "Reporter",
-        "Whistleblower"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CO-PILOT",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "ScanLoc": 1,
-        "Perception": 1,
-        "Navigation": 1
-      },
-      "ranks": [
-        "Pilot",
-        "Cont:Pilot",
-        "Kn:Routes",
-        "Lang:1"
-      ],
-      "paths": [
-        "Pilot",
-        "Smuggler"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DRIFTER",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Melee": 1,
-        "Luck": 1,
-        "Gambling": 1,
-        "Streetwise": 0,
-        "Survival": 0,
-        "Psychology": 1,
-        "Persuade": 1,
-        "Perception": 1
-      },
-      "ranks": [
-        "Lang:2",
-        "Kn:City:3",
-        "Cont:3"
-      ],
-      "paths": [
-        "Smuggler",
-        "Reporter",
-        "Whistle Blower"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ENTERTAINER",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Focus": 1,
-        "Streetwise": 1,
-        "Persuade": 1,
-        "Psychology": 1,
-        "Disguise": 0
-      },
-      "ranks": [
-        "Art:+2",
-        "Kn:City",
-        "Lang:+1",
-        "Cont:local"
-      ],
-      "paths": [
-        "National Hit",
-        "Reporter"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MECHANIC",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Electrical": 1,
-        "Focus": 1,
-        "Mechanical": 1,
-        "ScanLoc": 1,
-        "Perception": 0,
-        "Streetwise": 0,
-        "Bypass": 1
-      },
-      "ranks": [
-        "Kn:City",
-        "Lang:Add1",
-        "Cont:Breaker",
-        "Drive"
-      ],
-      "paths": [
-        "Engineer",
-        "Ripperdoc"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "JOURNALIST",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Focus": 0,
-        "Perception": 1,
-        "Interrogate": 1,
-        "Persuade": 1,
-        "Psychology": 0,
-        "Streetwise": 0,
-        "Stealth": 0,
-        "Bribe": 0
-      },
-      "ranks": [
-        "Art:Writing",
-        "Cont:3"
-      ],
-      "paths": [
-        "Reporter",
-        "Whistle Blower",
-        "National Hit"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "PARAMEDIC",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "Focus": 1,
-        "First-Aid": 1,
-        "Perception": 1,
-        "Pistols": 0,
-        "Psychology": 1,
-        "Streetwise": 1,
-        "Instinct": 1,
-        "Treatment": 2,
-        "Rifles": 0,
-        "Melee": 0
-      },
-      "ranks": [
-        "Kn:City",
-        "Lang:+1",
-        "Cont:*Legal"
-      ],
-      "paths": [
-        "Doctor",
-        "Ripperdoc"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GUIDE",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 0,
-        "Focus": 1,
-        "First-Aid": 1,
-        "Perception": 1,
-        "Pistols": 0,
-        "Psychology": 1,
-        "Streetwise": 1,
-        "Instinct": 1,
-        "Treatment": 2,
-        "Rifles": 0,
-        "Melee": 0
-      },
-      "ranks": [
-        "Kn:City",
-        "Lang:+1",
-        "Cont:*Legal"
-      ],
-      "paths": [
-        "Doctor",
-        "Ripperdoc"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "WAGE SLAVE",
-      "level": 1,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Focus": 1,
-        "Persuade": 0,
-        "Psychology": 0,
-        "Coding": 1
-      },
-      "ranks": [
-        "Cont:Corpo"
-      ],
-      "paths": [
-        "Corpo",
-        "Businessman"
-      ],
-      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -1399,39 +518,237 @@
       "signature": null
     },
     {
-      "name": "BOMBER",
+      "name": "BORDERGUARD",
       "level": 2,
       "branch": "Armsman",
       "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2"
+        "AGI": "+2",
+        "INT": "+1",
+        "INIT": "+2"
       },
       "skills": {
+        "Admin": 1,
+        "Pistols": 1,
+        "Rifles": 1,
         "Melee": 1,
-        "First-Aid": 1,
-        "Pistols": 2,
-        "Electrical": 2,
-        "Disguise": 1,
-        "Ordinance": 2,
-        "Perception": 1,
-        "Stealth": 1,
-        "Tactics": 2,
-        "Electronics": 2,
-        "Veteran": 2,
-        "Bypass": 2
+        "Drive": 1,
+        "Perception": 2,
+        "ScanLoc": 2,
+        "Psychology": 1,
+        "Survival": 1
       },
       "ranks": [
-        "Cont:*Crimin"
+        "Kn:Area",
+        "Kn:Region",
+        "Lang:+1",
+        "Transportx3"
       ],
       "paths": [
-        "Terrorist",
-        "Operator"
+        "Operator",
+        "Search&Rescue"
       ],
       "lateral": [
-        "Mercenary",
-        "Survivalist"
+        "Tracker",
+        "Pilot",
+        "Smuggler"
       ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BOUNTY HUNTER",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+3",
+        "END": "+3",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+2",
+        "INIT": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Bribe": 2,
+        "Shadow": 2,
+        "Interrogate": 2,
+        "Pistols": 3,
+        "Rifles": 1,
+        "Melee": 3,
+        "Perception": 3,
+        "Veteran": 2,
+        "Psychology": 2,
+        "Streetwise": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Trans+1"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BUSINESS",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Perception": 0,
+        "Persuade": 1,
+        "Psychology": 1,
+        "Law": 0,
+        "Gambling": 1
+      },
+      "ranks": [
+        "Cont:Corpo",
+        "Drive",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Businessman",
+        "Corpo"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "BUSINESSMAN",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 2,
+        "PsvSys": 2,
+        "Perception": 2,
+        "Bribe": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Gambling": 1,
+        "Intimidate": 1
+      },
+      "ranks": [
+        "Cont:Govt"
+      ],
+      "paths": [
+        "Executive",
+        "Fixer"
+      ],
+      "lateral": [
+        "Corpo",
+        "Lawyer"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CARJACKER",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "AGI": "+1",
+        "INIT": "+1"
+      },
+      "skills": {
+        "Intimidate": 1,
+        "Melee": 1,
+        "Perception": 1,
+        "Pistols": 1,
+        "Streetwise": 1,
+        "Athletics": 0,
+        "Bypass": 1
+      },
+      "ranks": [
+        "Cont:Breaker",
+        "Kn:City",
+        "Drive"
+      ],
+      "paths": [
+        "Getaway Driver",
+        "Bank Robber",
+        "Smuggler"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CITY RONIN",
+      "level": 2,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+2",
+        "END": "+1",
+        "INIT": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Melee": 2,
+        "Athletics": 2,
+        "Intimidate": 1,
+        "First-Aid": 1,
+        "Veteran": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Perception": 1,
+        "Honour": 1,
+        "Stealth": 2,
+        "Streetwise": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Cont:*Crimin",
+        "Lng:+1"
+      ],
+      "paths": [
+        "Densetsushi",
+        "BlackGuard",
+        "Operator",
+        "Hitman"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CO-PILOT",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "AGI": "+1",
+        "EDU": "+1",
+        "INIT": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "ScanLoc": 1,
+        "Perception": 1,
+        "Navigation": 1
+      },
+      "ranks": [
+        "Pilot",
+        "Cont:Pilot",
+        "Kn:Routes",
+        "Lang:1"
+      ],
+      "paths": [
+        "Pilot",
+        "Smuggler"
+      ],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -1443,8 +760,8 @@
         "STR": "+2",
         "AGI": "+2",
         "END": "+2",
-        "INT": "+1",
-        "CHA": "+1"
+        "EDU": "+1",
+        "WIL": "+1"
       },
       "skills": {
         "Rifles": 2,
@@ -1477,40 +794,364 @@
       "signature": null
     },
     {
-      "name": "BORDERGUARD",
-      "level": 2,
+      "name": "CONSPIRACIST",
+      "level": 3,
       "branch": "Armsman",
       "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2"
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+2",
+        "WIL": "+2"
       },
       "skills": {
-        "Admin": 1,
+        "Admin": 3,
+        "Perception": 3,
+        "Psychology": 2,
+        "Stealth": 3,
+        "ScanLoc": 2,
+        "Bribe": 2,
+        "Coding": 2,
+        "Lore": 3,
+        "Shadow": 3,
+        "Forgery": 2,
+        "Disguise": 2
+      },
+      "ranks": [
+        "Kn:Con.Theory"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "COP",
+      "level": 1,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "END": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "Bribe": 0,
+        "Frame": 0,
+        "Interrogate": 1,
+        "Psychology": 1,
         "Pistols": 1,
         "Rifles": 1,
         "Melee": 1,
-        "Drive": 1,
-        "Perception": 2,
-        "ScanLoc": 2,
-        "Psychology": 1,
-        "Survival": 1
+        "Perception": 1,
+        "Streetwise": 1,
+        "Veteran": 1
       },
       "ranks": [
-        "Kn:Area",
-        "Kn:Region",
-        "Lang:+1",
-        "Transportx3"
+        "Kn:City",
+        "Cont:LEO",
+        "Drive"
       ],
       "paths": [
-        "Operator",
-        "Search&Rescue"
+        "Detective",
+        "S.W.A.T.",
+        "Guard Captain",
+        "Bondsman"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CORONER",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+3",
+        "EDU": "+3",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "First-Aid": 2,
+        "ScanLoc": 2,
+        "Psychology": 1,
+        "Treatment": 1,
+        "Focus": 1,
+        "Pathology": 3,
+        "Surgery": 1
+      },
+      "ranks": [
+        "Lng:Latin",
+        "Cont:LEO",
+        "Sci:Biology"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CORPO",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Perception": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Gambling": 1,
+        "Intimidate": 1
+      },
+      "ranks": [
+        "Cont:Corpo"
+      ],
+      "paths": [
+        "Executive",
+        "Fixer"
       ],
       "lateral": [
-        "Tracker",
-        "Pilot",
-        "Smuggler"
+        "Businessman",
+        "Lawyer"
       ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CREW CHIEF",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+1",
+        "END": "+3",
+        "INT": "+3",
+        "EDU": "+2",
+        "CHA": "+2",
+        "INIT": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Melee": 2,
+        "Perception": 3,
+        "Tactics": 3,
+        "Interrogate": 2,
+        "Honour": 2,
+        "Psychology": 3,
+        "Veteran": 2,
+        "Thief": 2,
+        "Streetwise": 2,
+        "ScanLoc": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CROOK",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+1"
+      },
+      "skills": {
+        "Thief": 1,
+        "Gambling": 1,
+        "Intimidate": 1,
+        "Melee": 1,
+        "Perception": 0,
+        "Persuade": 1,
+        "Pistols": 1,
+        "Psychology": 0,
+        "Stealth": 0,
+        "Streetwise": 1,
+        "Bypass": 1,
+        "Athletics": 1
+      },
+      "ranks": [
+        "Kn:City2",
+        "Cont:Fence"
+      ],
+      "paths": [
+        "Fence",
+        "Face",
+        "Made Man",
+        "Enforcer"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CUB",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "EDU": "+1",
+        "CHA": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
+      },
+      "skills": {
+        "Chan:Shamn": 1,
+        "Focus": 1,
+        "Intimidate": 0,
+        "Honour": 1,
+        "Ritual": 1,
+        "Lore": 1,
+        "Persuade": 0,
+        "Psychology": 0
+      },
+      "ranks": [
+        "Drive",
+        "Horse",
+        "Hst:Tribe",
+        "Lng:Tribe",
+        "Cont:Spirit",
+        "Cont:Tribal"
+      ],
+      "paths": [
+        "Shaman"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "CYBERNETICIST",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+2",
+        "EDU": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 2,
+        "First-Aid": 2,
+        "ScanLoc": 2,
+        "Treatment": 2,
+        "Cybernetics": 3,
+        "Psychology": 2,
+        "Sci:Biology": 2,
+        "Pathology": 1,
+        "Surgery": 2,
+        "Electronics": 2,
+        "Electrical": 2,
+        "Mechanical": 2,
+        "Perception": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DABBLER",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "Chan:Herm": 1,
+        "Focus": 1,
+        "Ritual": 1,
+        "Veteran": 1,
+        "Lore": 1,
+        "Persuade": 1,
+        "Psychology": 1
+      },
+      "ranks": [
+        "Drive",
+        "Cont:Academ",
+        "Lng:Latin",
+        "Lng+2",
+        "Cont:*Criminal"
+      ],
+      "paths": [
+        "StreetMage",
+        "WageMage"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DEKKER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1",
+        "INIT": "+3",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 3,
+        "ScanLoc": 3,
+        "Electrical": 2,
+        "Electronics": 2,
+        "Integration": 3,
+        "Coding": 3,
+        "Streetwise": 2,
+        "Perception": 2,
+        "SysVlns": 3,
+        "Frame": 2,
+        "Pistols": 1
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DENSETSUSHI",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+4",
+        "END": "+3",
+        "INIT": "+4",
+        "WIL": "+2",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Athletics": 3,
+        "Intimidate": 3,
+        "First-Aid": 2,
+        "Gambling": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Melee": 3,
+        "Perception": 3,
+        "Honour": 2,
+        "Stealth": 3,
+        "Streetwise": 3,
+        "Veteran": 3
+      },
+      "ranks": [
+        "Kn:City"
+      ],
+      "paths": [],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -1519,10 +1160,10 @@
       "level": 2,
       "branch": "Armsman",
       "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+1"
+        "AGI": "+1",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+1"
       },
       "skills": {
         "Admin": 2,
@@ -1551,6 +1192,675 @@
         "Bondsman",
         "Guard Captain"
       ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DIRECTOR",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Focus": 2,
+        "Perception": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Intimidate": 1
+      },
+      "ranks": [
+        "Art:Writing",
+        "Art:Directing"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DOCTOR",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "First-Aid": 2,
+        "ScanLoc": 2,
+        "Psychology": 1,
+        "Treatment": 2,
+        "Focus": 1,
+        "Pathology": 1,
+        "Surgery": 2,
+        "Psychiatry": 1,
+        "Hypnosis": 1
+      },
+      "ranks": [
+        "Sci:Biology"
+      ],
+      "paths": [
+        "Surgeon",
+        "Coroner"
+      ],
+      "lateral": [
+        "Ripperdoc",
+        "Corpo",
+        "Lawyer",
+        "Scientist"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DRIFTER",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+1",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Melee": 1,
+        "Luck": 1,
+        "Gambling": 1,
+        "Streetwise": 0,
+        "Survival": 0,
+        "Psychology": 1,
+        "Persuade": 1,
+        "Perception": 1
+      },
+      "ranks": [
+        "Lang:2",
+        "Kn:City3",
+        "Cont:3"
+      ],
+      "paths": [
+        "Smuggler",
+        "Reporter",
+        "Whistle Blower"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "DRONEOP",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "AGI": "+2",
+        "INT": "+2",
+        "EDU": "+2",
+        "INIT": "+2"
+      },
+      "skills": {
+        "Coding": 1,
+        "Electrical": 1,
+        "Mechanical": 1,
+        "Electronics": 1,
+        "Integration": 2,
+        "Perception": 2,
+        "Pistols": 1,
+        "Navigation": 2,
+        "Ordinance": 2,
+        "Streetwise": 1,
+        "ScanLoc": 1
+      },
+      "ranks": [
+        "Kn:City",
+        "Trans+3",
+        "Cont*Crimin+2"
+      ],
+      "paths": [
+        "Rigger",
+        "Cyberneticist"
+      ],
+      "lateral": [
+        "Engineer",
+        "Ripperdoc"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ENFORCER",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+1",
+        "END": "+2",
+        "INIT": "+1"
+      },
+      "skills": {
+        "Melee": 2,
+        "First-Aid": 1,
+        "Perception": 2,
+        "Intimidate": 2,
+        "Psychology": 2,
+        "Streetwise": 2,
+        "Shadow": 2,
+        "Interrogate": 2,
+        "Pistols": 1,
+        "Persuade": 1,
+        "Veteran": 2,
+        "Frame": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Cont*Crimin+1"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ENGINEER",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "ScanLoc": 2,
+        "Electrical": 2,
+        "Electronics": 2,
+        "Mechanical": 2,
+        "PsvSyst": 2,
+        "Perception": 2,
+        "Coding": 2,
+        "Cybernetics": 1
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [
+        "DroneOp",
+        "Scientist"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ENGINEERING",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "ScanLoc": 1,
+        "Electrical": 1,
+        "Bypass": 0,
+        "Electronics": 1,
+        "Mechanical": 1,
+        "Perception": 0,
+        "Coding": 1
+      },
+      "ranks": [
+        "Vtol",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Engineer"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "ENTERTAINER",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "CHA": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Focus": 1,
+        "Streetwise": 1,
+        "Persuade": 1,
+        "Psychology": 1,
+        "Disguise": 0
+      },
+      "ranks": [
+        "Art:+2",
+        "Kn:City",
+        "Lang:+1",
+        "Cont:local"
+      ],
+      "paths": [
+        "National Hit",
+        "Reporter"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "EXORCIST",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+3",
+        "CHA": "+2",
+        "WIL": "+3",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Admin": 3,
+        "Chan:Cath": 3,
+        "Focus": 3,
+        "Honour": 3,
+        "Perception": 2,
+        "Lore": 2,
+        "Persuade": 2,
+        "Ritual": 3
+      },
+      "ranks": [
+        "Cont:Catholic",
+        "Lng:Add1",
+        "Lng:Latin"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "FACE",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+1",
+        "EDU": "+1",
+        "CHA": "+2",
+        "INIT": "+1"
+      },
+      "skills": {
+        "Bribe": 2,
+        "Perception": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Pistols": 1,
+        "Streetwise": 2,
+        "Instinct": 2,
+        "Melee": 1
+      },
+      "ranks": [
+        "Lang+2",
+        "Cont:+3"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "FENCE",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Bribe": 1,
+        "ScanLoc": 2,
+        "Admin": 2,
+        "Streetwise": 2,
+        "Instinct": 2,
+        "Pistols": 1,
+        "Psychology": 2,
+        "Persuade": 2,
+        "Perception": 2
+      },
+      "ranks": [
+        "Lang+1",
+        "Cont*Crimin+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "FIXER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+1",
+        "END": "+3",
+        "INT": "+3",
+        "EDU": "+1",
+        "CHA": "+3",
+        "INIT": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Bribe": 3,
+        "Honour": 2,
+        "Perception": 2,
+        "Persuade": 3,
+        "Kn:City": 0,
+        "Streetwise": 3,
+        "Instinct": 2,
+        "Pistols": 2,
+        "Psychology": 3,
+        "Thief": 2,
+        "Frame": 3,
+        "Melee": 2,
+        "Intimidate": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "FORGER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+1",
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 3,
+        "Bureaucracy": 3,
+        "Electrical": 2,
+        "Electronics": 2,
+        "ScanLoc": 3,
+        "Coding": 3,
+        "Streetwise": 2,
+        "Perception": 2,
+        "SysVlns": 2,
+        "Frame": 1,
+        "Pistols": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "FUKUSHO",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+3",
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+2",
+        "INIT": "+3",
+        "WIL": "+2",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Admin": 2,
+        "Athletics": 3,
+        "Intimidate": 3,
+        "First-Aid": 2,
+        "Persuade": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Melee": 3,
+        "Perception": 3,
+        "Honour": 3,
+        "Stealth": 3,
+        "Veteran": 3
+      },
+      "ranks": [
+        "Kn:City"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GANGER",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "END": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Melee": 1,
+        "Intimidate": 1,
+        "Perception": 0,
+        "Pistols": 1,
+        "Veteran": 1,
+        "Rifles": 0,
+        "Streetwise": 1,
+        "Athletics": 0,
+        "Kn:City": 1,
+        "Psychology": 0,
+        "Honour": 1
+      },
+      "ranks": [
+        "Ride",
+        "Cont:Gang",
+        "Drive"
+      ],
+      "paths": [
+        "Enforcer",
+        "Sgt-at-Arms",
+        "Made Man",
+        "Shot Caller"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GANGLEADER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+2",
+        "END": "+3",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+1",
+        "INIT": "+1",
+        "WIL": "+2"
+      },
+      "skills": {
+        "Intimidate": 3,
+        "Melee": 2,
+        "Perception": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Streetwise": 3,
+        "Athletics": 2,
+        "Kn:City": 0,
+        "Psychology": 2
+      },
+      "ranks": [
+        "Cont:*Crim+2",
+        "Veteran2",
+        "Honour2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GETAWAY DRIVER",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+2",
+        "END": "+1",
+        "INT": "+1",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Intimidate": 1,
+        "Melee": 1,
+        "Perception": 2,
+        "Pistols": 1,
+        "Streetwise": 2,
+        "Athletics": 1,
+        "Tactics": 2,
+        "ScanLoc": 1,
+        "Integration": 0,
+        "Honour": 1,
+        "Navigation": 0
+      },
+      "ranks": [
+        "Lang+1",
+        "Cont*Crimin+2",
+        "Drive"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GHOST",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "INIT": "+2",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 1,
+        "Chan:Spirit": 2,
+        "Focus": 2,
+        "Discipline": 0,
+        "Lore": 1,
+        "Persuade": 0,
+        "Ritual": 2,
+        "Intimidate": 0
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GIFTED",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "EDU": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
+      },
+      "skills": {
+        "Chan:Mental": 1,
+        "Instinct": 1,
+        "Focus": 1,
+        "Perception": 0,
+        "Persuade": 0,
+        "Psychology": 0,
+        "Streetwise": 0,
+        "Veteran": 1,
+        "Lore": 1
+      },
+      "ranks": [
+        "Cont:Mental"
+      ],
+      "paths": [
+        "Medium"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GRIFTER",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+1",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Bribe": 1,
+        "Gambling": 1,
+        "Perception": 1,
+        "Persuade": 1,
+        "Psychology": 1,
+        "Streetwise": 1,
+        "Thief": 1,
+        "Athletics": 1
+      },
+      "ranks": [
+        "Cont:*Crim+1",
+        "Kn:City",
+        "Kn:Lang:+2"
+      ],
+      "paths": [
+        "Face",
+        "Fence",
+        "Smuggler",
+        "Made Man"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "GUARD",
+      "level": 1,
+      "branch": "Armsman",
+      "stats": {},
+      "skills": {
+        "Admin": 0,
+        "Pistols": 1,
+        "Rifles": 1,
+        "Melee": 1,
+        "Psychology": 0,
+        "Perception": 1,
+        "Drive": 0
+      },
+      "ranks": [
+        "Kn:City",
+        "Transp:+1"
+      ],
+      "paths": [
+        "Guard Captain",
+        "Borderguard"
+      ],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -1593,40 +1903,297 @@
       "signature": null
     },
     {
-      "name": "MERCENARY",
-      "level": 2,
-      "branch": "Armsman",
+      "name": "GUIDE",
+      "level": 1,
+      "branch": "Civilian",
       "stats": {
-        "STR": "+2",
+        "END": "+1",
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "Focus": 1,
+        "First-Aid": 1,
+        "Perception": 1,
+        "Pistols": 0,
+        "Psychology": 1,
+        "Streetwise": 1,
+        "Instinct": 1,
+        "Treatment": 2,
+        "Rifles": 0,
+        "Melee": 0
+      },
+      "ranks": [
+        "Kn:City",
+        "Lang:+1",
+        "Cont:*Legal"
+      ],
+      "paths": [
+        "Doctor",
+        "Ripperdoc"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HACKER",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "INIT": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "ScanLoc": 2,
+        "Electrical": 1,
+        "Electronics": 1,
+        "Integration": 2,
+        "Coding": 2,
+        "Streetwise": 1,
+        "Perception": 1,
+        "SysVulns": 2,
+        "Frame": 1,
+        "Pistols": 1
+      },
+      "ranks": [
+        "Cont*Crimin+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HIGH PRIESTESS",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
         "AGI": "+1",
         "END": "+2",
-        "INT": "+1",
+        "INT": "+3",
+        "EDU": "+2",
+        "CHA": "+2",
+        "WIL": "+3",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Admin": 3,
+        "Focus": 3,
+        "Intimidate": 2,
+        "Chan:Wiccan": 3,
+        "Lore": 3,
+        "Persuade": 2,
+        "Ritual": 3,
+        "Streetwise": 1,
+        "Perception": 2
+      },
+      "ranks": [
+        "Cont:Wiccan",
+        "Lng:Add1",
+        "Lng:Latin"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HISTORIAN",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
         "CHA": "+1"
       },
       "skills": {
-        "Melee": 2,
-        "First-Aid": 1,
-        "Pistols": 1,
-        "Rifles": 2,
-        "Honour": 1,
-        "Ordinance": 1,
+        "Admin": 2,
         "Perception": 1,
-        "Stealth": 1,
-        "Survival": 1,
-        "Tactics": 1,
+        "Ritual": 1,
+        "Lore": 1
+      },
+      "ranks": [
+        "Lng:+2",
+        "Kn:Hist+3",
+        "Cont:*Channel",
+        "Lng:Latin",
+        "Cont:Academ",
+        "Cont*Legal+2"
+      ],
+      "paths": [
+        "Occultist",
+        "Tomb Raider"
+      ],
+      "lateral": [
+        "Archeologist",
+        "Businessman"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HISTORY",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Perception": 1,
+        "Lore": 1,
+        "Ritual": 0
+      },
+      "ranks": [
+        "Lng+2",
+        "LngLatin",
+        "Hst+3",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Historian"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HITMAN",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+3",
+        "END": "+3",
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+1",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Frame": 3,
+        "Pistols": 3,
+        "Rifles": 3,
+        "Melee": 2,
+        "Disguise": 2,
+        "Streetwise": 2,
+        "Psychology": 2,
+        "Stealth": 3,
+        "Intimidate": 2,
+        "Bypass": 3,
+        "Kn:City": 0,
+        "Thief": 2,
+        "Shadow": 3,
         "Veteran": 2
       },
       "ranks": [
-        "Cont:Military"
+        "Cont:*Crim+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HOME INVADER",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "END": "+1"
+      },
+      "skills": {
+        "Intimidate": 1,
+        "Melee": 1,
+        "Perception": 1,
+        "Pistols": 1,
+        "Psychology": 1,
+        "Stealth": 1,
+        "Streetwise": 1,
+        "Interrogate": 0,
+        "Bypass": 0
+      },
+      "ranks": [
+        "Cont:Fence",
+        "Drive"
       ],
       "paths": [
-        "Operator",
-        "BlackGuard"
+        "B&E Expert",
+        "Fence",
+        "Killer"
       ],
-      "lateral": [
-        "Commando",
-        "Bomber"
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HOUNGANS/ MAMBOS",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+2",
+        "INT": "+3",
+        "EDU": "+2",
+        "CHA": "+3",
+        "WIL": "+2",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Lore": 3,
+        "Focus": 3,
+        "Intimidate": 2,
+        "Chan:Voodoo": 3,
+        "Persuade": 2,
+        "Ritual": 3,
+        "Streetwise": 1,
+        "Perception": 2
+      },
+      "ranks": [
+        "Cont:Voodoo",
+        "Lng:+1",
+        "Lng:Latin"
       ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "HOUNSI",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "EDU": "+1",
+        "CHA": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
+      },
+      "skills": {
+        "Ritual": 1,
+        "Chan:Voodoo": 1,
+        "Focus": 1,
+        "LngLatin": 0,
+        "Lore": 1,
+        "Persuade": 1,
+        "Psychology": 0
+      },
+      "ranks": [
+        "Hst:Vadouan",
+        "Lng+2",
+        "Cont:Vadouan"
+      ],
+      "paths": [
+        "Vadouan"
+      ],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -1639,9 +2206,9 @@
         "AGI": "+2",
         "END": "+2",
         "INT": "+1",
+        "EDU": "+1",
         "CHA": "+1",
-        "INIT": "+1",
-        "WIL": "+1"
+        "INIT": "+1"
       },
       "skills": {
         "Admin": 2,
@@ -1675,115 +2242,1092 @@
       "signature": null
     },
     {
-      "name": "CITY RONIN",
-      "level": 2,
-      "branch": "Armsman",
+      "name": "INMATE",
+      "level": 1,
+      "branch": "Criminal",
       "stats": {
         "STR": "+1",
-        "AGI": "+2",
+        "AGI": "+1",
         "END": "+1",
-        "INT": "+2",
-        "CHA": "+2"
+        "WIL": "+1"
       },
       "skills": {
-        "Melee": 2,
-        "Athletics": 2,
+        "Melee": 1,
         "Intimidate": 1,
-        "First-Aid": 1,
-        "Veteran": 2,
-        "Pistols": 2,
-        "Rifles": 2,
-        "Perception": 1,
+        "Perception": 0,
         "Honour": 1,
-        "Stealth": 2,
-        "Streetwise": 2
+        "Veteran": 1,
+        "Contacts": 1,
+        "Athletics": 0,
+        "Psychology": 0,
+        "Persuade": 0,
+        "Gambling": 1
       },
       "ranks": [
-        "Kn:City",
-        "Cont:*Crimin",
-        "Lng:+1"
+        "Cont:Prison",
+        "Cont:*Criminal"
       ],
       "paths": [
-        "Densetsushi",
-        "BlackGuard",
-        "Operator",
-        "Hitman"
+        "ShotCaller",
+        "BankRobber",
+        "Enforcer",
+        "Smuggler"
       ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "STREET SAMURAI",
-      "level": 2,
-      "branch": "Armsman",
+      "name": "JOHNSON",
+      "level": 3,
+      "branch": "Criminal",
       "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+2",
-        "CHA": "+2"
+        "AGI": "+1",
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+3",
+        "WIL": "+1"
       },
       "skills": {
-        "Frame": 1,
-        "Athletics": 2,
+        "Admin": 3,
+        "Perception": 2,
+        "Bureaucracy": 3,
+        "Frame": 2,
+        "Bribe": 3,
+        "Persuade": 3,
         "Intimidate": 2,
-        "First-Aid": 1,
-        "Stealth": 2,
+        "Psychology": 3,
+        "Pistols": 1
+      },
+      "ranks": [
+        "Cont:*Crim+3"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "JOURNALIST",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1",
+        "CHA": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Focus": 0,
+        "Perception": 1,
+        "Interrogate": 1,
+        "Persuade": 1,
+        "Psychology": 0,
+        "Streetwise": 0,
+        "Stealth": 0,
+        "Bribe": 0
+      },
+      "ranks": [
+        "Art:Writing",
+        "Cont:3"
+      ],
+      "paths": [
+        "Reporter",
+        "Whistle Blower",
+        "National Hit"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "KILLER",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+2",
+        "INT": "+2",
+        "INIT": "+2"
+      },
+      "skills": {
+        "Frame": 2,
         "Pistols": 2,
         "Rifles": 2,
         "Melee": 2,
-        "Perception": 2,
-        "Honour": 2,
-        "Veteran": 2,
-        "ScanLoc": 1
+        "Disguise": 2,
+        "Streetwise": 2,
+        "Instinct": 2,
+        "Psychology": 2,
+        "Stealth": 2,
+        "Intimidate": 1,
+        "Persuade": 2,
+        "Bypass": 2,
+        "Shadow": 2,
+        "Veteran": 2
       },
       "ranks": [
-        "Kn:City",
-        "Cont:Corpo"
+        "Kn:City"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "LAW",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Perception": 0,
+        "Persuade": 2,
+        "Intimidate": 0,
+        "Psychology": 1,
+        "Law": 1
+      },
+      "ranks": [
+        "Cont:Govt",
+        "Cont:Academ"
       ],
       "paths": [
-        "Black Guard",
-        "Operator",
-        "Fukusho"
+        "Lawyer",
+        "Businessman",
+        "Corpo"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "LAWYER",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Perception": 1,
+        "Bribe": 1,
+        "Frame": 1,
+        "Persuade": 2,
+        "Intimidate": 1,
+        "Psychology": 2,
+        "Law": 2,
+        "Interrogate": 2
+      },
+      "ranks": [
+        "LngLatin",
+        "Cont:Academ",
+        "Cont*Legal+2"
+      ],
+      "paths": [
+        "Attorney"
       ],
       "lateral": [
-        "Mercenary",
-        "Commando",
-        "Hunter",
-        "City Ronin"
+        "Businessman",
+        "Corpo"
       ],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "SURVIVALIST",
+      "name": "MADE MAN",
       "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+2",
+        "WIL": "+2"
+      },
+      "skills": {
+        "Admin": 1,
+        "Intimidate": 2,
+        "Interrogate": 2,
+        "Perception": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Streetwise": 2,
+        "Gambling": 2,
+        "Honour": 2,
+        "Frame": 2,
+        "Bribe": 2
+      },
+      "ranks": [
+        "Lang+1",
+        "Cont:*Crim+2"
+      ],
+      "paths": [
+        "Mob Boss",
+        "Fixer",
+        "Crew Chief",
+        "Hitman"
+      ],
+      "lateral": [
+        "Face",
+        "Smuggler",
+        "Killer"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MAGICIAN",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "AGI": "+1",
+        "END": "+2",
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+3",
+        "WIL": "+2",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Admin": 2,
+        "Chan:Herm": 3,
+        "Focus": 3,
+        "Thief": 2,
+        "Psychology": 3,
+        "Lore": 3,
+        "Persuade": 3,
+        "Ritual": 3,
+        "Intimidate": 2,
+        "Streetwise": 3,
+        "Perception": 2
+      },
+      "ranks": [
+        "Cont:Hermetic",
+        "Lng:+1"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MANAGEMENT",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+3"
+      },
+      "skills": {
+        "Admin": 3,
+        "Perception": 2,
+        "Bribe": 3,
+        "Persuade": 3,
+        "Psychology": 3,
+        "Gambling": 2,
+        "Intimidate": 2,
+        "Frame": 2,
+        "Bureaucracy": 3
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MECHANIC",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "STR": "+1",
+        "END": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Electrical": 1,
+        "Focus": 1,
+        "Mechanical": 1,
+        "ScanLoc": 1,
+        "Perception": 0,
+        "Streetwise": 0,
+        "Bypass": 1
+      },
+      "ranks": [
+        "Kn:City",
+        "Lang:Add1",
+        "Cont:Breaker",
+        "Drive"
+      ],
+      "paths": [
+        "Engineer",
+        "Ripperdoc"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MEDICAL",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "First-Aid": 1,
+        "ScanLoc": 0,
+        "Psychology": 0,
+        "Surgery": 0,
+        "Treatment": 1
+      },
+      "ranks": [
+        "Lng:Latin",
+        "Sci:Biology",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Doctor",
+        "Ripperdoc"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MEDIUM",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "INT": "+2",
+        "CHA": "+1",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Focus": 2,
+        "ScanLoc": 2,
+        "Ritual": 2,
+        "Chan:Mental": 2,
+        "First-Aid": 1,
+        "Instinct": 2,
+        "Lore": 2,
+        "Perception": 2
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:Mental"
+      ],
+      "paths": [
+        "Psychic",
+        "Occultist"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MERCENARY",
+      "level": 2,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+1",
+        "END": "+2",
+        "INIT": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Melee": 2,
+        "First-Aid": 1,
+        "Pistols": 1,
+        "Rifles": 2,
+        "Honour": 1,
+        "Ordinance": 1,
+        "Perception": 1,
+        "Stealth": 1,
+        "Survival": 1,
+        "Tactics": 1,
+        "Veteran": 2
+      },
+      "ranks": [
+        "Cont:Military"
+      ],
+      "paths": [
+        "Operator",
+        "BlackGuard"
+      ],
+      "lateral": [
+        "Commando",
+        "Bomber"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MOB BOSS",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+1",
+        "END": "+3",
+        "INT": "+3",
+        "EDU": "+2",
+        "CHA": "+3",
+        "WIL": "+3"
+      },
+      "skills": {
+        "Admin": 2,
+        "Perception": 2,
+        "Bribe": 3,
+        "Persuade": 3,
+        "Psychology": 3,
+        "Frame": 3,
+        "Gambling": 2,
+        "Intimidate": 3
+      },
+      "ranks": [
+        "Cont:*Crim+3",
+        "Cont:*Legal+1"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "MONK",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+3",
+        "END": "+3",
+        "INT": "+1",
+        "EDU": "+1",
+        "INIT": "+3",
+        "WIL": "+3",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Athletics": 3,
+        "Chan:Phys": 3,
+        "Focus": 3,
+        "First-Aid": 2,
+        "Instinct": 2,
+        "Melee": 3,
+        "Lore": 2,
+        "Stealth": 3,
+        "Perception": 3,
+        "Ritual": 2,
+        "Survival": 2,
+        "Honour": 3
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "NATIONAL HIT",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+1",
+        "CHA": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Focus": 2,
+        "Perception": 1,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Disguise": 2
+      },
+      "ranks": [
+        "Art:Writing",
+        "Art:Perform"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "NETRUNNER",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "INIT": "+2",
+        "WIL": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Perception": 2,
+        "Persuade": 1,
+        "Coding": 2,
+        "SysVlns": 2,
+        "Forgery": 2,
+        "Electronics": 1,
+        "ScanLoc": 1,
+        "Focus": 2
+      },
+      "ranks": [
+        "Lang+1",
+        "Cont:",
+        "Corpo",
+        "Cont:*Any+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "NOVICE",
+      "level": 1,
+      "branch": "Channeler",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+1",
+        "INIT": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
+      },
+      "skills": {
+        "Veteran": 0,
+        "Athletics": 1,
+        "Chan:Phys": 1,
+        "Focus": 1,
+        "Honour": 1,
+        "First-Aid": 1,
+        "Instinct": 1,
+        "Melee": 1,
+        "Lore": 1,
+        "Stealth": 1,
+        "Perception": 1,
+        "Ritual": 0,
+        "Survival": 1
+      },
+      "ranks": [
+        "Cont:Adepts"
+      ],
+      "paths": [
+        "Adept"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "OCCULTIST",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+2",
+        "WIL": "+3"
+      },
+      "skills": {
+        "Admin": 3,
+        "Perception": 2,
+        "Lng:Latin": 0,
+        "Lng:+": 2,
+        "Lore": 3,
+        "Kn:Hst+": 3,
+        "Ritual": 3
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "OPERATOR",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+3",
+        "AGI": "+3",
+        "END": "+3",
+        "INT": "+2",
+        "INIT": "+3",
+        "WIL": "+2"
+      },
+      "skills": {
+        "First-Aid": 2,
+        "Pistols": 3,
+        "Rifles": 3,
+        "Melee": 3,
+        "Ordinance": 2,
+        "Perception": 2,
+        "Stealth": 3,
+        "Survival": 2,
+        "Tactics": 3,
+        "Veteran": 3,
+        "Honour": 2
+      },
+      "ranks": [
+        "Transp:+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "PARAMEDIC",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "END": "+1",
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "Focus": 1,
+        "First-Aid": 1,
+        "Perception": 1,
+        "Pistols": 0,
+        "Psychology": 1,
+        "Streetwise": 1,
+        "Instinct": 1,
+        "Treatment": 2,
+        "Rifles": 0,
+        "Melee": 0
+      },
+      "ranks": [
+        "Kn:City",
+        "Lang:+1",
+        "Cont:*Legal"
+      ],
+      "paths": [
+        "Doctor",
+        "Ripperdoc"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "PILOT",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+2",
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+1",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "ScanLoc": 2,
+        "Perception": 2,
+        "Navigation": 2,
+        "Pilot": 2,
+        "Kn:Routes": 0,
+        "Lang:Add": 1,
+        "Tactics": 2,
+        "Focus": 2,
+        "Integration": 0,
+        "Electrical": 1,
+        "Electronics": 1,
+        "Mechanical": 1,
+        "Pistol": 1
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "POLTER",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 1,
+        "Chan:Spirit": 2,
+        "Focus": 2,
+        "Discipline": 0,
+        "Lore": 1,
+        "Persuade": 0,
+        "Ritual": 2,
+        "Intimidate": 0
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "POSSESSING SPIRIT",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {},
+      "skills": {
+        "Admin": 1,
+        "Chan:Spirit": 2,
+        "Focus": 2,
+        "Discipline": 0,
+        "Lore": 1,
+        "Persuade": 0,
+        "Ritual": 2,
+        "Intimidate": 0
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "PRIEST",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+1",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 1,
+        "Focus": 2,
+        "Honour": 2,
+        "Perception": 1,
+        "Lore": 2,
+        "Persuade": 1,
+        "Ritual": 2,
+        "Chan:Cath": 2
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:Catholic",
+        "Cont:*Legal",
+        "Cont:*Crimin"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "PSYCHIC",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+1",
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+3",
+        "WIL": "+3",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Admin": 2,
+        "Focus": 3,
+        "First-Aid": 2,
+        "Instinct": 2,
+        "Lore": 3,
+        "Perception": 2,
+        "Ritual": 2,
+        "Chan:Mental": 3
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "PUP",
+      "level": 1,
       "branch": "Armsman",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
-        "END": "+2",
-        "INT": "+1",
-        "CHA": "+1"
+        "END": "+1",
+        "EDU": "+1",
+        "INIT": "+1"
       },
       "skills": {
+        "Admin": 0,
+        "Bribe": 0,
         "First-Aid": 1,
+        "Lore": 1,
+        "Stealth": 1,
         "Pistols": 1,
-        "Rifles": 2,
+        "Rifles": 1,
         "Melee": 1,
         "Perception": 2,
-        "Stealth": 1,
-        "Survival": 2,
-        "Mechanical": 1,
-        "Ordinance": 1,
-        "Electrical": 1
+        "Veteran": 1,
+        "Persuade": 0,
+        "Psychology": 0
       },
       "ranks": [
-        "Transportx2"
+        "Drive",
+        "Cont:Hunter"
+      ],
+      "paths": [
+        "Hunter",
+        "Tracker"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "RANGER",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+3",
+        "EDU": "+2",
+        "WIL": "+2"
+      },
+      "skills": {
+        "First-Aid": 2,
+        "Pistols": 2,
+        "Rifles": 4,
+        "Melee": 2,
+        "Perception": 3,
+        "Stealth": 3,
+        "Survival": 3,
+        "Veteran": 2,
+        "Instinct": 3,
+        "Honour": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "RAZORBOY",
+      "level": 1,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+1",
+        "INIT": "+1",
+        "ESS": "+1"
+      },
+      "skills": {
+        "Athletics": 1,
+        "Intimidate": 1,
+        "First-Aid": 0,
+        "Honour": 0,
+        "Pistols": 1,
+        "Rifles": 1,
+        "Melee": 1,
+        "Perception": 1,
+        "Stealth": 1,
+        "Streetwise": 0,
+        "Veteran": 1
+      },
+      "ranks": [
+        "Kn:City1",
+        "Ride"
+      ],
+      "paths": [
+        "Street Samurai",
+        "City Ronin",
+        "Mercenary"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "REBEL",
+      "level": 1,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "END": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "First-Aid": 0,
+        "Pistols": 0,
+        "Rifles": 1,
+        "Melee": 1,
+        "Perception": 1,
+        "Stealth": 1,
+        "Survival": 1,
+        "Veteran": 1,
+        "Ordinance": 0
+      },
+      "ranks": [],
+      "paths": [
+        "Commando",
+        "Bomber",
+        "Mercenary",
+        "Survivalist"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "REPAIRTECH",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Electrical": 2,
+        "Electronics": 2,
+        "ScanLoc": 2,
+        "Coding": 2,
+        "Cybernetics": 1,
+        "SysVlns": 1,
+        "Mechanical": 2
+      },
+      "ranks": [
+        "VTOL",
+        "Pilot",
+        "Drive"
       ],
       "paths": [],
       "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "REPORTER",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+1",
+        "CHA": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Intimidate": 1,
+        "ScanLoc": 1,
+        "Perception": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Streetwise": 2,
+        "Bribe": 1,
+        "Instinct": 2,
+        "Interrogate": 2,
+        "Honour": 1,
+        "Bypass": 1
+      },
+      "ranks": [
+        "Art:Writ",
+        "Cont:*Any+3"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "RIGGER",
+      "level": 3,
+      "branch": "Criminal",
+      "stats": {
+        "AGI": "+3",
+        "INT": "+3",
+        "EDU": "+3",
+        "INIT": "+3"
+      },
+      "skills": {
+        "ScanLoc": 3,
+        "Electrical": 2,
+        "Mechanical": 2,
+        "Electronics": 2,
+        "Perception": 2,
+        "Coding": 2,
+        "Pistols": 2,
+        "Streetwise": 2,
+        "Integration": 3,
+        "Navigation": 3,
+        "Ordinance": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Trans:+3"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "RIPPERDOC",
+      "level": 2,
+      "branch": "Intellectual",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+2",
+        "EDU": "+2"
+      },
+      "skills": {
+        "Admin": 1,
+        "First-Aid": 2,
+        "ScanLoc": 2,
+        "Psychology": 1,
+        "Streetwise": 2,
+        "Focus": 1,
+        "Pathology": 1,
+        "Surgery": 2,
+        "Cybernetics": 2,
+        "Pistols": 1,
+        "Psychiatry": 1
+      },
+      "ranks": [
+        "Cont*Crimin+2",
+        "Sci:Biology"
+      ],
+      "paths": [
+        "Cyberneticist"
+      ],
+      "lateral": [
+        "Doctor",
+        "Engineer",
+        "Drone Operator"
+      ],
       "mastery": null,
       "signature": null
     },
@@ -1796,7 +3340,7 @@
         "AGI": "+2",
         "END": "+1",
         "INT": "+1",
-        "CHA": "+1",
+        "EDU": "+1",
         "INIT": "+2",
         "WIL": "+1"
       },
@@ -1831,346 +3375,29 @@
       "signature": null
     },
     {
-      "name": "TRACKER",
-      "level": 2,
-      "branch": "Armsman",
+      "name": "SCIENCE",
+      "level": 1,
+      "branch": "Intellectual",
       "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+2",
         "INT": "+1",
-        "CHA": "+2",
-        "WIL": "+1"
-      },
-      "skills": {
-        "First-Aid": 1,
-        "Pistols": 1,
-        "Rifles": 2,
-        "Melee": 1,
-        "Perception": 2,
-        "Stealth": 2,
-        "Survival": 2,
-        "Shadow": 2,
-        "Disguise": 1,
-        "Navigation": 1
-      },
-      "ranks": [
-        "Trnsptx2",
-        "Cont:Military"
-      ],
-      "paths": [
-        "Ranger",
-        "Operator",
-        "Blackguard"
-      ],
-      "lateral": [
-        "Survivalist",
-        "Mercenary",
-        "Borderguard"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ARCHEOLOGIST",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "PsvSyst": 2,
-        "Perception": 2,
-        "Bribe": 2,
-        "ScanLoc": 2,
-        "Lore": 2,
-        "Ritual": 2,
-        "Streetwise": 1
-      },
-      "ranks": [
-        "Hst:+3",
-        "Transportx2",
-        "Lng:Latin",
-        "Lng:+2",
-        "Cont:Academ"
-      ],
-      "paths": [
-        "Tomb Raider",
-        "Occultist"
-      ],
-      "lateral": [
-        "Historian"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "BUSINESSMAN",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 2,
-        "PsvSys": 2,
-        "Perception": 2,
-        "Bribe": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Gambling": 1,
-        "Intimidate": 1
-      },
-      "ranks": [
-        "Cont:Govt"
-      ],
-      "paths": [
-        "Executive",
-        "Fixer"
-      ],
-      "lateral": [
-        "Corpo",
-        "Lawyer"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CORPO",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1"
+        "EDU": "+1"
       },
       "skills": {
         "Admin": 1,
-        "Perception": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Gambling": 1,
-        "Intimidate": 1
-      },
-      "ranks": [
-        "Cont:Corpo"
-      ],
-      "paths": [
-        "Executive",
-        "Fixer"
-      ],
-      "lateral": [
-        "Businessman",
-        "Lawyer"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DOCTOR",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "First-Aid": 2,
-        "ScanLoc": 2,
-        "Psychology": 1,
-        "Treatment": 2,
-        "Focus": 1,
-        "Pathology": 1,
-        "Surgery": 2,
-        "Psychiatry": 1,
-        "Hypnosis": 1
-      },
-      "ranks": [
-        "Sci:Biology"
-      ],
-      "paths": [
-        "Surgeon",
-        "Coroner"
-      ],
-      "lateral": [
-        "Ripperdoc",
-        "Corpo",
-        "Lawyer",
-        "Scientist"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DRONEOP",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Coding": 1,
-        "Electrical": 1,
-        "Mechanical": 1,
-        "Electronics": 1,
-        "Integration": 2,
-        "Perception": 2,
-        "Pistols": 1,
-        "Navigation": 2,
-        "Ordinance": 2,
-        "Streetwise": 1,
-        "ScanLoc": 1
-      },
-      "ranks": [
-        "Kn:City",
-        "Trans+3",
-        "Cont*Crimin+2"
-      ],
-      "paths": [
-        "Rigger",
-        "Cyberneticist"
-      ],
-      "lateral": [
-        "Engineer",
-        "Ripperdoc"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HACKER",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "ScanLoc": 2,
-        "Electrical": 1,
-        "Electronics": 1,
-        "Integration": 2,
-        "Coding": 2,
-        "Streetwise": 1,
-        "Perception": 1,
-        "SysVulns": 2,
-        "Frame": 1,
-        "Pistols": 1
-      },
-      "ranks": [
-        "Cont*Crimin+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ENGINEER",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "ScanLoc": 2,
-        "Electrical": 2,
-        "Electronics": 2,
-        "Mechanical": 2,
-        "PsvSyst": 2,
-        "Perception": 2,
-        "Coding": 2,
-        "Cybernetics": 1
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [
-        "DroneOp",
-        "Scientist"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HISTORIAN",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1"
-      },
-      "skills": {
-        "Admin": 2,
-        "Perception": 1,
-        "Ritual": 1,
-        "Lore": 1
-      },
-      "ranks": [
-        "Lng:+2",
-        "Kn:Hist+3",
-        "Cont:*Channel",
-        "Lng:Latin",
-        "Cont:Academ",
-        "Cont*Legal+2"
-      ],
-      "paths": [
-        "Occultist",
-        "Tomb Raider"
-      ],
-      "lateral": [
-        "Archeologist",
-        "Businessman"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "LAWYER",
-      "level": 2,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Perception": 1,
-        "Bribe": 1,
-        "Frame": 1,
-        "Persuade": 2,
-        "Intimidate": 1,
-        "Psychology": 2,
-        "Law": 2,
-        "Interrogate": 2
+        "ScanLoc": 1,
+        "Focus": 1
       },
       "ranks": [
         "LngLatin",
-        "Cont:Academ",
-        "Cont*Legal+2"
+        "Sciencex2",
+        "Art:Writing",
+        "Cont:Academ"
       ],
       "paths": [
-        "Attorney"
+        "Scientist",
+        "Engineer"
       ],
-      "lateral": [
-        "Businessman",
-        "Corpo"
-      ],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -2179,9 +3406,9 @@
       "level": 2,
       "branch": "Intellectual",
       "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2"
+        "AGI": "+1",
+        "INT": "+2",
+        "EDU": "+2"
       },
       "skills": {
         "Admin": 2,
@@ -2204,529 +3431,28 @@
       "signature": null
     },
     {
-      "name": "RIPPERDOC",
-      "level": 2,
-      "branch": "Intellectual",
+      "name": "SEARCH& RESCUE",
+      "level": 3,
+      "branch": "Armsman",
       "stats": {
         "STR": "+1",
-        "AGI": "+2",
-        "END": "+2"
+        "AGI": "+3",
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+2",
+        "INIT": "+2"
       },
       "skills": {
-        "Admin": 1,
         "First-Aid": 2,
-        "ScanLoc": 2,
-        "Psychology": 1,
-        "Streetwise": 2,
-        "Focus": 1,
-        "Pathology": 1,
-        "Surgery": 2,
-        "Cybernetics": 2,
-        "Pistols": 1,
-        "Psychiatry": 1
-      },
-      "ranks": [
-        "Cont*Crimin+2",
-        "Sci:Biology"
-      ],
-      "paths": [
-        "Cyberneticist"
-      ],
-      "lateral": [
-        "Doctor",
-        "Engineer",
-        "Drone Operator"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ADEPT",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+1",
-        "WIL": "+2"
-      },
-      "skills": {
-        "Ritual": 2,
-        "Athletics": 2,
-        "Chan:Phys": 2,
-        "Focus": 2,
-        "Perception": 2,
-        "First-Aid": 1,
-        "Instinct": 2,
-        "Melee": 2,
-        "Lore": 1,
-        "Stealth": 2,
-        "Survival": 1,
-        "Honour": 2
-      },
-      "ranks": [
-        "Cont:Phys"
-      ],
-      "paths": [
-        "Monk",
-        "BlackGuard"
-      ],
-      "lateral": [
-        "Mercenary"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "STREETMAGE",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Chan:Herm": 2,
-        "Focus": 2,
-        "Thief": 1,
-        "Perception": 1,
-        "Lore": 2,
-        "Persuade": 1,
-        "Ritual": 2,
-        "Streetwise": 2
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:Hermetic",
-        "Cont:*Crimin",
-        "Cont:*Legal",
-        "Cont:*Chan"
-      ],
-      "paths": [
-        "Magician",
-        "Occultist"
-      ],
-      "lateral": [
-        "Mercenary"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "PRIEST",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+2",
-        "CHA": "+2"
-      },
-      "skills": {
-        "Admin": 1,
-        "Focus": 2,
-        "Honour": 2,
-        "Perception": 1,
-        "Lore": 2,
-        "Persuade": 1,
-        "Ritual": 2,
-        "Chan:Cath": 2
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:Catholic",
-        "Cont:*Legal",
-        "Cont:*Crimin"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MEDIUM",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Focus": 2,
-        "ScanLoc": 2,
-        "Ritual": 2,
-        "Chan:Mental": 2,
-        "First-Aid": 1,
-        "Instinct": 2,
-        "Lore": 2,
-        "Perception": 2
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:Mental"
-      ],
-      "paths": [
-        "Psychic",
-        "Occultist"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SHAMAN",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+2"
-      },
-      "skills": {
-        "Lore": 2,
-        "Chan:Sham": 2,
-        "Focus": 2,
-        "Intimidate": 1,
-        "Honour": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Perception": 2,
-        "Streetwise": 1,
-        "Ritual": 2
-      },
-      "ranks": [
-        "lang+2",
-        "Cont:Shaman",
-        "Cont:*Crimin",
-        "Cont:*Legal",
-        "Cont:*Chan"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "VADOUAN",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Lore": 2,
-        "Focus": 2,
-        "Intimidate": 2,
-        "Chan:Voodoo": 2,
-        "Persuade": 2,
-        "Ritual": 2,
-        "Streetwise": 2,
-        "Perception": 2,
-        "Lore": 2
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:*Crimin",
-        "Cont:*Legal",
-        "Cont:*Chan",
-        "Cont:Vadouan"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "WITCH",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Focus": 2,
-        "Intimidate": 2,
-        "Chan:Wiccan": 2,
-        "Perception": 2,
-        "Lore": 2,
-        "Persuade": 2,
-        "Ritual": 2,
-        "Streetwise": 1
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:*Crimin",
-        "Cont:*Legal",
-        "Cont:*Chan",
-        "Cont:Wiccan"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "WAGEMAGE",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Chan:Herm": 2,
-        "Focus": 2,
-        "Honour": 1,
-        "Lore": 2,
-        "Persuade": 1,
-        "Ritual": 2,
-        "Perception": 1
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:Corpo",
-        "Cont:*Legal",
-        "Cont:*Chan"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "POLTER",
-      "level": 2,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2"
-      },
-      "skills": {
-        "Admin": 1,
-        "Chan:Spirit": 2,
-        "Focus": 2,
-        "Discipline": null,
-        "Lore": 1,
-        "Persuade": 0,
-        "Ritual": 2,
-        "Intimidate": null
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "B&E EXPERT",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+2",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Melee": 1,
-        "Perception": 2,
-        "Pistols": 1,
-        "Psychology": 1,
-        "Stealth": 3,
-        "Streetwise": 2,
-        "SysVulns": 2,
-        "Bypass": 2,
-        "Electrical": 1,
-        "Electronics": 1,
-        "ScanLoc": 2
-      },
-      "ranks": [
-        "Cont:Fenc",
-        "Cont:*Crimin"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "BANK ROBBER",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+1",
-        "CHA": "+1",
-        "INIT": "+2",
-        "WIL": "+1"
-      },
-      "skills": {
-        "Focus": 1,
-        "Intimidate": 2,
-        "Rifles": 2,
-        "Ordinance": 2,
-        "Honour": 2,
-        "Streetwise": 2,
-        "Interrogate": 1,
-        "Pistols": 1,
-        "Psychology": 1,
-        "SysVulns": 2,
-        "Veteran": 1,
-        "Persuade": 2,
-        "Perception": 2
-      },
-      "ranks": [
-        "Kn:City",
-        "Cont:Fence"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ENFORCER",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+1"
-      },
-      "skills": {
-        "Melee": 2,
-        "First-Aid": 1,
-        "Perception": 2,
-        "Intimidate": 2,
-        "Psychology": 2,
-        "Streetwise": 2,
-        "Shadow": 2,
-        "Interrogate": 2,
-        "Pistols": 1,
-        "Persuade": 1,
-        "Veteran": 2,
-        "Frame": 2
-      },
-      "ranks": [
-        "Kn:City",
-        "Cont*Crimin+1"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "FACE",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+2",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Bribe": 2,
-        "Perception": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Pistols": 1,
-        "Streetwise": 2,
-        "Instinct": 2,
-        "Melee": 1
-      },
-      "ranks": [
-        "Lang+2",
-        "Cont:+3"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "FENCE",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1"
-      },
-      "skills": {
-        "Bribe": 1,
-        "ScanLoc": 2,
-        "Admin": 2,
-        "Streetwise": 2,
-        "Instinct": 2,
-        "Pistols": 1,
-        "Psychology": 2,
-        "Persuade": 2,
-        "Perception": 2
-      },
-      "ranks": [
-        "Lang+1",
-        "Cont*Crimin+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "KILLER",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+2"
-      },
-      "skills": {
-        "Frame": 2,
         "Pistols": 2,
-        "Rifles": 2,
+        "Rifles": 3,
         "Melee": 2,
-        "Disguise": 2,
-        "Streetwise": 2,
-        "Instinct": 2,
-        "Psychology": 2,
-        "Stealth": 2,
-        "Intimidate": 1,
-        "Persuade": 2,
-        "Bypass": 2,
-        "Shadow": 2,
-        "Veteran": 2
+        "ScanLoc": 3,
+        "Perception": 3,
+        "Survival": 2,
+        "*VTOL": 3,
+        "*Pilot": 3,
+        "Trans:+": 3
       },
       "ranks": [
         "Kn:City"
@@ -2737,78 +3463,68 @@
       "signature": null
     },
     {
-      "name": "GETAWAY DRIVER",
-      "level": 2,
-      "branch": "Criminal",
+      "name": "SEMINARIAN",
+      "level": 1,
+      "branch": "Channeler",
       "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+1",
         "INT": "+1",
-        "CHA": "+2",
-        "WIL": "+1"
+        "EDU": "+1",
+        "WIL": "+1",
+        "ESS": "+1"
       },
       "skills": {
-        "Intimidate": 1,
-        "Melee": 1,
-        "Perception": 2,
-        "Pistols": 1,
-        "Streetwise": 2,
-        "Athletics": 1,
-        "Tactics": 2,
-        "ScanLoc": 1,
-        "Integration": 1,
+        "Admin": 1,
+        "Chan:Cath": 1,
+        "Focus": 1,
         "Honour": 1,
-        "Navigation": 1
+        "Lore": 1,
+        "Persuade": 0,
+        "Ritual": 1
       },
       "ranks": [
-        "Lang+1",
-        "Cont*Crimin+2",
-        "Drive"
+        "Lng+1",
+        "LngLatin",
+        "Hist:Catholic",
+        "Cont:Catholic"
       ],
-      "paths": [],
+      "paths": [
+        "Priest"
+      ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "MADE MAN",
-      "level": 2,
+      "name": "SEX WORKER",
+      "level": 1,
       "branch": "Criminal",
       "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
+        "AGI": "+1",
+        "EDU": "+1",
+        "CHA": "+1"
       },
       "skills": {
-        "Admin": 1,
-        "Intimidate": 2,
-        "Interrogate": 2,
-        "Perception": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Streetwise": 2,
-        "Gambling": 2,
-        "Honour": 2,
-        "Frame": 2,
-        "Bribe": 2
+        "Thief": 1,
+        "Athletics": 1,
+        "First-Aid": 1,
+        "Melee": 0,
+        "Perception": 0,
+        "Persuade": 1,
+        "Pistols": 1,
+        "Psychology": 1,
+        "Streetwise": 1,
+        "Interrogate": 0,
+        "Disguise": 1
       },
       "ranks": [
-        "Lang+1",
-        "Cont:*Crim+2"
+        "Cont:*Crimin"
       ],
       "paths": [
-        "Mob Boss",
-        "Fixer",
-        "Crew Chief",
-        "Hitman"
-      ],
-      "lateral": [
         "Face",
-        "Smuggler",
-        "Killer"
+        "Fence",
+        "Made Man"
       ],
+      "lateral": [],
       "mastery": null,
       "signature": null
     },
@@ -2820,8 +3536,8 @@
         "STR": "+2",
         "AGI": "+2",
         "END": "+2",
-        "INT": "+2",
-        "CHA": "+2"
+        "INIT": "+2",
+        "WIL": "+2"
       },
       "skills": {
         "Admin": 1,
@@ -2857,6 +3573,116 @@
       "signature": null
     },
     {
+      "name": "SHAMAN",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "END": "+1",
+        "EDU": "+2",
+        "CHA": "+2",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Lore": 2,
+        "Chan:Sham": 2,
+        "Focus": 2,
+        "Intimidate": 1,
+        "Honour": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Perception": 2,
+        "Streetwise": 1,
+        "Ritual": 2
+      },
+      "ranks": [
+        "lang+2",
+        "Cont:Shaman",
+        "Cont:*Crimin",
+        "Cont:*Legal",
+        "Cont:*Chan"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "SHOT CALLER",
+      "level": 2,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+2",
+        "INIT": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Intimidate": 2,
+        "Interrogate": 2,
+        "Perception": 1,
+        "Honour": 2,
+        "Psychology": 2,
+        "Gambling": 2,
+        "Instinct": 1,
+        "Melee": 2,
+        "Thief": 1,
+        "Bribe": 1
+      },
+      "ranks": [
+        "Lang+1",
+        "Cont:*Crim+2"
+      ],
+      "paths": [
+        "Yard Boss"
+      ],
+      "lateral": [
+        "Enforcer",
+        "Killer",
+        "Smuggler"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "SKINWALKER",
+      "level": 3,
+      "branch": "Channeler",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+2",
+        "INT": "+1",
+        "EDU": "+1",
+        "CHA": "+2",
+        "INIT": "+2",
+        "WIL": "+3",
+        "ESS": "+3"
+      },
+      "skills": {
+        "Chan:Sham": 3,
+        "Focus": 3,
+        "Intimidate": 2,
+        "Honour": 2,
+        "Lore": 2,
+        "Persuade": 2,
+        "Psychology": 2,
+        "Melee": 2,
+        "Ritual": 3,
+        "Streetwise": 2,
+        "Perception": 2
+      },
+      "ranks": [
+        "Lng+2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
       "name": "SMUGGLER",
       "level": 2,
       "branch": "Criminal",
@@ -2865,9 +3691,8 @@
         "AGI": "+2",
         "END": "+1",
         "INT": "+2",
-        "CHA": "+2",
-        "INIT": "+2",
-        "WIL": "+2"
+        "EDU": "+2",
+        "CHA": "+2"
       },
       "skills": {
         "Admin": 2,
@@ -2899,533 +3724,143 @@
       "signature": null
     },
     {
-      "name": "SHOT CALLER",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Intimidate": 2,
-        "Interrogate": 2,
-        "Perception": 1,
-        "Honour": 2,
-        "Psychology": 2,
-        "Gambling": 2,
-        "Instinct": 1,
-        "Melee": 2,
-        "Thief": 1,
-        "Bribe": 1
-      },
-      "ranks": [
-        "Lang+1",
-        "Cont:*Crim+2"
-      ],
-      "paths": [
-        "Yard Boss"
-      ],
-      "lateral": [
-        "Enforcer",
-        "Killer",
-        "Smuggler"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "NETRUNNER",
-      "level": 2,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Perception": 2,
-        "Persuade": 1,
-        "Coding": 2,
-        "SysVlns": 2,
-        "Forgery": 2,
-        "Electronics": 1,
-        "ScanLoc": 1,
-        "Focus": 2
-      },
-      "ranks": [
-        "Lang+1",
-        "Cont: Corpo",
-        "Cont:*Any+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "NATIONAL HIT",
-      "level": 2,
-      "branch": "Civilian",
+      "name": "SOLDIER",
+      "level": 1,
+      "branch": "Armsman",
       "stats": {
         "STR": "+1",
-        "AGI": "+2",
-        "END": "+1"
-      },
-      "skills": {
-        "Focus": 2,
-        "Perception": 1,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Disguise": 2,
-        "Art:Writing": 2,
-        "Art:Perform": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "REPORTER",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Intimidate": 1,
-        "ScanLoc": 1,
-        "Perception": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Streetwise": 2,
-        "Bribe": 1,
-        "Instinct": 2,
-        "Interrogate": 2,
-        "Honour": 1,
-        "Bypass": 1
-      },
-      "ranks": [
-        "Art:Writ",
-        "Cont:*Any+3"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "WHISTLEBLOWER",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Perception": 2,
-        "Psychology": 2,
-        "Stealth": 2,
-        "Bribe": 1,
-        "Coding": 1,
-        "Lore": 1,
-        "Shadow": 2,
-        "Forgery": 2,
-        "Disguise": 1
-      },
-      "ranks": [],
-      "paths": [
-        "Field Agent",
-        "Infiltrator"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "PILOT",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+2",
+        "END": "+1",
         "WIL": "+1"
       },
       "skills": {
-        "Admin": 1,
-        "ScanLoc": 2,
-        "Perception": 2,
-        "Navigation": 2,
-        "Pilot": 2,
-        "Kn:Routes": 1,
-        "Lang:Add1": 1,
-        "Tactics": 2,
-        "Focus": 2,
-        "Integration": 1,
-        "Electrical": 1,
-        "Electronics": 1,
-        "Mechanical": 1,
-        "Pistol": 1
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "REPAIRTECH",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Electrical": 2,
-        "Electronics": 2,
-        "ScanLoc": 2,
-        "Coding": 2,
-        "Cybernetics": 1,
-        "SysVlns": 1,
-        "Mechanical": 2
-      },
-      "ranks": [
-        "VTOL",
-        "Pilot",
-        "Drive"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DIRECTOR",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+1"
-      },
-      "skills": {
-        "Focus": 2,
-        "Perception": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Intimidate": 1,
-        "Art:Writing": 2,
-        "Art:Directing": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "TRAUMA TECH",
-      "level": 2,
-      "branch": "Civilian",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Focus": 2,
-        "First-Aid": 2,
-        "Perception": 1,
-        "Psychology": 1,
-        "Streetwise": 2,
-        "Treatment": 2
-      },
-      "ranks": [
-        "Kn:City",
-        "Lang:+1",
-        "Drive"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "BOUNTY HUNTER",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+2",
-        "WIL": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Bribe": 2,
-        "Shadow": 2,
-        "Interrogate": 2,
-        "Pistols": 3,
+        "First-Aid": 1,
+        "Pistols": 0,
         "Rifles": 1,
-        "Melee": 3,
-        "Perception": 3,
-        "Veteran": 2,
-        "Psychology": 2,
-        "Streetwise": 2
+        "Melee": 0,
+        "Ordinance": 0,
+        "Perception": 1,
+        "Stealth": 0,
+        "Survival": 1,
+        "Tactics": 1,
+        "Veteran": 1,
+        "Honour": 0
       },
       "ranks": [
-        "Kn:City",
-        "Trans+1"
+        "Cont:Military"
       ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "BLACKGUARD",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+1"
-      },
-      "skills": {
-        "First-Aid": 2,
-        "Pistols": 2,
-        "Rifles": 3,
-        "Melee": 2,
-        "Ordinance": 2,
-        "Perception": 2,
-        "Stealth": 2,
-        "Survival": 3,
-        "Tactics": 3,
-        "Veteran": 3,
-        "Honour": 2
-      },
-      "ranks": [
-        "Trans:+2"
+      "paths": [
+        "Commando",
+        "Mercenary",
+        "S.W.A.T.",
+        "Survivalist"
       ],
-      "paths": [],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "CONSPIRACIST",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+2",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 3,
-        "Perception": 3,
-        "Psychology": 2,
-        "Stealth": 3,
-        "ScanLoc": 2,
-        "Bribe": 2,
-        "Coding": 2,
-        "Lore": 3,
-        "Shadow": 3,
-        "Forgery": 2,
-        "Disguise": 2
-      },
-      "ranks": [
-        "Kn:Con.Theory"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DENSETSUSHI",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+4",
-        "END": "+3",
-        "INT": "+4",
-        "CHA": "+2",
-        "INIT": "+3"
-      },
-      "skills": {
-        "Athletics": 3,
-        "Intimidate": 3,
-        "First-Aid": 2,
-        "Gambling": 2,
-        "Pistols": 2,
-        "Rifles": 2,
-        "Melee": 3,
-        "Perception": 3,
-        "Honour": 2,
-        "Stealth": 3,
-        "Streetwise": 3,
-        "Veteran": 3
-      },
-      "ranks": [
-        "Kn:City"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "UNION AGENT",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+2"
-      },
-      "skills": {
-        "Admin": 3,
-        "Bureaucracy": 2,
-        "Interrogate": 3,
-        "Pistols": 3,
-        "Rifles": 2,
-        "Melee": 2,
-        "Perception": 3,
-        "ScanLoc": 2,
-        "Psychology": 3,
-        "Streetwise": 2,
-        "Veteran": 2
-      },
-      "ranks": [
-        "Kn:City",
-        "Drive"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "FUKUSHO",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+3",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+2",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Admin": 2,
-        "Athletics": 3,
-        "Intimidate": 3,
-        "First-Aid": 2,
-        "Persuade": 2,
-        "Pistols": 2,
-        "Rifles": 2,
-        "Melee": 3,
-        "Perception": 3,
-        "Honour": 3,
-        "Stealth": 3,
-        "Veteran": 3
-      },
-      "ranks": [
-        "Kn:City"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "RANGER",
-      "level": 3,
-      "branch": "Armsman",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+2"
-      },
-      "skills": {
-        "First-Aid": 2,
-        "Pistols": 2,
-        "Rifles": 4,
-        "Melee": 2,
-        "Perception": 3,
-        "Stealth": 3,
-        "Survival": 3,
-        "Veteran": 3,
-        "Instinct": 3,
-        "Honour": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SEARCH & RESCUE",
-      "level": 3,
+      "name": "STREET SAMURAI",
+      "level": 2,
       "branch": "Armsman",
       "stats": {
         "STR": "+1",
-        "AGI": "+3",
-        "END": "+2",
+        "AGI": "+2",
+        "END": "+1",
+        "INIT": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Frame": 1,
+        "Athletics": 2,
+        "Intimidate": 2,
+        "First-Aid": 1,
+        "Stealth": 2,
+        "Pistols": 2,
+        "Rifles": 2,
+        "Melee": 2,
+        "Perception": 2,
+        "Honour": 2,
+        "Veteran": 2,
+        "ScanLoc": 1
+      },
+      "ranks": [
+        "Kn:City",
+        "Cont:Corpo"
+      ],
+      "paths": [
+        "Black Guard",
+        "Operator",
+        "Fukusho"
+      ],
+      "lateral": [
+        "Mercenary",
+        "Commando",
+        "Hunter",
+        "City Ronin"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "STREETMAGE",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
         "INT": "+2",
-        "CHA": "+2",
+        "EDU": "+2",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Chan:Herm": 2,
+        "Focus": 2,
+        "Thief": 1,
+        "Perception": 1,
+        "Lore": 2,
+        "Persuade": 1,
+        "Ritual": 2,
+        "Streetwise": 2
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:Hermetic",
+        "Cont:*Crimin",
+        "Cont:*Legal",
+        "Cont:*Chan"
+      ],
+      "paths": [
+        "Magician",
+        "Occultist"
+      ],
+      "lateral": [
+        "Mercenary"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "SURGEON",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "AGI": "+1",
+        "INT": "+3",
+        "EDU": "+3",
         "WIL": "+2"
       },
       "skills": {
-        "First-Aid": 2,
-        "Pistols": 2,
-        "Rifles": 3,
-        "Melee": 2,
-        "ScanLoc": 3,
-        "Perception": 3,
-        "Survival": 2,
-        "VTOL": 3,
-        "Pilot": 3
+        "Admin": 3,
+        "First-Aid": 3,
+        "ScanLoc": 2,
+        "Psychology": 2,
+        "Treatment": 2,
+        "Focus": 3,
+        "Pathology": 1,
+        "Surgery": 3
       },
       "ranks": [
-        "Trans:+3",
-        "Kn:City"
+        "Sci:Biology"
       ],
       "paths": [],
       "lateral": [],
@@ -3433,34 +3868,97 @@
       "signature": null
     },
     {
-      "name": "OPERATOR",
-      "level": 3,
+      "name": "SURVIVALIST",
+      "level": 2,
       "branch": "Armsman",
       "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+2",
-        "WIL": "+3"
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+2",
+        "EDU": "+1",
+        "WIL": "+1"
       },
       "skills": {
-        "First-Aid": 2,
-        "Pistols": 3,
-        "Rifles": 3,
-        "Melee": 3,
-        "Ordinance": 2,
+        "First-Aid": 1,
+        "Pistols": 1,
+        "Rifles": 2,
+        "Melee": 1,
         "Perception": 2,
-        "Stealth": 3,
+        "Stealth": 1,
         "Survival": 2,
-        "Tactics": 3,
-        "Veteran": 3,
-        "Honour": 2
+        "Mechanical": 1,
+        "Ordinance": 1,
+        "Electrical": 1
       },
       "ranks": [
-        "Transp:+2"
+        "Transportx2"
       ],
       "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "SURVIVOR",
+      "level": 1,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+1",
+        "INIT": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Athletics": 1,
+        "Intimidate": 1,
+        "Instinct": 1,
+        "Luck": 1,
+        "First-Aid": 0,
+        "Pistols": 1,
+        "Rifles": 1,
+        "Melee": 1,
+        "Perception": 1,
+        "Stealth": 0,
+        "Veteran": 1
+      },
+      "ranks": [],
+      "paths": [
+        "Survivalist",
+        "Tracker",
+        "Hunter",
+        "Mercenary"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "TECHY",
+      "level": 1,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 0,
+        "ScanLoc": 1,
+        "Electrical": 1,
+        "Electronics": 1,
+        "Coding": 1,
+        "Cybernetics": 1,
+        "Mechanical": 1,
+        "Bypass": 1,
+        "SysVulns": 1
+      },
+      "ranks": [
+        "Vtol",
+        "Cont:Academ"
+      ],
+      "paths": [
+        "Engineer"
+      ],
       "lateral": [],
       "mastery": null,
       "signature": null
@@ -3492,9 +3990,293 @@
       },
       "ranks": [
         "Cont:*Crim+2",
-        "Bribe"
-        :
-        2
+        "Bribe2"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "THEORETICIST",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 3,
+        "ScanLoc": 3,
+        "Focus": 3,
+        "Coding": 2
+      },
+      "ranks": [
+        "Sci:+2",
+        "Lang:Latin",
+        "Cont:Acedem",
+        "Cont:Corpo"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "THUG",
+      "level": 1,
+      "branch": "Criminal",
+      "stats": {
+        "STR": "+1",
+        "END": "+1",
+        "INIT": "+1"
+      },
+      "skills": {
+        "First-Aid": 0,
+        "Melee": 1,
+        "Perception": 0,
+        "Intimidate": 1,
+        "Streetwise": 1,
+        "Pistols": 1,
+        "Psychology": 0,
+        "Veteran": 1
+      },
+      "ranks": [
+        "Kn:City",
+        "Cont:*Crimin",
+        "Drive",
+        "Ride"
+      ],
+      "paths": [
+        "Enforcer",
+        "Sgt-at-Arms",
+        "Made man",
+        "Killer"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "TOMB RAIDER",
+      "level": 3,
+      "branch": "Intellectual",
+      "stats": {
+        "STR": "+2",
+        "AGI": "+2",
+        "END": "+2",
+        "INT": "+2",
+        "EDU": "+3",
+        "CHA": "+1",
+        "INIT": "+1",
+        "WIL": "+1"
+      },
+      "skills": {
+        "Admin": 3,
+        "ScanLoc": 3,
+        "Perception": 3,
+        "Bribe": 2,
+        "Lng:Latin": 0,
+        "Lng:+": 1,
+        "Pistols": 3,
+        "Lore": 2,
+        "Hst:+": 2,
+        "Melee": 2,
+        "Ritual": 2,
+        "Stealth": 2
+      },
+      "ranks": [],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "TRACKER",
+      "level": 2,
+      "branch": "Armsman",
+      "stats": {
+        "STR": "+1",
+        "AGI": "+1",
+        "END": "+2",
+        "INT": "+1",
+        "EDU": "+2",
+        "WIL": "+1"
+      },
+      "skills": {
+        "First-Aid": 1,
+        "Pistols": 1,
+        "Rifles": 2,
+        "Melee": 1,
+        "Perception": 2,
+        "Stealth": 2,
+        "Survival": 2,
+        "Shadow": 2,
+        "Disguise": 1,
+        "Navigation": 1
+      },
+      "ranks": [
+        "Trnsptx2",
+        "Cont:Military"
+      ],
+      "paths": [
+        "Ranger",
+        "Operator",
+        "Blackguard"
+      ],
+      "lateral": [
+        "Survivalist",
+        "Mercenary",
+        "Borderguard"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "TRAUMA TECH",
+      "level": 2,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Focus": 2,
+        "First-Aid": 2,
+        "Perception": 1,
+        "Psychology": 1,
+        "Streetwise": 2,
+        "Treatment": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Lang:+1",
+        "Drive"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "UNION AGENT",
+      "level": 3,
+      "branch": "Armsman",
+      "stats": {
+        "AGI": "+2",
+        "INT": "+3",
+        "EDU": "+3",
+        "CHA": "+2",
+        "INIT": "+2"
+      },
+      "skills": {
+        "Admin": 3,
+        "Bureaucracy": 2,
+        "Interrogate": 3,
+        "Pistols": 3,
+        "Rifles": 2,
+        "Melee": 2,
+        "Perception": 3,
+        "ScanLoc": 2,
+        "Psychology": 3,
+        "Streetwise": 2,
+        "Veteran": 2
+      },
+      "ranks": [
+        "Kn:City",
+        "Drive"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "VADOUAN",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "INT": "+2",
+        "CHA": "+2",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Lore": 2,
+        "Focus": 2,
+        "Intimidate": 2,
+        "Chan:Voodoo": 2,
+        "Persuade": 2,
+        "Ritual": 2,
+        "Streetwise": 2,
+        "Perception": 2
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:*Crimin",
+        "Cont:*Legal",
+        "Cont:*Chan",
+        "Cont:Vadouan"
+      ],
+      "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "WAGE SLAVE",
+      "level": 1,
+      "branch": "Civilian",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Focus": 1,
+        "Persuade": 0,
+        "Psychology": 0,
+        "Coding": 1
+      },
+      "ranks": [
+        "Cont:Corpo"
+      ],
+      "paths": [
+        "Corpo",
+        "Businessman"
+      ],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "name": "WAGEMAGE",
+      "level": 2,
+      "branch": "Channeler",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "WIL": "+1",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Chan:Herm": 2,
+        "Focus": 2,
+        "Honour": 1,
+        "Lore": 2,
+        "Persuade": 1,
+        "Ritual": 2,
+        "Perception": 1
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:Corpo",
+        "Cont:*Legal",
+        "Cont:*Chan"
       ],
       "paths": [],
       "lateral": [],
@@ -3510,10 +4292,10 @@
         "AGI": "+3",
         "END": "+3",
         "INT": "+2",
+        "EDU": "+2",
         "CHA": "+2",
         "INIT": "+2",
-        "WIL": "+2",
-        "ESS": "+2"
+        "WIL": "+2"
       },
       "skills": {
         "Admin": 2,
@@ -3540,790 +4322,95 @@
       "signature": null
     },
     {
-      "name": "ATTORNEY",
-      "level": 3,
-      "branch": "Intellectual",
+      "name": "WHISTLE BLOWER",
+      "level": 2,
+      "branch": "Civilian",
       "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2"
-      },
-      "skills": {
-        "Admin": 3,
-        "Perception": 2,
-        "Persuade": 3,
-        "Intimidate": 3,
-        "Psychology": 3,
-        "Law": 3,
-        "Interrogate": 3
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ARCHITECT",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Admin": 3,
-        "Bureaucracy": 3,
-        "Electrical": 3,
-        "Electronics": 3,
-        "Mechanical": 2,
-        "Persuade": 2,
-        "ScanLoc": 3
-      },
-      "ranks": [
-        "Cont:*Legal+2",
-        "Kn:City"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CYBERNETICIST",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+1"
+        "INT": "+2",
+        "EDU": "+2",
+        "CHA": "+2",
+        "WIL": "+2"
       },
       "skills": {
         "Admin": 2,
-        "First-Aid": 2,
-        "ScanLoc": 2,
-        "Treatment": 2,
-        "Cybernetics": 3,
+        "Perception": 2,
         "Psychology": 2,
-        "Sci:Biology": 2,
-        "Pathology": 1,
-        "Surgery": 2,
-        "Electronics": 2,
-        "Electrical": 2,
-        "Mechanical": 2,
-        "Perception": 2
+        "Stealth": 2,
+        "Bribe": 1,
+        "Coding": 1,
+        "Lore": 1,
+        "Shadow": 2,
+        "Forgery": 2,
+        "Disguise": 1
       },
       "ranks": [],
-      "paths": [],
+      "paths": [
+        "Field Agent",
+        "Infiltrator"
+      ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "MANAGEMENT",
-      "level": 3,
-      "branch": "Intellectual",
+      "name": "WICCAN",
+      "level": 1,
+      "branch": "Channeler",
       "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+3"
-      },
-      "skills": {
-        "Admin": 3,
-        "Perception": 2,
-        "Bribe": 3,
-        "Persuade": 3,
-        "Psychology": 3,
-        "Gambling": 2,
-        "Intimidate": 2,
-        "Frame": 2,
-        "Bureaucracy": 3
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "OCCULTIST",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+2",
-        "INT": "+3"
-      },
-      "skills": {
-        "Admin": 3,
-        "Perception": 2,
-        "Lng:Latin": null,
-        "Lng:+2": 2,
-        "Lore": 3,
-        "Kn:Hst+3": 3,
-        "Ritual": 3
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "TOMB RAIDER",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+3",
-        "INIT": "+1",
+        "INT": "+1",
+        "EDU": "+1",
         "WIL": "+1",
         "ESS": "+1"
       },
       "skills": {
-        "Admin": 3,
-        "ScanLoc": 3,
-        "Perception": 3,
-        "Bribe": 2,
-        "Lng:Latin": null,
-        "Lng:+1": 1,
-        "Pistols": 3,
-        "Lore": 2,
-        "Hst:+2": 2,
-        "Melee": 2,
-        "Ritual": 2,
-        "Stealth": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SURGEON",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2"
-      },
-      "skills": {
-        "Admin": 3,
-        "First-Aid": 3,
-        "ScanLoc": 2,
-        "Psychology": 2,
-        "Treatment": 2,
-        "Focus": 3,
-        "Pathology": 1,
-        "Surgery": 3
-      },
-      "ranks": [
-        "Sci:Biology"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "THEORETICIST",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+1",
-        "INT": "+1"
-      },
-      "skills": {
-        "Admin": 3,
-        "ScanLoc": 3,
-        "Focus": 3,
-        "Coding": 2
-      },
-      "ranks": [
-        "Sci:+2",
-        "Lang:Latin",
-        "Cont:Acedem",
-        "Cont:Corpo"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CORONER",
-      "level": 3,
-      "branch": "Intellectual",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+1"
-      },
-      "skills": {
         "Admin": 1,
-        "First-Aid": 2,
-        "ScanLoc": 2,
-        "Psychology": 1,
-        "Treatment": 1,
+        "Chan:Wiccan": 1,
         "Focus": 1,
-        "Pathology": 3,
-        "Surgery": 1
-      },
-      "ranks": [
-        "Lng:Latin",
-        "Cont:LEO",
-        "Sci:Biology"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "EXORCIST",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+3",
-        "WIL": "+3"
-      },
-      "skills": {
-        "Admin": 3,
-        "Chan:Cath": 3,
-        "Focus": 3,
-        "Honour": 3,
-        "Perception": 2,
-        "Lore": 2,
-        "Persuade": 2,
-        "Ritual": 3
-      },
-      "ranks": [
-        "Cont:Catholic",
-        "Lng:Add1",
-        "Lng:Latin"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HIGH PRIESTESS",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+3"
-      },
-      "skills": {
-        "Admin": 3,
-        "Focus": 3,
-        "Intimidate": 2,
-        "Chan:Wiccan": 3,
-        "Lore": 3,
-        "Persuade": 2,
-        "Ritual": 3,
-        "Streetwise": 1,
-        "Perception": 2
-      },
-      "ranks": [
-        "Cont:Wiccan",
-        "Lng:Add1",
-        "Lng:Latin"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HOUNGANS/MAMBOS",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+3",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+2",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Lore": 3,
-        "Focus": 3,
-        "Intimidate": 2,
-        "Chan:Voodoo": 3,
-        "Persuade": 2,
-        "Ritual": 3,
-        "Streetwise": 1,
-        "Perception": 2
-      },
-      "ranks": [
-        "Cont:Voodoo",
-        "Lng:+1",
-        "Lng:Latin"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MAGICIAN",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+2",
-        "END": "+3",
-        "INT": "+3",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+3"
-      },
-      "skills": {
-        "Admin": 2,
-        "Chan:Herm": 3,
-        "Focus": 3,
-        "Thief": 2,
-        "Psychology": 3,
-        "Lore": 3,
-        "Persuade": 3,
-        "Ritual": 3,
-        "Intimidate": 2,
-        "Streetwise": 3,
-        "Perception": 2
-      },
-      "ranks": [
-        "Cont:Hermetic",
-        "Lng:+1"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MONK",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+1",
-        "CHA": "+1",
-        "INIT": "+3",
-        "WIL": "+3",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Athletics": 3,
-        "Chan:Phys": 3,
-        "Focus": 3,
-        "First-Aid": 2,
-        "Instinct": 2,
-        "Melee": 3,
-        "Lore": 2,
-        "Stealth": 3,
-        "Perception": 3,
-        "Ritual": 2,
-        "Survival": 2,
-        "Honour": 3
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "PSYCHIC",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+2",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+3",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Admin": 2,
-        "Focus": 3,
-        "First-Aid": 2,
-        "Instinct": 2,
-        "Lore": 3,
-        "Perception": 2,
-        "Ritual": 2,
-        "Chan:Mental": 3
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "SKINWALKER",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+2",
-        "INT": "+1",
-        "CHA": "+1",
-        "INIT": "+2",
-        "WIL": "+2",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Chan:Sham": 3,
-        "Focus": 3,
-        "Intimidate": 2,
-        "Honour": 2,
-        "Lore": 2,
-        "Persuade": 2,
-        "Psychology": 2,
-        "Melee": 2,
-        "Ritual": 3,
-        "Streetwise": 2,
-        "Perception": 2
-      },
-      "ranks": [
-        "Lng+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "POSSESSING SPIRIT",
-      "level": 3,
-      "branch": "Channeler",
-      "stats": {},
-      "skills": {
-        "Admin": 1,
-        "Chan:Spirit": 2,
-        "Focus": 2,
-        "Discipline": null,
+        "Ritual": 1,
         "Lore": 1,
         "Persuade": 0,
-        "Ritual": 2,
-        "Intimidate": null
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "ARMS DEALER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+2",
-        "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+3",
-        "WIL": "+1"
-      },
-      "skills": {
-        "Admin": 2,
-        "Psychology": 3,
-        "Streetwise": 2,
-        "Bribe": 3,
-        "Navigation": 2,
-        "Perception": 2,
-        "Persuade": 3
+        "Psychology": 1
       },
       "ranks": [
-        "Trans:+2",
-        "Cont:Corpo",
-        "Cont:Mob",
-        "Cont:Govt",
-        "Cont:Gangs",
-        "Cont:Yakuza"
+        "Lng2",
+        "LngLatin",
+        "Hist:Wiccan",
+        "Cont:Wiccan"
       ],
-      "paths": [],
+      "paths": [
+        "Witch"
+      ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "BODYGUARD",
-      "level": 3,
-      "branch": "Criminal",
+      "name": "WITCH",
+      "level": 2,
+      "branch": "Channeler",
       "stats": {
-        "STR": "+3",
-        "AGI": "+2",
-        "END": "+3",
         "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+1",
+        "EDU": "+1",
         "WIL": "+2",
-        "ESS": "+1"
-      },
-      "skills": {
-        "Admin": 2,
-        "First-Aid": 2,
-        "Pistols": 3,
-        "Rifles": 2,
-        "Melee": 3,
-        "Perception": 3,
-        "Tactics": 2,
-        "Interrogate": 2,
-        "Frame": 2,
-        "Psychology": 3,
-        "Veteran": 2,
-        "Intimidate": 3
-      },
-      "ranks": [
-        "Cont:Corpo",
-        "Cont:*Crim+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "MOB BOSS",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+3",
-        "INT": "+3",
-        "CHA": "+2",
-        "INIT": "+3",
-        "WIL": "+3",
-        "ESS": "+3"
-      },
-      "skills": {
-        "Admin": 2,
-        "Perception": 2,
-        "Bribe": 3,
-        "Persuade": 3,
-        "Psychology": 3,
-        "Frame": 3,
-        "Gambling": 2,
-        "Intimidate": 3
-      },
-      "ranks": [
-        "Cont:*Crim+3",
-        "Cont:*Legal+1"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "CREW CHIEF",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+1",
-        "END": "+3",
-        "INT": "+3",
-        "CHA": "+2",
-        "INIT": "+2",
-        "WIL": "+1",
-        "ESS": "+1"
-      },
-      "skills": {
-        "Admin": 2,
-        "Pistols": 2,
-        "Rifles": 2,
-        "Melee": 2,
-        "Perception": 3,
-        "Tactics": 3,
-        "Interrogate": 2,
-        "Honour": 2,
-        "Psychology": 3,
-        "Veteran": 2,
-        "Thief": 2,
-        "Streetwise": 2,
-        "ScanLoc": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "FIXER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+1",
-        "END": "+3",
-        "INT": "+3",
-        "CHA": "+1",
-        "INIT": "+3",
-        "WIL": "+1",
-        "ESS": "+1"
-      },
-      "skills": {
-        "Bribe": 3,
-        "Honour": 2,
-        "Perception": 2,
-        "Persuade": 3,
-        "Kn:City": 2,
-        "Streetwise": 3,
-        "Instinct": 2,
-        "Pistols": 2,
-        "Psychology": 3,
-        "Thief": 2,
-        "Frame": 3,
-        "Melee": 2,
-        "Intimidate": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "FORGER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+1",
-        "END": "+1",
-        "INT": "+3",
-        "CHA": "+3",
-        "WIL": "+1"
-      },
-      "skills": {
-        "Admin": 3,
-        "Bureaucracy": 3,
-        "Electrical": 2,
-        "Electronics": 2,
-        "ScanLoc": 3,
-        "Coding": 3,
-        "Streetwise": 2,
-        "Perception": 2,
-        "SysVlns": 2,
-        "Frame": 1,
-        "Pistols": 2
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "GANGLEADER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+2",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+1",
-        "WIL": "+1",
         "ESS": "+2"
       },
       "skills": {
-        "Intimidate": 3,
-        "Melee": 2,
-        "Perception": 2,
-        "Pistols": 2,
-        "Rifles": 2,
-        "Streetwise": 3,
-        "Athletics": 2,
-        "Kn:City": 2,
-        "Psychology": 2
-      },
-      "ranks": [
-        "Cont:*Crim+2",
-        "Veteran"
-        :
-        2,
-        "Honour"
-        :
-        2
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "HITMAN",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+2",
-        "CHA": "+1",
-        "INIT": "+1",
-        "WIL": "+2",
-        "ESS": "+1"
-      },
-      "skills": {
-        "Frame": 3,
-        "Pistols": 3,
-        "Rifles": 3,
-        "Melee": 2,
-        "Disguise": 2,
-        "Streetwise": 2,
-        "Psychology": 2,
-        "Stealth": 3,
+        "Admin": 2,
+        "Focus": 2,
         "Intimidate": 2,
-        "Bypass": 3,
-        "Kn:City": 2,
-        "Thief": 2,
-        "Shadow": 3,
-        "Veteran": 2
+        "Chan:Wiccan": 2,
+        "Perception": 2,
+        "Lore": 2,
+        "Persuade": 2,
+        "Ritual": 2,
+        "Streetwise": 1
       },
       "ranks": [
-        "Cont:*Crim+2"
+        "Lng:+1",
+        "Cont:*Crimin",
+        "Cont:*Legal",
+        "Cont:*Chan",
+        "Cont:Wiccan"
       ],
       "paths": [],
       "lateral": [],
@@ -4339,10 +4426,10 @@
         "AGI": "+3",
         "END": "+3",
         "INT": "+2",
+        "EDU": "+1",
         "CHA": "+1",
-        "INIT": "+1",
-        "WIL": "+2",
-        "ESS": "+2"
+        "INIT": "+2",
+        "WIL": "+2"
       },
       "skills": {
         "Admin": 2,
@@ -4360,98 +4447,6 @@
       },
       "ranks": [
         "Cont:*Crim+2"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "DEKKER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+2",
-        "AGI": "+2",
-        "END": "+1",
-        "INT": "+3",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Admin": 3,
-        "ScanLoc": 3,
-        "Electrical": 2,
-        "Electronics": 2,
-        "Integration": 3,
-        "Coding": 3,
-        "Streetwise": 2,
-        "Perception": 2,
-        "SysVlns": 3,
-        "Frame": 2,
-        "Pistols": 1
-      },
-      "ranks": [],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "RIGGER",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+3",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+3"
-      },
-      "skills": {
-        "ScanLoc": 3,
-        "Electrical": 2,
-        "Mechanical": 2,
-        "Electronics": 2,
-        "Perception": 2,
-        "Coding": 2,
-        "Pistols": 2,
-        "Streetwise": 2,
-        "Integration": 3,
-        "Navigation": 3,
-        "Ordinance": 2
-      },
-      "ranks": [
-        "Kn:City",
-        "Trans:+3"
-      ],
-      "paths": [],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "name": "JOHNSON",
-      "level": 3,
-      "branch": "Criminal",
-      "stats": {
-        "STR": "+1",
-        "AGI": "+3",
-        "END": "+3",
-        "INT": "+3",
-        "CHA": "+1"
-      },
-      "skills": {
-        "Admin": 3,
-        "Perception": 2,
-        "Bureaucracy": 3,
-        "Frame": 2,
-        "Bribe": 3,
-        "Persuade": 3,
-        "Intimidate": 2,
-        "Psychology": 3,
-        "Pistols": 1
-      },
-      "ranks": [
-        "Cont:*Crim+3"
       ],
       "paths": [],
       "lateral": [],
