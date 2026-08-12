@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Threshold Career Path",
-    "version": "2.0",
+    "version": "2.1",
     "source_files": [
       "Thresh2.pdf"
     ],
     "total_careers": 133,
     "export_date": "2026-08-11",
-    "note": "stats/skills/ranks re-read from the PDF by position; lateral moves carried over from v1.1 (not on the sheet), sorted by name for ease of version comparison"
+    "note": "stats/skills/ranks re-read from the PDF by position; lateral moves carried over from v1.1, v2.0: sorted by name for ease of version comparison, v2.1: summary/description fields completed for all careers."
   },
   "branches": {
     "Armsman": [
@@ -57,6 +57,8 @@
       "name": "ADEPT",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Physical Channeler Initiate / Body Discipline Practitioner",
+      "description": "The Adept is an initiate who has learned to channel magical energy through their own body, blending martial prowess with physical channeling arts. Evolving from Novices, they possess balanced physical and spiritual stats, with notable boosts to Strength, Agility, Endurance, and Essence, allowing them to perform supernatural physical feats. Their skillset combines ritual, athletics, melee combat, and channeling physical energy, enabling them to fight with enhanced speed and power while maintaining spiritual discipline. They are also skilled in stealth, survival, and instinct, making them formidable in both combat and wilderness situations. The Adept walks the path between warrior and mystic, preparing for advancement to higher physical or shadow disciplines.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -96,6 +98,8 @@
       "name": "ANALYST",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Information Specialist / Researcher",
+      "description": "The Analyst is a keen-eyed researcher who specializes in gathering, processing, and interpreting information. With modest boosts to Intelligence and Education, they excel at scanning locations, perceiving details others miss, and applying psychological insight to understand motives. Their skillset includes administration, focus, and persuasion, making them effective in both desk-work and field investigations. Their connections to legal and academic contacts, along with historical knowledge and multilingual capabilities, give them an edge in uncovering hidden truths. The Analyst is the first step toward a career in journalism or whistleblowing, laying the groundwork for those who seek to expose secrets.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -125,6 +129,8 @@
       "name": "APPRENTICE",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Hermetic Student / Novice Mage",
+      "description": "The Apprentice is a beginner in the Hermetic magical tradition, learning the foundational principles of ritual magic and occult lore. With minor boosts to Intelligence, Education, Willpower, and Essence, they possess the raw potential to develop into a full-fledged mage. Their skillset centers on Hermetic channeling, focus, ritual, and lore, supplemented by basic administration and language skills including Latin. The Apprentice is in the earliest stage of magical development, preparing to enter the world as either a Street Mage or a Wage Mage depending on their chosen path.",
       "stats": {
         "INT": "+1",
         "EDU": "+1",
@@ -154,6 +160,8 @@
       "name": "ARCHEO",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Field Researcher / Antiquities Student",
+      "description": "The Archeo is a student of ancient civilizations, learning the methods of excavation and historical research. With modest Intelligence and Education boosts, they possess the analytical mindset needed to study the past. Their skillset includes administration, perception, scanning, lore, and basic ritual knowledge, reflecting the blend of academic study and fieldwork that defines archaeology. Their connections to academic institutions and proficiency in Latin and additional languages open doors to ancient texts and scholarly networks. The Archeo is the starting point for those drawn to uncover the secrets of lost ages.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -184,6 +192,8 @@
       "name": "ARCHEOLOGIST",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Field Researcher / Ancient Site Explorer",
+      "description": "The Archeologist is a seasoned explorer of ancient sites, combining scholarly knowledge with practical fieldwork skills. Evolving from Archeo students, they possess enhanced Intelligence and Education, along with a modest Strength boost that aids in physical excavation. Their skillset expands to include bribery, streetwise, and advanced scanning, reflecting the realities of navigating both academic and underground channels to fund and conduct expeditions. Their linguistic proficiencies and academic connections remain strong, while their knowledge of history and ritual deepens. The Archeologist bridges the gap between the classroom and the tomb, ready to pursue the path of the Tomb Raider or the Occultist.",
       "stats": {
         "STR": "+1",
         "INT": "+2",
@@ -312,6 +322,8 @@
       "name": "B&E EXPERT",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Breaking & Entry Specialist / Infiltration Technician",
+      "description": "The B&E Expert is a professional infiltrator who specializes in bypassing physical and electronic security systems to gain unauthorized access to buildings and facilities. Evolving from Home Invaders or Carjackers, they possess high Agility and Intelligence, along with solid Initiative, making them quick-thinking and nimble. Their skillset is a potent mix of stealth, system vulnerability exploitation, bypass techniques, and electronic skills, allowing them to defeat locks, alarms, and security networks with equal proficiency. They are also competent in perception and streetwise, enabling them to scout targets and navigate the criminal underworld. The B&E Expert is the point of entry for any serious heist, the one who opens the door for everyone else.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -346,6 +358,8 @@
       "name": "BANK ROBBER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Heist Specialist / Armed Robbery Professional",
+      "description": "The Bank Robber is a daring criminal who plans and executes armed robberies against high-value financial targets. Evolving from Carjackers or Inmates, they possess a well-rounded stat profile with notable boosts to Agility, Endurance, and Initiative, allowing them to act decisively under pressure. Their skillset combines firearms proficiency in rifles and pistols with intimidation, ordinance knowledge, and interrogation, making them a formidable presence in any heist scenario. They are also skilled in psychology, streetwise, and system vulnerabilities, enabling them to understand security systems and manipulate hostages. The Bank Robber thrives on adrenaline and precision, turning the vault into their personal treasury.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -456,6 +470,8 @@
       "name": "BOMBER",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Explosives Technician / Demolition Specialist",
+      "description": "The Bomber is a specialist in explosives and demolition, capable of creating and deploying destructive devices with precision. Evolving from Rebels or Soldiers, they possess high Intelligence and Willpower, reflecting the technical expertise and mental fortitude required to work with volatile materials. Their skillset focuses on ordinance, electrical and electronics engineering, bypass techniques, and tactics, enabling them to construct sophisticated explosive devices and plan their placement for maximum effect. They are also skilled in stealth, disguise, and perception, allowing them to scout targets and plant devices undetected. The Bomber is a force of destruction, turning infrastructure into kindling.",
       "stats": {
         "INT": "+2",
         "EDU": "+1",
@@ -493,6 +509,8 @@
       "name": "BONDSMAN",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Bounty Enforcement Agent / Fugitive Recovery Officer",
+      "description": "The Bondsman is a licensed agent who tracks and apprehends fugitives who have skipped bail, operating in the gray area between law enforcement and private enterprise. Evolving from Cops or Guards, they possess solid Strength and Endurance, along with Charisma that aids in negotiation and intimidation. Their skillset blends combat skills in pistols and melee with investigative abilities like interrogation, perception, and psychology, enabling them to locate and capture their targets. They are also skilled in bribery, persuasion, and streetwise, allowing them to navigate both the legal system and the criminal underworld. The Bondsman is the pragmatic face of justice, motivated by profit but bound by the law.",
       "stats": {
         "STR": "+2",
         "AGI": "+1",
@@ -533,6 +551,8 @@
       "name": "BORDERGUARD",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Frontier Sentinel / Immigration Enforcement",
+      "description": "The Borderguard is a frontline defender of national boundaries, stationed at crossings and checkpoints to monitor and control the flow of people and goods. Evolving from Guards or Soldiers, they possess high Agility and Initiative, enabling rapid response to smuggling attempts and border incursions. Their skillset includes firearms proficiency, driving, scanning, perception, and survival skills, allowing them to patrol vast and varied terrain effectively. They are also trained in psychology and administration, helping them assess travelers and manage the bureaucratic aspects of border control. The Borderguard stands at the edge of civilization, deciding who enters and who is turned away.",
       "stats": {
         "AGI": "+2",
         "INT": "+1",
@@ -608,6 +628,8 @@
       "name": "BUSINESS",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Business Student / Corporate Aspirant",
+      "description": "The Business career represents the starting point for those pursuing a path in commerce and corporate management. With modest boosts to Intelligence, Education, and Charisma, they possess the foundational traits for understanding markets and dealing with people. Their skillset includes administration, persuasion, psychology, and gambling, reflecting the blend of analytical and interpersonal skills needed in the business world. Their corporate and academic connections provide early networking opportunities. The Business career is the first rung on the ladder toward becoming a Businessman or joining the corporate ranks as a Corpo.",
       "stats": {
         "INT": "+1",
         "EDU": "+1",
@@ -638,6 +660,8 @@
       "name": "BUSINESSMAN",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Entrepreneur / Deal Maker",
+      "description": "The Businessman is a seasoned entrepreneur who has moved beyond the basics of commerce into active deal-making and market manipulation. Evolving from the Business career, they possess enhanced Intelligence, Education, and Charisma, allowing them to negotiate favorable terms and spot profitable opportunities. Their skillset includes administration, perception, bribery, persuasion, and psychology, giving them the tools to navigate both legitimate business and the gray areas of corporate dealings. They are also competent in intimidation and gambling, reflecting the competitive and risk-taking nature of their profession. The Businessman is poised to advance to the executive suite or pivot into the world of fixing as a Fixer.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -670,6 +694,8 @@
       "name": "CARJACKER",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Vehicle Thief / Street Opportunist",
+      "description": "The Carjacker is a street-level criminal who steals vehicles through force or opportunity, often serving as the entry point into more serious criminal enterprises. With modest boosts to Agility and Initiative, they rely on speed and quick reactions rather than brute strength. Their skillset includes intimidation, melee, pistols, streetwise, and bypass, reflecting the hands-on nature of vehicle theft. Their knowledge of the city and connections to breakers (chop shops) provide a ready market for stolen vehicles. The Carjacker is a small-time operator with big ambitions, eyeing the jump to getaway driving, bank robbery, or smuggling.",
       "stats": {
         "AGI": "+1",
         "INIT": "+1"
@@ -701,6 +727,8 @@
       "name": "CITY RONIN",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Urban Warrior / Masterless Fighter",
+      "description": "The City Ronin is a masterless warrior who wanders the urban landscape, offering their combat skills to the highest bidder while adhering to a personal code of honor. Evolving from Razorboys or Street Samurais, they possess well-rounded physical stats with notable boosts to Agility, Initiative, and Essence, making them fast, reactive, and spiritually attuned. Their skillset spans melee, athletics, firearms, stealth, and streetwise, reflecting their versatility in both combat and social situations. They carry a sense of honor that sets them apart from common thugs, and their veteran experience gives them an edge in urban warfare. The City Ronin is a blade without a master, seeking purpose in the chaos of the city.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -740,6 +768,8 @@
       "name": "CO-PILOT",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Flight Trainee / Navigation Apprentice",
+      "description": "The Co-Pilot is a trainee aviator learning the ropes of flight and navigation alongside a more experienced pilot. With modest boosts to Agility, Education, and Initiative, they possess the quick reflexes and analytical mindset needed for aerial operations. Their skillset covers scanning, perception, and navigation, providing the foundational skills for piloting various aircraft. Their connections to pilot circles and knowledge of routes give them a head start in building the network essential for a career in aviation. The Co-Pilot is poised to either pursue legitimate piloting or slip into the lucrative world of smuggling.",
       "stats": {
         "AGI": "+1",
         "EDU": "+1",
@@ -769,6 +799,8 @@
       "name": "COMMANDO",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Elite Infantry / Special Operations Soldier",
+      "description": "The Commando is an elite soldier trained for special operations behind enemy lines, combining combat proficiency with survival and tactical expertise. Evolving from Soldiers or Rebels, they possess strong physical stats across Strength, Agility, and Endurance, along with a boost to Education and Willpower that reflects their specialized training. Their skillset is a comprehensive mix of rifles, pistols, melee, stealth, survival, tactics, and athletics, making them adaptable to any mission profile. They are also trained in first aid and carry a sense of honor, distinguishing them from common mercenaries. The Commando is the tip of the spear, capable of operating independently in hostile territory for extended periods.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -843,6 +875,8 @@
       "name": "COP",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Patrol Officer / Street Law Enforcer",
+      "description": "The Cop is a front-line law enforcement officer, patrolling the streets and maintaining order in the community. With basic boosts to Strength and Endurance, they have the physical foundation for the demands of police work. Their skillset covers the essentials of law enforcement: firearms proficiency, melee combat, interrogation, psychology, perception, and streetwise, giving them the tools to handle a variety of situations from traffic stops to violent confrontations. Their connections to law enforcement and knowledge of the city are foundational, and their veteran skill reflects exposure to real-world policing. The Cop is the first step on the law enforcement ladder, with paths leading to detective work, SWAT, guard captaincy, or bounty enforcement.",
       "stats": {
         "STR": "+1",
         "END": "+1"
@@ -911,6 +945,8 @@
       "name": "CORPO",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Corporate Employee / Middle Management",
+      "description": "The Corpo is a mid-level corporate employee who has climbed the initial ranks of the business world, navigating office politics and corporate machinations. Evolving from Wage Slaves or Business students, they possess enhanced Intelligence, Education, and Charisma, allowing them to read people and situations effectively. Their skillset centers on administration, perception, persuasion, and psychology, enabling them to manage teams, negotiate deals, and climb the corporate ladder. They also have some skill in gambling and intimidation, reflecting the competitive nature of corporate culture. The Corpo is on track for the executive suite or can pivot into fixing or law, having built a versatile foundation of corporate savvy.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -979,6 +1015,8 @@
       "name": "CROOK",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Petty Criminal / Small-Time Hustler",
+      "description": "The Crook is a small-time criminal who engages in a variety of petty crimes, from theft to cons, learning the ropes of the underworld. With modest boosts to Agility and Intelligence, they rely on cunning and quick hands rather than brute force. Their skillset is broad but shallow, covering theft, gambling, intimidation, melee, pistols, streetwise, and bypass, reflecting the jack-of-all-trades nature of street-level crime. Their connections to fences and knowledge of the city give them a foothold in the criminal economy. The Crook is the gateway to more specialized criminal careers, with paths leading to fencing, facing, organized crime, or enforcement.",
       "stats": {
         "AGI": "+1",
         "INT": "+1"
@@ -1015,6 +1053,8 @@
       "name": "CUB",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Shamanic Initiate / Tribal Apprentice",
+      "description": "The Cub is a young initiate in the shamanic tradition, beginning their journey into the world of spirits and tribal magic. With modest boosts to Education, Charisma, Willpower, and Essence, they possess the spiritual potential and social aptitude needed to serve as a bridge between their community and the spirit world. Their skillset covers the fundamentals of shamanic practice: channeling, focus, ritual, and lore, along with basic skills in intimidation, honor, and persuasion. Their connections to spiritual and tribal communities ground them in their cultural context. The Cub is the first step on the shamanic path, destined to grow into a full Shaman and eventually a Skinwalker.",
       "stats": {
         "EDU": "+1",
         "CHA": "+1",
@@ -1083,6 +1123,8 @@
       "name": "DABBLER",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Casual Occultist / Part-Time Mage",
+      "description": "The Dabbler is someone with a passing interest in the occult and Hermetic magic, exploring magical practices without committing fully to the path. With modest boosts to Intelligence and Education, they possess enough mental acuity to grasp basic magical concepts. Their skillset introduces Hermetic channeling, focus, ritual, and lore, supplemented by persuasion, psychology, and veteran experience, suggesting they came to magic later in life. Their diverse contacts, including academic, criminal, and Latin-speaking circles, hint at a varied background. The Dabbler is a latecomer to magic, ready to commit to the path of the Street Mage or Wage Mage.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -1184,6 +1226,8 @@
       "name": "DETECTIVE",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Investigator / Plainclothes Officer",
+      "description": "The Detective is an experienced investigator who has moved beyond patrol duties into the complex world of solving crimes through analysis, intuition, and interrogation. Evolving from Cops, they possess enhanced Intelligence and Education, along with Charisma that aids in extracting information from witnesses and suspects. Their skillset is built around investigation: instinct, interrogation, scanning, perception, psychology, and streetwise, complemented by combat proficiency in pistols and veteran experience. They are also skilled in bribery and frame-building, reflecting the sometimes morally gray nature of detective work. The Detective is the thinking person's law enforcement officer, with paths leading to federal agencies, conspiracy investigation, or bounty hunting.",
       "stats": {
         "AGI": "+1",
         "INT": "+2",
@@ -1224,6 +1268,8 @@
       "name": "DIRECTOR",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Creative Visionary / Production Leader",
+      "description": "The Director is a creative professional who oversees artistic productions, guiding the vision and execution of media projects. With enhanced Intelligence, Charisma, and Willpower, they possess the mental clarity and persuasive power needed to lead creative teams. Their skillset centers on focus, perception, persuasion, and psychology, enabling them to manage personalities, read rooms, and maintain artistic coherence throughout a production. They are also skilled in intimidation, reflecting the authoritative nature of directing. Their connections in writing and directing circles anchor them in the creative industry. The Director is a behind-the-scenes power, shaping stories that influence millions.",
       "stats": {
         "INT": "+2",
         "EDU": "+1",
@@ -1250,6 +1296,8 @@
       "name": "DOCTOR",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Medical Professional / General Practitioner",
+      "description": "The Doctor is a licensed medical professional with comprehensive training in diagnosis, treatment, and surgery. Evolving from Medical students or Guides, they possess enhanced Intelligence, Education, and Charisma, allowing them to communicate with patients and collaborate with colleagues effectively. Their skillset is broad and medically focused: first aid, treatment, surgery, pathology, psychiatry, and hypnosis, giving them the tools to address both physical and mental ailments. They are also skilled in administration, scanning, and psychology, enabling them to manage clinical settings and understand patient behavior. The Doctor stands at a crossroads, able to specialize as a Surgeon or Coroner, or pivot into ripperdoc work, corporate medicine, law, or scientific research.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -1287,6 +1335,8 @@
       "name": "DRIFTER",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Wandering Traveler / Jack of All Trades",
+      "description": "The Drifter is a restless wanderer who moves from place to place, picking up odd jobs and accumulating stories along the way. With modest boosts to Agility, Intelligence, and Charisma, they are adaptable and socially capable, able to fit into a variety of situations. Their skillset reflects a nomadic lifestyle: melee, luck, gambling, survival, psychology, persuasion, and perception, showing someone who survives by their wits and charm. Their knowledge of multiple languages and cities speaks to a life of constant movement. The Drifter is a free spirit, with potential paths leading into smuggling, reporting, or whistleblowing.",
       "stats": {
         "AGI": "+1",
         "INT": "+1",
@@ -1320,6 +1370,8 @@
       "name": "DRONEOP",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Drone Operator / Remote Systems Technician",
+      "description": "The DroneOp is a technical specialist who operates unmanned vehicles and drones for surveillance, combat, or logistical purposes. Evolving from Engineers, Mechanics, or Techys, they possess enhanced Agility, Intelligence, Education, and Initiative, allowing them to process complex spatial data and react quickly to changing conditions. Their skillset spans coding, electrical engineering, electronics, integration, navigation, and ordinance, enabling them to build, maintain, and deploy drone fleets effectively. They are also skilled in perception and scanning, essential for remote reconnaissance operations. The DroneOp is a modern operator, bridging the gap between technician and warrior, with paths leading to rigging or cybernetics.",
       "stats": {
         "AGI": "+2",
         "INT": "+2",
@@ -1359,6 +1411,8 @@
       "name": "ENFORCER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Muscle for Hire / Intimidation Specialist",
+      "description": "The Enforcer is the physical arm of criminal organizations, using muscle and menace to ensure compliance and settle disputes. Evolving from Gangers, Thugs, or Crooks, they possess strong physical stats in Strength and Endurance, along with an Initiative boost that makes them quick to act when violence erupts. Their skillset blends combat proficiency in melee and pistols with intimidation, interrogation, and shadowing, enabling them to track down and pressure those who cross the organization. They are also skilled in psychology and framing, allowing them to manipulate situations and plant evidence. The Enforcer is the fist of the underworld, delivering consequences with brutal efficiency.",
       "stats": {
         "STR": "+2",
         "AGI": "+1",
@@ -1392,6 +1446,8 @@
       "name": "ENGINEER",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Technical Specialist / Systems Designer",
+      "description": "The Engineer is a versatile technical professional who designs, builds, and maintains complex mechanical and electronic systems. Evolving from Engineering students or Techys, they possess enhanced Intelligence and Education, giving them the analytical tools to tackle complex technical challenges. Their skillset is a comprehensive blend of administration, scanning, electrical, electronics, mechanical, coding, and cybernetics, making them the go-to specialist for everything from infrastructure to hardware modification. They are also skilled in perception, allowing them to diagnose issues and identify vulnerabilities. The Engineer is the backbone of any technical operation, capable of advancing into drone operations or scientific research.",
       "stats": {
         "INT": "+2",
         "EDU": "+2"
@@ -1419,6 +1475,8 @@
       "name": "ENGINEERING",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Engineering Student / Technical Foundations",
+      "description": "The Engineering career represents the starting point for those pursuing technical education and hands-on problem-solving. With modest boosts to Intelligence and Education, they possess the analytical foundation needed to understand complex systems. Their skillset introduces scanning, electrical, electronics, mechanical, and coding, providing the core competencies of an engineer, supplemented by basic administration and bypass skills. Their connections to academic institutions and familiarity with VTOL technology hint at specialized training. The Engineering student is the first step toward becoming a full Engineer, with a path focused on technical mastery.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -1448,6 +1506,8 @@
       "name": "ENTERTAINER",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Performer / Stage Personality",
+      "description": "The Entertainer is a charismatic performer who captivates audiences through music, comedy, or other stage talents. With modest boosts to Charisma and Willpower, they possess the magnetic personality and mental resilience needed to perform under pressure. Their skillset includes focus, streetwise, persuasion, and psychology, reflecting the social intelligence required to read crowds and navigate the entertainment industry. Their artistic connections and knowledge of the city give them a local following, while their language skills broaden their appeal. The Entertainer is the starting point for those dreaming of becoming a National Hit or leveraging their visibility into a career as a Reporter.",
       "stats": {
         "CHA": "+1",
         "WIL": "+1"
@@ -1511,6 +1571,8 @@
       "name": "FACE",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Con Artist / Social Manipulator",
+      "description": "The Face is a master of social engineering, using charm, deception, and psychological manipulation to gain trust and access where force cannot. Evolving from Crooks, Grifters, or Sex Workers, they possess a well-rounded stat profile highlighted by Charisma and Initiative, allowing them to think on their feet in high-stakes social encounters. Their skillset revolves around bribery, perception, persuasion, psychology, streetwise, and instinct, making them the ideal front-person for any operation requiring social finesse. They are also competent with pistols and melee, able to defend themselves if a con goes sideways. The Face is the voice of the crew, opening doors that no lockpick can touch.",
       "stats": {
         "AGI": "+1",
         "INT": "+1",
@@ -1541,6 +1603,8 @@
       "name": "FENCE",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Black Market Dealer / Goods Launderer",
+      "description": "The Fence is a dealer in stolen goods, serving as the critical link between thieves and buyers by assessing value, moving merchandise, and laundering the proceeds. Evolving from Crooks or Grifters, they possess enhanced Intelligence, Education, and Charisma, enabling them to appraise items, negotiate prices, and maintain a network of buyers. Their skillset includes bribery, scanning, administration, streetwise, instinct, and psychology, giving them the tools to evaluate goods, detect undercover agents, and manage a complex web of transactions. They are also competent with pistols, providing a measure of self-defense in a dangerous trade. The Fence is the economy of the underworld, turning stolen goods into clean money.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -1678,6 +1742,8 @@
       "name": "GANGER",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Street Gang Member / Turf Defender",
+      "description": "The Ganger is a member of a street gang, bound by loyalty to their crew and engaged in territorial disputes and petty crime. With modest boosts to Strength, Endurance, and Willpower, they have the physical toughness and stubborn determination needed for gang life. Their skillset covers the essentials of street-level combat and survival: melee, intimidation, pistols, veteran experience, streetwise, and honor, reflecting the code of the streets. Their connections to their gang and knowledge of the city form the foundation of their social network. The Ganger is the bottom rung of organized crime, with paths leading to enforcement, sergeant-at-arms, made man, or shot caller.",
       "stats": {
         "STR": "+1",
         "END": "+1",
@@ -1739,7 +1805,7 @@
         "Psychology": 2
       },
       "ranks": [
-        "Cont:*Crim+2",
+        "Cont:Crim+2",
         "Veteran2",
         "Honour2"
       ],
@@ -1752,6 +1818,8 @@
       "name": "GETAWAY DRIVER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Escape Specialist / Wheelman",
+      "description": "The Getaway Driver is the person who ensures that the crew gets out alive, specializing in high-speed escapes and evasive driving. Evolving from Carjackers, they possess strong Agility and Initiative, along with enough Willpower to stay calm under fire. Their skillset blends navigation, perception, streetwise, and tactics with basic combat skills, enabling them to plan escape routes, read traffic, and improvise when plans go wrong. They are also skilled in scanning and intimidation, allowing them to spot roadblocks and clear paths when necessary. The Getaway Driver is the pulse of any heist, turning chaos into motion at the critical moment.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -1775,7 +1843,7 @@
       },
       "ranks": [
         "Lang+1",
-        "Cont*Crimin+2",
+        "ContCrimin+2",
         "Drive"
       ],
       "paths": [],
@@ -1787,6 +1855,8 @@
       "name": "GHOST",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Spirit-Touched Initiate / Astral Beginner",
+      "description": "The Ghost is a beginner in the tradition of spirit channeling, possessing a natural affinity for the astral plane and the entities that dwell there. With boosts focused entirely on Initiative, Willpower, and Essence, they have the spiritual sensitivity to perceive and interact with spirits, though their physical and mental faculties remain undeveloped. Their skillset introduces spirit channeling, focus, ritual, and lore, providing the foundational practices for working with the unseen. The Ghost is a raw talent on the spirit channeling path, still learning to control their gifts and navigate the boundary between the material and ethereal.",
       "stats": {
         "INIT": "+2",
         "WIL": "+2",
@@ -1812,6 +1882,8 @@
       "name": "GIFTED",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Psionic Awakening / Mental Talent",
+      "description": "The Gifted is someone who has recently discovered their latent psychic abilities, experiencing the first stirrings of mental powers they do not yet fully understand. With modest boosts to Education, Willpower, and Essence, they possess the spiritual and mental foundation for developing telepathic and extrasensory capabilities. Their skillset introduces mental channeling, instinct, focus, and lore, along with veteran experience suggesting their abilities may have surfaced through trauma or intense life events. Their connection to mental communities hints at finding others like themselves. The Gifted is the starting point for the psychic path, with potential to develop into a Medium.",
       "stats": {
         "EDU": "+1",
         "WIL": "+1",
@@ -1842,6 +1914,8 @@
       "name": "GRIFTER",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Con Artist / Confidence Trickster",
+      "description": "The Grifter is a confidence trickster who lives by their wits, using charm and deception to separate marks from their money. With modest boosts to Agility, Intelligence, and Charisma, they possess the quick thinking, physical grace, and social magnetism essential for running cons. Their skillset spans bribery, gambling, perception, persuasion, psychology, streetwise, theft, and athletics, reflecting the versatile skill set needed to adopt personas, read victims, and slip away when the con is complete. Their knowledge of the city and multiple languages allows them to target a wide range of victims. The Grifter is the starting point for specialized criminal social roles, with paths to becoming a Face, Fence, Smuggler, or Made Man.",
       "stats": {
         "AGI": "+1",
         "INT": "+1",
@@ -1876,6 +1950,8 @@
       "name": "GUARD",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Security Guard / Watchman",
+      "description": "The Guard is a basic security professional, stationed to protect property, facilities, or people through vigilance and deterrence. Without notable stat bonuses, they rely on training and routine rather than exceptional physical or mental gifts. Their skillset covers the fundamentals of security work: pistols, rifles, melee, perception, and basic administration, providing the tools to monitor, report, and respond to incidents. Their knowledge of the city and transportation access helps them navigate patrol routes. The Guard is the entry point for the security and law enforcement path, with options to advance to Guard Captain or pivot to Borderguard duty.",
       "stats": {},
       "skills": {
         "Admin": 0,
@@ -1902,6 +1978,8 @@
       "name": "GUARD CAPTAIN",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Security Commander / Facility Defense Leader",
+      "description": "The Guard Captain is a senior security officer who oversees a team of guards and manages the defense of a facility or installation. Evolving from Guards or Cops, they possess solid Strength and Endurance, along with Intelligence and Charisma that aid in managing personnel and liaising with authorities. Their skillset expands beyond basic guard duties to include first aid, tactics, interrogation, frame-building, and psychology, reflecting the increased responsibilities of leadership. They are proficient in pistols and rifles, and their veteran experience lends credibility to their commands. The Guard Captain is a defensive leader, with paths leading to field agency or operator roles.",
       "stats": {
         "STR": "+2",
         "AGI": "+1",
@@ -1940,6 +2018,8 @@
       "name": "GUIDE",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Tour Guide / Wilderness Escort",
+      "description": "The Guide is a knowledgeable escort who leads others through unfamiliar territory, whether city streets or wilderness trails. With modest boosts to Endurance, Intelligence, and Education, they possess the stamina and mental acuity to navigate and inform. Their skillset combines focus, first aid, perception, psychology, streetwise, and instinct, with notably strong treatment skills, making them surprisingly capable in emergency medical situations. Their connections to legal circles and knowledge of the city make them valuable in urban environments. The Guide is a versatile starting point, with paths leading to medical careers as a Doctor or Ripperdoc.",
       "stats": {
         "END": "+1",
         "INT": "+1",
@@ -1961,7 +2041,7 @@
       "ranks": [
         "Kn:City",
         "Lang:+1",
-        "Cont:*Legal"
+        "Cont:Legal"
       ],
       "paths": [
         "Doctor",
@@ -1975,6 +2055,8 @@
       "name": "HACKER",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Systems Intruder / Data Thief",
+      "description": "The Hacker is a skilled intruder who breaches computer systems and networks to steal data, plant malware, or gain unauthorized access. Evolving from Techys or Engineering students, they possess enhanced Intelligence, Education, and Initiative, giving them the processing speed and quick thinking essential for digital infiltration. Their skillset centers on coding, integration, and system vulnerabilities, supplemented by electrical and electronics knowledge for hardware-level exploits. They are also skilled in scanning, administration, streetwise, and framing, enabling them to cover their tracks and monetize their hauls. The Hacker is the digital skeleton key, with connections to the criminal underworld providing clients for their services.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -1994,7 +2076,7 @@
         "Pistols": 1
       },
       "ranks": [
-        "Cont*Crimin+2"
+        "ContCrimin+2"
       ],
       "paths": [],
       "lateral": [],
@@ -2041,6 +2123,8 @@
       "name": "HISTORIAN",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Scholar of the Past / Archival Researcher",
+      "description": "The Historian is a dedicated scholar who studies the past through documents, artifacts, and oral traditions, seeking to understand how history shapes the present. Evolving from History or Archeo students, they possess enhanced Intelligence, Education, and Charisma, allowing them to research effectively and present their findings persuasively. Their skillset centers on administration, perception, ritual, and lore, reflecting the blend of academic methodology and occult curiosity that defines historical research. Their extensive language proficiencies, including Latin, and deep historical knowledge give them access to sources unavailable to most. The Historian stands at a crossroads, able to pursue the adventurous path of the Tomb Raider or the mystical route of the Occultist.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -2055,10 +2139,10 @@
       "ranks": [
         "Lng:+2",
         "Kn:Hist+3",
-        "Cont:*Channel",
+        "Cont:Channel",
         "Lng:Latin",
         "Cont:Academ",
-        "Cont*Legal+2"
+        "ContLegal+2"
       ],
       "paths": [
         "Occultist",
@@ -2075,6 +2159,8 @@
       "name": "HISTORY",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "History Student / Scholarly Initiate",
+      "description": "The History career represents the starting point for those drawn to the study of the past and its relevance to the present. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for historical research. Their skillset introduces administration, perception, lore, and basic ritual, providing the tools for archival research and understanding the connection between history and the occult. Their language proficiencies, including Latin, and extensive historical knowledge give them a head start in academic circles. The History student is poised to become a Historian, with potential to branch into archaeology or business.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -2142,6 +2228,8 @@
       "name": "HOME INVADER",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Residential Burglar / Violent Intruder",
+      "description": "The Home Invader is a criminal who forcibly enters homes to steal valuables, using intimidation and violence to control occupants. With modest boosts to Strength and Endurance, they rely on physical presence and the shock of confrontation. Their skillset covers intimidation, melee, perception, pistols, psychology, stealth, and streetwise, providing the tools to case targets, gain entry, and control situations through fear. Their connections to fences provide a market for stolen goods. The Home Invader is an entry-level violent criminal, with paths leading to specialized B&E work, fencing, or contract killing.",
       "stats": {
         "STR": "+1",
         "END": "+1"
@@ -2210,6 +2298,8 @@
       "name": "HOUNSI",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Vodou Initiate / Temple Servant",
+      "description": "The Hounsi is a novice in the Vodou tradition, serving as a temple servant and beginning the long journey toward spiritual mastery. With modest boosts to Education, Charisma, Willpower, and Essence, they possess the spiritual potential and social warmth needed to serve the community and commune with the loa. Their skillset introduces Vodou channeling, ritual, focus, lore, and persuasion, providing the foundations of the faith. Their connections to the Vodou community and proficiency in related languages ground them in their cultural practice. The Hounsi is the first step on the Vodou path, destined to grow into a Vadouan practitioner.",
       "stats": {
         "EDU": "+1",
         "CHA": "+1",
@@ -2241,6 +2331,8 @@
       "name": "HUNTER",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Big Game Tracker / Bounty Pursuer",
+      "description": "The Hunter is a skilled tracker and outdoorsperson who pursues quarry — animal or human — across varied terrain, using patience, knowledge, and combat proficiency. Evolving from Pups or Survivors, they possess strong physical stats across Strength, Agility, and Endurance, with an Initiative boost that enables quick reactions. Their skillset is remarkably diverse, blending combat skills in pistols, melee, and rifles with tracking abilities like shadowing, stealth, disguise, and perception. They are also trained in administration, veteran experience, ritual, lore, and psychology, making them versatile operatives who understand both prey and people. The Hunter is a predator with a conscience, able to pursue paths as a Warden, Bounty Hunter, or Conspiracist.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -2285,6 +2377,8 @@
       "name": "INMATE",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Convicted Criminal / Prison Survivor",
+      "description": "The Inmate is someone currently serving time in prison, using the experience to build connections, toughen up, and plan their next move upon release. With modest boosts to Strength, Agility, Endurance, and Willpower, they have developed the physical and mental resilience needed to survive incarceration. Their skillset covers melee, intimidation, honor, veteran experience, athletics, gambling, and basic social skills, reflecting the harsh education of prison life. Their connections to prison networks and the broader criminal underworld provide a foundation for post-release criminal careers. The Inmate uses their time inside as a crucible, with paths leading to shot calling, bank robbery, enforcement, or smuggling.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -2342,7 +2436,7 @@
         "Pistols": 1
       },
       "ranks": [
-        "Cont:*Crim+3"
+        "Cont:Crim+3"
       ],
       "paths": [],
       "lateral": [],
@@ -2353,6 +2447,8 @@
       "name": "JOURNALIST",
       "level": 1,
       "branch": "Civilian",
+      "summary": "News Writer / Field Reporter",
+      "description": "The Journalist is a writer and investigator who gathers, verifies, and reports news to the public. With modest boosts to Intelligence, Education, and Charisma, they possess the analytical and social skills needed to chase stories and interview sources. Their skillset includes administration, perception, interrogation, persuasion, and psychology, providing the tools to dig for information and get people to talk. Their artistic writing connections and broad contact network help them publish and distribute their work. The Journalist is the starting point for media careers, with paths leading to investigative reporting or whistleblowing.",
       "stats": {
         "INT": "+1",
         "EDU": "+1",
@@ -2386,6 +2482,8 @@
       "name": "KILLER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Contract Killer / Hired Assassin",
+      "description": "The Killer is a professional murderer who accepts contracts to eliminate targets, operating with a blend of combat skill, stealth, and psychological insight. Evolving from Home Invaders or Thugs, they possess strong, well-rounded physical stats with notable Initiative, enabling swift and decisive action. Their skillset is a dangerous mix of firearms proficiency, disguise, stealth, shadowing, bypass, framing, and psychology, allowing them to stalk targets, gain access, execute the kill, and disappear without a trace. They are also skilled in persuasion and instinct, enabling them to read situations and adapt on the fly. The Killer is the precursor to the Hitman, honing their craft toward cold professionalism.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -2421,6 +2519,8 @@
       "name": "LAW",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Law Student / Legal Foundations",
+      "description": "The Law career represents the starting point for those pursuing legal education and a career in the justice system. With modest boosts to Intelligence and Education, they possess the analytical foundation needed to study statutes, precedents, and legal theory. Their skillset includes administration, persuasion, psychology, and law, reflecting the blend of research and argumentation that defines legal practice. Their connections to government and academic institutions provide internships and networking opportunities. The Law student is the first step toward becoming a Lawyer, with potential to branch into business or corporate paths.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -2450,6 +2550,8 @@
       "name": "LAWYER",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Legal Practitioner / Advocate",
+      "description": "The Lawyer is a licensed legal professional who advises clients, argues cases, and navigates the judicial system. Evolving from Law students, they possess enhanced Intelligence, Education, and Charisma, enabling them to construct arguments and sway judges and juries. Their skillset expands to include administration, perception, bribery, frame-building, persuasion, intimidation, psychology, law, and interrogation, giving them a comprehensive toolkit for both courtroom and behind-the-scenes maneuvering. Their academic and legal connections, along with Latin proficiency, anchor them in the legal establishment. The Lawyer is poised to advance to Attorney, with lateral options in business or corporate paths.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -2469,7 +2571,7 @@
       "ranks": [
         "LngLatin",
         "Cont:Academ",
-        "Cont*Legal+2"
+        "ContLegal+2"
       ],
       "paths": [
         "Attorney"
@@ -2485,6 +2587,8 @@
       "name": "MADE MAN",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Inducted Member / Organized Crime Family",
+      "description": "The Made Man is a formally inducted member of an organized crime family, having earned full membership through loyalty, service, and initiation rites. Evolving from Crooks, Grifters, or Gangers, they possess enhanced Intelligence, Education, Charisma, and Willpower, reflecting the social intelligence and mental resilience needed to thrive in organized crime. Their skillset is a sophisticated blend of intimidation, interrogation, perception, persuasion, psychology, streetwise, gambling, honor, and bribery, making them versatile operatives who can handle diplomacy, enforcement, and financial matters. They are also skilled in framing, enabling them to manipulate situations to their advantage. The Made Man has arrived in the upper echelon of criminal society, with paths to becoming a Mob Boss, Fixer, Crew Chief, or Hitman.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -2591,6 +2695,8 @@
       "name": "MECHANIC",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Repair Technician / Garage Hand",
+      "description": "The Mechanic is a hands-on technician who repairs and maintains vehicles and machinery, working in garages, workshops, or industrial settings. With modest boosts to Strength, Endurance, and Education, they possess the physical capability and technical knowledge needed for the job. Their skillset introduces electrical, mechanical, scanning, bypass, and focus skills, providing the core competencies of a tradesperson. Their connections to breakers (parts dealers) and driving skills round out their practical skill set. The Mechanic is a practical starting point, with paths leading to Engineering or the more specialized world of ripperdoc work.",
       "stats": {
         "STR": "+1",
         "END": "+1",
@@ -2623,6 +2729,8 @@
       "name": "MEDICAL",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Medical Student / Healthcare Trainee",
+      "description": "The Medical career represents the starting point for those pursuing healthcare and medical practice. With modest boosts to Intelligence and Education, they possess the analytical foundation needed to study anatomy, pharmacology, and clinical procedures. Their skillset introduces first aid, treatment, and basic scanning and psychology, providing the core competencies of a medical trainee. Their connections to academic institutions and biological science foundations, along with Latin proficiency, ground them in the medical establishment. The Medical student is the first step toward becoming a Doctor or a Ripperdoc, depending on whether they choose the legitimate or underground path.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -2652,6 +2760,8 @@
       "name": "MEDIUM",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Spirit Communicator / Psychic Sensitive",
+      "description": "The Medium is a practitioner who bridges the gap between the living and the spirit world, using psychic sensitivity to communicate with the dead and perceive hidden truths. Evolving from the Gifted, they possess enhanced Intelligence, Charisma, Willpower, and Essence, reflecting their growth in both mental and spiritual power. Their skillset centers on mental channeling, focus, ritual, scanning, lore, and perception, enabling them to receive visions, interpret spiritual signals, and guide others. They are also skilled in first aid and instinct, providing comfort and practical help to those who seek their services. The Medium is the bridge between worlds, with paths leading to full psychic development or the study of the occult.",
       "stats": {
         "INT": "+2",
         "CHA": "+1",
@@ -2685,6 +2795,8 @@
       "name": "MERCENARY",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Soldier of Fortune / Combat Contractor",
+      "description": "The Mercenary is a professional soldier who sells their combat skills to the highest bidder, operating outside formal military structures. Evolving from Soldiers, Rebels, or Razorboys, they possess strong physical stats in Strength and Endurance, along with an Initiative boost that makes them combat-ready. Their skillset spans melee, first aid, pistols, rifles, ordinance, stealth, survival, tactics, and veteran experience, making them versatile fighters who can handle a wide range of mission profiles. They are also bound by a sense of honor, which distinguishes them from mere thugs. The Mercenary is a gun for hire, with paths leading to elite operator or Blackguard roles.",
       "stats": {
         "STR": "+2",
         "AGI": "+1",
@@ -2793,6 +2905,8 @@
       "name": "NATIONAL HIT",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Celebrity Performer / Media Star",
+      "description": "The National Hit is a celebrity entertainer who has achieved widespread fame, using their platform to influence culture and public opinion. Evolving from Entertainers, they possess enhanced Charisma and Willpower, along with Intelligence that helps them navigate the business of fame. Their skillset focuses on focus, perception, persuasion, psychology, and disguise, enabling them to manage their public persona, read audiences, and reinvent themselves as needed. Their artistic connections in writing and performance provide the creative foundation for their brand. The National Hit is a household name, wielding influence that extends far beyond the stage.",
       "stats": {
         "INT": "+1",
         "CHA": "+2",
@@ -2818,6 +2932,8 @@
       "name": "NETRUNNER",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Network Infiltrator / Digital Operative",
+      "description": "The Netrunner is a skilled digital operative who navigates virtual spaces and network architectures to gather intelligence, breach systems, and manipulate data. With enhanced Intelligence, Education, Initiative, and Willpower, they possess the mental processing power and focus needed for extended operations in cyberspace. Their skillset centers on coding, system vulnerabilities, forgery, electronics, scanning, and focus, enabling them to infiltrate networks, fabricate digital identities, and cover their tracks. They are also skilled in administration, perception, and persuasion, allowing them to operate as part of a team. Their broad connections across corporate, criminal, and any-contact networks make them invaluable assets in the information age.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -2850,6 +2966,8 @@
       "name": "NOVICE",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Physical Channeler Novice / Monastic Aspirant",
+      "description": "The Novice is a beginner in the tradition of physical channeling, learning to harmonize body and spirit through disciplined training and basic ritual practice. With modest but balanced boosts across Strength, Agility, Endurance, Initiative, Willpower, and Essence, they possess the foundational attributes needed for the physically demanding path of the adept. Their skillset introduces physical channeling, athletics, focus, melee, stealth, survival, first aid, instinct, lore, and perception, providing a well-rounded introduction to the monastic combat tradition. Their connections to adept communities anchor them in their practice. The Novice is the starting point for the physical channeling path, destined to grow into an Adept.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -2949,6 +3067,8 @@
       "name": "PARAMEDIC",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Emergency Medical Responder / Field Medic",
+      "description": "The Paramedic is a first responder who provides emergency medical care in the field, stabilizing patients and transporting them to definitive care. With modest boosts to Endurance, Intelligence, and Education, they possess the stamina and medical knowledge needed for high-pressure situations. Their skillset combines focus, first aid, perception, psychology, streetwise, and instinct with notably strong treatment skills, making them effective at diagnosing and managing medical emergencies in chaotic environments. Their knowledge of the city and connections to legal circles help them navigate the emergency response system. The Paramedic is a starting point for medical careers, with paths leading to becoming a Doctor or a Ripperdoc.",
       "stats": {
         "END": "+1",
         "INT": "+1",
@@ -2984,6 +3104,8 @@
       "name": "PILOT",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Aviation Specialist / Aircraft Commander",
+      "description": "The Pilot is a skilled aviator capable of commanding various aircraft, from commercial airliners to military transports. Evolving from Co-Pilots, they possess enhanced Agility, Intelligence, Education, and Initiative, allowing them to process complex flight data and react instantly to aerial hazards. Their skillset spans navigation, scanning, perception, tactics, and integration, enabling them to plan routes, manage systems, and coordinate with ground crews. They are also proficient in electrical, electronics, and mechanical maintenance, ensuring their aircraft remain airworthy. The Pilot is the master of the sky, with connections that open doors to legitimate airlines or the black market.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -3019,6 +3141,8 @@
       "name": "POLTER",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Kinetic Spirit Manifestation / Telekinetic Entity",
+      "description": "The Polter is a spirit-touched individual who manifests kinetic energy through willpower, causing objects to move, break, or levitate without physical contact. Evolving from Ghosts, they possess enhanced Willpower and Essence, reflecting their deep connection to the astral and their ability to impose their will on the material world. Their skillset focuses on spirit channeling, focus, discipline, and ritual, enabling them to control their manifestations and avoid losing themselves to the chaos of uncontrolled power. They are also skilled in lore and intimidation, using their eerie presence to unsettle foes. The Polter is a force of nature, a bridge between the ethereal and the physical.",
       "stats": {
         "WIL": "+2",
         "ESS": "+2"
@@ -3066,6 +3190,8 @@
       "name": "PRIEST",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Religious Cleric / Spiritual Shepherd",
+      "description": "The Priest is an ordained cleric who serves a religious institution, providing spiritual guidance, performing sacraments, and ministering to the faithful. Evolving from Seminarians, they possess enhanced Intelligence, Education, Charisma, Willpower, and Essence, reflecting their deep theological knowledge and spiritual connection. Their skillset centers on Catholic channeling, focus, honor, lore, persuasion, and ritual, enabling them to lead services, offer counsel, and perform miracles. They are also skilled in administration and perception, managing parish affairs and discerning the needs of their flock. Their connections to legal and criminal circles suggest a complex role in society, bridging the sacred and the profane. The Priest is a pillar of the community, with paths leading to higher ecclesiastical office or the specialized role of Exorcist.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -3130,6 +3256,8 @@
       "name": "PUP",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Young Hunter / Apprentice Tracker",
+      "description": "The Pup is a young aspirant learning the ways of the hunt, beginning their journey as a tracker and survivalist. With modest boosts across Strength, Agility, Endurance, Education, and Initiative, they possess the balanced physical and mental foundation needed for outdoor pursuits. Their skillset covers the basics of survival: stealth, pistols, rifles, melee, perception, veteran experience, and lore, providing the tools to track game and navigate the wild. Their connections to hunters and driving skills help them integrate into hunting communities. The Pup is the starting point for the hunter's path, destined to grow into a full Hunter or Tracker.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -3198,6 +3326,8 @@
       "name": "RAZORBOY",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Street Kid / Gang Recruit",
+      "description": "The Razorboy is a street kid growing up in the urban jungle, learning to survive through grit, speed, and a willingness to fight. With modest boosts across Strength, Agility, Endurance, Initiative, and Essence, they possess the raw physical potential and spiritual awareness needed to navigate the dangers of the streets. Their skillset covers athletics, intimidation, pistols, rifles, melee, perception, stealth, and veteran experience, reflecting the harsh education of street life. Their knowledge of the city and riding skills help them move through their turf. The Razorboy is the raw material of the street warrior, with paths leading to Street Samurai, City Ronin, or Mercenary roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -3235,6 +3365,8 @@
       "name": "REBEL",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Insurgent / Freedom Fighter",
+      "description": "The Rebel is a freedom fighter or insurgent, fighting against oppression or tyranny with whatever weapons and tactics are available. With modest boosts to Strength, Endurance, and Willpower, they possess the physical resilience and mental fortitude needed for guerrilla warfare. Their skillset covers rifles, melee, perception, stealth, survival, veteran experience, and basic ordinance, reflecting the improvisational nature of rebel tactics. They are often driven by ideology rather than profit, willing to risk everything for their cause. The Rebel is the spark of revolution, with paths leading to Commando, Bomber, Mercenary, or Survivalist roles.",
       "stats": {
         "STR": "+1",
         "END": "+1",
@@ -3266,6 +3398,8 @@
       "name": "REPAIRTECH",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Field Repair Specialist / Maintenance Technician",
+      "description": "The RepairTech is a versatile technician who maintains and repairs complex machinery, vehicles, and electronic systems in the field. Evolving from Mechanics or Techys, they possess enhanced Intelligence and Education, giving them the analytical skills to diagnose and fix intricate problems. Their skillset spans administration, electrical, electronics, scanning, coding, cybernetics, system vulnerabilities, and mechanics, making them a one-stop shop for technical maintenance. They are also skilled in VTOL and driving, allowing them to reach remote locations. The RepairTech is the backbone of any technical operation, keeping the machines running when everything else fails.",
       "stats": {
         "INT": "+2",
         "EDU": "+2"
@@ -3294,6 +3428,8 @@
       "name": "REPORTER",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Investigative Journalist / Field Correspondent",
+      "description": "The Reporter is an experienced journalist who investigates stories, interviews sources, and reports the news to the public. Evolving from Analysts, Journalists, or Entertainers, they possess enhanced Intelligence, Education, and Charisma, enabling them to dig deep, persuade sources, and present their findings compellingly. Their skillset includes administration, intimidation, scanning, perception, persuasion, psychology, streetwise, bribery, instinct, interrogation, and honor, providing a comprehensive toolkit for investigative work. They are also skilled in bypassing security and bribing officials, reflecting the lengths they go to get the story. The Reporter is the voice of the truth, with broad connections across all sectors of society.",
       "stats": {
         "INT": "+2",
         "EDU": "+1",
@@ -3315,7 +3451,7 @@
       },
       "ranks": [
         "Art:Writ",
-        "Cont:*Any+3"
+        "Cont:Any+3"
       ],
       "paths": [],
       "lateral": [],
@@ -3360,6 +3496,8 @@
       "name": "RIPPERDOC",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Underground Surgeon / Cyber-Implanter",
+      "description": "The Ripperdoc is an underground medical specialist who performs illegal surgeries and installs cybernetic implants, operating outside the bounds of licensed medicine. Evolving from Doctors, Guides, Paramedics, or Mechanics, they possess enhanced Intelligence and Education, along with Agility that aids in delicate surgical procedures. Their skillset blends medical expertise in first aid, surgery, pathology, psychiatry, and cybernetics with streetwise, psychology, and scanning, enabling them to treat patients in clandestine settings. They are also proficient in pistols, providing self-defense in a dangerous trade. Their connections to the criminal underworld and biological science foundations anchor them in the fringe of medicine. The Ripperdoc is the surgeon of the streets, with paths leading to the advanced role of Cyberneticist.",
       "stats": {
         "AGI": "+1",
         "INT": "+2",
@@ -3379,7 +3517,7 @@
         "Psychiatry": 1
       },
       "ranks": [
-        "Cont*Crimin+2",
+        "ContCrimin+2",
         "Sci:Biology"
       ],
       "paths": [
@@ -3397,6 +3535,8 @@
       "name": "S.W.A.T.",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Tactical Police Unit / Special Weapons Team",
+      "description": "The S.W.A.T. officer is a member of a specialized tactical police unit trained for high-risk operations, hostage rescues, and riot control. Evolving from Cops or Guards, they possess enhanced Agility and Initiative, along with solid Strength and Endurance, enabling them to breach buildings and engage in intense firefights. Their skillset is a comprehensive mix of melee, first aid, pistols, rifles, veteran experience, ordinance, perception, tactics, and stealth, making them elite operators within the law enforcement framework. Their connections to law enforcement and transportation networks support their rapid deployment. The S.W.A.T. officer is the tip of the police spear, with paths leading to union agency, Black Guard, or operator roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -3440,6 +3580,8 @@
       "name": "SCIENCE",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Science Student / Research Assistant",
+      "description": "The Science career represents the starting point for those pursuing scientific research and discovery. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for laboratory work and theoretical study. Their skillset introduces administration, scanning, and focus, providing the core competencies of a researcher. Their connections to academic institutions, proficiency in Latin, and artistic writing skills help them publish and communicate their findings. The Science student is the first step toward becoming a Scientist or Engineer, with a path focused on empirical inquiry.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -3467,6 +3609,8 @@
       "name": "SCIENTIST",
       "level": 2,
       "branch": "Intellectual",
+      "summary": "Researcher / Experimental Specialist",
+      "description": "The Scientist is a dedicated researcher who conducts experiments, analyzes data, and develops new theories in their field of specialization. Evolving from Science students or Engineers, they possess enhanced Agility, Intelligence, and Education, enabling them to conduct precise experiments and process complex information. Their skillset centers on administration, scanning, focus, and coding, providing the tools for rigorous scientific inquiry and simulation. Their connections to academic institutions, Latin proficiency, and scientific knowledge anchor them in the research community. The Scientist is the seeker of truth, with paths leading to the theoretical heights of the Theoreticist or lateral moves into engineering.",
       "stats": {
         "AGI": "+1",
         "INT": "+2",
@@ -3530,6 +3674,8 @@
       "name": "SEMINARIAN",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Seminary Student / Future Clergy",
+      "description": "The Seminarian is a student preparing for ordination in the Catholic Church, studying theology, scripture, and pastoral care. With modest boosts to Intelligence, Education, Willpower, and Essence, they possess the intellectual and spiritual foundation needed for the priesthood. Their skillset introduces Catholic channeling, focus, honor, lore, persuasion, and ritual, providing the basics of clerical training. Their connections to the Catholic Church, proficiency in Latin, and historical knowledge of the faith ground them in their vocation. The Seminarian is the first step on the clerical path, destined to grow into a Priest.",
       "stats": {
         "INT": "+1",
         "EDU": "+1",
@@ -3562,6 +3708,8 @@
       "name": "SEX WORKER",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Entertainment Provider / Adult Industry Worker",
+      "description": "The Sex Worker is an adult industry professional who provides companionship and intimacy services, often navigating the gray areas of the law and society. With modest boosts to Agility, Education, and Charisma, they possess the physical appeal, social intelligence, and mental acuity needed for their work. Their skillset includes theft, athletics, first aid, persuasion, pistols, psychology, streetwise, and disguise, reflecting the diverse skills required to survive in a dangerous profession. Their connections to the criminal underworld provide protection and clientele. The Sex Worker is a survivor on the margins, with paths leading to facing, fencing, or organized crime roles.",
       "stats": {
         "AGI": "+1",
         "EDU": "+1",
@@ -3596,6 +3744,8 @@
       "name": "SGT AT ARMS",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Gang Enforcer / Security Chief",
+      "description": "The Sgt-at-Arms is the enforcer and security chief of a criminal organization, responsible for maintaining discipline, protecting leadership, and intimidating rivals. Evolving from Gangers, Inmates, or Thugs, they possess strong physical stats across Strength, Agility, Endurance, and Initiative, along with high Willpower, making them formidable in direct confrontation. Their skillset blends administration, intimidation, interrogation, perception, persuasion, psychology, streetwise, pistols, framing, bribery, honor, and melee, enabling them to manage internal affairs and project power externally. They are the muscle and the brain of enforcement, with paths leading to gang leadership, bodyguard work, hitman roles, or crew chief positions.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -3640,6 +3790,8 @@
       "name": "SHAMAN",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Tribal Healer / Spirit Medium",
+      "description": "The Shaman is a spiritual leader and healer within a tribal community, serving as a bridge between the physical world and the spirit realm. Evolving from Cubs, they possess enhanced Endurance, Education, Charisma, Willpower, and Essence, reflecting their deep connection to their people and the spirits. Their skillset centers on shamanic channeling, focus, intimidation, honor, persuasion, psychology, perception, streetwise, and ritual, enabling them to heal the sick, divine the future, and protect their tribe. Their connections to shamanic, criminal, legal, and channeling communities give them a wide network. The Shaman is the heart of their tribe, with no further paths as they have reached the peak of their tradition.",
       "stats": {
         "END": "+1",
         "EDU": "+2",
@@ -3675,6 +3827,8 @@
       "name": "SHOT CALLER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Gang Lieutenant / Local Boss",
+      "description": "The Shot Caller is a mid-level leader in a criminal organization, responsible for managing operations, settling disputes, and directing lower-level members. Evolving from Gangers or Inmates, they possess strong physical stats across Strength, Agility, Endurance, and Initiative, along with high Willpower, enabling them to lead by example and enforce their authority. Their skillset blends administration, intimidation, interrogation, perception, honor, psychology, gambling, instinct, melee, theft, and bribery, providing the tools to manage a crew and negotiate with rivals. Their connections to the criminal underworld and language skills help them build alliances. The Shot Caller is the rising star of the underworld, with paths leading to Yard Boss or lateral moves into enforcement and killing.",
       "stats": {
         "STR": "+2",
         "AGI": "+2",
@@ -3752,6 +3906,8 @@
       "name": "SMUGGLER",
       "level": 2,
       "branch": "Criminal",
+      "summary": "Contraband Transporter / Border Crosser",
+      "description": "The Smuggler is a specialist in moving illicit goods across borders, avoiding detection by authorities and delivering cargo to its destination. Evolving from Carjackers, Drifters, Grifters, or Inmates, they possess enhanced Agility, Intelligence, Education, and Charisma, enabling them to plan routes, negotiate deals, and talk their way through checkpoints. Their skillset focuses on administration, psychology, streetwise, tactics, bribery, navigation, scanning, perception, and persuasion, providing the tools to outsmart customs and manage logistics. Their connections to the criminal underworld and transportation networks make them invaluable to the black market. The Smuggler is the artery of the underworld, with paths leading to arms dealing, fixing, or job coordination.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -3793,6 +3949,8 @@
       "name": "SOLDIER",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Regular Infantry / Conscript",
+      "description": "The Soldier is a regular infantryman or conscript, serving in a formal military unit and learning the basics of warfare. With modest boosts to Strength, Endurance, and Willpower, they possess the physical and mental resilience needed for military service. Their skillset covers first aid, rifles, perception, survival, tactics, veteran experience, and basic honor, providing the foundation for a career in the armed forces. Their connections to military units anchor them in the chain of command. The Soldier is the basic building block of any army, with paths leading to commando, mercenary, SWAT, or survivalist roles.",
       "stats": {
         "STR": "+1",
         "END": "+1",
@@ -3828,6 +3986,8 @@
       "name": "STREET SAMURAI",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Urban Warrior / Corporate Enforcer",
+      "description": "The Street Samurai is a cyber-enhanced warrior who serves corporations, gangs, or private clients, combining traditional martial arts with modern technology. Evolving from Razorboys, they possess enhanced Agility, Initiative, and Essence, reflecting their cybernetic augmentations and quick reflexes. Their skillset spans frame-building, athletics, intimidation, first aid, stealth, pistols, rifles, melee, perception, honor, and veteran experience, making them versatile combatants in the urban jungle. Their knowledge of the city and corporate connections give them access to high-paying gigs. The Street Samurai is the blade of the corporation, with paths leading to Black Guard, Operator, or Fukusho roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -3871,6 +4031,8 @@
       "name": "STREETMAGE",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Urban Hermetic / Street Sorcerer",
+      "description": "The Street Mage is a Hermetic magician who operates in the urban environment, blending arcane arts with street smarts to cast spells and manipulate reality. Evolving from Apprentices or Dabblers, they possess enhanced Intelligence, Education, Willpower, and Essence, reflecting their deep magical knowledge and spiritual resilience. Their skillset centers on Hermetic channeling, focus, theft, perception, lore, persuasion, ritual, and streetwise, enabling them to perform rituals, acquire components, and navigate the underworld. Their connections to Hermetic, criminal, legal, and channeling communities give them a wide network. The Street Mage is a wizard of the concrete jungle, with paths leading to the Magician or Occultist.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -3939,6 +4101,8 @@
       "name": "SURVIVALIST",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Wilderness Expert / Self-Reliant Scout",
+      "description": "The Survivalist is an expert in surviving in the wild, able to live off the land and endure the harshest conditions. Evolving from Soldiers, Rebels, or Survivors, they possess enhanced Endurance and Education, along with Strength, Agility, and Willpower, reflecting their physical toughness and mental resilience. Their skillset covers first aid, rifles, melee, perception, stealth, survival, mechanics, ordinance, and electrical, enabling them to build shelters, hunt, and defend themselves in remote areas. Their transportation connections help them move through the wilderness. The Survivalist is the ultimate self-reliant individual, with no further paths as they have mastered the art of staying alive.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -3970,6 +4134,8 @@
       "name": "SURVIVOR",
       "level": 1,
       "branch": "Armsman",
+      "summary": "Scrap Heap Fighter / Post-Apocalyptic Wanderer",
+      "description": "The Survivor is a hardened individual who has endured catastrophic events or lived on the fringes of society, relying on grit and luck to stay alive. With modest boosts across Strength, Agility, Endurance, Initiative, and Willpower, they possess the balanced resilience needed to face adversity. Their skillset covers athletics, intimidation, instinct, luck, pistols, rifles, melee, perception, and veteran experience, reflecting the practical skills of a wanderer in a hostile world. The Survivor is the starting point for those who choose to fight for their own survival, with paths leading to Survivalist, Tracker, Hunter, or Mercenary roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -4005,6 +4171,8 @@
       "name": "TECHY",
       "level": 1,
       "branch": "Intellectual",
+      "summary": "Technical Apprentice / Hardware Tinkerer",
+      "description": "The Techy is a hands-on technician who learns the basics of electronics, mechanics, and computing through trial and error. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for technical work. Their skillset introduces scanning, electrical, electronics, coding, cybernetics, mechanics, bypass, and system vulnerabilities, providing the core competencies of a tinkerer. Their connections to academic institutions and VTOL familiarity hint at specialized training. The Techy is the starting point for technical careers, with paths leading to Engineering or specialized roles.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -4100,6 +4268,8 @@
       "name": "THUG",
       "level": 1,
       "branch": "Criminal",
+      "summary": "Street Brawler / Muscle",
+      "description": "The Thug is a street-level enforcer who uses brute force and intimidation to settle disputes and collect debts. With modest boosts to Strength, Endurance, and Initiative, they possess the physical presence and quick reflexes needed for brawling. Their skillset covers first aid, melee, perception, intimidation, streetwise, pistols, and veteran experience, reflecting the simple but effective tactics of street violence. Their knowledge of the city and connections to criminal circles give them a foothold in the underworld. The Thug is the raw muscle of the criminal world, with paths leading to enforcement, sergeant-at-arms, made man, or killer roles.",
       "stats": {
         "STR": "+1",
         "END": "+1",
@@ -4171,6 +4341,8 @@
       "name": "TRACKER",
       "level": 2,
       "branch": "Armsman",
+      "summary": "Trail Finder / Pursuit Specialist",
+      "description": "The Tracker is a skilled pursuer who can follow trails across any terrain, locating targets or game with uncanny accuracy. Evolving from Pups, Survivors, or Hunters, they possess enhanced Endurance and Education, along with Strength, Agility, and Willpower, reflecting their physical stamina and mental focus. Their skillset covers first aid, rifles, melee, perception, stealth, survival, shadowing, disguise, and navigation, enabling them to track, evade, and intercept targets. Their transportation connections and military contacts support their operations. The Tracker is the hound of the underworld, with paths leading to Ranger, Operator, or Blackguard roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -4212,6 +4384,8 @@
       "name": "TRAUMA TECH",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Emergency Medical Technician / Field Trauma Specialist",
+      "description": "The Trauma Tech is a specialized medical responder who provides immediate care in high-stress situations, stabilizing patients before transport. Evolving from Guides, Paramedics, or Mechanics, they possess enhanced Intelligence and Education, enabling them to diagnose and treat complex injuries. Their skillset focuses on administration, focus, first aid, perception, psychology, streetwise, and treatment, providing the tools to manage trauma cases in the field. Their knowledge of the city and language skills help them navigate emergency response systems. The Trauma Tech is the frontline of emergency medicine, with no further paths as they have reached the limit of their specialization.",
       "stats": {
         "INT": "+2",
         "EDU": "+2"
@@ -4274,6 +4448,8 @@
       "name": "VADOUAN",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Vodou Practitioner / Spirit Worker",
+      "description": "The Vadouan is a dedicated practitioner of Vodou, skilled in rituals, spirit communication, and community healing. Evolving from Hounsi, they possess enhanced Intelligence, Charisma, Willpower, and Essence, reflecting their deep spiritual connection and social influence. Their skillset centers on lore, focus, intimidation, Vodou channeling, persuasion, ritual, streetwise, and perception, enabling them to lead ceremonies, guide the community, and navigate the complexities of the spirit world. Their connections to criminal, legal, and channeling communities give them a wide network. The Vadouan is a pillar of the Vodou faith, with no further paths as they have reached the height of their tradition.",
       "stats": {
         "INT": "+2",
         "CHA": "+2",
@@ -4306,6 +4482,8 @@
       "name": "WAGE SLAVE",
       "level": 1,
       "branch": "Civilian",
+      "summary": "Corporate Employee / Entry-Level Worker",
+      "description": "The Wage Slave is an entry-level corporate employee, performing routine tasks and learning the ropes of the business world. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for office work. Their skillset includes administration, focus, persuasion, psychology, and coding, providing the basics of corporate productivity. Their connections to corporate circles give them a foothold in the business world. The Wage Slave is the starting point for corporate careers, with paths leading to Corpo or Businessman roles.",
       "stats": {
         "INT": "+1",
         "EDU": "+1"
@@ -4332,6 +4510,8 @@
       "name": "WAGEMAGE",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Corporate Mage / Paid Spellcaster",
+      "description": "The Wage Mage is a Hermetic magician who works for a corporation or wealthy patron, using their magical skills to solve problems and gain advantages. Evolving from Apprentices or Dabblers, they possess enhanced Intelligence, Education, and Essence, reflecting their magical training and spiritual resilience. Their skillset centers on administration, Hermetic channeling, focus, honor, lore, persuasion, ritual, and perception, enabling them to perform rituals, advise clients, and navigate the corporate world. Their connections to corporate, legal, and channeling communities give them a wide network. The Wage Mage is a mercenary of the arcane, with no further paths as they have reached the limit of their paid practice.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -4403,6 +4583,8 @@
       "name": "WHISTLE BLOWER",
       "level": 2,
       "branch": "Civilian",
+      "summary": "Truth Revealer / Corporate Dissident",
+      "description": "The Whistle Blower is a courageous insider who exposes corruption, fraud, or illegal activities within an organization. Evolving from Analysts, Journalists, or Drifters, they possess enhanced Intelligence, Education, Charisma, and Willpower, enabling them to gather evidence, withstand pressure, and speak truth to power. Their skillset includes administration, perception, psychology, stealth, bribery, coding, lore, shadowing, forgery, and disguise, providing the tools to uncover secrets, protect their identity, and leak information safely. They are the conscience of the corporation, with paths leading to field agency or infiltration roles.",
       "stats": {
         "INT": "+2",
         "EDU": "+2",
@@ -4434,6 +4616,8 @@
       "name": "WICCAN",
       "level": 1,
       "branch": "Channeler",
+      "summary": "Wiccan Initiate / Nature Worshipper",
+      "description": "The Wiccan is a beginner in the Wiccan tradition, learning to connect with nature, the elements, and the divine through ritual and observation. With modest boosts to Intelligence, Education, Willpower, and Essence, they possess the spiritual foundation needed for the path. Their skillset introduces Wiccan channeling, focus, ritual, lore, and persuasion, providing the basics of the craft. Their connections to Wiccan communities, proficiency in Latin, and historical knowledge of the faith ground them in their practice. The Wiccan is the first step on the pagan path, destined to grow into a Witch.",
       "stats": {
         "INT": "+1",
         "EDU": "+1",
@@ -4466,6 +4650,8 @@
       "name": "WITCH",
       "level": 2,
       "branch": "Channeler",
+      "summary": "Practitioner of the Craft / Hedge Wizard",
+      "description": "The Witch is a dedicated practitioner of Wicca, skilled in rituals, spellcasting, and herbalism. Evolving from Wiccans, they possess enhanced Intelligence, Education, Willpower, and Essence, reflecting their deepening magical connection and mental fortitude. Their skillset centers on administration, focus, intimidation, Wiccan channeling, perception, lore, persuasion, ritual, and streetwise, enabling them to perform ceremonies, protect themselves, and navigate both the spiritual and mundane worlds. Their connections to criminal, legal, and channeling communities give them a wide network. The Witch is a guardian of the old ways, with no further paths as they have reached the peak of their tradition.",
       "stats": {
         "INT": "+2",
         "EDU": "+1",
