@@ -4322,6 +4322,49 @@
       "signature": null
     },
     {
+      "id": "STREET_MAGE",
+      "name": "Street Mage",
+      "level": 2,
+      "branch": "Channeler",
+      "summary": "Urban Hermetic / Street Sorcerer",
+      "description": "The Street Mage is a Hermetic magician who operates in the urban environment, blending arcane arts with street smarts to cast spells and manipulate reality. Evolving from Apprentices or Dabblers, they possess enhanced Intelligence, Education, Willpower, and Essence, reflecting their deep magical knowledge and spiritual resilience. Their skillset centers on Hermetic channeling, focus, theft, perception, lore, persuasion, ritual, and streetwise, enabling them to perform rituals, acquire components, and navigate the underworld. Their connections to Hermetic, criminal, legal, and channeling communities give them a wide network. The Street Mage is a wizard of the concrete jungle, with paths leading to the Magician or Occultist.",
+      "equipment": "",
+      "income": "",
+      "stats": {
+        "INT": "+2",
+        "EDU": "+2",
+        "WIL": "+2",
+        "ESS": "+2"
+      },
+      "skills": {
+        "Admin": 2,
+        "Chan:Herm": 2,
+        "Focus": 2,
+        "Thief": 1,
+        "Perception": 1,
+        "Lore": 2,
+        "Persuade": 1,
+        "Ritual": 2,
+        "Streetwise": 2
+      },
+      "ranks": [
+        "Lng:+1",
+        "Cont:Hermetic",
+        "Cont:*Crimin",
+        "Cont:*Legal",
+        "Cont:*Chan"
+      ],
+      "paths": [
+        "Magician",
+        "Occultist"
+      ],
+      "lateral": [
+        "Mercenary"
+      ],
+      "mastery": null,
+      "signature": null
+    },
+    {
       "id": "STREET_SAMURAI",
       "name": "Street Samurai",
       "level": 2,
@@ -4365,49 +4408,6 @@
         "Commando",
         "Hunter",
         "City Ronin"
-      ],
-      "mastery": null,
-      "signature": null
-    },
-    {
-      "id": "STREET_MAGE",
-      "name": "Street Mage",
-      "level": 2,
-      "branch": "Channeler",
-      "summary": "Urban Hermetic / Street Sorcerer",
-      "description": "The Street Mage is a Hermetic magician who operates in the urban environment, blending arcane arts with street smarts to cast spells and manipulate reality. Evolving from Apprentices or Dabblers, they possess enhanced Intelligence, Education, Willpower, and Essence, reflecting their deep magical knowledge and spiritual resilience. Their skillset centers on Hermetic channeling, focus, theft, perception, lore, persuasion, ritual, and streetwise, enabling them to perform rituals, acquire components, and navigate the underworld. Their connections to Hermetic, criminal, legal, and channeling communities give them a wide network. The Street Mage is a wizard of the concrete jungle, with paths leading to the Magician or Occultist.",
-      "equipment": "",
-      "income": "",
-      "stats": {
-        "INT": "+2",
-        "EDU": "+2",
-        "WIL": "+2",
-        "ESS": "+2"
-      },
-      "skills": {
-        "Admin": 2,
-        "Chan:Herm": 2,
-        "Focus": 2,
-        "Thief": 1,
-        "Perception": 1,
-        "Lore": 2,
-        "Persuade": 1,
-        "Ritual": 2,
-        "Streetwise": 2
-      },
-      "ranks": [
-        "Lng:+1",
-        "Cont:Hermetic",
-        "Cont:*Crimin",
-        "Cont:*Legal",
-        "Cont:*Chan"
-      ],
-      "paths": [
-        "Magician",
-        "Occultist"
-      ],
-      "lateral": [
-        "Mercenary"
       ],
       "mastery": null,
       "signature": null
@@ -4860,37 +4860,6 @@
       "signature": null
     },
     {
-      "id": "WAGE_SLAVE",
-      "name": "Wage Slave",
-      "level": 1,
-      "branch": "Civilian",
-      "summary": "Corporate Employee / Entry-Level Worker",
-      "description": "The Wage Slave is an entry-level corporate employee, performing routine tasks and learning the ropes of the business world. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for office work. Their skillset includes administration, focus, persuasion, psychology, and coding, providing the basics of corporate productivity. Their connections to corporate circles give them a foothold in the business world. The Wage Slave is the starting point for corporate careers, with paths leading to Corpo or Businessman roles.",
-      "equipment": "",
-      "income": "",
-      "stats": {
-        "INT": "+1",
-        "EDU": "+1"
-      },
-      "skills": {
-        "Admin": 1,
-        "Focus": 1,
-        "Persuade": 0,
-        "Psychology": 0,
-        "Coding": 1
-      },
-      "ranks": [
-        "Cont:Corpo"
-      ],
-      "paths": [
-        "Corpo",
-        "Businessman"
-      ],
-      "lateral": [],
-      "mastery": null,
-      "signature": null
-    },
-    {
       "id": "WAGE_MAGE",
       "name": "Wage Mage",
       "level": 2,
@@ -4922,6 +4891,37 @@
         "Cont:*Chan"
       ],
       "paths": [],
+      "lateral": [],
+      "mastery": null,
+      "signature": null
+    },
+    {
+      "id": "WAGE_SLAVE",
+      "name": "Wage Slave",
+      "level": 1,
+      "branch": "Civilian",
+      "summary": "Corporate Employee / Entry-Level Worker",
+      "description": "The Wage Slave is an entry-level corporate employee, performing routine tasks and learning the ropes of the business world. With modest boosts to Intelligence and Education, they possess the analytical foundation needed for office work. Their skillset includes administration, focus, persuasion, psychology, and coding, providing the basics of corporate productivity. Their connections to corporate circles give them a foothold in the business world. The Wage Slave is the starting point for corporate careers, with paths leading to Corpo or Businessman roles.",
+      "equipment": "",
+      "income": "",
+      "stats": {
+        "INT": "+1",
+        "EDU": "+1"
+      },
+      "skills": {
+        "Admin": 1,
+        "Focus": 1,
+        "Persuade": 0,
+        "Psychology": 0,
+        "Coding": 1
+      },
+      "ranks": [
+        "Cont:Corpo"
+      ],
+      "paths": [
+        "Corpo",
+        "Businessman"
+      ],
       "lateral": [],
       "mastery": null,
       "signature": null
