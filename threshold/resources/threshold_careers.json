@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Threshold Career Path",
-    "version": "2.1",
+    "version": "2.2",
     "source_files": [
       "Thresh2.pdf"
     ],
     "total_careers": 133,
-    "export_date": "2026-08-11",
-    "note": "stats/skills/ranks re-read from the PDF by position; lateral moves carried over from v1.1, v2.0: sorted by name for ease of version comparison, v2.1: summary/description fields completed for all careers."
+    "export_date": "2026-08-13",
+    "note": "stats/skills/ranks re-read from the PDF by position; lateral moves carried over from v1.1, v2.0: sorted by name for ease of version comparison, v2.1: summary/description fields completed for all careers, v2.2: cleaned up mispellings, added ID field"
   },
   "branches": {
     "Armsman": [
@@ -38,7 +38,8 @@
   },
   "career_structure": {
     "fields": {
-      "name": "Career title",
+      "id": "Unique ID",
+      "name": "Name of career",
       "level": "Career level (1, 2, or 3)",
       "branch": "Career branch category",
       "summary": "One sentence description of career",
@@ -54,7 +55,8 @@
   },
   "careers": [
     {
-      "name": "ADEPT",
+      "id": "ADEPT",
+      "name": "Adept",
       "level": 2,
       "branch": "Channeler",
       "summary": "Physical Channeler Initiate / Body Discipline Practitioner",
@@ -95,7 +97,8 @@
       "signature": null
     },
     {
-      "name": "ANALYST",
+      "id": "ANALYST",
+      "name": "Analyst",
       "level": 1,
       "branch": "Civilian",
       "summary": "Information Specialist / Researcher",
@@ -126,7 +129,8 @@
       "signature": null
     },
     {
-      "name": "APPRENTICE",
+      "id": "APPRENTICE",
+      "name": "Apprentice",
       "level": 1,
       "branch": "Channeler",
       "summary": "Hermetic Student / Novice Mage",
@@ -149,15 +153,16 @@
       },
       "ranks": [],
       "paths": [
-        "StreetMage",
-        "WageMage"
+        "Street Mage",
+        "Wage Mage"
       ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "ARCHEO",
+      "id": "ARCHEO",
+      "name": "Archeo",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Field Researcher / Antiquities Student",
@@ -189,7 +194,8 @@
       "signature": null
     },
     {
-      "name": "ARCHEOLOGIST",
+      "id": "ARCHEOLOGIST",
+      "name": "Archeologist",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Field Researcher / Ancient Site Explorer",
@@ -226,7 +232,8 @@
       "signature": null
     },
     {
-      "name": "ARCHITECT",
+      "id": "ARCHITECT",
+      "name": "Architect",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Master Builder / Urban Planner",
@@ -256,7 +263,8 @@
       "signature": null
     },
     {
-      "name": "ARMS DEALER",
+      "id": "ARMS_DEALER",
+      "name": "Arms Dealer",
       "level": 3,
       "branch": "Criminal",
       "summary": "Weapons Magnate / Global Supplier",
@@ -293,7 +301,8 @@
       "signature": null
     },
     {
-      "name": "ATTORNEY",
+      "id": "ATTORNEY",
+      "name": "Attorney",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Legal Mastermind / Courtroom Champion",
@@ -319,7 +328,8 @@
       "signature": null
     },
     {
-      "name": "B&E EXPERT",
+      "id": "B&E_EXPERT",
+      "name": "B&E Expert",
       "level": 2,
       "branch": "Criminal",
       "summary": "Breaking & Entry Specialist / Infiltration Technician",
@@ -355,7 +365,8 @@
       "signature": null
     },
     {
-      "name": "BANK ROBBER",
+      "id": "BANK_ROBBER",
+      "name": "Bank Robber",
       "level": 2,
       "branch": "Criminal",
       "summary": "Heist Specialist / Armed Robbery Professional",
@@ -394,7 +405,8 @@
       "signature": null
     },
     {
-      "name": "BLACKGUARD",
+      "id": "BLACKGUARD",
+      "name": "Blackguard",
       "level": 3,
       "branch": "Armsman",
       "summary": "Elite Shadow Operative / Corporate Enforcer",
@@ -428,7 +440,8 @@
       "signature": null
     },
     {
-      "name": "BODYGUARD",
+      "id": "BODYGUARD",
+      "name": "Bodyguard",
       "level": 3,
       "branch": "Criminal",
       "summary": "Elite Protector / Personal Shield",
@@ -467,7 +480,8 @@
       "signature": null
     },
     {
-      "name": "BOMBER",
+      "id": "BOMBER",
+      "name": "Bomber",
       "level": 2,
       "branch": "Armsman",
       "summary": "Explosives Technician / Demolition Specialist",
@@ -506,7 +520,8 @@
       "signature": null
     },
     {
-      "name": "BONDSMAN",
+      "id": "BONDSMAN",
+      "name": "Bondsman",
       "level": 2,
       "branch": "Armsman",
       "summary": "Bounty Enforcement Agent / Fugitive Recovery Officer",
@@ -548,11 +563,12 @@
       "signature": null
     },
     {
-      "name": "BORDERGUARD",
+      "id": "BORDER_GUARD",
+      "name": "Border Guard",
       "level": 2,
       "branch": "Armsman",
       "summary": "Frontier Sentinel / Immigration Enforcement",
-      "description": "The Borderguard is a frontline defender of national boundaries, stationed at crossings and checkpoints to monitor and control the flow of people and goods. Evolving from Guards or Soldiers, they possess high Agility and Initiative, enabling rapid response to smuggling attempts and border incursions. Their skillset includes firearms proficiency, driving, scanning, perception, and survival skills, allowing them to patrol vast and varied terrain effectively. They are also trained in psychology and administration, helping them assess travelers and manage the bureaucratic aspects of border control. The Borderguard stands at the edge of civilization, deciding who enters and who is turned away.",
+      "description": "The Border Guard is a frontline defender of national boundaries, stationed at crossings and checkpoints to monitor and control the flow of people and goods. Evolving from Guards or Soldiers, they possess high Agility and Initiative, enabling rapid response to smuggling attempts and border incursions. Their skillset includes firearms proficiency, driving, scanning, perception, and survival skills, allowing them to patrol vast and varied terrain effectively. They are also trained in psychology and administration, helping them assess travelers and manage the bureaucratic aspects of border control. The Border Guard stands at the edge of civilization, deciding who enters and who is turned away.",
       "stats": {
         "AGI": "+2",
         "INT": "+1",
@@ -588,7 +604,8 @@
       "signature": null
     },
     {
-      "name": "BOUNTY HUNTER",
+      "id": "BOUNTY_HUNTER",
+      "name": "Bounty Hunter",
       "level": 3,
       "branch": "Armsman",
       "summary": "Master Tracker / Legal Pursuer",
@@ -625,7 +642,8 @@
       "signature": null
     },
     {
-      "name": "BUSINESS",
+      "id": "BUSINESS",
+      "name": "Business",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Business Student / Corporate Aspirant",
@@ -657,7 +675,8 @@
       "signature": null
     },
     {
-      "name": "BUSINESSMAN",
+      "id": "BUSINESSMAN",
+      "name": "Businessman",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Entrepreneur / Deal Maker",
@@ -691,7 +710,8 @@
       "signature": null
     },
     {
-      "name": "CARJACKER",
+      "id": "CARJACKER",
+      "name": "Carjacker",
       "level": 1,
       "branch": "Criminal",
       "summary": "Vehicle Thief / Street Opportunist",
@@ -724,7 +744,8 @@
       "signature": null
     },
     {
-      "name": "CITY RONIN",
+      "id": "CITY_RONIN",
+      "name": "City Ronin",
       "level": 2,
       "branch": "Armsman",
       "summary": "Urban Warrior / Masterless Fighter",
@@ -765,7 +786,8 @@
       "signature": null
     },
     {
-      "name": "CO-PILOT",
+      "id": "CO-PILOT",
+      "name": "Co-Pilot",
       "level": 1,
       "branch": "Civilian",
       "summary": "Flight Trainee / Navigation Apprentice",
@@ -796,7 +818,8 @@
       "signature": null
     },
     {
-      "name": "COMMANDO",
+      "id": "COMMANDO",
+      "name": "Commando",
       "level": 2,
       "branch": "Armsman",
       "summary": "Elite Infantry / Special Operations Soldier",
@@ -839,7 +862,8 @@
       "signature": null
     },
     {
-      "name": "CONSPIRACIST",
+      "id": "CONSPIRACIST",
+      "name": "Conspiracist",
       "level": 3,
       "branch": "Armsman",
       "summary": "Master of Secrets / Underground Intellect",
@@ -872,7 +896,8 @@
       "signature": null
     },
     {
-      "name": "COP",
+      "id": "COP",
+      "name": "Cop",
       "level": 1,
       "branch": "Armsman",
       "summary": "Patrol Officer / Street Law Enforcer",
@@ -910,7 +935,8 @@
       "signature": null
     },
     {
-      "name": "CORONER",
+      "id": "CORONER",
+      "name": "Coroner",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Forensic Pathologist / Death Investigator",
@@ -942,7 +968,8 @@
       "signature": null
     },
     {
-      "name": "CORPO",
+      "id": "CORPO",
+      "name": "Corpo",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Corporate Employee / Middle Management",
@@ -975,7 +1002,8 @@
       "signature": null
     },
     {
-      "name": "CREW CHIEF",
+      "id": "CREW_CHIEF",
+      "name": "Crew Chief",
       "level": 3,
       "branch": "Criminal",
       "summary": "Heist Mastermind / Team Leader",
@@ -1012,7 +1040,8 @@
       "signature": null
     },
     {
-      "name": "CROOK",
+      "id": "CROOK",
+      "name": "Crook",
       "level": 1,
       "branch": "Criminal",
       "summary": "Petty Criminal / Small-Time Hustler",
@@ -1050,7 +1079,8 @@
       "signature": null
     },
     {
-      "name": "CUB",
+      "id": "CUB",
+      "name": "Cub",
       "level": 1,
       "branch": "Channeler",
       "summary": "Shamanic Initiate / Tribal Apprentice",
@@ -1087,7 +1117,8 @@
       "signature": null
     },
     {
-      "name": "CYBERNETICIST",
+      "id": "CYBERNETICIST",
+      "name": "Cyberneticist",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Master of Flesh and Machine / Bio-Engineer",
@@ -1120,7 +1151,8 @@
       "signature": null
     },
     {
-      "name": "DABBLER",
+      "id": "DABBLER",
+      "name": "Dabbler",
       "level": 1,
       "branch": "Channeler",
       "summary": "Casual Occultist / Part-Time Mage",
@@ -1147,15 +1179,16 @@
         "Cont:*Criminal"
       ],
       "paths": [
-        "StreetMage",
-        "WageMage"
+        "Street Mage",
+        "Wage Mage"
       ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "DEKKER",
+      "id": "DEKKER",
+      "name": "Dekker",
       "level": 3,
       "branch": "Criminal",
       "summary": "Netrunner Master / Cyber-Thief",
@@ -1187,7 +1220,8 @@
       "signature": null
     },
     {
-      "name": "DENSETSUSHI",
+      "id": "DENSETSUSHI",
+      "name": "Densetsushi",
       "level": 3,
       "branch": "Armsman",
       "summary": "Legendary Urban Warrior / Master Duelist",
@@ -1223,7 +1257,8 @@
       "signature": null
     },
     {
-      "name": "DETECTIVE",
+      "id": "DETECTIVE",
+      "name": "Detective",
       "level": 2,
       "branch": "Armsman",
       "summary": "Investigator / Plainclothes Officer",
@@ -1265,7 +1300,8 @@
       "signature": null
     },
     {
-      "name": "DIRECTOR",
+      "id": "DIRECTOR",
+      "name": "Director",
       "level": 2,
       "branch": "Civilian",
       "summary": "Creative Visionary / Production Leader",
@@ -1293,7 +1329,8 @@
       "signature": null
     },
     {
-      "name": "DOCTOR",
+      "id": "DOCTOR",
+      "name": "Doctor",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Medical Professional / General Practitioner",
@@ -1332,7 +1369,8 @@
       "signature": null
     },
     {
-      "name": "DRIFTER",
+      "id": "DRIFTER",
+      "name": "Drifter",
       "level": 1,
       "branch": "Civilian",
       "summary": "Wandering Traveler / Jack of All Trades",
@@ -1367,7 +1405,8 @@
       "signature": null
     },
     {
-      "name": "DRONEOP",
+      "id": "DRONEOP",
+      "name": "Droneop",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Drone Operator / Remote Systems Technician",
@@ -1408,7 +1447,8 @@
       "signature": null
     },
     {
-      "name": "ENFORCER",
+      "id": "ENFORCER",
+      "name": "Enforcer",
       "level": 2,
       "branch": "Criminal",
       "summary": "Muscle for Hire / Intimidation Specialist",
@@ -1443,7 +1483,8 @@
       "signature": null
     },
     {
-      "name": "ENGINEER",
+      "id": "ENGINEER",
+      "name": "Engineer",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Technical Specialist / Systems Designer",
@@ -1472,7 +1513,8 @@
       "signature": null
     },
     {
-      "name": "ENGINEERING",
+      "id": "ENGINEERING",
+      "name": "Engineering",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Engineering Student / Technical Foundations",
@@ -1503,7 +1545,8 @@
       "signature": null
     },
     {
-      "name": "ENTERTAINER",
+      "id": "ENTERTAINER",
+      "name": "Entertainer",
       "level": 1,
       "branch": "Civilian",
       "summary": "Performer / Stage Personality",
@@ -1534,7 +1577,8 @@
       "signature": null
     },
     {
-      "name": "EXORCIST",
+      "id": "EXORCIST",
+      "name": "Exorcist",
       "level": 3,
       "branch": "Channeler",
       "summary": "Divine Purifier / Spirit Banisher",
@@ -1568,7 +1612,8 @@
       "signature": null
     },
     {
-      "name": "FACE",
+      "id": "FACE",
+      "name": "Face",
       "level": 2,
       "branch": "Criminal",
       "summary": "Con Artist / Social Manipulator",
@@ -1600,7 +1645,8 @@
       "signature": null
     },
     {
-      "name": "FENCE",
+      "id": "FENCE",
+      "name": "Fence",
       "level": 2,
       "branch": "Criminal",
       "summary": "Black Market Dealer / Goods Launderer",
@@ -1631,7 +1677,8 @@
       "signature": null
     },
     {
-      "name": "FIXER",
+      "id": "FIXER",
+      "name": "Fixer",
       "level": 3,
       "branch": "Criminal",
       "summary": "Problem Solver / Underground Broker",
@@ -1668,7 +1715,8 @@
       "signature": null
     },
     {
-      "name": "FORGER",
+      "id": "FORGER",
+      "name": "Forger",
       "level": 3,
       "branch": "Criminal",
       "summary": "Master of Deception / Document Artist",
@@ -1701,7 +1749,8 @@
       "signature": null
     },
     {
-      "name": "FUKUSHO",
+      "id": "FUKUSHO",
+      "name": "Fukusho",
       "level": 3,
       "branch": "Armsman",
       "summary": "Second-in-Command / Elite Lieutenant",
@@ -1739,7 +1788,8 @@
       "signature": null
     },
     {
-      "name": "GANGER",
+      "id": "GANGER",
+      "name": "Ganger",
       "level": 1,
       "branch": "Criminal",
       "summary": "Street Gang Member / Turf Defender",
@@ -1778,7 +1828,8 @@
       "signature": null
     },
     {
-      "name": "GANGLEADER",
+      "id": "GANGLEADER",
+      "name": "Gangleader",
       "level": 3,
       "branch": "Criminal",
       "summary": "Gang Boss / Street Warlord",
@@ -1815,7 +1866,8 @@
       "signature": null
     },
     {
-      "name": "GETAWAY DRIVER",
+      "id": "GETAWAY_DRIVER",
+      "name": "Getaway Driver",
       "level": 2,
       "branch": "Criminal",
       "summary": "Escape Specialist / Wheelman",
@@ -1852,7 +1904,8 @@
       "signature": null
     },
     {
-      "name": "GHOST",
+      "id": "GHOST",
+      "name": "Ghost",
       "level": 1,
       "branch": "Channeler",
       "summary": "Spirit-Touched Initiate / Astral Beginner",
@@ -1879,7 +1932,8 @@
       "signature": null
     },
     {
-      "name": "GIFTED",
+      "id": "GIFTED",
+      "name": "Gifted",
       "level": 1,
       "branch": "Channeler",
       "summary": "Psionic Awakening / Mental Talent",
@@ -1911,7 +1965,8 @@
       "signature": null
     },
     {
-      "name": "GRIFTER",
+      "id": "GRIFTER",
+      "name": "Grifter",
       "level": 1,
       "branch": "Criminal",
       "summary": "Con Artist / Confidence Trickster",
@@ -1947,11 +2002,12 @@
       "signature": null
     },
     {
-      "name": "GUARD",
+      "id": "GUARD",
+      "name": "Guard",
       "level": 1,
       "branch": "Armsman",
       "summary": "Security Guard / Watchman",
-      "description": "The Guard is a basic security professional, stationed to protect property, facilities, or people through vigilance and deterrence. Without notable stat bonuses, they rely on training and routine rather than exceptional physical or mental gifts. Their skillset covers the fundamentals of security work: pistols, rifles, melee, perception, and basic administration, providing the tools to monitor, report, and respond to incidents. Their knowledge of the city and transportation access helps them navigate patrol routes. The Guard is the entry point for the security and law enforcement path, with options to advance to Guard Captain or pivot to Borderguard duty.",
+      "description": "The Guard is a basic security professional, stationed to protect property, facilities, or people through vigilance and deterrence. Without notable stat bonuses, they rely on training and routine rather than exceptional physical or mental gifts. Their skillset covers the fundamentals of security work: pistols, rifles, melee, perception, and basic administration, providing the tools to monitor, report, and respond to incidents. Their knowledge of the city and transportation access helps them navigate patrol routes. The Guard is the entry point for the security and law enforcement path, with options to advance to Guard Captain or pivot to Border Guard duty.",
       "stats": {},
       "skills": {
         "Admin": 0,
@@ -1968,18 +2024,19 @@
       ],
       "paths": [
         "Guard Captain",
-        "Borderguard"
+        "Border Guard"
       ],
       "lateral": [],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "GUARD CAPTAIN",
+      "id": "GUARD_CAPTAIN",
+      "name": "Guard Captain",
       "level": 2,
       "branch": "Armsman",
       "summary": "Security Commander / Facility Defense Leader",
-      "description": "The Guard Captain is a senior security officer who oversees a team of guards and manages the defense of a facility or installation. Evolving from Guards or Cops, they possess solid Strength and Endurance, along with Intelligence and Charisma that aid in managing personnel and liaising with authorities. Their skillset expands beyond basic guard duties to include first aid, tactics, interrogation, frame-building, and psychology, reflecting the increased responsibilities of leadership. They are proficient in pistols and rifles, and their veteran experience lends credibility to their commands. The Guard Captain is a defensive leader, with paths leading to field agency or operator roles.",
+      "description": "The Guard Captain is a senior security officer who oversees a team of guards and manages the defense of a facility or installation. Evolving from Guards or Cops, they possess solid Strength and Endurance, along with Intelligence and Charisma that aids in managing personnel and liaising with authorities. Their skillset expands beyond basic guard duties to include first aid, tactics, interrogation, frame-building, and psychology, reflecting the increased responsibilities of leadership. They are proficient in pistols and rifles, and their veteran experience lends credibility to their commands. The Guard Captain is a defensive leader, with paths leading to field agency or operator roles.",
       "stats": {
         "STR": "+2",
         "AGI": "+1",
@@ -2009,13 +2066,14 @@
       ],
       "lateral": [
         "Bondsman",
-        "Borderguard"
+        "Border Guard"
       ],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "GUIDE",
+      "id": "GUIDE",
+      "name": "Guide",
       "level": 1,
       "branch": "Civilian",
       "summary": "Tour Guide / Wilderness Escort",
@@ -2052,7 +2110,8 @@
       "signature": null
     },
     {
-      "name": "HACKER",
+      "id": "HACKER",
+      "name": "Hacker",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Systems Intruder / Data Thief",
@@ -2084,7 +2143,8 @@
       "signature": null
     },
     {
-      "name": "HIGH PRIESTESS",
+      "id": "HIGH_PRIESTESS",
+      "name": "High Priestess",
       "level": 3,
       "branch": "Channeler",
       "summary": "Wiccan Matriarch / Spiritual Leader",
@@ -2120,7 +2180,8 @@
       "signature": null
     },
     {
-      "name": "HISTORIAN",
+      "id": "HISTORIAN",
+      "name": "Historian",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Scholar of the Past / Archival Researcher",
@@ -2156,7 +2217,8 @@
       "signature": null
     },
     {
-      "name": "HISTORY",
+      "id": "HISTORY",
+      "name": "History",
       "level": 1,
       "branch": "Intellectual",
       "summary": "History Student / Scholarly Initiate",
@@ -2185,7 +2247,8 @@
       "signature": null
     },
     {
-      "name": "HITMAN",
+      "id": "HITMAN",
+      "name": "Hitman",
       "level": 3,
       "branch": "Criminal",
       "summary": "Assassin / Professional Killer",
@@ -2225,7 +2288,8 @@
       "signature": null
     },
     {
-      "name": "HOME INVADER",
+      "id": "HOME_INVADER",
+      "name": "Home Invader",
       "level": 1,
       "branch": "Criminal",
       "summary": "Residential Burglar / Violent Intruder",
@@ -2259,11 +2323,12 @@
       "signature": null
     },
     {
-      "name": "HOUNGANS/ MAMBOS",
+      "id": "HOUNGAN/MAMBO",
+      "name": "Houngan/Mambo",
       "level": 3,
       "branch": "Channeler",
       "summary": "Vodou High Priest / Spiritual Healer",
-      "description": "The Houngans or Mambo is a revered leader in the Vodou tradition, a spiritual healer and medium who bridges the gap between the living and the spirits. Evolving from Hounsi, they possess deep knowledge of Vodou rituals and lore, supported by high Charisma and Intelligence. Their skillset is focused on ritual, persuasion, and intimidation, allowing them to command the loa and guide their community. They are also skilled in streetwise and perception, enabling them to navigate the complexities of the human spirit. The Houngans/Mambo is a pillar of their community, offering healing, guidance, and protection from the forces of evil.",
+      "description": "The Houngan or Mambo is a revered leader in the Vodou tradition, a spiritual healer and medium who bridges the gap between the living and the spirits. Evolving from Hounsi, they possess deep knowledge of Vodou rituals and lore, supported by high Charisma and Intelligence. Their skillset is focused on ritual, persuasion, and intimidation, allowing them to command the loa and guide their community. They are also skilled in streetwise and perception, enabling them to navigate the complexities of the human spirit. The Houngans/Mambo is a pillar of their community, offering healing, guidance, and protection from the forces of evil.",
       "stats": {
         "STR": "+1",
         "AGI": "+1",
@@ -2295,7 +2360,8 @@
       "signature": null
     },
     {
-      "name": "HOUNSI",
+      "id": "HOUNSI",
+      "name": "Hounsi",
       "level": 1,
       "branch": "Channeler",
       "summary": "Vodou Initiate / Temple Servant",
@@ -2328,7 +2394,8 @@
       "signature": null
     },
     {
-      "name": "HUNTER",
+      "id": "HUNTER",
+      "name": "Hunter",
       "level": 2,
       "branch": "Armsman",
       "summary": "Big Game Tracker / Bounty Pursuer",
@@ -2374,7 +2441,8 @@
       "signature": null
     },
     {
-      "name": "INMATE",
+      "id": "INMATE",
+      "name": "Inmate",
       "level": 1,
       "branch": "Criminal",
       "summary": "Convicted Criminal / Prison Survivor",
@@ -2412,7 +2480,8 @@
       "signature": null
     },
     {
-      "name": "JOHNSON",
+      "id": "JOHNSON",
+      "name": "Johnson",
       "level": 3,
       "branch": "Criminal",
       "summary": "Mission Coordinator / Job Master",
@@ -2444,7 +2513,8 @@
       "signature": null
     },
     {
-      "name": "JOURNALIST",
+      "id": "JOURNALIST",
+      "name": "Journalist",
       "level": 1,
       "branch": "Civilian",
       "summary": "News Writer / Field Reporter",
@@ -2479,7 +2549,8 @@
       "signature": null
     },
     {
-      "name": "KILLER",
+      "id": "KILLER",
+      "name": "Killer",
       "level": 2,
       "branch": "Criminal",
       "summary": "Contract Killer / Hired Assassin",
@@ -2516,7 +2587,8 @@
       "signature": null
     },
     {
-      "name": "LAW",
+      "id": "LAW",
+      "name": "Law",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Law Student / Legal Foundations",
@@ -2547,7 +2619,8 @@
       "signature": null
     },
     {
-      "name": "LAWYER",
+      "id": "LAWYER",
+      "name": "Lawyer",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Legal Practitioner / Advocate",
@@ -2584,7 +2657,8 @@
       "signature": null
     },
     {
-      "name": "MADE MAN",
+      "id": "MADE_MAN",
+      "name": "Made Man",
       "level": 2,
       "branch": "Criminal",
       "summary": "Inducted Member / Organized Crime Family",
@@ -2627,7 +2701,8 @@
       "signature": null
     },
     {
-      "name": "MAGICIAN",
+      "id": "MAGICIAN",
+      "name": "Magician",
       "level": 3,
       "branch": "Channeler",
       "summary": "Hermetic Archmage / Master of Magic",
@@ -2664,7 +2739,8 @@
       "signature": null
     },
     {
-      "name": "MANAGEMENT",
+      "id": "MANAGEMENT",
+      "name": "Management",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Corporate Executive / Power Broker",
@@ -2692,7 +2768,8 @@
       "signature": null
     },
     {
-      "name": "MECHANIC",
+      "id": "MECHANIC",
+      "name": "Mechanic",
       "level": 1,
       "branch": "Civilian",
       "summary": "Repair Technician / Garage Hand",
@@ -2726,7 +2803,8 @@
       "signature": null
     },
     {
-      "name": "MEDICAL",
+      "id": "MEDICAL",
+      "name": "Medical",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Medical Student / Healthcare Trainee",
@@ -2757,7 +2835,8 @@
       "signature": null
     },
     {
-      "name": "MEDIUM",
+      "id": "MEDIUM",
+      "name": "Medium",
       "level": 2,
       "branch": "Channeler",
       "summary": "Spirit Communicator / Psychic Sensitive",
@@ -2792,7 +2871,8 @@
       "signature": null
     },
     {
-      "name": "MERCENARY",
+      "id": "MERCENARY",
+      "name": "Mercenary",
       "level": 2,
       "branch": "Armsman",
       "summary": "Soldier of Fortune / Combat Contractor",
@@ -2832,7 +2912,8 @@
       "signature": null
     },
     {
-      "name": "MOB BOSS",
+      "id": "MOB_BOSS",
+      "name": "Mob Boss",
       "level": 3,
       "branch": "Criminal",
       "summary": "Crime Lord / Organized Crime Kingpin",
@@ -2866,7 +2947,8 @@
       "signature": null
     },
     {
-      "name": "MONK",
+      "id": "MONK",
+      "name": "Monk",
       "level": 3,
       "branch": "Channeler",
       "summary": "Ascetic Warrior / Physical Perfectionist",
@@ -2902,7 +2984,8 @@
       "signature": null
     },
     {
-      "name": "NATIONAL HIT",
+      "id": "NATIONAL_HIT",
+      "name": "National Hit",
       "level": 2,
       "branch": "Civilian",
       "summary": "Celebrity Performer / Media Star",
@@ -2929,7 +3012,8 @@
       "signature": null
     },
     {
-      "name": "NETRUNNER",
+      "id": "NETRUNNER",
+      "name": "Netrunner",
       "level": 2,
       "branch": "Civilian",
       "summary": "Network Infiltrator / Digital Operative",
@@ -2963,7 +3047,8 @@
       "signature": null
     },
     {
-      "name": "NOVICE",
+      "id": "NOVICE",
+      "name": "Novice",
       "level": 1,
       "branch": "Channeler",
       "summary": "Physical Channeler Novice / Monastic Aspirant",
@@ -3002,7 +3087,8 @@
       "signature": null
     },
     {
-      "name": "OCCULTIST",
+      "id": "OCCULTIST",
+      "name": "Occultist",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Master of Forbidden Lore / Arcane Scholar",
@@ -3029,11 +3115,12 @@
       "signature": null
     },
     {
-      "name": "OPERATOR",
+      "id": "OPERATOR",
+      "name": "Operator",
       "level": 3,
       "branch": "Armsman",
       "summary": "Special Forces Elite / Covert Action Specialist",
-      "description": "The Operator is the pinnacle of special forces training, a highly versatile soldier capable of executing the most dangerous missions with precision and efficiency. Evolving from Commandos, Mercenaries, or Borderguards, they are the go-to asset for governments and corporations needing results without trace. Their physical attributes are maximized for combat, with high Strength, Agility, and Endurance, ensuring they can endure the harshest conditions. Their skillset is a comprehensive mix of firearms mastery, stealth, tactics, and survival, making them adaptable to any scenario. They are the silent professionals who operate in the gray areas of conflict, leaving no evidence behind.",
+      "description": "The Operator is the pinnacle of special forces training, a highly versatile soldier capable of executing the most dangerous missions with precision and efficiency. Evolving from Commandos, Mercenaries, or Border Guards, they are the go-to asset for governments and corporations needing results without trace. Their physical attributes are maximized for combat, with high Strength, Agility, and Endurance, ensuring they can endure the harshest conditions. Their skillset is a comprehensive mix of firearms mastery, stealth, tactics, and survival, making them adaptable to any scenario. They are the silent professionals who operate in the gray areas of conflict, leaving no evidence behind.",
       "stats": {
         "STR": "+3",
         "AGI": "+3",
@@ -3064,7 +3151,8 @@
       "signature": null
     },
     {
-      "name": "PARAMEDIC",
+      "id": "PARAMEDIC",
+      "name": "Paramedic",
       "level": 1,
       "branch": "Civilian",
       "summary": "Emergency Medical Responder / Field Medic",
@@ -3101,7 +3189,8 @@
       "signature": null
     },
     {
-      "name": "PILOT",
+      "id": "PILOT",
+      "name": "Pilot",
       "level": 2,
       "branch": "Civilian",
       "summary": "Aviation Specialist / Aircraft Commander",
@@ -3138,7 +3227,8 @@
       "signature": null
     },
     {
-      "name": "POLTER",
+      "id": "POLTER",
+      "name": "Polter",
       "level": 2,
       "branch": "Channeler",
       "summary": "Kinetic Spirit Manifestation / Telekinetic Entity",
@@ -3164,7 +3254,8 @@
       "signature": null
     },
     {
-      "name": "POSSESSING SPIRIT",
+      "id": "POSSESSING_SPIRIT",
+      "name": "Possessing Spirit",
       "level": 3,
       "branch": "Channeler",
       "summary": "Incarnate Entity / Possession Master",
@@ -3187,7 +3278,8 @@
       "signature": null
     },
     {
-      "name": "PRIEST",
+      "id": "PRIEST",
+      "name": "Priest",
       "level": 2,
       "branch": "Channeler",
       "summary": "Religious Cleric / Spiritual Shepherd",
@@ -3221,7 +3313,8 @@
       "signature": null
     },
     {
-      "name": "PSYCHIC",
+      "id": "PSYCHIC",
+      "name": "Psychic",
       "level": 3,
       "branch": "Channeler",
       "summary": "Master Telepath / Mental Seer",
@@ -3253,7 +3346,8 @@
       "signature": null
     },
     {
-      "name": "PUP",
+      "id": "PUP",
+      "name": "Pup",
       "level": 1,
       "branch": "Armsman",
       "summary": "Young Hunter / Apprentice Tracker",
@@ -3292,7 +3386,8 @@
       "signature": null
     },
     {
-      "name": "RANGER",
+      "id": "RANGER",
+      "name": "Ranger",
       "level": 3,
       "branch": "Armsman",
       "summary": "Wilderness Guardian / Elite Scout",
@@ -3323,7 +3418,8 @@
       "signature": null
     },
     {
-      "name": "RAZORBOY",
+      "id": "RAZORBOY",
+      "name": "Razorboy",
       "level": 1,
       "branch": "Armsman",
       "summary": "Street Kid / Gang Recruit",
@@ -3362,7 +3458,8 @@
       "signature": null
     },
     {
-      "name": "REBEL",
+      "id": "REBEL",
+      "name": "Rebel",
       "level": 1,
       "branch": "Armsman",
       "summary": "Insurgent / Freedom Fighter",
@@ -3395,11 +3492,12 @@
       "signature": null
     },
     {
-      "name": "REPAIRTECH",
+      "id": "REPAIR_TECH",
+      "name": "Repair Tech",
       "level": 2,
       "branch": "Civilian",
       "summary": "Field Repair Specialist / Maintenance Technician",
-      "description": "The RepairTech is a versatile technician who maintains and repairs complex machinery, vehicles, and electronic systems in the field. Evolving from Mechanics or Techys, they possess enhanced Intelligence and Education, giving them the analytical skills to diagnose and fix intricate problems. Their skillset spans administration, electrical, electronics, scanning, coding, cybernetics, system vulnerabilities, and mechanics, making them a one-stop shop for technical maintenance. They are also skilled in VTOL and driving, allowing them to reach remote locations. The RepairTech is the backbone of any technical operation, keeping the machines running when everything else fails.",
+      "description": "The Repair Tech is a versatile technician who maintains and repairs complex machinery, vehicles, and electronic systems in the field. Evolving from Mechanics or Techys, they possess enhanced Intelligence and Education, giving them the analytical skills to diagnose and fix intricate problems. Their skillset spans administration, electrical, electronics, scanning, coding, cybernetics, system vulnerabilities, and mechanics, making them a one-stop shop for technical maintenance. They are also skilled in VTOL and driving, allowing them to reach remote locations. The Repair Tech is the backbone of any technical operation, keeping the machines running when everything else fails.",
       "stats": {
         "INT": "+2",
         "EDU": "+2"
@@ -3425,7 +3523,8 @@
       "signature": null
     },
     {
-      "name": "REPORTER",
+      "id": "REPORTER",
+      "name": "Reporter",
       "level": 2,
       "branch": "Civilian",
       "summary": "Investigative Journalist / Field Correspondent",
@@ -3459,7 +3558,8 @@
       "signature": null
     },
     {
-      "name": "RIGGER",
+      "id": "RIGGER",
+      "name": "Rigger",
       "level": 3,
       "branch": "Criminal",
       "summary": "Drone Commander / Remote Control Expert",
@@ -3493,7 +3593,8 @@
       "signature": null
     },
     {
-      "name": "RIPPERDOC",
+      "id": "RIPPERDOC",
+      "name": "Ripperdoc",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Underground Surgeon / Cyber-Implanter",
@@ -3532,11 +3633,12 @@
       "signature": null
     },
     {
+      "id": "S.W.A.T.",
       "name": "S.W.A.T.",
       "level": 2,
       "branch": "Armsman",
       "summary": "Tactical Police Unit / Special Weapons Team",
-      "description": "The S.W.A.T. officer is a member of a specialized tactical police unit trained for high-risk operations, hostage rescues, and riot control. Evolving from Cops or Guards, they possess enhanced Agility and Initiative, along with solid Strength and Endurance, enabling them to breach buildings and engage in intense firefights. Their skillset is a comprehensive mix of melee, first aid, pistols, rifles, veteran experience, ordinance, perception, tactics, and stealth, making them elite operators within the law enforcement framework. Their connections to law enforcement and transportation networks support their rapid deployment. The S.W.A.T. officer is the tip of the police spear, with paths leading to union agency, Black Guard, or operator roles.",
+      "description": "The S.W.A.T. officer is a member of a specialized tactical police unit trained for high-risk operations, hostage rescues, and riot control. Evolving from Cops or Guards, they possess enhanced Agility and Initiative, along with solid Strength and Endurance, enabling them to breach buildings and engage in intense firefights. Their skillset is a comprehensive mix of melee, first aid, pistols, rifles, veteran experience, ordinance, perception, tactics, and stealth, making them elite operators within the law enforcement framework. Their connections to law enforcement and transportation networks support their rapid deployment. The S.W.A.T. officer is the tip of the police spear, with paths leading to union agency, Blackguard, or Operator roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -3563,13 +3665,13 @@
       ],
       "paths": [
         "Union Agent",
-        "Black Guard",
+        "Blackguard",
         "Operative"
       ],
       "lateral": [
         "Guard Captain",
         "Mercenary",
-        "Borderguard",
+        "Border Guard",
         "Street Samurai",
         "Hunter"
       ],
@@ -3577,7 +3679,8 @@
       "signature": null
     },
     {
-      "name": "SCIENCE",
+      "id": "SCIENCE",
+      "name": "Science",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Science Student / Research Assistant",
@@ -3606,7 +3709,8 @@
       "signature": null
     },
     {
-      "name": "SCIENTIST",
+      "id": "SCIENTIST",
+      "name": "Scientist",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Researcher / Experimental Specialist",
@@ -3637,11 +3741,12 @@
       "signature": null
     },
     {
-      "name": "SEARCH& RESCUE",
+      "id": "SEARCH&RESCUE",
+      "name": "Search & Rescue",
       "level": 3,
       "branch": "Armsman",
       "summary": "Elite Rescue Specialist / Disaster Response Expert",
-      "description": "The Search & Rescue specialist is a hero of the emergency services, trained to locate and extract individuals from the most perilous situations imaginable. Evolving from Borderguards or Trackers, they combine high-level combat skills with advanced medical and rescue techniques. Their stats reflect a need for agility and endurance to navigate disaster zones, while their initiative ensures quick decision-making in life-or-death scenarios. They are proficient in a wide array of skills, including scanning, piloting VTOLs, and first aid, making them indispensable in crisis management. Their dedication to saving lives sets them apart from other combat-focused armsmen, driven by a profound sense of duty.",
+      "description": "The Search & Rescue specialist is a hero of the emergency services, trained to locate and extract individuals from the most perilous situations imaginable. Evolving from Border Guards or Trackers, they combine high-level combat skills with advanced medical and rescue techniques. Their stats reflect a need for agility and endurance to navigate disaster zones, while their initiative ensures quick decision-making in life-or-death scenarios. They are proficient in a wide array of skills, including scanning, piloting VTOLs, and first aid, making them indispensable in crisis management. Their dedication to saving lives sets them apart from other combat-focused armsmen, driven by a profound sense of duty.",
       "stats": {
         "STR": "+1",
         "AGI": "+3",
@@ -3671,7 +3776,8 @@
       "signature": null
     },
     {
-      "name": "SEMINARIAN",
+      "id": "SEMINARIAN",
+      "name": "Seminararian",
       "level": 1,
       "branch": "Channeler",
       "summary": "Seminary Student / Future Clergy",
@@ -3705,7 +3811,8 @@
       "signature": null
     },
     {
-      "name": "SEX WORKER",
+      "id": "SEX_WORKER",
+      "name": "Sex Worker",
       "level": 1,
       "branch": "Criminal",
       "summary": "Entertainment Provider / Adult Industry Worker",
@@ -3741,7 +3848,8 @@
       "signature": null
     },
     {
-      "name": "SGT AT ARMS",
+      "id": "SGT_AT_ARMS",
+      "name": "Sgt at Arms",
       "level": 2,
       "branch": "Criminal",
       "summary": "Gang Enforcer / Security Chief",
@@ -3787,7 +3895,8 @@
       "signature": null
     },
     {
-      "name": "SHAMAN",
+      "id": "SHAMAN",
+      "name": "Shaman",
       "level": 2,
       "branch": "Channeler",
       "summary": "Tribal Healer / Spirit Medium",
@@ -3824,7 +3933,8 @@
       "signature": null
     },
     {
-      "name": "SHOT CALLER",
+      "id": "SHOT_CALLER",
+      "name": "Shot Caller",
       "level": 2,
       "branch": "Criminal",
       "summary": "Gang Lieutenant / Local Boss",
@@ -3865,7 +3975,8 @@
       "signature": null
     },
     {
-      "name": "SKINWALKER",
+      "id": "SKINWALKER",
+      "name": "Skinwalker",
       "level": 3,
       "branch": "Channeler",
       "summary": "Shape-Shifter / Tribal Shaman",
@@ -3903,7 +4014,8 @@
       "signature": null
     },
     {
-      "name": "SMUGGLER",
+      "id": "SMUGGLER",
+      "name": "Smuggler",
       "level": 2,
       "branch": "Criminal",
       "summary": "Contraband Transporter / Border Crosser",
@@ -3946,7 +4058,8 @@
       "signature": null
     },
     {
-      "name": "SOLDIER",
+      "id": "SOLDIER",
+      "name": "Soldier",
       "level": 1,
       "branch": "Armsman",
       "summary": "Regular Infantry / Conscript",
@@ -3983,11 +4096,12 @@
       "signature": null
     },
     {
-      "name": "STREET SAMURAI",
+      "id": "STREET_SAMURAI",
+      "name": "Street Samurai",
       "level": 2,
       "branch": "Armsman",
       "summary": "Urban Warrior / Corporate Enforcer",
-      "description": "The Street Samurai is a cyber-enhanced warrior who serves corporations, gangs, or private clients, combining traditional martial arts with modern technology. Evolving from Razorboys, they possess enhanced Agility, Initiative, and Essence, reflecting their cybernetic augmentations and quick reflexes. Their skillset spans frame-building, athletics, intimidation, first aid, stealth, pistols, rifles, melee, perception, honor, and veteran experience, making them versatile combatants in the urban jungle. Their knowledge of the city and corporate connections give them access to high-paying gigs. The Street Samurai is the blade of the corporation, with paths leading to Black Guard, Operator, or Fukusho roles.",
+      "description": "The Street Samurai is a cyber-enhanced warrior who serves corporations, gangs, or private clients, combining traditional martial arts with modern technology. Evolving from Razorboys, they possess enhanced Agility, Initiative, and Essence, reflecting their cybernetic augmentations and quick reflexes. Their skillset spans frame-building, athletics, intimidation, first aid, stealth, pistols, rifles, melee, perception, honor, and veteran experience, making them versatile combatants in the urban jungle. Their knowledge of the city and corporate connections give them access to high-paying gigs. The Street Samurai is the blade of the corporation, with paths leading to Blackguard, Operator, or Fukusho roles.",
       "stats": {
         "STR": "+1",
         "AGI": "+2",
@@ -4014,7 +4128,7 @@
         "Cont:Corpo"
       ],
       "paths": [
-        "Black Guard",
+        "Blackguard",
         "Operator",
         "Fukusho"
       ],
@@ -4028,7 +4142,8 @@
       "signature": null
     },
     {
-      "name": "STREETMAGE",
+      "id": "STREET_MAGE",
+      "name": "Street Mage",
       "level": 2,
       "branch": "Channeler",
       "summary": "Urban Hermetic / Street Sorcerer",
@@ -4068,7 +4183,8 @@
       "signature": null
     },
     {
-      "name": "SURGEON",
+      "id": "SURGEON",
+      "name": "Surgeon",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Master of the Scalpel / Life-Saver",
@@ -4098,7 +4214,8 @@
       "signature": null
     },
     {
-      "name": "SURVIVALIST",
+      "id": "SURVIVALIST",
+      "name": "Survivalist",
       "level": 2,
       "branch": "Armsman",
       "summary": "Wilderness Expert / Self-Reliant Scout",
@@ -4131,7 +4248,8 @@
       "signature": null
     },
     {
-      "name": "SURVIVOR",
+      "id": "SURVIVOR",
+      "name": "Survivor",
       "level": 1,
       "branch": "Armsman",
       "summary": "Scrap Heap Fighter / Post-Apocalyptic Wanderer",
@@ -4168,7 +4286,8 @@
       "signature": null
     },
     {
-      "name": "TECHY",
+      "id": "TECHY",
+      "name": "Techy",
       "level": 1,
       "branch": "Intellectual",
       "summary": "Technical Apprentice / Hardware Tinkerer",
@@ -4200,7 +4319,8 @@
       "signature": null
     },
     {
-      "name": "TERRORIST",
+      "id": "TERRORIST",
+      "name": "Terrorist",
       "level": 3,
       "branch": "Armsman",
       "summary": "Ideological Extremist / Asymmetric Warfare Expert",
@@ -4236,7 +4356,8 @@
       "signature": null
     },
     {
-      "name": "THEORETICIST",
+      "id": "THEORETICIST",
+      "name": "Theoreticist",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Grand Theorist / Scientific Visionary",
@@ -4265,7 +4386,8 @@
       "signature": null
     },
     {
-      "name": "THUG",
+      "id": "THUG",
+      "name": "Thug",
       "level": 1,
       "branch": "Criminal",
       "summary": "Street Brawler / Muscle",
@@ -4302,7 +4424,8 @@
       "signature": null
     },
     {
-      "name": "TOMB RAIDER",
+      "id": "TOMB_RAIDER",
+      "name": "Tomb Raider",
       "level": 3,
       "branch": "Intellectual",
       "summary": "Adventure Archaeologist / Relic Hunter",
@@ -4338,7 +4461,8 @@
       "signature": null
     },
     {
-      "name": "TRACKER",
+      "id": "TRACKER",
+      "name": "Tracker",
       "level": 2,
       "branch": "Armsman",
       "summary": "Trail Finder / Pursuit Specialist",
@@ -4375,13 +4499,14 @@
       "lateral": [
         "Survivalist",
         "Mercenary",
-        "Borderguard"
+        "Border Guard"
       ],
       "mastery": null,
       "signature": null
     },
     {
-      "name": "TRAUMA TECH",
+      "id": "TRAUMA_TECH",
+      "name": "Trauma Tech",
       "level": 2,
       "branch": "Civilian",
       "summary": "Emergency Medical Technician / Field Trauma Specialist",
@@ -4410,7 +4535,8 @@
       "signature": null
     },
     {
-      "name": "UNION AGENT",
+      "id": "UNION_AGENT",
+      "name": "Union Agent",
       "level": 3,
       "branch": "Armsman",
       "summary": "Labor Organizer / Industrial Defender",
@@ -4445,7 +4571,8 @@
       "signature": null
     },
     {
-      "name": "VADOUAN",
+      "id": "VADOUAN",
+      "name": "Vadouan",
       "level": 2,
       "branch": "Channeler",
       "summary": "Vodou Practitioner / Spirit Worker",
@@ -4479,7 +4606,8 @@
       "signature": null
     },
     {
-      "name": "WAGE SLAVE",
+      "id": "WAGE_SLAVE",
+      "name": "Wage Slave",
       "level": 1,
       "branch": "Civilian",
       "summary": "Corporate Employee / Entry-Level Worker",
@@ -4507,7 +4635,8 @@
       "signature": null
     },
     {
-      "name": "WAGEMAGE",
+      "id": "WAGE_MAGE",
+      "name": "Wage Mage",
       "level": 2,
       "branch": "Channeler",
       "summary": "Corporate Mage / Paid Spellcaster",
@@ -4540,7 +4669,8 @@
       "signature": null
     },
     {
-      "name": "WARDEN",
+      "id": "WARDEN",
+      "name": "Warden",
       "level": 3,
       "branch": "Armsman",
       "summary": "Prison Overseer / Supernatural Custodian",
@@ -4580,7 +4710,8 @@
       "signature": null
     },
     {
-      "name": "WHISTLE BLOWER",
+      "id": "WHISTLE_BLOWER",
+      "name": "Whistle Blower",
       "level": 2,
       "branch": "Civilian",
       "summary": "Truth Revealer / Corporate Dissident",
@@ -4613,7 +4744,8 @@
       "signature": null
     },
     {
-      "name": "WICCAN",
+      "id": "WICCAN",
+      "name": "Wiccan",
       "level": 1,
       "branch": "Channeler",
       "summary": "Wiccan Initiate / Nature Worshipper",
@@ -4647,7 +4779,8 @@
       "signature": null
     },
     {
-      "name": "WITCH",
+      "id": "WITCH",
+      "name": "Witch",
       "level": 2,
       "branch": "Channeler",
       "summary": "Practitioner of the Craft / Hedge Wizard",
@@ -4682,7 +4815,8 @@
       "signature": null
     },
     {
-      "name": "YARD BOSS",
+      "id": "YARD_BOSS",
+      "name": "Yard Boss",
       "level": 3,
       "branch": "Criminal",
       "summary": "Prison King / Correctional Overlord",
