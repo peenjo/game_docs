@@ -1481,12 +1481,12 @@
       "signature": null
     },
     {
-      "id": "DRONEOP",
-      "name": "Droneop",
+      "id": "DRONE_OPERATOR",
+      "name": "Drone Operator",
       "level": 2,
       "branch": "Intellectual",
       "summary": "Drone Operator / Remote Systems Technician",
-      "description": "The DroneOp is a technical specialist who operates unmanned vehicles and drones for surveillance, combat, or logistical purposes. Evolving from Engineers, Mechanics, or Techys, they possess enhanced Agility, Intelligence, Education, and Initiative, allowing them to process complex spatial data and react quickly to changing conditions. Their skillset spans coding, electrical engineering, electronics, integration, navigation, and ordinance, enabling them to build, maintain, and deploy drone fleets effectively. They are also skilled in perception and scanning, essential for remote reconnaissance operations. The DroneOp is a modern operator, bridging the gap between technician and warrior, with paths leading to rigging or cybernetics.",
+      "description": "The Drone Operator is a technical specialist who operates unmanned vehicles and drones for surveillance, combat, or logistical purposes. Evolving from Engineers, Mechanics, or Techys, they possess enhanced Agility, Intelligence, Education, and Initiative, allowing them to process complex spatial data and react quickly to changing conditions. Their skillset spans coding, electrical engineering, electronics, integration, navigation, and ordinance, enabling them to build, maintain, and deploy drone fleets effectively. They are also skilled in perception and scanning, essential for remote reconnaissance operations. The Drone Operator is a modern operator, bridging the gap between technician and warrior, with paths leading to rigging or cybernetics.",
       "equipment": "",
       "income": "",
       "stats": {
@@ -1588,7 +1588,7 @@
       "ranks": [],
       "paths": [],
       "lateral": [
-        "DroneOp",
+        "Drone Operator",
         "Scientist"
       ],
       "mastery": null,
@@ -3761,7 +3761,7 @@
       "level": 3,
       "branch": "Criminal",
       "summary": "Drone Commander / Remote Control Expert",
-      "description": "The Rigger is a master of remote-controlled vehicles and drones, capable of piloting machines from a safe distance. Evolving from DroneOps or Hackers, they possess high Intelligence, Education, and Agility, allowing them to think and react quickly. Their skillset is focused on integration, navigation, and electronics, enabling them to control fleets of drones and vehicles. They are also skilled in coding and mechanics, allowing them to modify and repair their machines. The Rigger is a puppeteer of the digital age, pulling the strings from afar.",
+      "description": "The Rigger is a master of remote-controlled vehicles and drones, capable of piloting machines from a safe distance. Evolving from Drone Operator or Hacker, they possess high Intelligence, Education, and Agility, allowing them to think and react quickly. Their skillset is focused on integration, navigation, and electronics, enabling them to control fleets of drones and vehicles. They are also skilled in coding and mechanics, allowing them to modify and repair their machines. The Rigger is a puppeteer of the digital age, pulling the strings from afar.",
       "equipment": "",
       "income": "",
       "stats": {
