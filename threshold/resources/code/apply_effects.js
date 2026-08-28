@@ -48,5 +48,7 @@ for (const effect of effects) {
   `;
 
     // post the chat message object in Foundry
-    await ChatMessage.create({content: chatContent});
+    await ChatMessage.create({
+        content: chatContent, speaker: ChatMessage.getSpeaker({token: target})
+    });
 }
