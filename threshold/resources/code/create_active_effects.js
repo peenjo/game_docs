@@ -6,9 +6,10 @@
 
 // concentrate 'magic values' here
 const THRESHOLD_VALUES = {
+    AGILITY: "system.characteristics.dexterity.value",
+    INITIATIVE_MOD: "system.characteristics.alternative1.mod",
     MOVEMENT: "system.movement.walk",
     ARMOR_CLASS: "system.primaryArmor.value",
-    AGILITY: "system.characteristics.dexterity.value",
     EFFECT_TYPE: {MULTIPLY: 1, ADD: 2, DOWNGRADE: 3, UPGRADE: 4, OVERRIDE: 5, CUSTOM: 0}, // CUSTOM throws error
 };
 
@@ -45,15 +46,21 @@ for (const effectName of effectNames) {
             key: THRESHOLD_VALUES.MOVEMENT,
             mode: THRESHOLD_VALUES.EFFECT_TYPE.OVERRIDE,
             value: "0",
-            priority: 40
+            priority: 40 // happens after any reduction effects
         }];
     }
 
-    // this covers all movement reduction effects
-    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED)) {
-        let modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
+    // this covers all reduction effects
+    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) || effectName.includes(EFFECTS.AGILITY_REDUCED) || effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
+        const modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
+        let thresholdKey = THRESHOLD_VALUES.MOVEMENT;
+        if (effectName.includes(EFFECTS.AGILITY_REDUCED)) {
+            thresholdKey = THRESHOLD_VALUES.AGILITY;
+        } else if (effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
+            thresholdKey = THRESHOLD_VALUES.INITIATIVE_MOD;
+        }
         effectData.changes = [{
-            key: THRESHOLD_VALUES.MOVEMENT,
+            key: thresholdKey,
             mode: THRESHOLD_VALUES.EFFECT_TYPE.ADD,
             value: modifier,
             priority: 20

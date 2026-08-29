@@ -43,7 +43,7 @@ try {
 for (const effect of effects) {
     let chatContent = `
     <div class="twodsix-chat-card">
-      <p><strong>${target.name}</strong> is ${effect.name}!</p>
+      <p><strong>${target.name}</strong> gets ${effect.name}!</p>
     </div>
   `;
 
