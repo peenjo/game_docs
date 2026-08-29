@@ -9,7 +9,7 @@ const THRESHOLD_VALUES = {
     MOVEMENT: "system.movement.walk",
     ARMOR_CLASS: "system.primaryArmor.value",
     AGILITY: "system.characteristics.dexterity.value",
-    EFFECT_TYPE: {OVERRIDE: 5, ADD: 2, MUTLIPLY: 1, DOWNGRADE: 3, UPGRADE: 4, CUSTOM: 0},
+    EFFECT_TYPE: {MULTIPLY: 1, ADD: 2, DOWNGRADE: 3, UPGRADE: 4, OVERRIDE: 5, CUSTOM: 0}, // CUSTOM throws error
 };
 
 // crappy way of having global values without dealing with Foundry directly
@@ -45,6 +45,17 @@ for (const effectName of effectNames) {
             key: THRESHOLD_VALUES.MOVEMENT,
             mode: THRESHOLD_VALUES.EFFECT_TYPE.OVERRIDE,
             value: "0",
+            priority: 40
+        }];
+    }
+
+    // this covers all movement reduction effects
+    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED)) {
+        let modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
+        effectData.changes = [{
+            key: THRESHOLD_VALUES.MOVEMENT,
+            mode: THRESHOLD_VALUES.EFFECT_TYPE.ADD,
+            value: modifier,
             priority: 20
         }];
     }
