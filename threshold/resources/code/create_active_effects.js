@@ -7,6 +7,7 @@
 // concentrate 'magic values' here
 const THRESHOLD_VALUES = {
     AGILITY: "system.characteristics.dexterity.value",
+    CHARISMA: "system.characteristics.socialStanding.value",
     INITIATIVE_MOD: "system.characteristics.alternative1.mod",
     MOVEMENT: "system.movement.walk",
     ARMOR_CLASS: "system.primaryArmor.value",
@@ -51,11 +52,16 @@ for (const effectName of effectNames) {
     }
 
     // this covers all reduction effects
-    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) || effectName.includes(EFFECTS.AGILITY_REDUCED) || effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
+    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
+        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
+        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
+        effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
         const modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
         let thresholdKey = THRESHOLD_VALUES.MOVEMENT;
         if (effectName.includes(EFFECTS.AGILITY_REDUCED)) {
             thresholdKey = THRESHOLD_VALUES.AGILITY;
+        } else if (effectName.includes(EFFECTS.CHARISMA_REDUCED)) {
+            thresholdKey = THRESHOLD_VALUES.CHARISMA;
         } else if (effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
             thresholdKey = THRESHOLD_VALUES.INITIATIVE_MOD;
         }

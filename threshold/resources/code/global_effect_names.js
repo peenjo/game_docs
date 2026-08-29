@@ -12,6 +12,10 @@ return {
     BLEEDING_SURGERY: "bleeding - surgery", // surgery includes treatement and first-aid
     BLEEDING_TREAT: "bleeding - treatment", // treatment includes first-aid
     BLEEDING_FA: "bleeding - first aid",
+    CHARISMA_REDUCED: "charisma", // not used directly: a convenience to match any other CHARISMA effect
+    CHARISMA_REDUCED_LOW: "charisma -2",
+    CHARISMA_REDUCED_MEDIUM: "charisma -4",
+    CHARISMA_REDUCED_HIGH: "charisma -6",
     DEAD: "dead",
     DISARMED: "disarmed",
     INITIATIVE_REDUCED: "initiative", // not used directly: a convenience to match any other INITIATIVE effect
