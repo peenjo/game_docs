@@ -56,8 +56,6 @@ for (const effectName of effectNames) {
         img: iconPath,
     };
 
-    // TODO ech 2026-08-29 - set specific icons for each type of effect
-
     // effect setting movement to zero
     const noMovementEffects = [
         EFFECTS.DEAD,
@@ -103,6 +101,9 @@ for (const effectName of effectNames) {
         effectData.duration = {turns: 1, expiry: "turnEnd"};
     } else if (effectName.includes(EFFECTS.MOVED)) { // this one covers all 'moved' effects
         effectData.duration = {turns: 0, expiry: "turnStart"};
+    } else {
+        // ech 2026-08-29 - stupid hack to have a 'temporary' permanent effect to show icon. sigh...
+        effectData.duration = {expiry: "combatEnd"};
     }
 
     effects.push(effectData);
