@@ -9,8 +9,9 @@ return {
     AGILITY_REDUCED_LOW: "agility -2",
     AGILITY_REDUCED_MEDIUM: "agility -4",
     AGILITY_REDUCED_HIGH: "agility -6",
-    BLEEDING_SURGERY: "bleeding - surgery", // surgery includes treatement and first-aid
-    BLEEDING_TREAT: "bleeding - treatment", // treatment includes first-aid
+    BLEEDING: "bleeding", // not used directly: a convenience to match any other BLEEDING effect
+    BLEEDING_SURGERY: "bleeding - surgery", // surgery includes treatment and first aid
+    BLEEDING_TREAT: "bleeding - treatment", // treatment includes first aid
     BLEEDING_FA: "bleeding - first aid",
     CHARISMA_REDUCED: "charisma", // not used directly: a convenience to match any other CHARISMA effect
     CHARISMA_REDUCED_LOW: "charisma -2",

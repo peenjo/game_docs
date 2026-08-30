@@ -30,17 +30,11 @@ const effects = await createEffects.execute({effectNames: activeEffects});
 //console.log(effects);
 
 // apply the all active effects directly to the targeted token's actor
-try {
-    await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
-} catch (error) {
-    // TODO ech 2026-08-28 - this masks the actual error depending on how it's handled in the module code
-    ui.notifications.warn("Only a GameMaster can perform this action.");
-    return null;
-}
+await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
 // create chat messages for each of the active effects
-// TODO ech 2026-08-28 - make the messages smarter
 for (const effect of effects) {
+    // TODO ech 2026-08-28 - make the messages smarter
     let chatContent = `
     <div class="twodsix-chat-card">
       <p><strong>${target.name}</strong> gets ${effect.name}!</p>
@@ -49,6 +43,6 @@ for (const effect of effects) {
 
     // post the chat message object in Foundry
     await ChatMessage.create({
-        content: chatContent, speaker: ChatMessage.getSpeaker({token: target})
+        content: chatContent, speaker: {alias: "Special Effect"}
     });
 }
