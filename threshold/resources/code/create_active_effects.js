@@ -18,6 +18,22 @@ const THRESHOLD_VALUES = {
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
+const iconMap = new Map();
+// TODO ech 2026-08-29 - not married to any of these choices, but it's a start
+iconMap.set(EFFECTS.AGILITY_REDUCED, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/athletics-dexterity.svg");
+iconMap.set(EFFECTS.BLEEDING, "icons/svg/blood.svg");
+iconMap.set(EFFECTS.CHARISMA_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/pummeled.svg");
+iconMap.set(EFFECTS.DEAD, "icons/svg/skull.svg");
+iconMap.set(EFFECTS.DISARMED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/hand-bandage.svg");
+iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/empty-chessboard.svg");
+iconMap.set(EFFECTS.LOCKED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
+iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
+iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");
+iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
+iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
+iconMap.set(EFFECTS.SUPRESSED, "icons/svg/daze.svg");
+iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
+
 // names of effect passed in by calling macro
 const effectNames = scope.effectNames;
 if (!effectNames) {
@@ -27,12 +43,20 @@ if (!effectNames) {
 
 let effects = [];
 for (const effectName of effectNames) {
+    let iconPath = "icons/svg/aura.svg"; // default icon
+    // match on categories, not just single entries
+    const firstWord = effectName.split(" ")[0];
+    if (iconMap.has(firstWord)) {
+        iconPath = iconMap.get(firstWord);
+    }
+
     // base information for effect (no timers or mods)
     let effectData = {
         name: effectName,
-        // TODO ech 2026-08-27 - ignores this and supplies aura icon from same directory
-        icon: "icons/svg/daze.svg",
+        img: iconPath,
     };
+
+    // TODO ech 2026-08-29 - set specific icons for each type of effect
 
     // effect setting movement to zero
     const noMovementEffects = [
@@ -46,7 +70,7 @@ for (const effectName of effectNames) {
         effectData.changes = [{
             key: THRESHOLD_VALUES.MOVEMENT,
             mode: THRESHOLD_VALUES.EFFECT_TYPE.OVERRIDE,
-            value: "0",
+            value: 0,
             priority: 40 // happens after any reduction effects
         }];
     }
@@ -69,7 +93,7 @@ for (const effectName of effectNames) {
             key: thresholdKey,
             mode: THRESHOLD_VALUES.EFFECT_TYPE.ADD,
             value: modifier,
-            priority: 20
+            priority: 20 // happens before any override effects
         }];
     }
 
