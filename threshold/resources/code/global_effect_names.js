@@ -26,18 +26,20 @@ return {
     LOCKED: "locked",
     MOVED: "moved", // not used directly: a convenience to match any other MOVED effect
     MOVED_LONG_ANY_FORWARD: "moved 2m anywhere forward",
+    MOVED_LONG_ANYWHERE: "moved 2m in an appropriate direction",
     MOVED_LONG_BACK: "moved 2m directly back",
     MOVED_LONG_FORWARD: "moved 2m directly forward",
     MOVED_SHORT_ANYWHERE: "moved 1m in an appropriate direction",
     MOVED_SHORT_BACK: "moved 1m directly back",
     MOVED_SHORT_DIAGONAL: "moved 1m diagonally back",
     MOVED_SHORT_FORWARD: "moved 1m directly forward",
+    MOVED_SHORT_SIDEWAYS: "moved 1m sideways",
     MOVEMENT_REDUCED: "movement", // not used directly: a convenience to match any other MOVEMENT effect
     MOVEMENT_REDUCED_LOW: "movement -2",
     MOVEMENT_REDUCED_MEDIUM: "movement -4",
     MOVEMENT_REDUCED_HIGH: "movement -6",
     PRONE: "prone",
     STUNNED: "stunned",
-    SUPRESSED: "supressed",
+    SUPPRESSED: "suppressed",
     UNCONSCIOUS: "unconscious",
 }

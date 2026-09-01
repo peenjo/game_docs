@@ -31,7 +31,7 @@ iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fb
 iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");
 iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
 iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
-iconMap.set(EFFECTS.SUPRESSED, "icons/svg/daze.svg");
+iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
 
 // names of effect passed in by calling macro
@@ -61,7 +61,7 @@ for (const effectName of effectNames) {
         EFFECTS.DEAD,
         EFFECTS.PRONE,
         EFFECTS.STUNNED,
-        EFFECTS.SUPRESSED,
+        EFFECTS.SUPPRESSED,
         EFFECTS.UNCONSCIOUS,
     ];
     if (noMovementEffects.includes(effectName)) {
@@ -97,7 +97,7 @@ for (const effectName of effectNames) {
 
     // effects with timers
     // TODO ech 2026-08-27 - figure out niceties of expiration
-    if (effectName.includes(EFFECTS.STUNNED) || effectName.includes(EFFECTS.SUPRESSED)) {
+    if (effectName.includes(EFFECTS.STUNNED) || effectName.includes(EFFECTS.SUPPRESSED)) {
         effectData.duration = {turns: 1, expiry: "turnEnd"};
     } else if (effectName.includes(EFFECTS.MOVED)) { // this one covers all 'moved' effects
         effectData.duration = {turns: 0, expiry: "turnStart"};
