@@ -13,7 +13,6 @@ Exiting the club, the group noticed one of the hunters waiting for them. After s
 ### 24-Hour Building Surveillance Mission
 Our intrepid wardens drove to the building and drove around it to get more information. There were two entrances/exits, on opposite sides of the building. They drove to the top floor of a parking lot to observe the main entrance. While there, some of the group removed their tethers and saw that the entire building was flat black - no light coming out or reflecting from the surface. The team debated whether to investigate further or simply report their observations, with Jackson emphasizing they should focus on watching rather than entering the building due to the high payment for just surveillance.
 
-### Building Surveillance and Emergency Response
 Victor and Clem moved to the roof of a civilian building to monitor the other entrance, while the others remained in the parking lot. On the way to the other building Victor called Patch to update her and to tell her about the parking lot incident with the hunters. 
 
 ### Courier Message
@@ -28,11 +27,11 @@ While discussion next steps, the noises inside the bedroom reached a peak and th
 ### Vampire Possession
 The group discussed how to handle a vampire possession situation where a daughter has been possessed and a demon was released through a window. Harry explained that vampires are strong but can be restrained with silver items like handcuffs, and the group obtained holy water from the priest to help combat the vampire. The team planned to follow the vampire's direction toward the lake while preparing for the confrontation, though they noted they had limited resources like silver bullets or specialized weapons. The group left the scene to pursue the possessed daughter while advising the family to seek help from influential contacts regarding the dead assistant in their bedroom. They aren't getting a refund on their security deposit.
 
-### Vampire Demon Encounter Strategy
+### Vampire Encounter Strategy
 The group followed a blood trail to a partially constructed 20-story building. They discussed various strategies for trapping the creature, including using magic circles and baiting it with humans, but ultimately decided to follow it up the stairs, hoping to corner it and overpower it with the whole group. On the way up they heard a vehicle outside and saw the Boilermaker crew get out of a van with lots of guns.
 
-### New plan
-Let the vampire get past them and straight into the morons who followed them. Surprisingly that worked, and the vampire went through them like butter. The Veil was invoked because 'normals' saw something supernatural: the vampire burst into flames, but that didn't seem to slow her down much.
+### New Plan
+The group decided to let the vampire get past them and straight into the morons who followed them. Surprisingly that worked, and the vampire went through them like butter. The Veil was invoked because 'normals' saw something supernatural: the vampire burst into flames, but that didn't seem to slow her down much.
 
 ### Vampire Pursuit 
 The group pursued the vampire away from the building and through the streets, but eventually lost the trail after being delayed by a police patrol. The team had to hide their weapons when police showed up but were otherwise not detained. After returning to their car, they decided to leave a voicemail for Patch to report their failed mission. She told them to meet at the Raven's Loft the next day.
