@@ -34,7 +34,7 @@ iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
 
-// names of effect passed in by calling macro
+// names of effect(s) passed in by calling macro
 const effectNames = scope.effectNames;
 if (!effectNames) {
     console.log('Hey moron, you need to supply effect names');
@@ -56,7 +56,7 @@ for (const effectName of effectNames) {
         img: iconPath,
     };
 
-    // effect setting movement to zero
+    // effects setting movement to zero
     const noMovementEffects = [
         EFFECTS.DEAD,
         EFFECTS.PRONE,
@@ -95,14 +95,20 @@ for (const effectName of effectNames) {
         }];
     }
 
-    // effects with timers
-    // TODO ech 2026-08-27 - figure out niceties of expiration
-    if (effectName.includes(EFFECTS.STUNNED) || effectName.includes(EFFECTS.SUPPRESSED)) {
+    // stunned/suppressed effects persist for at least one turn
+    if (effectName.includes(EFFECTS.STUNNED) ||
+        effectName.includes(EFFECTS.SUPPRESSED)) {
         effectData.duration = {turns: 1, expiry: "turnEnd"};
-    } else if (effectName.includes(EFFECTS.MOVED)) { // this one covers all 'moved' effects
+        // all 'moved' effects appear briefly as a GM reminder to do something
+    } else if (effectName.includes(EFFECTS.MOVED)) {
         effectData.duration = {turns: 0, expiry: "turnStart"};
+        // permanent (persist after combat) effects
+    } else if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
+        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
+        effectName.includes(EFFECTS.CHARISMA_REDUCED)) {
+        // no duration is set
     } else {
-        // ech 2026-08-29 - stupid hack to have a 'temporary' permanent effect to show icon. sigh...
+        // ech 2026-08-29 - stupid hack to have a 'temporary' effect to show icon during combat. sigh...
         effectData.duration = {expiry: "combatEnd"};
     }
 
