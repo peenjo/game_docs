@@ -101,7 +101,7 @@ for (const effectName of effectNames) {
         effectData.duration = {turns: 1, expiry: "turnEnd"};
         // all 'moved' effects appear briefly as a GM reminder to do something
     } else if (effectName.includes(EFFECTS.MOVED)) {
-        effectData.duration = {turns: 0, expiry: "turnStart"};
+        effectData.duration = {turns: 0, expiry: "roundEnd"};
         // permanent (persist after combat) effects
     } else if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
         effectName.includes(EFFECTS.AGILITY_REDUCED) ||
