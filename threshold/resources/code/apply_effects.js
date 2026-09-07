@@ -27,7 +27,6 @@ if (!activeEffects) {
 // create the active effects Foundry resources to be applied to the target
 const createEffects = game.macros.getName("Create_Active_Effects");
 const effects = await createEffects.execute({effectNames: activeEffects});
-//console.log(effects);
 
 // apply the all active effects directly to the targeted token's actor
 await target.actor.createEmbeddedDocuments("ActiveEffect", effects);

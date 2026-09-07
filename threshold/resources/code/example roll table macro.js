@@ -1,5 +1,5 @@
 //***********************************
-// An example of the over 200 macros
+// An example of the many macros
 // created, one for each entry in the
 // six special effects rollable tables.
 // Only line 12 differs in each case.
