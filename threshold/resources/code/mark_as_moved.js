@@ -24,5 +24,5 @@ const effectData = {
     duration: {turns: 0, expiry: "roundEnd"}, // clear at end of every round
 };
 
-// apply the all active effects directly to the targeted token's actor
+// apply the active effect to the selected token's actor
 await target.actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
