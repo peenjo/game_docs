@@ -5,6 +5,15 @@
 // to the Foundry Chat Window.
 //*********************************************
 
+// ech 2026-09-08 - This makes all the expired events
+// actually go away instead of staying in the event tab
+// as zombie entries. It only needs to be set once on
+// game load, but that involves
+// Hooks.once("init", () => {...
+// code in a custom module which turns into a whole
+// thing. This is redundant but WAY simpler.
+CONFIG.ActiveEffect.expiryAction = 'delete';
+
 const selectedTokens = canvas.tokens.controlled;
 // ensure exactly one token is selected
 if (selectedTokens.length === 0) {
