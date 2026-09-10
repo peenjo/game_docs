@@ -32,6 +32,8 @@ if (selectedTokens.length > 1) {
     return null;
 }
 const target = selectedTokens[0];
+const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
+const EFFECTS = await getGlobalEffectNames.execute();
 
 // create the active effects Foundry resources to be applied to the target
 const createEffects = game.macros.getName("Create_Active_Effects");
@@ -42,12 +44,13 @@ await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
 // create chat messages for each of the active effects
 for (const effect of effects) {
-    // TODO ech 2026-08-28 - maybe make the messages smarter
-    let chatContent = `
-    <div class="twodsix-chat-card">
-      <p><strong>${target.name}</strong> gets ${effect.name}!</p>
-    </div>
-  `;
+    let mess = 'gets ' + effect.name; // simple default
+    if (effect.name === EFFECTS.BLEEDING) {
+        mess = 'starts ' + effect.name;
+    } else if (effect.name.includes(EFFECTS.NEEDS)) {
+        mess = effect.name;
+    }
+    let chatContent = `<div class="twodsix-chat-card"> <p><strong>${target.name}</strong> ${mess}!</p> </div>`;
 
     // post the chat message object in Foundry
     await ChatMessage.create({

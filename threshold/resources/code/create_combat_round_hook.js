@@ -10,6 +10,8 @@ if (globalThis.thresholdData.combatHookId != null) {
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
+const applyDamage = game.macros.getName("Apply_Damage");
+
 const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions) => {
     // Only fire on forward progression
     if (updateOptions.direction < 0) return;
@@ -22,7 +24,8 @@ const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions
         );
         if (!effect) continue;
 
-        // TODO ech 2026-09-08 - apply damage, which is a complex 3 way calc with and w/o armor
+        // apply damage, which is a set of complex calculations
+        await applyDamage.execute({target: actor, damage: 2});
 
         let chatContent = `
             <div class="twodsix-chat-card">

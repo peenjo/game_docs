@@ -1,18 +1,11 @@
 //*********************************************
-// This creates and applies a Foundry Active
-// Effect to the selected token.
+// This applies damage to the proper traits in
+// the correct order.
 //*********************************************
-// TODO ech 2026-09-09 - scaffold code for now
-const selectedTokens = canvas.tokens.controlled;
-if (selectedTokens.length !== 1) {
-    ui.notifications.warn("Please select one token!");
-    return null;
-}
-const target = selectedTokens[0].actor;
-const totalDamage = 6;
-// **********************************
 
-// const target = scope.target;
+const target = scope.target;
+const totalDamage = scope.damage;
+// const armorCounts = scope.armorCounts || false;
 if (!target) {
     console.log('Hey moron, you need to supply the target');
     return null;
@@ -30,6 +23,8 @@ const KEYS = {
 const PHYSICAL_TRAITS = [KEYS.ENDURANCE, KEYS.STRENGTH, KEYS.AGILITY]; // in order
 const SPIRITUAL_TRAITS = [KEYS.ESSENCE, KEYS.WILL, KEYS.CHARISMA]; // in order
 
+// TODO ech 2026-09-10 - take armor into account
+
 let remaining = totalDamage;
 for (const trait of PHYSICAL_TRAITS) { // TODO ech 2026-09-09 - add spiritual damage later
     if (remaining <= 0) {
@@ -44,7 +39,7 @@ for (const trait of PHYSICAL_TRAITS) { // TODO ech 2026-09-09 - add spiritual da
     currentDamage += loss;
     remaining -= loss;
     // console.log("Key", trait, "Remaining", remaining, "Loss", loss, "new currentDamage", currentDamage);
-    // apply the currentDamage
+    // apply currentDamage
     await target.update({['system.characteristics.' + trait + '.damage']: currentDamage});
 
     if (trait === KEYS.AGILITY && currentValue - loss === 0) {
