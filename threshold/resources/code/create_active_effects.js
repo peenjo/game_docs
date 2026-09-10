@@ -5,7 +5,7 @@
 //*******************************************
 
 // names of effect(s) passed in by calling macro
-const effectNames = scope.effectNames;
+let effectNames = scope.effectNames;
 if (!effectNames) {
     console.log('Hey moron, you need to supply effect names');
     return null;
@@ -15,14 +15,23 @@ if (!effectNames) {
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
-// redundantly instantiate combat round hook. It does nothing if already exists
+// redundantly instantiate singleton combat round hook. It does nothing if already exists
 const createHook = game.macros.getName("Create_Combat_Round_Hook");
 await createHook.execute();
 
-// TODO ech 2026-09-09 - set dependent effects here if needed (remove possible dups)
-// bleeding adds first aid
-// treatment adds first aid
-// surgery adds treatment and first aid
+// set dependent effects here
+if (effectNames.includes(EFFECTS.BLEEDING)) {
+    effectNames.push(EFFECTS.NEEDS_FIRST_AID);
+}
+
+if (effectNames.includes(EFFECTS.NEEDS_SURGERY)) {
+    effectNames.push(EFFECTS.NEEDS_TREATMENT);
+    effectNames.push(EFFECTS.NEEDS_FIRST_AID);
+} else if (effectNames.includes(EFFECTS.NEEDS_TREATMENT)) {
+    effectNames.push(EFFECTS.NEEDS_FIRST_AID);
+}
+// remove any dups
+const uniqueEffectNames = [...new Set(effectNames)];
 
 // concentrate 'magic values' here
 const THRESHOLD_VALUES = {
@@ -54,7 +63,7 @@ iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/system
 iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medicine.svg");
 
 let effects = [];
-for (const effectName of effectNames) {
+for (const effectName of uniqueEffectNames) {
     let iconPath = "icons/svg/aura.svg"; // default icon
     // match on categories, not just single entries
     const firstWord = effectName.split(" ")[0];
