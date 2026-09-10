@@ -5,6 +5,13 @@
 // to the Foundry Chat Window.
 //*********************************************
 
+// list of effects passed in from caller macro
+const activeEffects = scope.activeEffects;
+if (!activeEffects) {
+    console.log('hey moron, you need to supply the list of effect names');
+    return null;
+}
+
 // ech 2026-09-08 - This makes all the expired events
 // actually go away instead of staying in the event tab
 // as zombie entries. It only needs to be set once on
@@ -26,23 +33,16 @@ if (selectedTokens.length > 1) {
 }
 const target = selectedTokens[0];
 
-// list of effects passed in from caller macro
-const activeEffects = scope.activeEffects;
-if (!activeEffects) {
-    console.log('hey moron, you need to supply the list of effect names');
-    return null;
-}
-
 // create the active effects Foundry resources to be applied to the target
 const createEffects = game.macros.getName("Create_Active_Effects");
 const effects = await createEffects.execute({effectNames: activeEffects});
 
-// apply the all active effects directly to the targeted token's actor
+// apply the all active effects directly to the target token's actor
 await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
 // create chat messages for each of the active effects
 for (const effect of effects) {
-    // TODO ech 2026-08-28 - make the messages smarter
+    // TODO ech 2026-08-28 - maybe make the messages smarter
     let chatContent = `
     <div class="twodsix-chat-card">
       <p><strong>${target.name}</strong> gets ${effect.name}!</p>

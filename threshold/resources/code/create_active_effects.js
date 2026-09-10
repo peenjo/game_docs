@@ -4,6 +4,26 @@
 // given a list of effect names.
 //*******************************************
 
+// names of effect(s) passed in by calling macro
+const effectNames = scope.effectNames;
+if (!effectNames) {
+    console.log('Hey moron, you need to supply effect names');
+    return null;
+}
+
+// crappy way of having global values without dealing with Foundry directly
+const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
+const EFFECTS = await getGlobalEffectNames.execute();
+
+// redundantly instantiate combat round hook. It does nothing if already exists
+const createHook = game.macros.getName("Create_Combat_Round_Hook");
+await createHook.execute();
+
+// TODO ech 2026-09-09 - set dependent effects here if needed (remove possible dups)
+// bleeding adds first aid
+// treatment adds first aid
+// surgery adds treatment and first aid
+
 // concentrate 'magic values' here
 const THRESHOLD_VALUES = {
     AGILITY: "system.characteristics.dexterity.value",
@@ -14,12 +34,8 @@ const THRESHOLD_VALUES = {
     EFFECT_TYPE: {MULTIPLY: 1, ADD: 2, DOWNGRADE: 3, UPGRADE: 4, OVERRIDE: 5, CUSTOM: 0}, // CUSTOM throws error
 };
 
-// crappy way of having global values without dealing with Foundry directly
-const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
-const EFFECTS = await getGlobalEffectNames.execute();
-
 const iconMap = new Map();
-// TODO ech 2026-08-29 - not married to any of these choices, but it's a start
+// ech 2026-08-29 - not married to any of these choices, but it's a start
 iconMap.set(EFFECTS.AGILITY_REDUCED, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/athletics-dexterity.svg");
 iconMap.set(EFFECTS.BLEEDING, "icons/svg/blood.svg");
 iconMap.set(EFFECTS.CHARISMA_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/pummeled.svg");
@@ -33,13 +49,9 @@ iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
 iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
-
-// names of effect(s) passed in by calling macro
-const effectNames = scope.effectNames;
-if (!effectNames) {
-    console.log('Hey moron, you need to supply effect names');
-    return null;
-}
+iconMap.set(EFFECTS.NEEDS_FIRST_AID, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medic.svg");
+iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medical-drip.svg");
+iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medicine.svg");
 
 let effects = [];
 for (const effectName of effectNames) {
@@ -48,6 +60,8 @@ for (const effectName of effectNames) {
     const firstWord = effectName.split(" ")[0];
     if (iconMap.has(firstWord)) {
         iconPath = iconMap.get(firstWord);
+    } else if (iconMap.has(effectName)) { // match on full name
+        iconPath = iconMap.get(effectName);
     }
 
     // base information for effect (no timers or mods)
@@ -105,7 +119,8 @@ for (const effectName of effectNames) {
         // permanent (persist after combat) effects
     } else if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
         effectName.includes(EFFECTS.AGILITY_REDUCED) ||
-        effectName.includes(EFFECTS.CHARISMA_REDUCED)) {
+        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
+        effectName.includes(EFFECTS.NEEDS)) {
         // no duration is set
     } else {
         // ech 2026-08-29 - stupid hack to have a 'temporary' effect to show icon during combat. sigh...

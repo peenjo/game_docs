@@ -33,5 +33,5 @@ const effectData = {
     duration: {turns: 0, expiry: "roundEnd"},
 };
 
-// apply the all active effects directly to the targeted token's actor
+// apply the active effect directly to the target token's actor
 await target.actor.createEmbeddedDocuments("ActiveEffect", [effectData]);

@@ -9,10 +9,7 @@ return {
     AGILITY_REDUCED_LOW: "agility -2",
     AGILITY_REDUCED_MEDIUM: "agility -4",
     AGILITY_REDUCED_HIGH: "agility -6",
-    BLEEDING: "bleeding", // not used directly: a convenience to match any other BLEEDING effect
-    BLEEDING_SURGERY: "bleeding - surgery", // surgery includes treatment and first aid
-    BLEEDING_TREAT: "bleeding - treatment", // treatment includes first aid
-    BLEEDING_FA: "bleeding - first aid",
+    BLEEDING: "bleeding",
     CHARISMA_REDUCED: "charisma", // not used directly: a convenience to match any other CHARISMA effect
     CHARISMA_REDUCED_LOW: "charisma -2",
     CHARISMA_REDUCED_MEDIUM: "charisma -4",
@@ -38,6 +35,10 @@ return {
     MOVEMENT_REDUCED_LOW: "movement -2",
     MOVEMENT_REDUCED_MEDIUM: "movement -4",
     MOVEMENT_REDUCED_HIGH: "movement -6",
+    NEEDS: "needs", // not used directly: a convenience to match any other NEEDS effect
+    NEEDS_FIRST_AID: "needs first aid",
+    NEEDS_TREATMENT: "needs treatment", // treatment requires first aid
+    NEEDS_SURGERY: "needs surgery", // surgery requires treatment and first aid
     PRONE: "prone",
     STUNNED: "stunned",
     SUPPRESSED: "suppressed",
