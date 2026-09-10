@@ -3,9 +3,9 @@
 
 // check for previous instantiation in global state
 globalThis.thresholdData = globalThis.thresholdData || {};
-if (globalThis.thresholdData.combatHookId != null) {
-    return; // if exists, we're done
-}
+// if exists, we're done
+if (globalThis.thresholdData.combatHookId != null) return;
+
 
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
@@ -25,7 +25,7 @@ const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions
         if (!effect) continue;
 
         // apply damage, which is a set of complex calculations
-        await applyDamage.execute({target: actor, damage: 2});
+        await applyDamage.execute({target: actor, damage: 2, ignoreArmor: true});
 
         let chatContent = `
             <div class="twodsix-chat-card">
