@@ -11,7 +11,7 @@ if (!effectNames) {
     return null;
 }
 
-// crappy way of having global values without dealing with Foundry directly
+// simple way of having global values without dealing with Foundry directly
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
@@ -30,13 +30,13 @@ if (effectNames.includes(EFFECTS.NEEDS_SURGERY)) {
 } else if (effectNames.includes(EFFECTS.NEEDS_TREATMENT)) {
     effectNames.push(EFFECTS.NEEDS_FIRST_AID);
 }
-// remove any dups
+// remove any duplicates
 const uniqueEffectNames = [...new Set(effectNames)];
 
 // concentrate 'magic values' here
 const THRESHOLD_VALUES = {
-    AGILITY: "system.characteristics.dexterity.value",
-    CHARISMA: "system.characteristics.socialStanding.value",
+    AGILITY_MOD: "system.characteristics.dexterity.mod",
+    CHARISMA_MOD: "system.characteristics.socialStanding.mod",
     INITIATIVE_MOD: "system.characteristics.alternative1.mod",
     MOVEMENT: "system.movement.walk",
     ARMOR_CLASS: "system.primaryArmor.value",
@@ -104,9 +104,9 @@ for (const effectName of uniqueEffectNames) {
         const modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
         let thresholdKey = THRESHOLD_VALUES.MOVEMENT;
         if (effectName.includes(EFFECTS.AGILITY_REDUCED)) {
-            thresholdKey = THRESHOLD_VALUES.AGILITY;
+            thresholdKey = THRESHOLD_VALUES.AGILITY_MOD;
         } else if (effectName.includes(EFFECTS.CHARISMA_REDUCED)) {
-            thresholdKey = THRESHOLD_VALUES.CHARISMA;
+            thresholdKey = THRESHOLD_VALUES.CHARISMA_MOD;
         } else if (effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
             thresholdKey = THRESHOLD_VALUES.INITIATIVE_MOD;
         }
@@ -132,7 +132,7 @@ for (const effectName of uniqueEffectNames) {
         effectName.includes(EFFECTS.NEEDS)) {
         // no duration is set
     } else {
-        // ech 2026-08-29 - stupid hack to have a 'temporary' effect to show icon during combat. sigh...
+        // ech 2026-08-29 - hack to have a 'temporary' effect to show icon on token during combat. sigh...
         effectData.duration = {expiry: "combatEnd"};
     }
 
