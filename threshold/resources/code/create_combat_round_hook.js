@@ -11,6 +11,7 @@ const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
 const applyDamage = game.macros.getName("Apply_Damage");
+const displayChatMessage = game.macros.getName("Display_Chat_Message");
 
 const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions) => {
     // Only fire on forward progression
@@ -27,15 +28,8 @@ const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions
         // apply damage, which is a set of complex calculations
         await applyDamage.execute({target: actor, damage: 2, ignoreArmor: true});
 
-        let chatContent = `
-            <div class="twodsix-chat-card">
-                <p><strong>${actor.name}</strong> is still ${effect.name} and took more damage!</p>
-            </div>
-        `;
-        // post the chat message object in Foundry
-        await ChatMessage.create({
-            content: chatContent, speaker: {alias: "Special Effect"}
-        });
+        const chatContent = `<strong>${actor.name}</strong> is still ${effect.name} and took more damage!`;
+        await displayChatMessage.execute({message: chatContent});
     }
 });
 

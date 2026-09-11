@@ -24,12 +24,12 @@ CONFIG.ActiveEffect.expiryAction = 'delete';
 const selectedTokens = canvas.tokens.controlled;
 // ensure exactly one token is selected
 if (selectedTokens.length === 0) {
-    ui.notifications.warn("Please select a token first!");
-    return null;
+    ui.notifications.warn("Please select a token");
+    return;
 }
 if (selectedTokens.length > 1) {
-    ui.notifications.warn("Too many selected tokens! Please select only ONE token at a time.");
-    return null;
+    ui.notifications.warn("Too many selected tokens. Please select only ONE token.");
+    return;
 }
 const target = selectedTokens[0];
 const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
@@ -40,9 +40,11 @@ const createEffects = game.macros.getName("Create_Active_Effects");
 const effects = await createEffects.execute({effectNames: activeEffects});
 
 // apply the all active effects directly to the target token's actor
+
 await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
 // create chat messages for each of the active effects
+const displayChatMessage = game.macros.getName("Display_Chat_Message");
 for (const effect of effects) {
     let mess = 'gets ' + effect.name; // simple default
     if (effect.name === EFFECTS.BLEEDING) {
@@ -50,10 +52,7 @@ for (const effect of effects) {
     } else if (effect.name.includes(EFFECTS.NEEDS)) {
         mess = effect.name;
     }
-    let chatContent = `<div class="twodsix-chat-card"> <p><strong>${target.name}</strong> ${mess}!</p> </div>`;
 
-    // post the chat message object in Foundry
-    await ChatMessage.create({
-        content: chatContent, speaker: {alias: "Special Effect"}
-    });
+    const chatContent = `<strong>${target.name}</strong> ${mess}!`;
+    await displayChatMessage.execute({message: chatContent});
 }

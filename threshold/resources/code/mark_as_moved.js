@@ -15,15 +15,19 @@
 // thing. This is redundant but WAY simpler.
 CONFIG.ActiveEffect.expiryAction = 'delete';
 
+// redundantly instantiate singleton combat round hook. It does nothing if already exists
+const createHook = game.macros.getName("Create_Combat_Round_Hook");
+await createHook.execute();
+
 const selectedTokens = canvas.tokens.controlled;
 // ensure exactly one token is selected
 if (selectedTokens.length === 0) {
-    ui.notifications.warn("Please select a token first!");
-    return null;
+    ui.notifications.warn("Please select a token");
+    return;
 }
 if (selectedTokens.length > 1) {
-    ui.notifications.warn("Too many selected tokens! Please select only ONE token at a time.");
-    return null;
+    ui.notifications.warn("Too many selected tokens. Please select only ONE token.");
+    return;
 }
 const target = selectedTokens[0];
 
