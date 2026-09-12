@@ -1,0 +1,109 @@
+### Light Melee Special Effects
+| Roll  | Title                     | Description                                                                                                          | Effect                                              | Treatment             |
+| ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------- |
+| 11–16 | No Additional Effect    | The hit lands. No additional effect.                                                                                 | —                                                   | —                     |
+| 21    | Trip                    | Send the enemy off balance and 1m diagonally away.                                                                   | Move 1m diagonal                                    | —                     |
+| 22    | Push Back               | Drive the enemy backwards while maintaining pressure.                                                                | Knock Back 1m; Following                            | —                     |
+| 23    | Parry Break             | Break through or redirect their defence and drive them backwards.                                                    | Knock Back 2m; Following                            | —                     |
+| 24    | Turned Around           | Redirect the enemy past you, leaving them 1m behind.                                                                 | Target 1m behind                                    | —                     |
+| 25    | Sent Past               | Evade or redirect the attack and send the enemy 2m behind you.                                                       | Knock Back 2m behind attacker                       | —                     |
+| 26    | Momentum Shift          | Turn the enemy's momentum against them, sending them behind you and to the ground.                                   | Attacker moves 1m; Target moves 2m; Prone           | —                     |
+| 31    | Break & Stagger         | A hard attack to the face leaves the enemy injured and staggering backwards.                                         | Knock Back 1m; Stunned; −2 Initiative Modifier              | First Aid            |
+| 32    | Guard Shatter           | Break through their defence and send them to the ground as you move through their position.                          | Prone; Move through target                          | —                     |
+| 33    | Desperate Parry         | Force the enemy backwards until they lose their footing and fall.                                                    | Knock Back 2m; Following; Prone                     | —                     |
+| 34    | Redirect & Drop         | Redirect the enemy past you and dump them 1m behind.                                                                 | Target 1m behind; Prone                             | —                     |
+| 35    | Sidestep Strike         | Evade the attack and send the enemy 2m beyond you before they fall.                                                  | Knock Back 2m; Prone                                | —                     |
+| 36    | Momentum Turn           | Use the enemy's movement against them, sending them behind you and to the ground.                                    | Attacker moves 1m; Target moves 2m; Prone           | —                     |
+| 41    | Left Toe                | The left toes are crushed or badly injured; one or more may be damaged beyond repair.                                | −2 Movement                                       | Treatment (NuToe)   |
+| 42    | Right Toe               | The right toes are crushed or badly injured; one or more may be damaged beyond repair.                               | −2 Movement                                       | Treatment (NuToe)   |
+| 43    | Off Hand                | The off hand is injured and one or more fingers may be crushed or severed. Whatever it was holding is knocked away.  | Disarmed; −1 Agility Modifier                          | First Aid (NuFinger) |
+| 44    | Main Hand               | The main hand is injured and one or more fingers may be crushed or severed. Whatever it was holding is knocked away. | Disarmed; −2 Agility Modifier                            | First Aid (NuFinger) |
+| 45    | Ribs                    | A hard body attack cracks or badly bruises the ribs and drives the breath from them.                                 | Stunned; −2 Initiative Modifier                            | Treatment           |
+| 46    | Bell Rung               | A hard head impact sends the enemy staggering backwards, dazed and disoriented.                                      | Knock Back 1m; Stunned; −2 Initiative Modifier; Free Follow | First Aid            |
+| 51    | Face Meets Furniture    | Drive or redirect the enemy into a nearby object or surface.                                                         | Stunned                                             | —                     |
+| 52    | Mouthful of Teeth       | A vicious attack to the mouth leaves them spitting blood and teeth.                                                  | Stunned; −2 Charisma Modifier                              | First Aid            |
+| 53    | Gut Shot                | A hard body attack folds the enemy over and leaves them struggling for breath.                                       | Stunned; Next Movement +1 AP                        | —                     |
+| 54    | Hand, Meet Wall         | Drive or redirect the enemy's weapon hand into a nearby hard surface.                                                | Stunned; Disarmed; −1 Agility Modifier                     | First Aid            |
+| 55    | Environmental Education | Use a nearby object, obstacle or surface against the enemy.                                                          | Stunned; Move target 1m                             | —                     |
+| 56    | Oh, That's Gonna Bruise | A painful facial injury leaves obvious bruising or a nose damaged beyond repair.                                     | −2 Charisma Modifier                                       | First Aid (NuNose)   |
+| 61    | Dust / Liquid / Object  | Use something nearby to temporarily interfere with the enemy's vision.                                               | Stunned; Gain immediate 1 AP                        | —                     |
+| 62    | Target Driven Back      | Drive the enemy violently backwards and off their feet.                                                              | Knock Back 2m; Prone; Gain immediate 1 AP           | —                     |
+| 63    | Target Pulled Down      | Take the enemy violently to the ground and control them there.                                                       | Prone; Locked; Gain immediate 1 AP                  | —                     |
+| 64    | Target Slammed          | Send the enemy hard behind you and onto the ground.                                                                  | Target moves 2m behind; Prone; Gain immediate 1 AP  | —                     |
+| 65    | Target Clipped          | Catch the enemy, take them to the ground and strip away their weapon.                                                | Prone; Weapon Taken / Disarmed; Gain immediate 1 AP | —                     |
+| 66    | Jaw Strike              | A perfectly placed attack to the jaw or head drops the enemy immediately.                                            | Unconscious; Gain immediate 1 AP                             | —                     |
+
+
+
+
+### Medium Melee Special Effects
+| Roll  | Title                  | Description                                                                    | Effect                                                 | Treatment           |
+| ----- | -------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------ | ------------------- |
+| 11–16 | No Additional Effect | The hit lands. No additional effect.                                           | —                                                      | —                   |
+| 21    | Head Over Heels      | Send the enemy off their feet and 1m away.                                     | Prone; Move 1m                                         | —                   |
+| 22    | Driven Back          | A powerful attack sends the enemy staggering backwards.                        | Knock Back 2m; Stunned; Free Follow                    | —                   |
+| 23    | Hard Landing         | Send the enemy crashing hard to the ground.                                    | Prone; Stunned                                         | —                   |
+| 24    | Wrong Side of You    | Redirect the enemy past you, leaving them 2m behind.                           | Target 2m behind; Stunned                              | —                   |
+| 25    | Guard Smashed Aside  | Break through or bypass their defence, leaving them unable to defend properly. | Stunned;                                               | —                   |
+| 26    | Weapon Wrenched Free | Strip or knock the enemy's weapon from their grasp.                            | Disarmed; Weapon lands 2m away                         | —                   |
+| 31    | Head Shot            | A devastating attack shatters the jaw and drops the enemy.                     | Unconscious; −4 Charisma Modifier                                     | Treatment (NuJaw) |
+| 32    | Hard Takedown        | Catch the enemy hard and send them crashing to the ground.                     | Prone; Stunned; Attacker moves 1m past                 | —                   |
+| 33    | Driven Down          | Drive the enemy backwards before putting them violently on the ground.         | Knock Back 2m; Prone; Stunned; Following               | —                   |
+| 34    | Hard Throw           | Redirect or overpower the enemy and send them hard behind you.                 | Target 1m behind; Prone; Stunned                       | —                   |
+| 35    | Sidestep & Dump      | Evade their attack and dump them hard beyond you.                              | Target 2m past; Prone; Stunned                         | —                   |
+| 36    | Momentum Throw       | Turn their momentum against them and send them violently behind you.           | Target 2m behind; Prone; Stunned                       | —                   |
+| 41    | Knee Injury          | Damage the knee badly enough to impair movement.                               | Stunned; −2 Movement                                 | Treatment         |
+| 42    | Ankle Injury         | Damage the ankle badly enough to impair movement.                              | −2 Movement                                          | Treatment         |
+| 43    | Off Arm Injury       | Damage or open the off arm badly enough to impair its use.                     | Drop held item; −2 Agility Modifier; Bleeding             | Treatment         |
+| 44    | Main Arm Injury      | Damage the main arm badly enough to impair its use.                            | Drop held item; −2 Agility Modifier                        | Treatment         |
+| 45    | Cracked Ribs         | A powerful body attack cracks ribs and doubles the enemy over.                 | Stunned; −2 Initiative Modifier                               | Treatment         |
+| 46    | Seeing Stars         | A savage head impact leaves the enemy dazed and disoriented.                   | Stunned; −2 Initiative Modifier                                | First Aid          |
+| 51    | Left Foot Broken     | The left foot is broken or badly opened, making movement agonising.            | −4 Movement; Bleeding                               | Treatment         |
+| 52    | Right Foot Broken    | The right foot is broken, making movement agonising and difficult.             | −4 Movement                                          | Treatment         |
+| 53    | Off Arm Broken       | The off arm is broken or badly opened. Whatever it held falls away.            | Drop held item; −4 Agility Modifier; Bleeding             | Treatment         |
+| 54    | Main Arm Broken      | The main arm is broken. Whatever it held falls away.                           | Drop held item; −4 Agility Modifier                        | Treatment         |
+| 55    | Internal Injury      | A devastating body attack breaks ribs and causes serious internal injury.      | Stunned; −4 Initiative Modifier; Internal Bleeding        | Surgery          |
+| 56    | Lights Out           | A devastating head strike immediately shuts the enemy down.                    | Unconscious                                                     | —                   |
+| 61    | Can't See Shit       | An attack to the eyes or face temporarily leaves the enemy unable to see.      | Temporarily Blinded; Gain immediate 1 AP               | —                   |
+| 62    | Freight Train        | Smash or drive through the enemy and send them violently to the ground.        | Knock Back 2m; Prone; Stunned; Gain immediate 1 AP     | —                   |
+| 63    | Ground Control       | Take the enemy down and completely control their position.                     | Prone; Stunned; Locked; Gain immediate 1 AP            | —                   |
+| 64    | Hard Throw           | Send the enemy violently behind you and leave them stunned on the ground.      | Target 2m behind; Prone; Stunned; Gain immediate 1 AP  | —                   |
+| 65    | Strip & Drop         | Take the enemy down, control them and strip away their weapon.                 | Prone; Stunned; Locked; Disarmed; Gain immediate 1 AP  | —                   |
+| 66    | Killing Blow         | Land a perfectly placed attack that ends the fight immediately.                | Instant Death; Gain immediate 1 AP                     | —                   |
+
+
+
+### Heavy Melee Special Effects
+| Roll  | Title                  | Description                                                                                       | Effect                                                                | Treatment             |
+| ----- | -------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------- |
+| 11–16 | No Additional Effect | The hit lands. No additional effect.                                                              | —                                                                     | —                     |
+| 21    | Driven Through       | Smash the enemy backwards and send them crashing to the ground.                                   | Knock Back 2m; Prone; Stunned                                         | —                     |
+| 22    | Folded               | A brutal attack doubles them over before dumping them at your feet.                               | Prone; Stunned; −2 Initiative Modifier                                       | Treatment           |
+| 23    | Violent Reversal     | Turn their momentum against them and hurl them hard behind you.                                   | Target 2m behind; Prone; Stunned                                      | —                     |
+| 24    | Weapon Destroyed     | Strike, wrench or trap their weapon hard enough to break it or render it unusable.                | Weapon Destroyed; Disarmed                                            | —                     |
+| 25    | Crushing Takedown    | Drive the enemy bodily into the ground with devastating force.                                    | Unconscious                                                    | —                     |
+| 26    | Fatal Impact         | Hurl or drive the enemy into the ground or a nearby surface with lethal force.                    | Instant Death                                                         | —                     |
+| 31    | Savage Head Strike   | A devastating attack destroys part of the face and drops the enemy.                               | Unconscious; −4 Charisma Modifier                                                   | Surgery (NuFace)   |
+| 32    | Through the Guard    | Smash their defence aside and drive straight through them.                                        | Unconscious; Attacker moves 1m past                                     | —                     |
+| 33    | Impaled              | Drive them backwards until they are violently pierced by or driven onto something nearby.         | Knock Back 2m; Impaled; Unconscious; Bleeding                                | Treatment           |
+| 34    | Lift & Drop          | Catch or redirect the enemy before brutally dumping them behind you.                              | Target 1m behind; Unconscious; Stunned                                  | —                     |
+| 35    | Back Strike          | Catch them hard as they pass, leaving them staggering before they collapse.                       | Knock Back 2m; Unconscious                                                     | —                     |
+| 36    | Broken Neck          | Turn their movement violently against them. Something in the neck snaps.                          | Instant Death                                                         | —                     |
+| 41    | Left Foot Mangled    | The left foot is badly pierced, crushed or mangled beyond repair, leaving it barely usable.       | −4 Movement; Stunned; Bleeding                                    | Surgery (NuFoot)   |
+| 42    | Right Foot Mangled   | The right foot is badly crushed or mangled beyond repair, leaving it barely usable.               | −4 Movement; Stunned                                               | Surgery (NuFoot)   |
+| 43    | Off Hand Mangled     | The off hand is badly pierced, crushed or mangled beyond repair. Whatever it held goes sprawling. | Drop held item; −4 Agility Modifier; Bleeding                           | Surgery (NuHand)   |
+| 44    | Main Hand Mangled    | The main hand is badly crushed or mangled beyond repair. Whatever it held goes sprawling.         | Drop held item; −4 Agility Modifier                                      | Surgery (NuHand)   |
+| 45    | Chest Crushed        | Ribs break under the impact, leaving them doubled over and unable to breathe.                     | Stunned; −4 Initiative Modifier                                             | Surgery            |
+| 46    | Mortal Head Wound    | A catastrophic attack to the head destroys something vital.                                       | Instant Death                                                         | —                     |
+| 51    | Left Leg Destroyed   | The left leg is severed, shattered or crushed beyond use.                                         | −6 Movement; Unconscious; Bleeding                                         | Surgery (NuLeg)    |
+| 52    | Right Leg Destroyed  | The right leg is severed, shattered or crushed beyond use.                                        | −6 Movement; Unconscious; Bleeding                                         | Surgery (NuLeg)    |
+| 53    | Off Arm Destroyed    | The off arm is severed, shattered or crushed beyond use. Whatever it held falls away.             | Drop held item; −6 Agility Modifier; Bleeding                           | Surgery (NuArm)    |
+| 54    | Main Arm Destroyed   | The main arm is severed, shattered or crushed beyond use. Whatever it held falls away.            | Drop held item; −6 Agility Modifier                                      | Surgery (NuArm)    |
+| 55    | Chest Caved In       | The chest collapses under the attack, causing catastrophic internal injury.                       | Unconscious; Internal Bleeding                                              | Surgery (NuOrgans) |
+| 56    | Head Destroyed       | The attack catastrophically destroys the head or neck.                                            | Instant Death                                                         | —                     |
+| 61    | Blinded              | A catastrophic attack destroys both eyes, leaving the enemy permanently unable to see.            | Blinded; Unconscious; Gain immediate 1 AP                                   | Surgery (NuEye)    |
+| 62    | Launched             | A devastating attack sends the enemy backwards and violently off their feet.                      | Knock Back 2m; Unconscious; Gain immediate 1 AP                         | —                     |
+| 63    | Break & Drop         | Take the enemy violently to the ground and leave them unconscious.                                | Unconscious; Gain immediate 1 AP                                        | —                     |
+| 64    | Human Projectile     | Hurl the enemy behind you into the ground, scenery or another combatant.                          | Target 2m behind; Unconscious; Gain immediate 1 AP                      | —                     |
+| 65    | Arm Destroyed        | Take the enemy down while catastrophically destroying one arm.                                    | Unconscious; Disarmed; −6 Agility Modifier; Bleeding; Gain immediate 1 AP | Surgery (NuArm)    |
+| 66    | Finisher             | A perfectly placed attack catastrophically destroys the head, neck or another vital area.         | Instant Death; Gain immediate 1 AP                                    | —                     |
