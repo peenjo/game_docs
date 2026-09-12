@@ -43,14 +43,25 @@ const effects = await createEffects.execute({effectNames: activeEffects});
 
 await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
+function isReductionEffect(effectName) {
+    return (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
+        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
+        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
+        effectName.includes(EFFECTS.INITIATIVE_REDUCED));
+}
+
 // create chat messages for each of the active effects
 const displayChatMessage = game.macros.getName("Display_Chat_Message");
 for (const effect of effects) {
-    let mess = 'gets ' + effect.name; // simple default
-    if (effect.name === EFFECTS.BLEEDING) {
+    let mess = 'is ' + effect.name; // simple default
+    if (isReductionEffect(effect.name)) {
+        mess = 'gets ' + effect.name;
+    } else if (effect.name === EFFECTS.BLEEDING) {
         mess = 'starts ' + effect.name;
     } else if (effect.name.includes(EFFECTS.NEEDS)) {
         mess = effect.name;
+    } else if (effect.name.includes(EFFECTS.NU)) {
+        mess = 'needs a ' + effect.name;
     }
 
     const chatContent = `<strong>${target.name}</strong> ${mess}!`;

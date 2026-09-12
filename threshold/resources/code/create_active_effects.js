@@ -54,13 +54,33 @@ iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b7
 iconMap.set(EFFECTS.LOCKED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
 iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
 iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");
+iconMap.set(EFFECTS.NEEDS_FIRST_AID, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medic.svg");
+iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medicine.svg");
+iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medical-drip.svg");
+// TODO ech 2026-09-11 - when I can get better icons for cybernetic parts, I'll use them
+iconMap.set(EFFECTS.NU_ARM, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_EYE, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_FACE, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_FINGER, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_FOOT, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_HAND, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_JAW, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_LEG, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_NOSE, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_ORGANS, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_TOE, "icons/svg/teleport.svg");
+
 iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
 iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
-iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg");
+iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg"); // TODO ech 2026-09-11 - deprecated
 iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
-iconMap.set(EFFECTS.NEEDS_FIRST_AID, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medic.svg");
-iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medical-drip.svg");
-iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medicine.svg");
+
+function isReductionEffect(effectName) {
+    return (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
+        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
+        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
+        effectName.includes(EFFECTS.INITIATIVE_REDUCED));
+}
 
 let effects = [];
 for (const effectName of uniqueEffectNames) {
@@ -84,7 +104,7 @@ for (const effectName of uniqueEffectNames) {
         EFFECTS.DEAD,
         EFFECTS.PRONE,
         EFFECTS.STUNNED,
-        EFFECTS.SUPPRESSED,
+        EFFECTS.SUPPRESSED,// TODO ech 2026-09-11 - deprecated
         EFFECTS.UNCONSCIOUS,
     ];
     if (noMovementEffects.includes(effectName)) {
@@ -96,12 +116,8 @@ for (const effectName of uniqueEffectNames) {
         }];
     }
 
-    // this covers all reduction effects
-    if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
-        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
-        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
-        effectName.includes(EFFECTS.INITIATIVE_REDUCED)) {
-        const modifier = effectName.slice(-2); // get last two characters: -2, -4, -6
+    if (isReductionEffect(effectName)) {
+        const modifier = effectName.slice(-2); // get last two characters: -1, -2, -4, -6
         let thresholdKey = THRESHOLD_VALUES.MOVEMENT;
         if (effectName.includes(EFFECTS.AGILITY_REDUCED)) {
             thresholdKey = THRESHOLD_VALUES.AGILITY_MOD;
@@ -118,19 +134,17 @@ for (const effectName of uniqueEffectNames) {
         }];
     }
 
-    // stunned/suppressed effects persist for at least one turn
     if (effectName.includes(EFFECTS.STUNNED) ||
-        effectName.includes(EFFECTS.SUPPRESSED)) {
+        effectName.includes(EFFECTS.SUPPRESSED)) { // TODO ech 2026-09-11 - deprecated
+        // stunned/suppressed effects persist for at least one turn
         effectData.duration = {turns: 1, expiry: "turnEnd"};
-        // all 'moved' effects appear briefly as a GM reminder to do something
     } else if (effectName.includes(EFFECTS.MOVED)) {
+        // all 'moved' effects appear briefly as a GM reminder to do something
         effectData.duration = {turns: 0, expiry: "roundEnd"};
-        // permanent (persist after combat) effects
-    } else if (effectName.includes(EFFECTS.MOVEMENT_REDUCED) ||
-        effectName.includes(EFFECTS.AGILITY_REDUCED) ||
-        effectName.includes(EFFECTS.CHARISMA_REDUCED) ||
+    } else if (isReductionEffect(effectName) ||
+        effectName.includes(EFFECTS.NU) ||
         effectName.includes(EFFECTS.NEEDS)) {
-        // no duration is set
+        // permanent (persist after combat) effects - no duration is set
     } else {
         // ech 2026-08-29 - hack to have a 'temporary' effect to show icon on token during combat. sigh...
         effectData.duration = {expiry: "combatEnd"};
