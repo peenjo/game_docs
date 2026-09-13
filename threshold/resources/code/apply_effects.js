@@ -56,6 +56,8 @@ for (const effect of effects) {
     let mess = 'is ' + effect.name; // simple default
     if (isReductionEffect(effect.name)) {
         mess = 'gets ' + effect.name;
+    } else if (effect.name === EFFECTS.EMBEDDED_ROUND) {
+        mess = 'gets an ' + effect.name;
     } else if (effect.name === EFFECTS.BLEEDING) {
         mess = 'starts ' + effect.name;
     } else if (effect.name.includes(EFFECTS.NEEDS)) {

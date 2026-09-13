@@ -50,6 +50,7 @@ iconMap.set(EFFECTS.BLEEDING, "icons/svg/blood.svg");
 iconMap.set(EFFECTS.CHARISMA_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/pummeled.svg");
 iconMap.set(EFFECTS.DEAD, "icons/svg/skull.svg");
 iconMap.set(EFFECTS.DISARMED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/hand-bandage.svg");
+iconMap.set(EFFECTS.EMBEDDED_ROUND, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
 iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/empty-chessboard.svg");
 iconMap.set(EFFECTS.LOCKED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
 iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
@@ -59,6 +60,7 @@ iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/
 iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medical-drip.svg");
 // TODO ech 2026-09-11 - when I can get better icons for cybernetic parts, I'll use them
 iconMap.set(EFFECTS.NU_ARM, "icons/svg/teleport.svg");
+iconMap.set(EFFECTS.NU_EAR, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_EYE, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_FACE, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_FINGER, "icons/svg/teleport.svg");
@@ -69,7 +71,6 @@ iconMap.set(EFFECTS.NU_LEG, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_NOSE, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_ORGANS, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_TOE, "icons/svg/teleport.svg");
-
 iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
 iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
 iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg"); // TODO ech 2026-09-11 - deprecated
@@ -143,6 +144,7 @@ for (const effectName of uniqueEffectNames) {
         effectData.duration = {turns: 0, expiry: "roundEnd"};
     } else if (isReductionEffect(effectName) ||
         effectName.includes(EFFECTS.NU) ||
+        effectName.includes(EFFECTS.EMBEDDED_ROUND) ||
         effectName.includes(EFFECTS.NEEDS)) {
         // permanent (persist after combat) effects - no duration is set
     } else {

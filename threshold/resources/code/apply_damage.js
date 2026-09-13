@@ -31,7 +31,7 @@ const SPIRITUAL_TRAITS = [KEYS.ESSENCE, KEYS.WILL, KEYS.CHARISMA]; // in order
 const TRAITS = spiritualDamage ? SPIRITUAL_TRAITS : PHYSICAL_TRAITS; // physical or spiritual
 
 let remaining = totalDamage;
-// TODO ech 2026-09-10 - is there such a thing as 'spirit armor'?
+// TODO ech 2026-09-10 - figure out how to capture 'spirit armor' value
 if (!ignoreArmor) {
     const armorValue = target.system[KEYS.ARMOR_CLASS].value;
     remaining -= armorValue;
@@ -56,14 +56,15 @@ for (const trait of TRAITS) {
     // apply new damage and update the visual presentation (token, character sheet, etc)
     await target.update({['system.characteristics.' + trait + '.damage']: newDamage});
 
-    // TODO ech 2026-09-10 - does spirit combat also cause unconsciousness and death?
-    if (trait === KEYS.AGILITY && currentValue - loss === 0) {
-        // TODO ech 2026-09-09 - apply DEAD active effect?
-        const chatContent = `<strong>${target.name}</strong> just bled out and DIED!`;
-        await displayChatMessage.execute({message: chatContent});
-    } else if (trait === KEYS.STRENGTH && currentValue - loss === 0) {
-        // TODO ech 2026-09-09 - apply UNCONSCIOUS active effect?
-        const chatContent = `<strong>${target.name}</strong> went unconscious!`;
-        await displayChatMessage.execute({message: chatContent});
+    if (currentValue - loss === 0) {
+        if ([KEYS.AGILITY, KEYS.CHARISMA].includes(trait)) {
+            // TODO ech 2026-09-09 - apply DEAD active effect?
+            const chatContent = `<strong>${target.name}</strong> just DIED!`;
+            await displayChatMessage.execute({message: chatContent});
+        } else if ([KEYS.STRENGTH, KEYS.WILL].includes(trait)) {
+            // TODO ech 2026-09-09 - apply UNCONSCIOUS active effect?
+            const chatContent = `<strong>${target.name}</strong> went unconscious!`;
+            await displayChatMessage.execute({message: chatContent});
+        }
     }
 }
