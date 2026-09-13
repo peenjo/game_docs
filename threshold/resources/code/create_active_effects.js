@@ -73,7 +73,6 @@ iconMap.set(EFFECTS.NU_ORGANS, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.NU_TOE, "icons/svg/teleport.svg");
 iconMap.set(EFFECTS.PRONE, "icons/svg/falling.svg");
 iconMap.set(EFFECTS.STUNNED, "icons/svg/daze.svg");
-iconMap.set(EFFECTS.SUPPRESSED, "icons/svg/daze.svg"); // TODO ech 2026-09-11 - deprecated
 iconMap.set(EFFECTS.UNCONSCIOUS, "icons/svg/unconscious.svg");
 
 function isReductionEffect(effectName) {
@@ -105,7 +104,6 @@ for (const effectName of uniqueEffectNames) {
         EFFECTS.DEAD,
         EFFECTS.PRONE,
         EFFECTS.STUNNED,
-        EFFECTS.SUPPRESSED,// TODO ech 2026-09-11 - deprecated
         EFFECTS.UNCONSCIOUS,
     ];
     if (noMovementEffects.includes(effectName)) {
@@ -135,9 +133,8 @@ for (const effectName of uniqueEffectNames) {
         }];
     }
 
-    if (effectName.includes(EFFECTS.STUNNED) ||
-        effectName.includes(EFFECTS.SUPPRESSED)) { // TODO ech 2026-09-11 - deprecated
-        // stunned/suppressed effects persist for at least one turn
+    if (effectName.includes(EFFECTS.STUNNED)) {
+        // stunned effect persists for at least one turn
         effectData.duration = {turns: 1, expiry: "turnEnd"};
     } else if (effectName.includes(EFFECTS.MOVED)) {
         // all 'moved' effects appear briefly as a GM reminder to do something

@@ -57,6 +57,5 @@ return {
     NU_TOE: "NuToe",
     PRONE: "prone",
     STUNNED: "stunned",
-    SUPPRESSED: "suppressed", // TODO ech 2026-09-11 - deprecated
     UNCONSCIOUS: "unconscious",
 }
