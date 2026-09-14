@@ -47,12 +47,13 @@ const iconMap = new Map();
 // ech 2026-08-29 - not married to any of these choices, but it's a start
 iconMap.set(EFFECTS.AGILITY_REDUCED, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/athletics-dexterity.svg");
 iconMap.set(EFFECTS.BLEEDING, "icons/svg/blood.svg");
+iconMap.set(EFFECTS.BLINDED, "icons/svg/blind.svg");
 iconMap.set(EFFECTS.CHARISMA_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/pummeled.svg");
 iconMap.set(EFFECTS.DEAD, "icons/svg/skull.svg");
 iconMap.set(EFFECTS.DISARMED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/hand-bandage.svg");
 iconMap.set(EFFECTS.EMBEDDED_ROUND, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
 iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/empty-chessboard.svg");
-iconMap.set(EFFECTS.LOCKED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
+iconMap.set(EFFECTS.LOCKED, "icons/svg/padlock.svg");
 iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
 iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");
 iconMap.set(EFFECTS.NEEDS_FIRST_AID, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medic.svg");
