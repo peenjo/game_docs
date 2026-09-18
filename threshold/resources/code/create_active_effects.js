@@ -30,6 +30,12 @@ if (effectNames.includes(EFFECTS.NEEDS_SURGERY)) {
 } else if (effectNames.includes(EFFECTS.NEEDS_TREATMENT)) {
     effectNames.push(EFFECTS.NEEDS_FIRST_AID);
 }
+
+if (effectNames.includes(EFFECTS.MOVEMENT_ZERO) ||
+    effectNames.includes(EFFECTS.UNCONSCIOUS)) {
+    effectNames.push(EFFECTS.PRONE);
+}
+
 // remove any duplicates
 const uniqueEffectNames = [...new Set(effectNames)];
 
@@ -104,11 +110,11 @@ for (const effectName of uniqueEffectNames) {
     // effects setting movement to zero
     const noMovementEffects = [
         EFFECTS.DEAD,
+        EFFECTS.LOCKED,
+        EFFECTS.MOVEMENT_ZERO,
         EFFECTS.PRONE,
         EFFECTS.STUNNED,
         EFFECTS.UNCONSCIOUS,
-        EFFECTS.LOCKED,
-        EFFECTS.MOVEMENT_ZERO,
     ];
     if (noMovementEffects.includes(effectName)) {
         effectData.changes = [{
