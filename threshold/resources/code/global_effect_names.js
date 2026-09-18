@@ -39,6 +39,7 @@ return {
     MOVEMENT_REDUCED_LOW: "movement -2",
     MOVEMENT_REDUCED_MEDIUM: "movement -4",
     MOVEMENT_REDUCED_HIGH: "movement -6",
+    MOVEMENT_ZERO: "can't move",
     NEEDS: "needs", // not used directly: a convenience to match any other NEEDS effect
     NEEDS_FIRST_AID: "needs first aid",
     NEEDS_TREATMENT: "needs treatment", // treatment requires first aid

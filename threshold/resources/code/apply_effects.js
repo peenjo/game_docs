@@ -60,7 +60,7 @@ for (const effect of effects) {
         mess = 'gets an ' + effect.name;
     } else if (effect.name === EFFECTS.BLEEDING) {
         mess = 'starts ' + effect.name;
-    } else if (effect.name.includes(EFFECTS.NEEDS)) {
+    } else if (effect.name.includes(EFFECTS.NEEDS) || effect.name.includes(EFFECTS.MOVEMENT_ZERO)) {
         mess = effect.name;
     } else if (effect.name.includes(EFFECTS.NU)) {
         mess = 'needs a ' + effect.name;

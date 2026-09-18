@@ -56,6 +56,7 @@ iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b7
 iconMap.set(EFFECTS.LOCKED, "icons/svg/padlock.svg");
 iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
 iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");
+iconMap.set(EFFECTS.MOVEMENT_ZERO, "icons/svg/statue.svg");
 iconMap.set(EFFECTS.NEEDS_FIRST_AID, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medic.svg");
 iconMap.set(EFFECTS.NEEDS_SURGERY, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medicine.svg");
 iconMap.set(EFFECTS.NEEDS_TREATMENT, "https://assets.forge-vtt.com/bazaar/systems/twodsix/assets/assets/icons/medical-drip.svg");
@@ -106,6 +107,8 @@ for (const effectName of uniqueEffectNames) {
         EFFECTS.PRONE,
         EFFECTS.STUNNED,
         EFFECTS.UNCONSCIOUS,
+        EFFECTS.LOCKED,
+        EFFECTS.MOVEMENT_ZERO,
     ];
     if (noMovementEffects.includes(effectName)) {
         effectData.changes = [{
@@ -114,9 +117,7 @@ for (const effectName of uniqueEffectNames) {
             value: 0,
             priority: 40 // happens after any reduction effects
         }];
-    }
-
-    if (isReductionEffect(effectName)) {
+    } else if (isReductionEffect(effectName)) {
         const modifier = effectName.slice(-2); // get last two characters: -1, -2, -4, -6
         let thresholdKey = THRESHOLD_VALUES.MOVEMENT;
         if (effectName.includes(EFFECTS.AGILITY_REDUCED)) {
@@ -143,6 +144,7 @@ for (const effectName of uniqueEffectNames) {
     } else if (isReductionEffect(effectName) ||
         effectName.includes(EFFECTS.NU) ||
         effectName.includes(EFFECTS.EMBEDDED_ROUND) ||
+        effectName.includes(EFFECTS.MOVEMENT_ZERO) ||
         effectName.includes(EFFECTS.NEEDS)) {
         // permanent (persist after combat) effects - no duration is set
     } else {
