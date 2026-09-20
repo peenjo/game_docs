@@ -59,6 +59,7 @@ iconMap.set(EFFECTS.DEAD, "icons/svg/skull.svg");
 iconMap.set(EFFECTS.DISARMED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/hand-bandage.svg");
 iconMap.set(EFFECTS.EMBEDDED_ROUND, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/internal-injury.svg");
 iconMap.set(EFFECTS.INITIATIVE_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/empty-chessboard.svg");
+iconMap.set(EFFECTS.IMPALED, "https://assets.forge-vtt.com/6730262be6f1e2314a2b96a9/Eric-icons/spikes-full.svg");
 iconMap.set(EFFECTS.LOCKED, "icons/svg/padlock.svg");
 iconMap.set(EFFECTS.MOVED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/push.svg");
 iconMap.set(EFFECTS.MOVEMENT_REDUCED, "https://assets.forge-vtt.com/640b5615b76cde9b16737fba/moulinette/images/gameicons/knee-bandage.svg");

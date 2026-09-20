@@ -23,6 +23,7 @@ return {
     INITIATIVE_REDUCED_LOW: "initiative -2",
     INITIATIVE_REDUCED_MEDIUM: "initiative -4",
     INITIATIVE_REDUCED_HIGH: "initiative -6",
+    IMPALED: "impaled",
     LOCKED: "in a lock",
     MOVED: "moved", // not used directly: a convenience to match any other MOVED effect
     MOVED_LONG_ANYWHERE: "moved 2m in an appropriate direction",
