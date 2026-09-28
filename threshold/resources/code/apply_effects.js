@@ -51,7 +51,7 @@ function isReductionEffect(effectName) {
 }
 
 // create chat messages for each of the active effects
-const displayChatMessage = game.macros.getName("Display_Chat_Message");
+const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 for (const effect of effects) {
     let mess = 'is ' + effect.name; // simple default
     if (isReductionEffect(effect.name)) {
@@ -67,5 +67,5 @@ for (const effect of effects) {
     }
 
     const chatContent = `<strong>${target.name}</strong> ${mess}!`;
-    await displayChatMessage.execute({message: chatContent});
+    await displayMessage.execute({message: chatContent});
 }

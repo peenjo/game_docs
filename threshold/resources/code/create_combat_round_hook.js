@@ -11,7 +11,7 @@ const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
 const EFFECTS = await getGlobalEffectNames.execute();
 
 const applyDamage = game.macros.getName("Apply_Damage");
-const displayChatMessage = game.macros.getName("Display_Chat_Message");
+const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 
 const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions) => {
     // Only fire on forward progression
@@ -29,10 +29,9 @@ const hook_id = Hooks.on("combatRound", async (combat, updateData, updateOptions
         await applyDamage.execute({target: actor, damage: 2, ignoreArmor: true});
 
         const chatContent = `<strong>${actor.name}</strong> is still ${effect.name} and took more damage!`;
-        await displayChatMessage.execute({message: chatContent});
+        await displayMessage.execute({message: chatContent});
     }
 });
 
 // store hook id as a flag for 'already created'
 globalThis.thresholdData.combatHookId = hook_id;
-

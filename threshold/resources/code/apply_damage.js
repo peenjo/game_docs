@@ -10,34 +10,36 @@
 
 const target = scope.target; // foundry actor to apply the damage to
 if (!target) {
-    console.log('Hey moron, you need to supply the target');
-    return null;
+    console.log('Whoops, you need to supply the target');
+    return;
 }
 const totalDamage = scope.damage || 0; // damage to be applied
 const ignoreArmor = scope.ignoreArmor || false; // armor counts by default
-const spiritualDamage = scope.spiritualDamage || false; // physical damage by default
+const spiritDamage = scope.spiritDamage || false; // physical damage by default
 
 const KEYS = {
     AGILITY: "dexterity",
-    ARMOR_CLASS: "primaryArmor",
     CHARISMA: "socialStanding",
     ENDURANCE: "endurance",
     ESSENCE: "alternative3",
+    PHYSICAL_ARMOR: "primaryArmor",
+    SPIRIT_ARMOR: "radiationProtection", // ech 2026-09-27 - not ideal, but it's an unused value in twodsix code
     STRENGTH: "strength",
     WILL: "alternative2",
 };
 const PHYSICAL_TRAITS = [KEYS.ENDURANCE, KEYS.STRENGTH, KEYS.AGILITY]; // in order
-const SPIRITUAL_TRAITS = [KEYS.ESSENCE, KEYS.WILL, KEYS.CHARISMA]; // in order
-const TRAITS = spiritualDamage ? SPIRITUAL_TRAITS : PHYSICAL_TRAITS; // physical or spiritual
+const SPIRIT_TRAITS = [KEYS.ESSENCE, KEYS.WILL, KEYS.CHARISMA]; // in order
+const TRAITS = spiritDamage ? SPIRIT_TRAITS : PHYSICAL_TRAITS; // physical or spirit
+const ARMOR = spiritDamage ? KEYS.SPIRIT_ARMOR : KEYS.PHYSICAL_ARMOR; // physical or spirit
 
 let remaining = totalDamage;
-// TODO ech 2026-09-10 - figure out how to capture 'spirit armor' value
+// TODO ech 2026-09-27 - implement toughness
 if (!ignoreArmor) {
-    const armorValue = target.system[KEYS.ARMOR_CLASS].value;
+    const armorValue = target.system[ARMOR].value;
     remaining -= armorValue;
 }
 
-const displayChatMessage = game.macros.getName("Display_Chat_Message");
+const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 
 for (const trait of TRAITS) {
     // no more damage to apply - we're done
@@ -60,11 +62,11 @@ for (const trait of TRAITS) {
         if ([KEYS.AGILITY, KEYS.CHARISMA].includes(trait)) {
             // TODO ech 2026-09-09 - apply DEAD active effect?
             const chatContent = `<strong>${target.name}</strong> just DIED!`;
-            await displayChatMessage.execute({message: chatContent});
+            await displayMessage.execute({message: chatContent});
         } else if ([KEYS.STRENGTH, KEYS.WILL].includes(trait)) {
             // TODO ech 2026-09-09 - apply UNCONSCIOUS active effect?
             const chatContent = `<strong>${target.name}</strong> went unconscious!`;
-            await displayChatMessage.execute({message: chatContent});
+            await displayMessage.execute({message: chatContent});
         }
     }
 }
