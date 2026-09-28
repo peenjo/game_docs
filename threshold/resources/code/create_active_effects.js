@@ -7,8 +7,8 @@
 // names of effect(s) passed in by calling macro
 let effectNames = scope.effectNames;
 if (!effectNames) {
-    console.log('Hey moron, you need to supply effect names');
-    return null;
+    console.log('Whoops, you need to supply effect names');
+    return;
 }
 
 // simple way of having global values without dealing with Foundry directly
@@ -45,7 +45,6 @@ const THRESHOLD_VALUES = {
     CHARISMA_MOD: "system.characteristics.socialStanding.mod",
     INITIATIVE_MOD: "system.characteristics.alternative1.mod",
     MOVEMENT: "system.movement.walk",
-    ARMOR_CLASS: "system.primaryArmor.value",
     EFFECT_TYPE: {MULTIPLY: 1, ADD: 2, DOWNGRADE: 3, UPGRADE: 4, OVERRIDE: 5, CUSTOM: 0}, // CUSTOM throws error
 };
 

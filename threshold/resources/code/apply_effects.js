@@ -8,8 +8,8 @@
 // list of effects passed in from caller macro
 const activeEffects = scope.activeEffects;
 if (!activeEffects) {
-    console.log('hey moron, you need to supply the list of effect names');
-    return null;
+    console.log('Whoops, you need to supply the list of effect names');
+    return;
 }
 
 // ech 2026-09-08 - This makes all the expired events

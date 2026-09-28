@@ -8,7 +8,7 @@ const applyDamage = game.macros.getName("Apply_Damage");
 
 // TODO ech 2026-09-10 - maybe improve the dialog
 new Dialog({
-    title: "Apply Spirit Damage",
+    title: "Apply Physical Damage",
     content: `<input type="number" id="damageInput" value="0">`,
     buttons: {
         apply: {
@@ -17,7 +17,7 @@ new Dialog({
             callback: (html) => {
                 let d = parseInt(html.find('#damageInput').val());
                 if (!isNaN(d) && d > 0) {
-                    applyDamage.execute({target: actor, damage: d, spiritDamage: true});
+                    applyDamage.execute({target: actor, damage: d});
                 }
                 // TODO ech 2026-09-27 - maybe GM message about light/medium/heavy effect
             }
