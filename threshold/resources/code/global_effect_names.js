@@ -6,23 +6,23 @@
 
 return {
     AGILITY_REDUCED: "agility", // not used directly: a convenience to match any other AGILITY effect
-    AGILITY_REDUCED_MINOR: "agility -1",
-    AGILITY_REDUCED_LOW: "agility -2",
-    AGILITY_REDUCED_MEDIUM: "agility -4",
-    AGILITY_REDUCED_HIGH: "agility -6",
+    AGILITY_REDUCED_MINOR: "agility mod -1",
+    AGILITY_REDUCED_LOW: "agility mod -2",
+    AGILITY_REDUCED_MEDIUM: "agility mod -4",
+    AGILITY_REDUCED_HIGH: "agility mod -6",
     BLEEDING: "bleeding",
     BLINDED: "blinded",
     CHARISMA_REDUCED: "charisma", // not used directly: a convenience to match any other CHARISMA effect
-    CHARISMA_REDUCED_LOW: "charisma -2",
-    CHARISMA_REDUCED_MEDIUM: "charisma -4",
-    CHARISMA_REDUCED_HIGH: "charisma -6",
+    CHARISMA_REDUCED_LOW: "charisma mod -2",
+    CHARISMA_REDUCED_MEDIUM: "charisma mod -4",
+    CHARISMA_REDUCED_HIGH: "charisma mod -6",
     DEAD: "dead",
     DISARMED: "disarmed",
     EMBEDDED_ROUND: "embedded round",
     INITIATIVE_REDUCED: "initiative", // not used directly: a convenience to match any other INITIATIVE effect
-    INITIATIVE_REDUCED_LOW: "initiative -2",
-    INITIATIVE_REDUCED_MEDIUM: "initiative -4",
-    INITIATIVE_REDUCED_HIGH: "initiative -6",
+    INITIATIVE_REDUCED_LOW: "initiative mod -2",
+    INITIATIVE_REDUCED_MEDIUM: "initiative mod -4",
+    INITIATIVE_REDUCED_HIGH: "initiative mod -6",
     IMPALED: "impaled",
     LOCKED: "in a lock",
     MOVED: "moved", // not used directly: a convenience to match any other MOVED effect
