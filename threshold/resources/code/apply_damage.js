@@ -45,7 +45,7 @@ if (!ignoreArmor) {
         // TODO ech 2026-10-01 - implement natural toughness
         // effectiveArmor += natural_toughness;
     }
-    // console.log(`piercingDamage = ${piercingDamage}`);
+    console.log(`piercingDamage = ${piercingDamage}`);
     console.log(`effectiveArmor = ${effectiveArmor}`);
     remaining -= effectiveArmor;
 }
@@ -111,6 +111,7 @@ for (const [index, t] of TRAITS.entries()) {
     if (remaining <= 0) break;
 }
 
+// TODO ech 2026-10-02 - return data from macro for handling elsewhere
 if (!spiritDamage) {
     const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 
