@@ -6,7 +6,7 @@ if (selectedTokens.length !== 1) {
 const actor = selectedTokens[0].actor;
 const applyDamage = game.macros.getName("Apply_Damage");
 
-// TODO ech 2026-09-10 - maybe improve the dialog
+// TODO ech 2026-09-10 - improve the dialog
 new Dialog({
     title: "Apply Physical Damage",
     content:
@@ -26,11 +26,15 @@ new Dialog({
             callback: (html) => {
                 const d = parseInt(html.find('#totalDamage').val());
                 let p = parseInt(html.find('#piercingDamage').val());
+                // TODO ech 2026-10-02 - make this clearer
                 if (!isNaN(d) && d > 0) {
-                    if (!isNaN(p) && p < 0) p = 0;
+                    if (!isNaN(p)) {
+                        if (p < 0) p = 0;
+                        else if (p > d) p = d;
+                    }
                     applyDamage.execute({target: actor, damage: d, piercingDamage: p});
                 }
-                // TODO ech 2026-09-27 - maybe GM message about light/medium/heavy effect
+                // TODO ech 2026-09-27 - message GM about light/medium/heavy effect
             }
         }
     },

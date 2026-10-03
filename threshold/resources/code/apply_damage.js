@@ -35,6 +35,8 @@ const ARMOR = spiritDamage ? KEYS.SPIRIT_ARMOR : KEYS.PHYSICAL_ARMOR; // physica
 const SPECIAL_EFFECTS_TABLES = ['Light', 'Medium', 'Heavy'];
 const ADD = 2;
 
+console.log(`total damage = ${remaining}`);
+console.log(`piercingDamage = ${piercingDamage}`);
 if (!ignoreArmor) {
     let effectiveArmor = target.system[ARMOR].value;
     if (!spiritDamage && piercingDamage) {
@@ -42,10 +44,32 @@ if (!ignoreArmor) {
         if (effectiveArmor < 0) {
             effectiveArmor = 0;
         }
-        // TODO ech 2026-10-01 - implement natural toughness
-        // effectiveArmor += natural_toughness;
+
+        // TODO ech 2026-10-02 - clean this up
+        // apply natural toughness, if any
+        // get toughness effects for physical armor
+        const armorChanges = target.appliedEffects
+            .flatMap(eff =>
+                eff.changes
+                    .filter(ch => ch.key.includes(KEYS.PHYSICAL_ARMOR) &&
+                        eff.name.toLowerCase().includes('toughness'))
+                    .map(ch => ({
+                        effect: eff.name,
+                        key: ch.key,
+                        mode: ch.mode,
+                        value: ch.value
+                    }))
+            );
+        let toughness = 0;
+        for (const arm of armorChanges) {
+            console.log('armorChange = ' + JSON.stringify(arm, null, 2));
+            toughness += arm.value;
+        }
+        console.log(`toughness = ${toughness}`);
+        if (effectiveArmor < toughness) {
+            effectiveArmor = toughness;
+        }
     }
-    console.log(`piercingDamage = ${piercingDamage}`);
     console.log(`effectiveArmor = ${effectiveArmor}`);
     remaining -= effectiveArmor;
 }
