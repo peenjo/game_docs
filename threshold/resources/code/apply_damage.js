@@ -147,6 +147,10 @@ if (!spiritDamage) {
             const chatContent = `<strong>${target.name}</strong> went unconscious!`;
             await displayMessage.execute({message: chatContent});
         }
-        await displayMessage.execute({message: `Roll on the <strong>${specialEffect} Special Effects Table</strong>`});
+
+        await displayMessage.execute({
+            message: `Roll on the <strong>${specialEffect} Special Effects Table</strong>`,
+            whisper: game.users.filter(u => u.isGM).map(u => u._id),
+        });
     }
 }
