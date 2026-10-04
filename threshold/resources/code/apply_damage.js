@@ -93,7 +93,7 @@ if (!ignoreArmor) {
 let remaining = nonPiercingDamage + piercingDamage;
 results.damage_to_apply = remaining;
 if (remaining <= 0) {
-    console.log(JSON.stringify(results, null, 2));
+    // console.log(JSON.stringify(results, null, 2));
     return results; // no damage to apply, but have data to report
 }
 
@@ -137,15 +137,12 @@ for (const [index, t] of TRAITS.entries()) {
     const newDamage = currentDamage + loss;
     specialEffect = SPECIAL_EFFECTS_TABLES[index]; // tricksy way of tracking the degree of special effect
     remaining -= loss;
-    // console.log(`loss = ${loss}`);
-    // console.log(`newDamage = ${newDamage}`);
-    // console.log(`remaining = ${remaining}`);
 
     if (baseValue - newDamage <= 0) {
         if ([KEYS.AGILITY, KEYS.CHARISMA].includes(t)) {
-            finalStatus = "dead";
+            finalStatus = "dead"; // TODO ech 2026-10-03 - replace with global effect name
         } else if ([KEYS.STRENGTH, KEYS.WILL].includes(t)) {
-            finalStatus = "unconscious";
+            finalStatus = "unconscious"; // TODO ech 2026-10-03 - replace with global effect name
         }
     }
 
@@ -156,22 +153,9 @@ for (const [index, t] of TRAITS.entries()) {
     if (remaining <= 0) break;
 }
 
-// TODO ech 2026-10-02 - return data from macro for handling elsewhere
 if (!spiritDamage) {
-    const displayMessage = game.macros.getName("Display_Special_Effect_Message");
-
-    if (finalStatus === "dead") {
-        await displayMessage.execute({message: `<strong>${target.name}</strong> just DIED!`});
-    } else {
-        if (finalStatus === "unconscious") {
-            await displayMessage.execute({message: `<strong>${target.name}</strong> went unconscious!`});
-        }
-
-        await displayMessage.execute({
-            message: `Roll on the <strong>${specialEffect} Special Effects Table</strong>`,
-            onlyToGMs: true,
-        });
-    }
+    results.final_status = finalStatus;
+    results.special_effect_table = specialEffect;
 }
-console.log(JSON.stringify(results, null, 2));
+
 return results;

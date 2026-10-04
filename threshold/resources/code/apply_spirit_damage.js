@@ -20,14 +20,14 @@ new Dialog({
         apply: {
             icon: '',
             label: "Apply",
-            callback: (html) => {
+            callback: async (html) => {
                 let d = parseInt(html.find('#totalDamage').val());
                 if (isNaN(d) || d <= 0) return;
-                // TODO ech 2026-10-03 - figure out wait/async for this
-                let results = applyDamage.execute({target: actor, damage: d, spiritDamage: true});
-                // if (results) {
-                //     console.log(JSON.stringify(results, null, 2));
-                // }
+                let results = await applyDamage.execute({target: actor, damage: d, spiritDamage: true});
+                if (results) {
+                    // TODO ech 2026-10-03 - improve the output (damage to traits, etc)
+                    console.log(JSON.stringify(results, null, 2));
+                }
             }
         }
     },

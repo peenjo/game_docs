@@ -23,18 +23,33 @@ new Dialog({
         apply: {
             icon: '',
             label: "Apply",
-            callback: (html) => {
+            callback: async (html) => {
                 const d = parseInt(html.find('#totalDamage').val());
                 let p = parseInt(html.find('#piercingDamage').val());
                 if (isNaN(d) || isNaN(p)) return;
                 if (d > 0) {
                     if (p < 0) p = 0;
                     else if (p > d) p = d;
-                    // TODO ech 2026-10-03 - figure out wait/async for this
-                    let results = applyDamage.execute({target: actor, damage: d, piercingDamage: p});
-                    // if (results) {
-                    //     console.log(JSON.stringify(results, null, 2));
-                    // }
+                    let results = await applyDamage.execute({target: actor, damage: d, piercingDamage: p});
+                    if (results) {
+                        // TODO ech 2026-10-03 - improve the output (damage to traits, etc)
+                        console.log(JSON.stringify(results, null, 2));
+                        const displayMessage = game.macros.getName("Display_Special_Effect_Message");
+
+                        if (results.final_status === "dead") {
+                            await displayMessage.execute({message: `<strong>${actor.name}</strong> just DIED!`});
+                            // don't bother with special effect message - it's dead, Jim
+                        } else {
+                            if (results.final_status === "unconscious") {
+                                await displayMessage.execute({message: `<strong>${actor.name}</strong> went unconscious!`});
+                            }
+
+                            await displayMessage.execute({
+                                message: `Roll on the <strong>${results.special_effect_table} Special Effects Table</strong>`,
+                                onlyToGMs: true,
+                            });
+                        }
+                    }
                 }
             }
         }

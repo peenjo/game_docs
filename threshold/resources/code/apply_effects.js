@@ -5,7 +5,6 @@
 // to the Foundry Chat Window.
 //*********************************************
 
-// list of effects passed in from caller macro
 const activeEffects = scope.activeEffects;
 if (!activeEffects) {
     console.log('Whoops, you need to supply the list of effect names');
@@ -38,9 +37,9 @@ const EFFECTS = await getGlobalEffectNames.execute();
 // create the active effects Foundry resources to be applied to the target
 const createEffects = game.macros.getName("Create_Active_Effects");
 const effects = await createEffects.execute({effectNames: activeEffects});
+// console.log(JSON.stringify(effects, null, 2));
 
 // apply the all active effects directly to the target token's actor
-
 await target.actor.createEmbeddedDocuments("ActiveEffect", effects);
 
 function isReductionEffect(effectName) {
