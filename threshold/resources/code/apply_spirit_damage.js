@@ -22,10 +22,12 @@ new Dialog({
             label: "Apply",
             callback: (html) => {
                 let d = parseInt(html.find('#totalDamage').val());
-                if (!isNaN(d) && d > 0) {
-                    applyDamage.execute({target: actor, damage: d, spiritDamage: true});
-                }
-                // TODO ech 2026-09-27 - maybe GM message about light/medium/heavy effect
+                if (isNaN(d) || d <= 0) return;
+                // TODO ech 2026-10-03 - figure out wait/async for this
+                let results = applyDamage.execute({target: actor, damage: d, spiritDamage: true});
+                // if (results) {
+                //     console.log(JSON.stringify(results, null, 2));
+                // }
             }
         }
     },

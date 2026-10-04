@@ -13,8 +13,10 @@ if (!target) {
     console.log('Whoops, you need to supply the target');
     return;
 }
-let remaining = scope.damage || 0; // damage to be applied
-const piercingDamage = scope.piercingDamage || 0; // piercing damage to be applied (physical only)
+const totalDamage = scope.damage || 0; // damage to be applied
+if (totalDamage <= 0) return; // no damage to apply, early exit
+let piercingDamage = scope.piercingDamage || 0; // piercing damage to be applied (physical only)
+let nonPiercingDamage = totalDamage - piercingDamage;
 const ignoreArmor = scope.ignoreArmor || false; // armor counts by default
 const spiritDamage = scope.spiritDamage || false; // physical damage by default
 
@@ -28,6 +30,14 @@ const KEYS = {
     PHYSICAL_ARMOR: "primaryArmor",
     SPIRIT_ARMOR: "radiationProtection", // ech 2026-09-27 - not ideal, but it's an unused value in twodsix code
 };
+// const DISPLAY_NAMES = {
+//     ENDURANCE: "endurance",
+//     STRENGTH: "strength",
+//     AGILITY: "agility",
+//     ESSENCE: "essence",
+//     WILL: "will",
+//     CHARISMA: "charisma",
+// };
 const PHYSICAL_TRAITS = [KEYS.ENDURANCE, KEYS.STRENGTH, KEYS.AGILITY]; // in order
 const SPIRIT_TRAITS = [KEYS.ESSENCE, KEYS.WILL, KEYS.CHARISMA]; // in order
 const TRAITS = spiritDamage ? SPIRIT_TRAITS : PHYSICAL_TRAITS; // physical or spirit
@@ -35,19 +45,18 @@ const ARMOR = spiritDamage ? KEYS.SPIRIT_ARMOR : KEYS.PHYSICAL_ARMOR; // physica
 const SPECIAL_EFFECTS_TABLES = ['Light', 'Medium', 'Heavy'];
 const ADD = 2;
 
-console.log(`total damage = ${remaining}`);
-console.log(`piercingDamage = ${piercingDamage}`);
-if (!ignoreArmor) {
-    let effectiveArmor = target.system[ARMOR].value;
-    if (!spiritDamage && piercingDamage) {
-        effectiveArmor -= piercingDamage;
-        if (effectiveArmor < 0) {
-            effectiveArmor = 0;
-        }
+// kitchen sink object for returning damage process data
+let results = {
+    total_damage: totalDamage,
+    piercing_damage: piercingDamage,
+    non_piercing_damage: nonPiercingDamage,
+};
 
-        // TODO ech 2026-10-02 - clean this up
-        // apply natural toughness, if any
+if (!ignoreArmor) {
+    let effectiveArmor = target.system[ARMOR].value; // includes toughness, if any
+    if (piercingDamage > 0) {
         // get toughness effects for physical armor
+        // TODO ech 2026-10-02 - clean this up
         const armorChanges = target.appliedEffects
             .flatMap(eff =>
                 eff.changes
@@ -62,20 +71,31 @@ if (!ignoreArmor) {
             );
         let toughness = 0;
         for (const arm of armorChanges) {
-            console.log('armorChange = ' + JSON.stringify(arm, null, 2));
             toughness += arm.value;
         }
-        console.log(`toughness = ${toughness}`);
-        if (effectiveArmor < toughness) {
-            effectiveArmor = toughness;
+        results.toughness = toughness;
+
+        if (piercingDamage >= toughness) {
+            piercingDamage -= toughness; // reduce piercing by toughness
+            effectiveArmor -= toughness; // toughness used up, remove it from total armor
+        } else {
+            // all piercing caught by toughness
+            effectiveArmor -= piercingDamage; // effective armor includes toughness, so reduce
+            piercingDamage = 0;
         }
     }
-    console.log(`effectiveArmor = ${effectiveArmor}`);
-    remaining -= effectiveArmor;
+    results.effective_armor = effectiveArmor;
+    nonPiercingDamage -= effectiveArmor;
+    if (nonPiercingDamage < 0) {
+        nonPiercingDamage = 0; // armor soaked up all non-piercing damage
+    }
 }
-console.log(`damage to apply = ${remaining}`);
-
-if (remaining <= 0) return; // no damage to apply
+let remaining = nonPiercingDamage + piercingDamage;
+results.damage_to_apply = remaining;
+if (remaining <= 0) {
+    console.log(JSON.stringify(results, null, 2));
+    return results; // no damage to apply, but have data to report
+}
 
 // get relevant active effect changes to tease out base trait values
 // which sadly are not stored: just the current derived values
@@ -94,14 +114,15 @@ const activeChanges = target.appliedEffects
 let specialEffect = '';
 let finalStatus = null;
 for (const [index, t] of TRAITS.entries()) {
-    // console.log(`index ${index}, t ${t}`);
     const trait = target.system.characteristics[t];
-    // console.log(`key ${trait}`);
-    // this trait is zeroed out - skip to next
-    if (trait.current <= 0) continue;
+    // this trait is zeroed out - log and skip to next
+    if (trait.current <= 0) {
+        // TODO ech 2026-10-03 - add damage 0 and current 0 to results
+        // results
+        continue;
+    }
 
     const changes = activeChanges.filter(ch => ch.key.includes(t));
-    // console.log(changes);
     let baseValue = trait.value;
     // only support 'ADD' type changes
     if (changes.length && changes.every(ch => ch.mode === ADD)) {
@@ -140,17 +161,17 @@ if (!spiritDamage) {
     const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 
     if (finalStatus === "dead") {
-        const chatContent = `<strong>${target.name}</strong> just DIED!`;
-        await displayMessage.execute({message: chatContent});
+        await displayMessage.execute({message: `<strong>${target.name}</strong> just DIED!`});
     } else {
         if (finalStatus === "unconscious") {
-            const chatContent = `<strong>${target.name}</strong> went unconscious!`;
-            await displayMessage.execute({message: chatContent});
+            await displayMessage.execute({message: `<strong>${target.name}</strong> went unconscious!`});
         }
 
         await displayMessage.execute({
             message: `Roll on the <strong>${specialEffect} Special Effects Table</strong>`,
-            whisper: game.users.filter(u => u.isGM).map(u => u._id),
+            onlyToGMs: true,
         });
     }
 }
+console.log(JSON.stringify(results, null, 2));
+return results;

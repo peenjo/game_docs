@@ -26,15 +26,16 @@ new Dialog({
             callback: (html) => {
                 const d = parseInt(html.find('#totalDamage').val());
                 let p = parseInt(html.find('#piercingDamage').val());
-                // TODO ech 2026-10-02 - make this clearer
-                if (!isNaN(d) && d > 0) {
-                    if (!isNaN(p)) {
-                        if (p < 0) p = 0;
-                        else if (p > d) p = d;
-                    }
-                    applyDamage.execute({target: actor, damage: d, piercingDamage: p});
+                if (isNaN(d) || isNaN(p)) return;
+                if (d > 0) {
+                    if (p < 0) p = 0;
+                    else if (p > d) p = d;
+                    // TODO ech 2026-10-03 - figure out wait/async for this
+                    let results = applyDamage.execute({target: actor, damage: d, piercingDamage: p});
+                    // if (results) {
+                    //     console.log(JSON.stringify(results, null, 2));
+                    // }
                 }
-                // TODO ech 2026-09-27 - message GM about light/medium/heavy effect
             }
         }
     },
