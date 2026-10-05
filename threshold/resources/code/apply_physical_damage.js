@@ -6,6 +6,9 @@ if (selectedTokens.length !== 1) {
 const actor = selectedTokens[0].actor;
 const applyDamage = game.macros.getName("Apply_Damage");
 
+const getGlobalEffectNames = game.macros.getName("Global_Effect_Names");
+const EFFECTS = await getGlobalEffectNames.execute();
+
 // TODO ech 2026-09-10 - improve the dialog
 new Dialog({
     title: "Apply Physical Damage",
@@ -32,21 +35,22 @@ new Dialog({
                     else if (p > d) p = d;
                     let results = await applyDamage.execute({target: actor, damage: d, piercingDamage: p});
                     if (results) {
-                        // TODO ech 2026-10-03 - improve the output (damage to traits, etc)
-                        console.log(JSON.stringify(results, null, 2));
                         const displayMessage = game.macros.getName("Display_Special_Effect_Message");
 
-                        if (results.final_status === "dead") {
+                        let res = JSON.stringify(results, null, 2).slice(1, -1);
+                        await displayMessage.execute({message: res, onlyToGMs: true, title: "Physical Damage Report"});
+
+                        if (results.final_status === EFFECTS.DEAD) {
                             await displayMessage.execute({message: `<strong>${actor.name}</strong> just DIED!`});
                             // don't bother with special effect message - it's dead, Jim
                         } else {
-                            if (results.final_status === "unconscious") {
+                            if (results.final_status === EFFECTS.UNCONSCIOUS) {
                                 await displayMessage.execute({message: `<strong>${actor.name}</strong> went unconscious!`});
                             }
 
                             await displayMessage.execute({
                                 message: `Roll on the <strong>${results.special_effect_table} Special Effects Table</strong>`,
-                                onlyToGMs: true,
+                                onlyToGMs: true
                             });
                         }
                     }

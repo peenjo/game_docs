@@ -25,8 +25,10 @@ new Dialog({
                 if (isNaN(d) || d <= 0) return;
                 let results = await applyDamage.execute({target: actor, damage: d, spiritDamage: true});
                 if (results) {
-                    // TODO ech 2026-10-03 - improve the output (damage to traits, etc)
-                    console.log(JSON.stringify(results, null, 2));
+                    const displayMessage = game.macros.getName("Display_Special_Effect_Message");
+
+                    let res = JSON.stringify(results, null, 2).slice(1, -1);
+                    await displayMessage.execute({message: res, onlyToGMs: true, title: "Spiritual Damage Report"});
                 }
             }
         }
