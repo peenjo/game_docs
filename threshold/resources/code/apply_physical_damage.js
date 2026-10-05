@@ -47,11 +47,12 @@ new Dialog({
                             if (results.final_status === EFFECTS.UNCONSCIOUS) {
                                 await displayMessage.execute({message: `<strong>${actor.name}</strong> went unconscious!`});
                             }
-
-                            await displayMessage.execute({
-                                message: `Roll on the <strong>${results.special_effect_table} Special Effects Table</strong>`,
-                                onlyToGMs: true
-                            });
+                            if (results.special_effect_table) {
+                                await displayMessage.execute({
+                                    message: `Roll on the <strong>${results.special_effect_table} Special Effects Table</strong>`,
+                                    onlyToGMs: true
+                                });
+                            }
                         }
                     }
                 }

@@ -16,7 +16,6 @@ if (!target) {
 const totalDamage = scope.damage || 0; // damage to be applied
 if (totalDamage <= 0) return; // no damage to apply, early exit
 let piercingDamage = scope.piercingDamage || 0; // piercing damage to be applied (physical only)
-let nonPiercingDamage = totalDamage - piercingDamage;
 const ignoreArmor = scope.ignoreArmor || false; // armor counts by default
 const spiritDamage = scope.spiritDamage || false; // physical damage by default
 
@@ -46,17 +45,14 @@ const SPECIAL_EFFECTS_TABLES = ['Light', 'Medium', 'Heavy'];
 const ADD = 2;
 
 // kitchen sink object for returning damage process data
-let results = {
-    total_damage: totalDamage,
-    piercing_damage: piercingDamage,
-    non_piercing_damage: nonPiercingDamage,
-};
+let results = {total_damage: totalDamage};
+if (!spiritDamage) results.piercing_damage = piercingDamage;
 
+let effectiveArmor = 0;
 if (!ignoreArmor) {
-    let effectiveArmor = target.system[ARMOR].value; // includes toughness, if any
+    effectiveArmor = target.system[ARMOR].value; // includes toughness, if any
     if (piercingDamage > 0) {
         // get toughness effects for physical armor
-        // TODO ech 2026-10-02 - clean this up
         const armorChanges = target.appliedEffects
             .flatMap(eff =>
                 eff.changes
@@ -74,26 +70,15 @@ if (!ignoreArmor) {
             toughness += arm.value;
         }
         results.toughness = toughness;
-
-        if (piercingDamage >= toughness) {
-            piercingDamage -= toughness; // reduce piercing by toughness
-            effectiveArmor -= toughness; // toughness used up, remove it from total armor
-        } else {
-            // all piercing caught by toughness
-            effectiveArmor -= piercingDamage; // effective armor includes toughness, so reduce
-            piercingDamage = 0;
-        }
-    }
-    results.effective_armor = effectiveArmor;
-    nonPiercingDamage -= effectiveArmor;
-    if (nonPiercingDamage < 0) {
-        nonPiercingDamage = 0; // armor/toughness soaked up all non-piercing damage
+        effectiveArmor -= piercingDamage;
+        if (effectiveArmor < toughness) effectiveArmor = toughness; // piercing doesn't affect toughness
     }
 }
-let remaining = nonPiercingDamage + piercingDamage;
+results.effective_armor = effectiveArmor;
+let remaining = totalDamage - effectiveArmor;
+if (remaining < 0) remaining = 0;
 results.damage_to_apply = remaining;
 if (remaining <= 0) {
-    // console.log(JSON.stringify(results, null, 2));
     return results; // no damage to apply, but data to report
 }
 
@@ -111,8 +96,9 @@ const activeChanges = target.appliedEffects
             }))
     );
 
-let specialEffect = '';
-let finalStatus = null;
+let specialEffect = ''; // degree of special effect (light, medium, heavy)
+let finalStatus = null; // unconscious or dead or not
+// go through the three traits in order to apply damage
 for (const [index, t] of TRAITS.entries()) {
     const trait = target.system.characteristics[t];
     // this trait is zeroed out - log and skip to next
@@ -121,6 +107,7 @@ for (const [index, t] of TRAITS.entries()) {
         continue;
     }
 
+    // calculate the actual base trait value, not the stupidly dynamic one (back out effects)
     const changes = activeChanges.filter(ch => ch.key.includes(t));
     let baseValue = trait.value;
     // only support 'ADD' type changes
