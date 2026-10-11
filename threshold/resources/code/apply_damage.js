@@ -51,6 +51,7 @@ if (!spiritDamage) results.piercing_damage = piercingDamage;
 let effectiveArmor = 0;
 if (!ignoreArmor) {
     effectiveArmor = target.system[ARMOR].value; // includes toughness, if any
+    results.total_armor = effectiveArmor;
     if (piercingDamage > 0) {
         // get toughness effects for physical armor
         const armorChanges = target.appliedEffects

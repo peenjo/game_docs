@@ -1,0 +1,35 @@
+#### TL;DR
+The group continued their role-playing game session, focusing on a tense escape from a ziggurat while in spirit form, pursued by essence parasites. They navigated through dark hallways and used lights to deter the creatures, with characters like Quill, Victor and others trying various tactics to evade or fight them. The session included discussions on character abilities, particularly the need for the Conviction skill to wield weapons in the spirit realm, and the acquisition of Rowan sticks as potential spiritual weapons. After a dramatic escape, the players returned to their bodies and learned that their mission to discredit Union Marshal Spirro had succeeded. They then engaged in character management, purchasing equipment like shotguns and discussing cybernetic enhancements. The conversation also touched on character development regrets and the mechanics of spiritual toughness and essence.
+
+#### Ziggurat, Part Deux
+When last we left our heroes they had found the document in a safe in the living room of Union Marshall Spirro on the top floor of a massive ziggurat. Unfortunately, there were dark blobs forming in the entrance that really didn't look friendly. Once a blob reached a certain size it disgorged these spider-like spirit parasites, which were "about twice the size of a face hugger" (thanks Harry). Since no one other than Quill had any spirit combat mojo, they bravely ran away like Sir Robin.
+
+Various folks tried different means of escape. Quill went straight into panic mode and hovered outside near the balcony. Jackson went out to the balcony and looked for a way down. Victor ran through the bedroom wall into the hallway, but it took some willpower to do it. Blake tried a couple times (bouncing off the wall) until he made it. When he rounded the corner towards the exit stairs, Victor was the only person the creepies could see, so the ran after him, jumping on his back and taking him down. He managed to get back up and jump into a well-lit section of corridor, and they couldn't follow him.
+
+Harry clarified that while players could interact with physical elements like ladders and walls, they would experience gravity if they fell through the building's floors. If not lucky, they might end up getting trapped in the walls/floors. 
+
+The spiders avoided light, but could work together to turn off lights in the phyiscal world. Quill eventually pulled his head out long enough to use telekinesis to turn on the main overhead light, causing the spiders to flee into darkness. When the lights came on Quill also noticed there was a ladder on the balcony that went to the next lower floor. Jackson was first to try climbing down the ladder and had a critical fail. Whoops! Harry gave him a 1 in 6 chance of 'not dying'. Of course  Jackson rolled a 6 to grab a flagpole and avoid falling to his death.  
+
+The overhead lights began to flicker, indicating the parasites' approach, while Quill remained on the balcony shouting directions to the others about finding a way down. The players then discussed their movement through the building, with some escaping down the stairs and others using the ladder. 
+
+#### Post Mission
+After returning to their physical bodies, they were dropped off at Clem's place and received a call from the mayor confirming that warrants had been rescinded and their mission had been completed successfully.
+
+#### Spirit Realm Weapons
+The group discussed acquiring weapons for use in the spirit realm, focusing on Rowan sticks which can be used as weapons when coated in their own blood. Harry explained that players need Conviction skill points to effectively use these weapons, with each point adding 1d6 damage to strikes. Jackson purchased 50 Rowan sticks (10 batches of 5 sticks) for 1,000 crowns, and distributed 10 sticks to each of the other players. Of course, only a couple characters have Conviction level 0, so the Rowan sticks are useless for everyone at this point.
+
+#### Physical Weapons and Cybernetics Discussion
+The group discussed purchasing weapons and cybernetics in the game. Blake inquired about shotguns and an AK-147 assault rifle, leading to a conversation with Patch about weapon options and pricing. Patch arranged for a delivery of guns, including shotguns, to an alley at midnight the next night. Brian asked about chameleon new flesh cybernetics, but decided not to proceed after learning about the essence reduction effects. Eric mentioned that he had made updates to the game, adding natural and spiritual toughness features that needed to be properly equipped by players.
+
+#### Paperwork Comes Back
+Jackson got the paperwork he had requested a few weeks ago from the city. Plans for the Amaranth building and the Riverside Deli. The ownership was undetermined, as it was held by many layers of shell companies. The Amaranth has three sublevels - two known parking areas and an unknown third level. There was only one name in common between the two buildings: Jamie Sikes who works in amaranth building and lives above the deli. When they asked for infomration about Jamie, it turns out he was found dead floating in the lake. They need to find out if he died violently, as this would allow Clem to make contact with him after death.
+
+#### Missing Courier
+There is also the case with the Angaros - two different couriers were sent to Detroit. One didn't return, while the second one did, spoke with a Keeper about the job. Victor mentioned plans to go fishing, while Jackson suggested focusing on the Detroit investigation. They contacted the company through various phone calls but were rebuffed, with the representative claiming it wasn't their responsibility since it happened outside Toronto. Later, they received confirmation that the Black Library had been reopened, though the Street Queen who provided this information was reported to be ill. 
+
+The team considered their options for next steps, including researching Elithium at the Black Library, but determined they would need to steal a book from the Black Library first, which is scheduled for three weeks later. The group considered visiting the Black Library through a mirror in the Heinz house basement, though they were uncertain about their permission to do so.
+
+#### Coroner Case and Health Visit
+The group visited the Street Queen to check on her health, where they learned about a disagreement with a Voodoo practitioner that may have caused her current illness. The Street Queen told Clem to watch out, but that she would be fine and Mdm Brigitte did not get away without harm. 
+
+They examined Jamie's body at the coroner's office that appeared to be the result of a bear attack, with the right leg missing and significant trauma 'consistent' with a rabid bear. The team obtained a hair sample from the corpse to perform a ritual, with Clem potentially using it to communicate with the deceased person's spirit. The group then discussed scheduling for the next session, with Marc possibly unable to attend due to a new baby, and they needed to confirm Catey's availability before determining if the next meeting would proceed.
